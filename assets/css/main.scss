@@ -433,18 +433,18 @@ main {
   line-height: 1.75;
 }
 
-/* Editorial drop cap, the one place a big serif glyph anchors a long-form page */
+/* Editorial drop cap, sized to span exactly two lines of body text */
 .post-content > p:first-of-type::first-letter,
 .page-content > p:first-of-type::first-letter {
   font-family: var(--serif);
   font-weight: 600;
   font-variation-settings: "opsz" 144;
-  font-size: 4.2rem;
-  line-height: 0.85;
+  font-size: 3.2rem;
+  line-height: 1;
   float: left;
-  padding: 0.4rem 0.7rem 0 0;
+  padding: 0.15rem 0.55rem 0 0;
   color: var(--terracotta-deep);
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
 }
 
 .post-content h2:first-child,
@@ -738,6 +738,6 @@ figcaption {
   .site-nav a { font-size: 0.72rem; }
   .post-content > p:first-of-type::first-letter,
   .page-content > p:first-of-type::first-letter {
-    font-size: 3.6rem;
+    font-size: 2.8rem;
   }
 }
