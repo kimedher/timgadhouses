@@ -4,6 +4,7 @@ title: Cite and Contribute
 subtitle: How to cite this site, how to file a correction, and how the licensing works.
 permalink: /cite/
 last_updated: 2026-04-18
+published: false
 ---
 
 ## Citing the site

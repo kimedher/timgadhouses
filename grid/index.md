@@ -5,6 +5,7 @@ subtitle: The urban plan of Timgad, block by block, with house identifiers mappe
 permalink: /grid/
 show_citation: true
 last_updated: 2026-04-18
+published: false
 ---
 
 Timgad was laid out on a strict rectilinear grid, two main streets crossing at right angles with regular rectangular blocks between them. Each block, called an *insula* in Latin, is identified here by its coordinates on that grid. Individual houses are keyed to the insula they sit inside, so that a house identifier like `TIMGAD-C3D5-H01` can be traced directly to its place in the city.

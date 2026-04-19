@@ -4,6 +4,7 @@ title: Notes & Essays
 subtitle: Short pieces on method, scholarship, teaching, and what is changing in how we read provincial Roman houses.
 permalink: /notes/
 last_updated: 2026-04-18
+published: false
 ---
 
 <ul class="post-list">

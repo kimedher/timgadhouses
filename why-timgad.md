@@ -5,6 +5,7 @@ subtitle: A short introduction to a Roman city in modern Algeria that still has 
 permalink: /why-timgad/
 show_citation: true
 last_updated: 2026-04-18
+published: false
 ---
 
 Timgad is a Roman city in modern-day Algeria, set on a high plain at the foot of the Aurès mountains, about 500 kilometers southeast of the capital, Algiers. The Romans called it Thamugadi. It was founded in 100 CE by the emperor Trajan as a colony for veterans of the Third Augustan legion, and over the next three centuries it grew into a substantial provincial city before being abandoned in the Middle Ages. Buried by sand for centuries, it is one of the best-preserved Roman sites anywhere, and a UNESCO World Heritage Site since 1982.

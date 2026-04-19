@@ -5,6 +5,7 @@ date: 2026-04-18
 categories: [method]
 tags: [timgad, pompeii, vitruvius, north-africa, method]
 reading_time: 7
+published: false
 excerpt: >-
   For a long time, anyone who wanted to talk about a Roman house started with
   Pompeii. Atrium, peristyle, axial sightline, cubicula arranged around the

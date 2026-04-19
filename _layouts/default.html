@@ -18,11 +18,13 @@
       <div class="container-wide">
         <a href="{{ '/' | relative_url }}" class="site-title">Houses of Roman Timgad</a>
         <nav class="site-nav">
+          {% comment %} Pages temporarily hidden during review. Restore by removing these comment tags.
           <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
           <a href="{{ '/why-timgad/' | relative_url }}"{% if page.url contains '/why-timgad' %} class="active"{% endif %}>Why Timgad</a>
           <a href="{{ '/grid/' | relative_url }}"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
           <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' or page.url contains '/20' %} class="active"{% endif %}>Notes</a>
           <a href="{{ '/cite/' | relative_url }}"{% if page.url contains '/cite' %} class="active"{% endif %}>Cite</a>
+          {% endcomment %}
         </nav>
       </div>
     </header>
@@ -38,12 +40,14 @@
             <div class="footer-tagline">Where work, home, and identity shared a roof.</div>
             <div>Open data, open scholarship.</div>
           </div>
+          {% comment %} Footer links to hidden pages temporarily removed during review.
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">The project</strong><br>
             <a href="{{ '/about/' | relative_url }}">About</a><br>
             <a href="{{ '/why-timgad/' | relative_url }}">Why Timgad</a><br>
             <a href="{{ '/cite/' | relative_url }}">Cite &amp; contribute</a>
           </div>
+          {% endcomment %}
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">License &amp; credit</strong><br>
             Text and images © {{ site.time | date: '%Y' }} Kim Edher, CC BY 4.0 unless noted.<br>

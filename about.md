@@ -5,6 +5,7 @@ subtitle: What this site is, who is doing it, and why.
 permalink: /about/
 show_citation: true
 last_updated: 2026-04-18
+published: false
 ---
 
 ## What this site is
