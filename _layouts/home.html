@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="container-wide">
+    <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center;">
+      <div>
+        <p class="hero-eyebrow">Open digital humanities project</p>
+        <h1>The rhythms, smells, and work of a provincial Roman home.</h1>
+        <p class="hero-lede">{{ site.description }}</p>
+        <p style="margin-top: 1.8rem;">
+          <a href="/why-timgad/" style="display: inline-block; background: var(--teal); color: white; padding: 0.7rem 1.4rem; border-radius: var(--radius); border: none; font-weight: 600; font-size: 0.92rem;">Start with Timgad &rarr;</a>
+          &nbsp;&nbsp;
+          <a href="/grid/" style="font-weight: 600;">View the interactive grid</a>
+        </p>
+      </div>
+      <figure class="hero-image" style="margin: 0;">
+        <img src="/assets/images/timgad-aerial-bw.jpg" alt="Stone walls of houses at Timgad rising out of the plain, with mountains beyond.">
+        <figcaption>The remains of houses in Timgad's northeastern quarter, looking south toward the Aurès mountains.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 4rem 0 1rem;">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+
+<section style="padding: 1rem 0 4rem;">
+  <div class="container">
+    <h2>What's here</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>About the project</h3>
+        <p>Who is doing this work, why, and what the dissertation behind it is trying to do.</p>
+        <a href="/about/" class="card-link">Read more &rarr;</a>
+      </div>
+      <div class="feature-card">
+        <h3>Why Timgad</h3>
+        <p>An accessible introduction to the city, its houses, and what makes it worth a closer look.</p>
+        <a href="/why-timgad/" class="card-link">Start here &rarr;</a>
+      </div>
+      <div class="feature-card">
+        <h3>Interactive grid</h3>
+        <p>Explore the urban plan of Timgad block by block, with house identifiers mapped to the street grid.</p>
+        <a href="/grid/" class="card-link">Open the grid &rarr;</a>
+      </div>
+      <div class="feature-card">
+        <h3>Notes &amp; essays</h3>
+        <p>Short pieces on method, scholarship, and what is changing in how we read provincial Roman houses.</p>
+        <a href="/notes/" class="card-link">Read the latest &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if site.posts.size > 0 %}
+<section style="padding: 1rem 0 5rem; border-top: 1px solid var(--hairline);">
+  <div class="container">
+    <h2>Latest from the notes</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+      <li>
+        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

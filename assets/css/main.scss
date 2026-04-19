@@ -1,0 +1,419 @@
+---
+---
+
+/* ==========================================================================
+   Houses of Roman Timgad, main stylesheet
+   Palette: soft off-white, baby blue, teal, charcoal
+   Typography: Montserrat 400 / 600
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #FAFAF7;
+  --bg-soft: #F3F1EC;
+  --text: #1F2933;
+  --text-muted: #6B7380;
+  --teal: #1B6B6F;
+  --teal-dark: #104A4D;
+  --baby-blue: #B8D8E3;
+  --baby-blue-soft: #E4F0F4;
+  --hairline: #E3E6EA;
+  --max-content: 720px;
+  --max-wide: 1040px;
+  --radius: 4px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 17px;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.25;
+  margin: 2.2em 0 0.6em;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; font-weight: 600; color: var(--teal-dark); }
+
+p { margin: 0 0 1.2em; }
+
+a {
+  color: var(--teal);
+  text-decoration: none;
+  border-bottom: 1px solid var(--baby-blue);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+a:hover {
+  color: var(--teal-dark);
+  border-bottom-color: var(--teal);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+blockquote {
+  margin: 2em 0;
+  padding: 1.2em 1.6em;
+  background: var(--baby-blue-soft);
+  border-left: 3px solid var(--teal);
+  font-style: italic;
+  color: var(--text);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--hairline);
+  margin: 3em 0;
+}
+
+/* ---------- Layout ---------- */
+
+.site-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-wide {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+main {
+  flex: 1;
+  padding: 3rem 0 5rem;
+}
+
+/* ---------- Header / Nav ---------- */
+
+.site-header {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--hairline);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+  background: rgba(250, 250, 247, 0.92);
+}
+
+.site-header .container-wide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  text-decoration: none;
+  border: none;
+  letter-spacing: 0.01em;
+}
+
+.site-title:hover { color: var(--teal-dark); }
+
+.site-nav {
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 500;
+  border: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--teal);
+  border-bottom-color: var(--teal);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 4.5rem 0 3.5rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.hero-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--teal);
+  margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+
+.hero-lede {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 620px;
+  line-height: 1.65;
+}
+
+.hero-image {
+  margin-top: 2.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* ---------- Page / post ---------- */
+
+.page-header {
+  margin-bottom: 2.4rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.page-header h1 { margin: 0 0 0.4rem; }
+
+.page-header .meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.post-content h2:first-child,
+.page-content h2:first-child { margin-top: 0.2em; }
+
+.post-content img,
+.page-content img {
+  margin: 2em auto;
+  border-radius: var(--radius);
+}
+
+figure {
+  margin: 2em 0;
+}
+
+figure img { margin-bottom: 0.6em; }
+
+figcaption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* ---------- Feature cards (homepage) ---------- */
+
+.feature-grid {
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 2rem;
+}
+
+.feature-card {
+  padding: 1.6rem;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--baby-blue);
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.feature-card:hover {
+  border-left-color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.feature-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  color: var(--teal-dark);
+}
+
+.feature-card p {
+  margin: 0 0 0.8rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.feature-card a.card-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--teal);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Posts list ---------- */
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.post-list li:first-child { padding-top: 0; }
+
+.post-list .post-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+}
+
+.post-list .post-title a {
+  color: var(--text);
+  border: none;
+}
+
+.post-list .post-title a:hover { color: var(--teal); }
+
+.post-list .post-meta {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.post-list .post-excerpt {
+  margin: 0.4rem 0 0;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+/* ---------- Citation block ---------- */
+
+.citation-block {
+  margin-top: 3.5rem;
+  padding: 1.4rem 1.6rem;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.citation-block strong {
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.citation-block code {
+  display: block;
+  margin-top: 0.4rem;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--hairline);
+  padding: 2.5rem 0;
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+.site-footer .footer-tagline {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+  border-bottom-color: var(--hairline);
+}
+
+.site-footer a:hover {
+  color: var(--teal);
+  border-bottom-color: var(--teal);
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.footer-row > div { min-width: 200px; }
+
+/* ---------- Utilities ---------- */
+
+.text-muted { color: var(--text-muted); }
+.text-center { text-align: center; }
+.mt-2 { margin-top: 2rem; }
+.mt-3 { margin-top: 3rem; }
+
+/* ---------- Grid viewer embed ---------- */
+
+.grid-viewer-frame {
+  width: 100%;
+  height: 78vh;
+  min-height: 560px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  h1 { font-size: 2rem; }
+  .hero { padding: 3rem 0 2.5rem; }
+  .hero h1 { font-size: 2.1rem; }
+  .site-header .container-wide {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-nav { gap: 1.2rem; }
+  .site-nav a { font-size: 0.88rem; }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  {% seo %}
+</head>
+<body>
+  <div class="site-wrap">
+
+    <header class="site-header">
+      <div class="container-wide">
+        <a href="{{ '/' | relative_url }}" class="site-title">Houses of Roman Timgad</a>
+        <nav class="site-nav">
+          <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
+          <a href="{{ '/why-timgad/' | relative_url }}"{% if page.url contains '/why-timgad' %} class="active"{% endif %}>Why Timgad</a>
+          <a href="{{ '/grid/' | relative_url }}"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
+          <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' or page.url contains '/20' %} class="active"{% endif %}>Notes</a>
+          <a href="{{ '/cite/' | relative_url }}"{% if page.url contains '/cite' %} class="active"{% endif %}>Cite</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-wide">
+        <div class="footer-row">
+          <div>
+            <div class="footer-tagline">Where work, home, and identity shared a roof.</div>
+            <div>Open data, open scholarship.</div>
+          </div>
+          <div>
+            <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">The project</strong><br>
+            <a href="{{ '/about/' | relative_url }}">About</a><br>
+            <a href="{{ '/why-timgad/' | relative_url }}">Why Timgad</a><br>
+            <a href="{{ '/cite/' | relative_url }}">Cite &amp; contribute</a>
+          </div>
+          <div>
+            <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">License &amp; credit</strong><br>
+            Text and images © {{ site.time | date: '%Y' }} Kim Edher, CC BY 4.0 unless noted.<br>
+            Code under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.<br>
+            Built in the open on <a href="https://github.com/{{ site.github_username }}/timgadhouses">GitHub</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

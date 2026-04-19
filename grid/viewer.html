@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1360">
+<title>Timgad Insula Grid — Edher 2026 (Quadrant System)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif; padding: 18px; background: #fafafa; color: #222; }
+h1 { font-size: 21px; margin-bottom: 4px; }
+.subtitle { font-size: 11px; color: #555; margin-bottom: 14px; line-height: 1.5; }
+.tabs { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; }
+.tab { padding: 7px 14px; border: 1px solid #bbb; border-radius: 5px; background: #fff; cursor: pointer; font-size: 11px; font-weight: 600; font-family: inherit; }
+.tab.active { background: #2C3E50; color: #fff; border-color: #2C3E50; }
+.legend { display: flex; gap: 14px; margin-bottom: 12px; font-size: 10px; align-items: center; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-swatch { width: 13px; height: 13px; border-radius: 2px; border: 2px solid; }
+.grid-wrap { overflow-x: auto; }
+.grid-row { display: flex; align-items: center; margin-bottom: 0; }
+.row-label { width: 90px; text-align: right; padding-right: 6px; flex-shrink: 0; }
+.row-label .num { font-weight: 700; font-size: 13px; }
+.row-label .street { font-size: 6.5px; color: #888; line-height: 1.15; }
+.col-headers { display: flex; margin-left: 90px; margin-bottom: 0; }
+.col-header { width: 90px; text-align: center; flex-shrink: 0; }
+.col-header .letter { font-weight: 700; font-size: 13px; }
+.col-header .street { font-size: 6.5px; color: #888; line-height: 1.1; white-space: pre-line; }
+.cell { width: 86px; height: 72px; border: 2px solid #bdbdbd; border-radius: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0 2px; font-size: 8px; text-align: center; padding: 2px; position: relative; background: #f5f5f5; cursor: pointer; flex-shrink: 0; }
+.cell.house { background: #E8F5E9; border-color: #43A047; color: #1B5E20; }
+.cell.baths { background: #E3F2FD; border-color: #1E88E5; color: #0D47A1; }
+.cell.public { background: #FFF3E0; border-color: #FB8C00; color: #E65100; }
+.cell.unknown { background: #F5F5F5; border-color: #BDBDBD; color: #9E9E9E; }
+.cell.selected { background: #FFEBEE !important; border-color: #D32F2F !important; box-shadow: 0 0 8px rgba(211,47,47,0.4); }
+.cell .tid { font-weight: 700; font-size: 9px; color: #333; }
+.cell .label { font-size: 7px; line-height: 1.12; white-space: pre-line; }
+.cell .germain { position: absolute; top: 1px; right: 3px; font-size: 7px; color: #7B1FA2; font-weight: 600; }
+.cell .quad-tag { position: absolute; top: 1px; left: 3px; font-size: 6px; font-weight: 700; }
+.cell .quad-tag.nw { color: #2E7D32; }
+.cell .quad-tag.ne { color: #1565C0; }
+.cell .quad-tag.sw { color: #E65100; }
+.cell .quad-tag.se { color: #6A1B9A; }
+.cell .coord-sub { font-size: 6px; color: #999; }
+.dm-bar { height: 22px; display: flex; align-items: center; background: #FFF9C4; border-top: 3px solid #F57F17; border-bottom: 3px solid #F57F17; font-size: 10px; font-weight: 700; color: #F57F17; margin-left: 90px; margin-bottom: 0; }
+.cm-spacer { width: 6px; flex-shrink: 0; margin: 0 1px; }
+.cm-solid { background: #1565C0; border-radius: 1px; }
+.cm-dash { background: repeating-linear-gradient(to bottom, #1565C0 0px, #1565C0 6px, transparent 6px, transparent 12px); border-radius: 1px; }
+.cm-note { margin-left: 90px; margin-top: 6px; display: flex; font-size: 9px; color: #1565C0; font-weight: 600; }
+.grid-inner { position: relative; display: inline-block; }
+.quad-label { font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 4px; margin: 0 4px; }
+.quad-label.nw { background: #E8F5E9; color: #2E7D32; }
+.quad-label.ne { background: #E3F2FD; color: #1565C0; }
+.quad-label.sw { background: #FFF3E0; color: #E65100; }
+.quad-label.se { background: #F3E5F5; color: #6A1B9A; }
+.detail { background: #fff; border: 2px solid #D32F2F; border-radius: 8px; padding: 14px; margin-top: 14px; max-width: 660px; }
+.detail h3 { color: #D32F2F; margin-bottom: 6px; font-size: 15px; }
+.detail-grid { display: grid; grid-template-columns: 160px 1fr; gap: 3px 10px; font-size: 12px; }
+.detail-grid .lbl { font-weight: 600; }
+.fab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-width: 720px; }
+.fab-card { padding: 10px; background: #E8F5E9; border: 2px solid #43A047; border-radius: 6px; cursor: pointer; }
+.fab-card.selected { background: #FFEBEE; border-color: #D32F2F; }
+.fab-card .fid { font-weight: 700; font-size: 14px; color: #1B5E20; }
+.fab-card .fname { font-size: 11px; font-weight: 600; }
+.fab-card .fdetail { font-size: 9px; color: #555; }
+.fab-card .ftid { font-size: 9px; color: #6A1B9A; margin-top: 3px; font-weight: 600; }
+.system-key { margin-top: 20px; padding: 14px; background: #f5f5f5; border-radius: 8px; font-size: 10.5px; line-height: 1.65; max-width: 960px; }
+.system-key h3 { font-size: 12px; margin-bottom: 5px; }
+.system-key strong { font-weight: 700; }
+.section-title { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.section-sub { font-size: 10px; color: #666; margin-bottom: 10px; }
+.source-note { margin-top: 12px; font-size: 9px; color: #888; line-height: 1.5; max-width: 960px; }
+.quad-header-row { display: flex; align-items: center; margin-left: 90px; margin-bottom: 0; }
+</style>
+</head>
+<body>
+
+<h1>Timgad Insula Numbering System (Edher 2026)</h1>
+<p class="subtitle">Quadrant-based Fiorelli-style system anchored at the Cardo Maximus / Decumanus Maximus intersection.<br>
+Four intramural quadrants (NW, NE, SW, SE) with insulae numbered outward from the axes.<br>
+Format: <strong>TIMG.NW.I5</strong> (site.quadrant.insula), with optional house suffix <strong>.H3</strong> for multi-unit insulae.<br>
+Click any block to see concordance details. Purple <span style="color:#7B1FA2;font-weight:700">G:##</span> = Germain 1969 insula number.</p>
+
+<div class="tabs">
+  <button class="tab active" onclick="showView('main',this)">Intramural Grid (4 Quadrants)</button>
+  <button class="tab" onclick="showView('enw',this)">E-NW (Extramural)</button>
+  <button class="tab" onclick="showView('ene',this)">E-NE (Extramural)</button>
+  <button class="tab" onclick="showView('ese',this)">E-SE (Extramural)</button>
+  <button class="tab" onclick="showView('fab',this)">Faubourg (E-SW / E-SE)</button>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:#E8F5E9;border-color:#43A047"></div>House (H)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#E3F2FD;border-color:#1E88E5"></div>Baths (B)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#FFF3E0;border-color:#FB8C00"></div>Public (P)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#F5F5F5;border-color:#BDBDBD"></div>Unexcavated</div>
+  <div class="legend-item"><span style="color:#7B1FA2;font-weight:700;font-size:9px">G:##</span> = Germain 1969 #</div>
+  <div class="legend-item" style="font-size:9px"><span class="quad-label nw" style="font-size:8px;padding:2px 5px">NW</span><span class="quad-label ne" style="font-size:8px;padding:2px 5px">NE</span><span class="quad-label sw" style="font-size:8px;padding:2px 5px">SW</span><span class="quad-label se" style="font-size:8px;padding:2px 5px">SE</span> = Quadrant colors</div>
+</div>
+
+<div id="view-main"></div>
+<div id="view-enw" style="display:none"></div>
+<div id="view-ene" style="display:none"></div>
+<div id="view-ese" style="display:none"></div>
+<div id="view-fab" style="display:none"></div>
+<div id="detail-panel"></div>
+
+<div class="system-key">
+  <h3>Numbering System Key (Edher 2026)</h3>
+  <p><strong>Format:</strong> TIMG.{Quadrant}.I{n} (e.g., TIMG.NW.I1 = insula at the NW corner of the CM/DM intersection). For individual houses within an insula, append .H{n} (e.g., TIMG.SE.I20.H1).</p>
+  <p><strong>Quadrant origin:</strong> The Cardo Maximus (between C5-C6) and Decumanus Maximus (between R6-R7) divide the Trajanic city into four quadrants. Insula I1 in each quadrant is the block touching both axes.</p>
+  <p><strong>Numbering direction:</strong> Insulae are numbered outward from the CM/DM intersection, proceeding row by row toward the city walls.</p>
+  <p><strong>Quadrant sizes:</strong> NW = 5 cols x 6 rows = 30 insulae. NE = 6 cols x 6 rows = 36 insulae. SW = 5 cols x 6 rows = 30 insulae. SE = 6 cols x 6 rows = 36 insulae. Total = 132.</p>
+  <p><strong>Building prefixes:</strong> H = House (domestic), P = Public building (forum, theatre, library), B = Baths (thermal complexes). A temple at TIMG.SE.I4 would have no house suffix.</p>
+  <p><strong>Extramural quadrants:</strong> E-NW, E-NE, E-SW, E-SE mirror the intramural divisions for houses outside the Trajanic walls.</p>
+  <p><strong>Merged insulae:</strong> Listed at both grid positions (e.g., Piscina spans SW.I2 + SW.I7).</p>
+  <p style="color:#7B1FA2"><strong>Purple G:## labels</strong> = Germain 1969 insula number. Boustrophedon confirmed for R1-R6, computed for R7-R12.</p>
+</div>
+
+<p class="source-note"><strong>Sources:</strong> Wilson 2001 annotated plan (C1-C11 x R1-R12 grid); Germain 1969 numbered plan and mosaic catalog; Ballu 1903 street-by-street descriptions (Houses 1-31 + Sertius + Hermaphrodite); Ballu 1911 quarter descriptions; Rebuffat 1969/1974 peristyle house catalog. Quadrant system modeled on the Fiorelli system used at Pompeii, anchored to the principal urban axes.</p>
+
+<script>
+const COLS = [1,2,3,4,5,6,7,8,9,10,11];
+const ROWS = [1,2,3,4,5,6,7,8,9,10,11,12];
+
+const COL_STREETS = [
+  "W. Blvd \u2192",
+  "4th Cardo W",
+  "3rd Cardo W",
+  "2nd Cardo W\n(Byz. Bas. / Arc Tri.)",
+  "1st Cardo W\n(Forum / Museum path)",
+  "CARDO\nMAXIMUS",
+  "1st Cardo E\n(Curie path)",
+  "2nd Cardo E",
+  "3rd Cardo E",
+  "4th Cardo E",
+  "5th Cardo E",
+  "\u2190 E. Blvd"
+];
+
+const ROW_STREETS = [
+  "N. Boulevard",
+  "5th Dec N",
+  "4th Dec N",
+  "3rd Dec N",
+  "2nd Dec N",
+  "1st Dec N",
+  "DEC. MAXIMUS",
+  "1st Dec S",
+  "2nd Dec S",
+  "3rd Dec S",
+  "4th Dec S",
+  "5th Dec S",
+  "S. Boulevard"
+];
+
+/* ══════════════════════════════════════════════════════════════
+   MAIN GRID DATA — ALL 132 INTRAMURAL INSULAE
+   Quadrant-based Fiorelli numbering (Edher 2026)
+   q = quadrant, qi = insula # within quadrant, tid = full TIMG ID
+   Germain boustrophedon: confirmed R1-R6, computed R7-R12
+   ══════════════════════════════════════════════════════════════ */
+const B = {
+  // ═══ ROW 1 (northernmost) ═══
+  "C1.R1": {t:"unknown", g:"11", q:"NW", qi:30, tid:"TIMG.NW.I30"},
+  "C2.R1": {t:"unknown", g:"10", q:"NW", qi:29, tid:"TIMG.NW.I29"},
+  "C3.R1": {t:"unknown", g:"9", q:"NW", qi:28, tid:"TIMG.NW.I28"},
+  "C4.R1": {t:"unknown", g:"8", q:"NW", qi:27, tid:"TIMG.NW.I27"},
+  "C5.R1": {t:"unknown", g:"7", q:"NW", qi:26, tid:"TIMG.NW.I26"},
+  "C6.R1": {t:"baths", l:"Small N.\nBaths", g:"6", q:"NE", qi:31, tid:"TIMG.NE.I31"},
+  "C7.R1": {t:"unknown", g:"5", q:"NE", qi:32, tid:"TIMG.NE.I32"},
+  "C8.R1": {t:"unknown", g:"4", q:"NE", qi:33, tid:"TIMG.NE.I33"},
+  "C9.R1": {t:"unknown", g:"3", q:"NE", qi:34, tid:"TIMG.NE.I34"},
+  "C10.R1": {t:"unknown", g:"2", q:"NE", qi:35, tid:"TIMG.NE.I35"},
+  "C11.R1": {t:"unknown", g:"1", q:"NE", qi:36, tid:"TIMG.NE.I36"},
+
+  // ═══ ROW 2 ═══
+  "C1.R2": {t:"unknown", g:"12", q:"NW", qi:25, tid:"TIMG.NW.I25"},
+  "C2.R2": {t:"unknown", g:"13", q:"NW", qi:24, tid:"TIMG.NW.I24"},
+  "C3.R2": {t:"unknown", g:"14", q:"NW", qi:23, tid:"TIMG.NW.I23"},
+  "C4.R2": {t:"unknown", g:"15", q:"NW", qi:22, tid:"TIMG.NW.I22"},
+  "C5.R2": {t:"unknown", g:"16", q:"NW", qi:21, tid:"TIMG.NW.I21"},
+  "C6.R2": {t:"unknown", g:"17", q:"NE", qi:25, tid:"TIMG.NE.I25"},
+  "C7.R2": {t:"unknown", g:"18", q:"NE", qi:26, tid:"TIMG.NE.I26"},
+  "C8.R2": {t:"unknown", g:"19", q:"NE", qi:27, tid:"TIMG.NE.I27"},
+  "C9.R2": {t:"unknown", g:"20", q:"NE", qi:28, tid:"TIMG.NE.I28"},
+  "C10.R2": {t:"unknown", g:"21", q:"NE", qi:29, tid:"TIMG.NE.I29"},
+  "C11.R2": {t:"unknown", g:"22", q:"NE", qi:30, tid:"TIMG.NE.I30"},
+
+  // ═══ ROW 3 ═══
+  "C1.R3": {t:"unknown", g:"33", q:"NW", qi:20, tid:"TIMG.NW.I20"},
+  "C2.R3": {t:"unknown", g:"32", q:"NW", qi:19, tid:"TIMG.NW.I19"},
+  "C3.R3": {t:"house", l:"Ballu H3\n(nr Basilica)", g:"31", b3:"3", q:"NW", qi:18, tid:"TIMG.NW.I18", n:"Disturbed; reused as entrance to Byzantine basilica"},
+  "C4.R3": {t:"house", l:"Ballu H2\n(Januarius)", g:"30", b3:"2", q:"NW", qi:17, tid:"TIMG.NW.I17", n:"W of CM, separated by unexcavated lot"},
+  "C5.R3": {t:"unknown", g:"29", q:"NW", qi:16, tid:"TIMG.NW.I16"},
+  "C6.R3": {t:"house", l:"Ballu H1", g:"28", b3:"1", q:"NE", qi:19, tid:"TIMG.NE.I19", n:"E of CM; betw. 3rd-4th Dec N; equidistant Small N Baths & Schola"},
+  "C7.R3": {t:"unknown", g:"27", q:"NE", qi:20, tid:"TIMG.NE.I20"},
+  "C8.R3": {t:"unknown", g:"26", q:"NE", qi:21, tid:"TIMG.NE.I21"},
+  "C9.R3": {t:"unknown", g:"25", q:"NE", qi:22, tid:"TIMG.NE.I22"},
+  "C10.R3": {t:"unknown", g:"24", q:"NE", qi:23, tid:"TIMG.NE.I23"},
+  "C11.R3": {t:"unknown", g:"23", q:"NE", qi:24, tid:"TIMG.NE.I24"},
+
+  // ═══ ROW 4 ═══
+  "C1.R4": {t:"unknown", g:"34", q:"NW", qi:15, tid:"TIMG.NW.I15"},
+  "C2.R4": {t:"unknown", g:"35", q:"NW", qi:14, tid:"TIMG.NW.I14"},
+  "C3.R4": {t:"unknown", g:"36", q:"NW", qi:13, tid:"TIMG.NW.I13"},
+  "C4.R4": {t:"unknown", g:"37", q:"NW", qi:12, tid:"TIMG.NW.I12"},
+  "C5.R4": {t:"unknown", g:"38", q:"NW", qi:11, tid:"TIMG.NW.I11"},
+  "C6.R4": {t:"unknown", g:"39", q:"NE", qi:13, tid:"TIMG.NE.I13"},
+  "C7.R4": {t:"unknown", g:"40", q:"NE", qi:14, tid:"TIMG.NE.I14"},
+  "C8.R4": {t:"unknown", g:"41", q:"NE", qi:15, tid:"TIMG.NE.I15"},
+  "C9.R4": {t:"unknown", g:"42", q:"NE", qi:16, tid:"TIMG.NE.I16"},
+  "C10.R4": {t:"unknown", g:"43", q:"NE", qi:17, tid:"TIMG.NE.I17"},
+  "C11.R4": {t:"unknown", g:"44", q:"NE", qi:18, tid:"TIMG.NE.I18"},
+
+  // ═══ ROW 5 ═══
+  "C1.R5": {t:"house", l:"Ballu H12\n(merged \u2193R6)", g:"55", b3:"12", q:"NW", qi:10, tid:"TIMG.NW.I10", n:"Two merged insulae spanning R5+R6; absorbed 1st Dec N street"},
+  "C2.R5": {t:"house", l:"Ballu H7", g:"54", b3:"7", q:"NW", qi:9, tid:"TIMG.NW.I9", n:"Betw. 4th Cardo W & 3rd Cardo W; 1st-2nd Dec N"},
+  "C3.R5": {t:"house", l:"Ballu H6", g:"53", b3:"6", q:"NW", qi:8, tid:"TIMG.NW.I8", n:"Betw. 3rd Cardo W & 2nd Cardo W"},
+  "C4.R5": {t:"house", l:"Ballu H5", g:"52", b3:"5", q:"NW", qi:7, tid:"TIMG.NW.I7", n:"Betw. Forum path & Byz. Bas. path; 21.10\u00d721m"},
+  "C5.R5": {t:"house", l:"Ballu H4\n(Diana/Actaeon)", g:"51", b3:"4", q:"NW", qi:6, tid:"TIMG.NW.I6", n:"Opposite Schola across CM; Diana & Actaeon mosaic; 20.25\u00d721.40m"},
+  "C6.R5": {t:"public", l:"Library", g:"50", q:"NE", qi:7, tid:"TIMG.NE.I7", n:"Public building; Germain Insula 50"},
+  "C7.R5": {t:"unknown", g:"49", q:"NE", qi:8, tid:"TIMG.NE.I8"},
+  "C8.R5": {t:"unknown", g:"48", q:"NE", qi:9, tid:"TIMG.NE.I9"},
+  "C9.R5": {t:"unknown", g:"47", q:"NE", qi:10, tid:"TIMG.NE.I10"},
+  "C10.R5": {t:"unknown", g:"46", q:"NE", qi:11, tid:"TIMG.NE.I11"},
+  "C11.R5": {t:"unknown", g:"45", q:"NE", qi:12, tid:"TIMG.NE.I12"},
+
+  // ═══ ROW 6 (north side of DM) ═══
+  "C1.R6": {t:"house", l:"Ballu H12\n(merged \u2191R5)", g:"56", b3:"12", q:"NW", qi:5, tid:"TIMG.NW.I5", n:"Lower half of merged insulae"},
+  "C2.R6": {t:"house", l:"Ballu H11", g:"57", b3:"11", q:"NW", qi:4, tid:"TIMG.NW.I4", n:"Betw. 4th Cardo W & ext. CM South; 1st Dec N to DM"},
+  "C3.R6": {t:"house", l:"Ballu H10", g:"58", b3:"10", q:"NW", qi:3, tid:"TIMG.NW.I3", n:"7-span portico on DM; 28.90\u00d720.80m"},
+  "C4.R6": {t:"house", l:"Ballu H9", g:"59", b3:"9", q:"NW", qi:2, tid:"TIMG.NW.I2", n:"6-span portico on DM; 29\u00d720m"},
+  "C5.R6": {t:"house", l:"Ballu H8\n(CM/DM corner)", g:"60", b3:"8", q:"NW", qi:1, tid:"TIMG.NW.I1", n:"NW corner of CM/DM intersection; 9-span portico on CM, 7 on DM; 29\u00d724.20m"},
+  "C6.R6": {t:"unknown", g:"61", q:"NE", qi:1, tid:"TIMG.NE.I1"},
+  "C7.R6": {t:"public", l:"Forum\n(west)", g:"62", q:"NE", qi:2, tid:"TIMG.NE.I2", n:"Forum precinct; E of Curie path"},
+  "C8.R6": {t:"public", l:"Forum\n(east)", g:"63", q:"NE", qi:3, tid:"TIMG.NE.I3", n:"Forum precinct buildings"},
+  "C9.R6": {t:"unknown", g:"64", q:"NE", qi:4, tid:"TIMG.NE.I4"},
+  "C10.R6":{t:"baths", l:"Great E.\nBaths (W)", g:"65", q:"NE", qi:5, tid:"TIMG.NE.I5", n:"Great Eastern Baths, western section"},
+  "C11.R6":{t:"baths", l:"Great E.\nBaths (E)", g:"66", q:"NE", qi:6, tid:"TIMG.NE.I6", n:"Great Eastern Baths, eastern section"},
+
+  // ═══ ROW 7 (south side of DM) ═══
+  "C1.R7": {t:"unknown", g:"77", q:"SW", qi:5, tid:"TIMG.SW.I5"},
+  "C2.R7": {t:"unknown", g:"76", q:"SW", qi:4, tid:"TIMG.SW.I4"},
+  "C3.R7": {t:"unknown", g:"75", q:"SW", qi:3, tid:"TIMG.SW.I3"},
+  "C4.R7": {t:"house", l:"Piscina \u2193\n(Ballu H15)", g:"67-75", gn:"67/75", go:"73/82", rb:"2", b3:"15", nm:"Maison de la Piscina", q:"SW", qi:2, tid:"TIMG.SW.I2", n:"Spans SW.I2+I7; rose marble columns; finest mosaic oecus at Timgad"},
+  "C5.R7": {t:"house", l:"Ballu H14\n(Open-Air Mus.)", g:"73", b3:"14", q:"SW", qi:1, tid:"TIMG.SW.I1", n:"Now Open-Air Museum; 23.90\u00d721m"},
+  "C6.R7": {t:"house", l:"Ballu H13", g:"72", b3:"13", q:"SE", qi:1, tid:"TIMG.SE.I1", n:"E of CM; Curie path on E borders Forum; 24.70\u00d720.50m"},
+  "C7.R7": {t:"house", l:"Jardini\u00e8res", g:"70", gn:"70", go:"76", rb:"3", nm:"Maison aux Jardini\u00e8res", q:"SE", qi:2, tid:"TIMG.SE.I2", n:"NE corner of Forum; modest house with atrium; floral mosaics"},
+  "C8.R7": {t:"house", l:"Insula 72", g:"72", q:"SE", qi:3, tid:"TIMG.SE.I3", n:"House on DM east; adj. Eastern Market. Germain pp. 46-47"},
+  "C9.R7": {t:"house", l:"Insula 73", g:"73", q:"SE", qi:4, tid:"TIMG.SE.I4", n:"House on DM east; multiple mosaics. Germain pp. 46-49"},
+  "C10.R7": {t:"unknown", g:"68", q:"SE", qi:5, tid:"TIMG.SE.I5"},
+  "C11.R7": {t:"unknown", g:"67", q:"SE", qi:6, tid:"TIMG.SE.I6"},
+
+  // ═══ ROW 8 ═══
+  "C1.R8": {t:"unknown", g:"78", q:"SW", qi:10, tid:"TIMG.SW.I10"},
+  "C2.R8": {t:"unknown", g:"79", q:"SW", qi:9, tid:"TIMG.SW.I9"},
+  "C3.R8": {t:"unknown", g:"80", q:"SW", qi:8, tid:"TIMG.SW.I8"},
+  "C4.R8": {t:"house", l:"Piscina \u2191\n(Ballu H15)", g:"67-75", rb:"2", b3:"15", q:"SW", qi:7, tid:"TIMG.SW.I7", n:"Lower half of Piscina house (merged from R7)"},
+  "C5.R8": {t:"house", l:"Ballu H17", g:"82", b3:"17", q:"SW", qi:6, tid:"TIMG.SW.I6", n:"E facade on CM; 20.75\u00d720.80m"},
+  "C6.R8": {t:"house", l:"Ballu H16\n(two families)", g:"83", b3:"16", rb:"4", q:"SE", qi:7, tid:"TIMG.SE.I7", n:"Divided N-S wall; 20.40\u00d720.65m. Rebuffat House 4"},
+  "C7.R8": {t:"unknown", g:"84", q:"SE", qi:8, tid:"TIMG.SE.I8"},
+  "C8.R8": {t:"unknown", g:"85", q:"SE", qi:9, tid:"TIMG.SE.I9"},
+  "C9.R8": {t:"baths", l:"Small E.\nBaths", g:"79", q:"SE", qi:10, tid:"TIMG.SE.I10", n:"Small Eastern Baths"},
+  "C10.R8": {t:"unknown", g:"87", q:"SE", qi:11, tid:"TIMG.SE.I11"},
+  "C11.R8": {t:"unknown", g:"88", q:"SE", qi:12, tid:"TIMG.SE.I12"},
+
+  // ═══ ROW 9 ═══
+  "C1.R9": {t:"unknown", g:"99", q:"SW", qi:15, tid:"TIMG.SW.I15"},
+  "C2.R9": {t:"unknown", g:"98", q:"SW", qi:14, tid:"TIMG.SW.I14"},
+  "C3.R9": {t:"unknown", g:"97", q:"SW", qi:13, tid:"TIMG.SW.I13"},
+  "C4.R9": {t:"house", l:"Ballu H20", g:"96", b3:"20", q:"SW", qi:12, tid:"TIMG.SW.I12", n:"20.45\u00d720.65m"},
+  "C5.R9": {t:"house", l:"Ballu H19\n(8-col atrium)", g:"95", b3:"19", q:"SW", qi:11, tid:"TIMG.SW.I11", n:"Beautiful atrium, 8 columns; well 16m deep; 20.75\u00d720.35m"},
+  "C6.R9": {t:"house", l:"Ballu H18", g:"94", b3:"18", q:"SE", qi:13, tid:"TIMG.SE.I13", n:"Atrium with polygonal basin; large room 9.50\u00d711.50m"},
+  "C7.R9": {t:"unknown", g:"93", q:"SE", qi:14, tid:"TIMG.SE.I14"},
+  "C8.R9": {t:"unknown", g:"92", q:"SE", qi:15, tid:"TIMG.SE.I15"},
+  "C9.R9": {t:"public", l:"THEATRE", g:"91", q:"SE", qi:16, tid:"TIMG.SE.I16"},
+  "C10.R9":{t:"public", l:"THEATRE", g:"90", q:"SE", qi:17, tid:"TIMG.SE.I17"},
+  "C11.R9": {t:"unknown", g:"89", q:"SE", qi:18, tid:"TIMG.SE.I18"},
+
+  // ═══ ROW 10 ═══
+  "C1.R10": {t:"unknown", g:"100", q:"SW", qi:20, tid:"TIMG.SW.I20"},
+  "C2.R10": {t:"unknown", g:"101", q:"SW", qi:19, tid:"TIMG.SW.I19"},
+  "C3.R10": {t:"unknown", g:"102", q:"SW", qi:18, tid:"TIMG.SW.I18"},
+  "C4.R10":{t:"house", l:"Ballu H23", g:"103", b3:"23", q:"SW", qi:17, tid:"TIMG.SW.I17", n:"Divided E-W; 20.60\u00d720.77m"},
+  "C5.R10":{t:"house", l:"Ballu H22\n(7-col portico)", g:"104", b3:"22", q:"SW", qi:16, tid:"TIMG.SW.I16", n:"7-col portico on CM; 21.10\u00d721.05m"},
+  "C6.R10":{t:"baths", l:"Small Central\nBaths", g:"91", q:"SE", qi:19, tid:"TIMG.SE.I19", n:"Plan-confirmed G:91"},
+  "C7.R10":{t:"house", l:"Ballu H21\n(NW of Theatre)", g:"106", b3:"21", q:"SE", qi:20, tid:"TIMG.SE.I20", n:"3 independent units; 9-col portico; 24.90\u00d727.60m"},
+  "C8.R10":{t:"public", l:"Theatre\ncourt", g:"107", q:"SE", qi:21, tid:"TIMG.SE.I21", n:"Rectangular court W of cavea"},
+  "C9.R10":{t:"public", l:"THEATRE", g:"108", q:"SE", qi:22, tid:"TIMG.SE.I22"},
+  "C10.R10":{t:"public",l:"THEATRE", g:"109", q:"SE", qi:23, tid:"TIMG.SE.I23"},
+  "C11.R10": {t:"unknown", g:"110", q:"SE", qi:24, tid:"TIMG.SE.I24"},
+
+  // ═══ ROW 11 ═══
+  "C1.R11": {t:"unknown", g:"121", q:"SW", qi:25, tid:"TIMG.SW.I25"},
+  "C2.R11": {t:"unknown", g:"120", q:"SW", qi:24, tid:"TIMG.SW.I24"},
+  "C3.R11": {t:"unknown", g:"119", q:"SW", qi:23, tid:"TIMG.SW.I23"},
+  "C4.R11":{t:"house", l:"Ballu H27", g:"118", b3:"27", q:"SW", qi:22, tid:"TIMG.SW.I22", n:"7 rooms + large undivided space; 20.35\u00d720.50m"},
+  "C5.R11":{t:"house", l:"Ballu H26", g:"117", b3:"26", q:"SW", qi:21, tid:"TIMG.SW.I21", n:"Connected to H25 by street fountain; 20.63\u00d720.80m"},
+  "C6.R11":{t:"house", l:"Ballu H25", g:"116", b3:"25", q:"SE", qi:25, tid:"TIMG.SE.I25", n:"20.60\u00d720.50m"},
+  "C7.R11":{t:"house", l:"Ballu H24\n(S of Theatre)", g:"115", b3:"24", q:"SE", qi:26, tid:"TIMG.SE.I26", n:"S of H21; 20.15\u00d728m"},
+  "C8.R11": {t:"unknown", g:"114", q:"SE", qi:27, tid:"TIMG.SE.I27"},
+  "C9.R11":{t:"public", l:"THEATRE\n(lower)", g:"113", q:"SE", qi:28, tid:"TIMG.SE.I28"},
+  "C10.R11": {t:"unknown", g:"112", q:"SE", qi:29, tid:"TIMG.SE.I29"},
+  "C11.R11": {t:"unknown", g:"111", q:"SE", qi:30, tid:"TIMG.SE.I30"},
+
+  // ═══ ROW 12 (southernmost) ═══
+  "C1.R12": {t:"unknown", g:"122", q:"SW", qi:30, tid:"TIMG.SW.I30"},
+  "C2.R12": {t:"unknown", g:"123", q:"SW", qi:29, tid:"TIMG.SW.I29"},
+  "C3.R12": {t:"unknown", g:"124", q:"SW", qi:28, tid:"TIMG.SW.I28"},
+  "C4.R12":{t:"house", l:"Ballu H31\n(SW corner)", g:"125", b3:"31", q:"SW", qi:27, tid:"TIMG.SW.I27", n:"SW corner of Trajanic city; 20.50\u00d720m"},
+  "C5.R12":{t:"house", l:"Ballu H30", g:"126", b3:"30", q:"SW", qi:26, tid:"TIMG.SW.I26", n:"E on CM; 20.50\u00d721m"},
+  "C6.R12":{t:"house", l:"Ballu H29", g:"127", b3:"29", q:"SE", qi:31, tid:"TIMG.SE.I31", n:"3-span portico; herringbone brick; 20.60\u00d720.60m"},
+  "C7.R12":{t:"house", l:"Ballu H28\n(ruined)", g:"128", b3:"28", q:"SE", qi:32, tid:"TIMG.SE.I32", n:"Almost destroyed; 20.80\u00d728m"},
+  "C8.R12": {t:"unknown", g:"129", q:"SE", qi:33, tid:"TIMG.SE.I33"},
+  "C9.R12": {t:"unknown", g:"130", q:"SE", qi:34, tid:"TIMG.SE.I34"},
+  "C10.R12": {t:"unknown", g:"131", q:"SE", qi:35, tid:"TIMG.SE.I35"},
+  "C11.R12": {t:"unknown", g:"132", q:"SE", qi:36, tid:"TIMG.SE.I36"},
+};
+
+/* ── Extramural NW Quarter (Ballu 1911) ── */
+const ENW = [
+  {coord:"E-NW.R1.P1", t:"house", l:"Row 1, Pos 1", b11:"R1.P1", tid:"TIMG.E-NW.I1", n:"NW+W Blvd corner; fuller's vats; shops N & S"},
+  {coord:"E-NW.R1.P2", t:"house", l:"Row 1, Pos 2\n(Insula 53)", b11:"R1.P2", g:"53", tid:"TIMG.E-NW.I2", n:"Near secondary N gate; rebuilt"},
+  {coord:"E-NW.R1.P3", t:"house", l:"Row 1, Pos 3", b11:"R1.P3", tid:"TIMG.E-NW.I3", n:"Manifestly rebuilt; divided into 3 families; 3 atriums"},
+  {coord:"E-NW.R1.P4", t:"house", l:"Row 1, Pos 4", b11:"R1.P4", tid:"TIMG.E-NW.I4", n:"Almost entirely demolished; 2 dwellings, 2 wells"},
+  {coord:"E-NW.R1.P5", t:"house", l:"Row 1, Pos 5", b11:"R1.P5", tid:"TIMG.E-NW.I5", n:"20.30\u00d720.60m; two non-communicating parts; tablinum with basin"},
+  {coord:"E-NW.R2.P1", t:"house", l:"Row 2, Pos 1", b11:"R2.P1", tid:"TIMG.E-NW.I6", n:"Fine atrium with porticoes, square basin 2.10m; fountain with pine-cone cap"},
+  {coord:"E-NW.R2.P2", t:"house", l:"Row 2, Pos 2", b11:"R2.P2", tid:"TIMG.E-NW.I7", n:"Three divisions E-W; poor walls"},
+  {coord:"E-NW.R2.P3", t:"house", l:"Row 2, Pos 3", b11:"R2.P3", tid:"TIMG.E-NW.I8", n:"Marcus Aurelius inscription; destroyed by fire; roof tiles found"},
+  {coord:"E-NW.R2.P4", t:"house", l:"Row 2, Pos 4", b11:"R2.P4", tid:"TIMG.E-NW.I9", n:"Well-preserved divisions; 4-col portico; Ionic & Corinthian capitals"},
+  {coord:"E-NW.R2.P5", t:"house", l:"Row 2, Pos 5", b11:"R2.P5", tid:"TIMG.E-NW.I10", n:"20.50\u00d720.80m; two parts with party wall"},
+  {coord:"E-NW.R3.P1", t:"house", l:"Row 3, Pos 1", b11:"R3.P1", tid:"TIMG.E-NW.I11", n:"Central square atrium; basin relocated"},
+  {coord:"E-NW.R3.P2", t:"house", l:"Row 3, Pos 2", b11:"R3.P2", tid:"TIMG.E-NW.I12", n:"Marine goddess mosaic; very ruined but important find"},
+  {coord:"E-NW.R3.P3", t:"house", l:"Row 3, Pos 3\n(FORTVNAE)", b11:"R3.P3", tid:"TIMG.E-NW.I13", n:"Magnificent atrium; chevron brick portico; 6 columns; FORTVNAE V N inscription on well cap"},
+  {coord:"E-NW.R3-4.P4", t:"house", l:"Corfidii\n(R3-4, P4)", b11:"R3-4.P4", g:"26", gn:"26", go:"28", rb:"1", nm:"Maison de Corfidius Crementius", tid:"TIMG.E-NW.I14", n:"Perpetual flamen's house; entrance S; wheat & barley stores; destroyed by fire. Spans rows 3-4"},
+  {coord:"E-NW.R3.P5", t:"house", l:"Row 3, Pos 5", b11:"R3.P5", tid:"TIMG.E-NW.I15", n:"N part: large room + 4 small + latrines projecting onto street; central atrium 8.90\u00d79.40m; 6-color mosaic oecus"},
+  {coord:"E-NW.R4.P1", t:"house", l:"Row 4, Pos 1", b11:"R4.P1", tid:"TIMG.E-NW.I16", n:"Borders W Blvd; only traces remain in N part; southern part better preserved"},
+  {coord:"E-NW.R5", t:"house", l:"Row 5", b11:"R5", tid:"TIMG.E-NW.I17", n:"Limited documentation"},
+];
+
+/* ── Extramural NE Quarter (Ballu 1911) ── */
+const ENE = [
+  {coord:"E-NE.R1", t:"house", l:"NE Row 1", b11:"R1", tid:"TIMG.E-NE.I1"},
+  {coord:"E-NE.R2.P1", t:"house", l:"NE R2 Pos 1", b11:"R2.P1", tid:"TIMG.E-NE.I2"},
+  {coord:"E-NE.R2.P2", t:"house", l:"NE R2 Pos 2", b11:"R2.P2", tid:"TIMG.E-NE.I3"},
+  {coord:"E-NE.R3", t:"house", l:"NE Row 3", b11:"R3", tid:"TIMG.E-NE.I4"},
+  {coord:"E-NE.R4", t:"house", l:"NE Row 4", b11:"R4", tid:"TIMG.E-NE.I5"},
+];
+
+/* ── Extramural SE Quarter ── */
+const ESE = [
+  {coord:"E-SE.1", t:"house", l:"Insula 62", g:"62", tid:"TIMG.E-SE.I1", n:"Fine mosaics; extramural E"},
+  {coord:"E-SE.2", t:"house", l:"E. Blvd", tid:"TIMG.E-SE.I2"},
+  {coord:"E-SE.3", t:"house", l:"Pottery kiln", tid:"TIMG.E-SE.I3"},
+];
+
+/* ── Faubourg Houses (E-SW / E-SE, outside all grids) ── */
+const FAB = [
+  {id:"E-SW.F1", l:"Sertius", nm:"Maison de Sertius", loc:"SW of grid; fronts on CM South & 6th Dec. Private baths, fish vivarium, oecus, gyneceum.", tid:"TIMG.E-SW.I1", rb:"9", b3:"Sertius"},
+  {id:"E-SW.F2", l:"Hermaphrodite", nm:"Maison de l'Hermaphrodite", loc:"S of grid; N of Grand S. Baths, E of CM. 28\u00d760m. 22-col atrium, celebrated mosaic.", tid:"TIMG.E-SE.I4", rb:"8", b3:"Hermaphrodite"},
+  {id:"E-SW.F3", l:"Entrep\u00f4t", nm:"Storehouse (Entrep\u00f4t)", loc:"S of Lamb\u00e8se gate area", tid:"TIMG.E-SW.I2", rb:"7"},
+  {id:"E-SW.F4", l:"W of Filadelfes", nm:"Great House W of Filadelfes Baths", loc:"W of Filadelfes Baths; important mosaic program", tid:"TIMG.E-SE.I5", rb:"11"},
+  {id:"E-NW.F5", l:"N of Capitol", nm:"Great House N of Capitol", loc:"N of Capitol; complex plan, significant mosaics", tid:"TIMG.E-NW.I18"},
+  {id:"E-NW.F6", l:"S of Capitol", nm:"Small House S of Capitol", loc:"S of Capitol", tid:"TIMG.E-NW.I19"},
+  {id:"E-NE.F7", l:"Optat", nm:"House of Optat (Episcopal Quarter)", loc:"Donatist quarter; 5th-c. mosaics, episcopal complex", tid:"TIMG.E-NE.I6", rb:"12"},
+  {id:"E-SE.F8", l:"East Quarter", nm:"House of the East Quarter", loc:"E sector, beyond regular grid", tid:"TIMG.E-SE.I6", rb:"10"},
+  {id:"E-NE.F9", l:"Forum NE", nm:"House at NE Corner of Forum", loc:"NE corner of Forum complex", tid:"TIMG.E-NE.I7"},
+];
+
+let selected = null;
+
+function cid(c, r) { return "C" + c + ".R" + r; }
+
+/* Build prefix letter for building type */
+function typePrefix(t) {
+  if (t === "house") return "H";
+  if (t === "baths") return "B";
+  if (t === "public") return "P";
+  return "";
+}
+
+function makeCell(coord, data) {
+  const d = data || {t:"unknown"};
+  const cls = "cell " + d.t + (selected === coord ? " selected" : "");
+  const click = ` onclick="selectBlock('${coord}')"`;
+  const gTag = d.g ? `<div class="germain">G:${d.g}</div>` : "";
+  const qClass = d.q ? d.q.toLowerCase() : "";
+  const qTag = d.q ? `<div class="quad-tag ${qClass}">${d.q}</div>` : "";
+  const prefix = typePrefix(d.t);
+  const iLabel = d.qi ? `<div class="tid">${prefix ? prefix + " " : ""}I${d.qi}</div>` : "";
+  const coordSub = `<div class="coord-sub">${coord}</div>`;
+  return `<div class="${cls}"${click}>${gTag}${qTag}${iLabel}<div class="label">${d.l || ""}</div>${coordSub}</div>`;
+}
+
+function renderMain() {
+  // Layout constants
+  const cellW = 90;          // cell total width (86px + 4px margin)
+  const cmW = 8;             // CM spacer total (6px + 2px margin)
+  const labelW = 90;         // row-label width
+  const westCols = 5;
+  const eastCols = 6;
+  const gridContentW = westCols*cellW + cmW + eastCols*cellW; // 998px
+  const totalW = labelW + gridContentW;                        // 1088px
+  const cmLeft = labelW + westCols*cellW + 1; // 541px — left edge of blue line
+
+  let html = "";
+
+  // ── Outer wrapper: position:relative so the CM overlay spans the full grid height ──
+  html += `<div class="grid-inner" style="min-width:${totalW}px">`;
+
+  // ── CM LINE LOGIC ──
+  // North of DM (R1-R6): solid blue = physical Cardo Maximus street
+  // South of DM (R7-R12): dashed blue = projected axis (CM interrupted by Forum)
+
+  // ── NW / NE quadrant labels ──
+  html += `<div class="quad-header-row">`;
+  html += `<div style="width:${westCols*cellW}px;text-align:center"><span class="quad-label nw">NW Quadrant (I1 to I30)</span></div>`;
+  html += `<div class="cm-spacer cm-solid" style="align-self:stretch"></div>`;
+  html += `<div style="width:${eastCols*cellW}px;text-align:center"><span class="quad-label ne">NE Quadrant (I1 to I36)</span></div>`;
+  html += `</div>`;
+
+  // ── Column headers ──
+  html += `<div class="col-headers">`;
+  COLS.forEach((c, i) => {
+    if (c === 6) html += `<div class="cm-spacer cm-solid" style="align-self:stretch;min-height:36px"></div>`;
+    html += `<div class="col-header"><div class="letter">C${c}</div><div class="street">${COL_STREETS[i]}  |  ${COL_STREETS[i+1]}</div></div>`;
+  });
+  html += `</div>`;
+
+  // ── Grid rows ──
+  ROWS.forEach(r => {
+    // DM bar between R6 and R7
+    if (r === 7) {
+      html += `<div class="dm-bar" style="width:${gridContentW}px">`;
+      html += `<div style="width:${westCols*cellW}px;text-align:center">\u2190 DECUMANUS MAXIMUS</div>`;
+      html += `<div class="cm-spacer cm-solid" style="height:22px"></div>`;
+      html += `<div style="width:${eastCols*cellW}px;text-align:center">DECUMANUS MAXIMUS \u2192</div>`;
+      html += `</div>`;
+      // SW / SE quadrant labels
+      html += `<div class="quad-header-row" style="margin-left:${labelW}px">`;
+      html += `<div style="width:${westCols*cellW}px;text-align:center"><span class="quad-label sw">SW Quadrant (I1 to I30)</span></div>`;
+      html += `<div class="cm-spacer cm-dash" style="align-self:stretch"></div>`;
+      html += `<div style="width:${eastCols*cellW}px;text-align:center"><span class="quad-label se">SE Quadrant (I1 to I36)</span></div>`;
+      html += `</div>`;
+    }
+
+    // CM style: solid north of DM, dashed south
+    const cmClass = r <= 6 ? "cm-solid" : "cm-dash";
+
+    html += `<div class="grid-row">`;
+    html += `<div class="row-label"><span class="num">R${r}</span><div class="street">${ROW_STREETS[r-1]}<br>${ROW_STREETS[r]}</div></div>`;
+    COLS.forEach(c => {
+      if (c === 6) html += `<div class="cm-spacer ${cmClass}" style="align-self:stretch"></div>`;
+      const coord = cid(c, r);
+      html += makeCell(coord, B[coord]);
+    });
+    html += `</div>`;
+  });
+
+  // ── Bottom axis labels ──
+  html += `<div class="cm-note" style="margin-left:${labelW}px"><div style="width:${westCols*cellW}px;text-align:center;border-right:3px dashed #1565C0;padding-right:4px">\u2190 West of CM axis (C1\u2013C5)</div><div style="width:${eastCols*cellW + cmW}px;text-align:center;padding-left:4px">East of CM axis (C6\u2013C11) \u2192</div></div>`;
+  html += `<div style="margin-left:${labelW}px;font-size:8px;color:#1565C0;margin-top:3px"><strong>Solid line</strong> = physical Cardo Maximus (north of DM). <strong>Dashed line</strong> = projected axis (CM interrupted by Forum south of DM).</div>`;
+
+  html += `</div>`; // close grid-inner
+  document.getElementById("view-main").innerHTML = `<div class="grid-wrap">${html}</div>`;
+}
+
+function renderExtramural(data, elId, title, sub) {
+  let html = `<div class="section-title">${title}</div><p class="section-sub">${sub}</p>`;
+  html += `<div class="fab-grid">`;
+  data.forEach(item => {
+    const cls = "fab-card" + (selected === item.coord ? " selected" : "");
+    const prefix = typePrefix(item.t);
+    html += `<div class="${cls}" onclick="selectExtra('${item.coord}','${elId.replace("view-","")}')">
+      <div class="fid">${item.tid}</div>
+      <div class="fname">${item.l}</div>
+      <div class="fdetail">${item.nm || ""}</div>
+      <div class="fdetail">${item.n || ""}</div>
+      <div class="ftid">${item.b11 ? "Ballu 1911: " + item.b11 : ""}</div>
+    </div>`;
+  });
+  html += `</div>`;
+  document.getElementById(elId).innerHTML = html;
+}
+
+function renderFab() {
+  let html = `<div class="section-title">Faubourg Houses (Beyond Extramural Quarters)</div>
+  <p class="section-sub">Houses outside the Trajanic walls, assigned to extramural quadrants (E-NW, E-NE, E-SW, E-SE) based on position relative to CM/DM axes.</p><div class="fab-grid">`;
+  FAB.forEach(f => {
+    const cls = "fab-card" + (selected === f.id ? " selected" : "");
+    html += `<div class="${cls}" onclick="selectFab('${f.id}')">
+      <div class="fid">${f.tid}</div><div class="fname">${f.l}</div>
+      <div class="fdetail">${f.nm}</div><div class="fdetail">${f.loc}</div>
+      <div class="ftid">${f.rb ? "Rebuffat #" + f.rb : ""}</div></div>`;
+  });
+  html += `</div>`;
+  document.getElementById("view-fab").innerHTML = html;
+}
+
+function showDetail(coord, d) {
+  if (!d) { document.getElementById("detail-panel").innerHTML = ""; return; }
+  let rows = "";
+  const add = (lbl, val) => { if (val) rows += `<div class="lbl">${lbl}:</div><div>${val}</div>`; };
+  add("Edher Insula ID", d.tid || "");
+  add("Grid Coordinate", coord);
+  add("House Name", d.nm || d.l);
+  add("Quadrant", d.q || "");
+  add("Insula #", d.qi ? "I" + d.qi : "");
+  add("Building Type", d.t ? d.t.charAt(0).toUpperCase() + d.t.slice(1) + " (" + typePrefix(d.t) + ")" : "");
+  add("Germain 1969 #", d.g);
+  add("Germain new #", d.gn);
+  add("Germain ex-old #", d.go ? "ex-" + d.go : "");
+  add("Rebuffat catalog #", d.rb);
+  add("Ballu 1903 #", d.b3 ? (isNaN(d.b3) ? d.b3 : "House " + d.b3) : "");
+  add("Ballu 1911", d.b11);
+  add("Notes", d.n);
+  const title = d.tid || coord;
+  document.getElementById("detail-panel").innerHTML = `<div class="detail"><h3>${title}</h3><div class="detail-grid">${rows}</div></div>`;
+}
+
+function selectBlock(coord) {
+  selected = selected === coord ? null : coord;
+  const d = B[coord];
+  renderAll();
+  showDetail(coord, selected ? d : null);
+}
+
+function selectExtra(coord, source) {
+  selected = selected === coord ? null : coord;
+  let item = null;
+  if (source === "enw") item = ENW.find(x => x.coord === coord);
+  else if (source === "ene") item = ENE.find(x => x.coord === coord);
+  else if (source === "ese") item = ESE.find(x => x.coord === coord);
+  renderAll();
+  if (selected && item) {
+    showDetail(coord, item);
+  } else {
+    document.getElementById("detail-panel").innerHTML = "";
+  }
+}
+
+function selectFab(id) {
+  selected = selected === id ? null : id;
+  const f = FAB.find(x => x.id === id);
+  renderFab();
+  if (selected && f) {
+    showDetail(id, {nm: f.nm, tid: f.tid, t: "house", l: f.l, n: f.loc, rb: f.rb, b3: f.b3});
+  } else {
+    document.getElementById("detail-panel").innerHTML = "";
+  }
+}
+
+function renderAll() {
+  renderMain();
+  renderExtramural(ENW, "view-enw",
+    "Extramural NW Quarter (E-NW, Ballu 1911)",
+    "Houses NW of the Trajanic walls, documented by Ballu 1911. 5 positions per row, up to 5 rows. Includes the House of Corfidii (Rebuffat #1, Germain 26).");
+  renderExtramural(ENE, "view-ene",
+    "Extramural NE Quarter (E-NE, Ballu 1911)",
+    "Houses NE of the Trajanic walls. Fewer columns excavated than E-NW.");
+  renderExtramural(ESE, "view-ese",
+    "Extramural SE Quarter (E-SE)",
+    "Houses SE of the Trajanic walls. Limited excavation documentation. Germain Insula 62 with fine mosaics.");
+  renderFab();
+}
+
+function showView(v, btn) {
+  selected = null;
+  document.getElementById("detail-panel").innerHTML = "";
+  ["main","enw","ene","ese","fab"].forEach(x => {
+    document.getElementById("view-" + x).style.display = x === v ? "block" : "none";
+  });
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  btn.classList.add("active");
+  renderAll();
+}
+
+renderAll();
+</script>
+</body>
+</html>
