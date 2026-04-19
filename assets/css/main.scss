@@ -433,18 +433,21 @@ main {
   line-height: 1.75;
 }
 
-/* Editorial drop cap, sized to span exactly two lines of body text */
+/* Editorial drop cap, sized to span exactly two lines of body text.
+   Line-height sub-1 collapses the glyph's box so the float wraps only two
+   body-text lines, and the negative top margin nudges the cap up so its
+   top edge aligns with the first line's cap height. */
 .post-content > p:first-of-type::first-letter,
 .page-content > p:first-of-type::first-letter {
   font-family: var(--serif);
   font-weight: 600;
-  font-variation-settings: "opsz" 144;
-  font-size: 3.2rem;
-  line-height: 1;
+  font-variation-settings: "opsz" 72;
+  font-size: 3em;
+  line-height: 0.85;
   float: left;
-  padding: 0.15rem 0.55rem 0 0;
+  padding: 0 0.45rem 0 0;
+  margin-top: -0.05em;
   color: var(--terracotta-deep);
-  margin-top: 0.3rem;
 }
 
 .post-content h2:first-child,
@@ -738,6 +741,6 @@ figcaption {
   .site-nav a { font-size: 0.72rem; }
   .post-content > p:first-of-type::first-letter,
   .page-content > p:first-of-type::first-letter {
-    font-size: 2.8rem;
+    font-size: 2.7em;
   }
 }
