@@ -644,6 +644,54 @@ figcaption {
 .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 3rem; }
 
+/* Inline color highlights for editorial emphasis */
+.hl-blue {
+  color: var(--baby-blue-deep);
+  font-weight: 700;
+}
+
+.hl-coral {
+  color: var(--terracotta-deep);
+  font-weight: 700;
+}
+
+/* ---------- Image panel (editorial figure in body) ---------- */
+
+.image-panel {
+  margin: 3.5rem auto;
+  max-width: 640px;
+}
+
+.image-panel img {
+  width: 100%;
+  height: auto;
+  max-height: 78vh;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.image-panel figcaption {
+  margin-top: 0.9rem;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.image-panel figcaption a {
+  color: var(--text-muted);
+  border-bottom-color: var(--hairline);
+}
+
+.image-panel figcaption a:hover {
+  color: var(--terracotta-deep);
+  border-bottom-color: var(--terracotta);
+}
+
 /* ---------- Fade in on scroll ---------- */
 
 .fade-in {
