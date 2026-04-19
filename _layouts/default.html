@@ -16,7 +16,13 @@
 
     <header class="site-header">
       <div class="container-wide">
-        <a href="{{ '/' | relative_url }}" class="site-title">Houses of Roman Timgad</a>
+        <a href="{{ '/' | relative_url }}" class="site-title">
+          <svg width="20" height="14" viewBox="0 0 40 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true" style="vertical-align: -2px; margin-right: 0.55em; color: var(--terracotta);">
+            <path d="M3 26 L3 12 L37 12 L37 26"/>
+            <path d="M13 26 L13 16 Q13 12 17 12 L23 12 Q27 12 27 16 L27 26"/>
+            <line x1="1" y1="26" x2="39" y2="26"/>
+          </svg>Houses of Roman Timgad
+        </a>
         <nav class="site-nav">
           {% comment %} Pages temporarily hidden during review. Restore by removing these comment tags.
           <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
@@ -35,6 +41,7 @@
 
     <footer class="site-footer">
       <div class="container-wide">
+        {% include arch-ornament.html %}
         <div class="footer-row">
           <div>
             <div class="footer-tagline">Where work, home, and identity shared a roof.</div>
@@ -59,5 +66,28 @@
     </footer>
 
   </div>
+
+  <script>
+    /* Fade in elements as they scroll into view. */
+    (function() {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+          el.classList.add('in-view');
+        });
+        return;
+      }
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.fade-in').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
 </body>
 </html>
