@@ -2,35 +2,35 @@
 layout: default
 ---
 
-<section class="hero">
-  <div class="container-wide">
-    <div style="display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center;">
-      <div>
-        <p class="hero-eyebrow">Open digital humanities project</p>
-        <h1>The rhythms, smells, and work of a provincial Roman home.</h1>
-        <p class="hero-lede">{{ site.description }}</p>
-        {% comment %} Hero CTAs temporarily hidden during review.
-        <p style="margin-top: 1.8rem;">
-          <a href="/why-timgad/" style="display: inline-block; background: var(--teal); color: white; padding: 0.7rem 1.4rem; border-radius: var(--radius); border: none; font-weight: 600; font-size: 0.92rem;">Start with Timgad &rarr;</a>
-          &nbsp;&nbsp;
-          <a href="/grid/" style="font-weight: 600;">View the interactive grid</a>
-        </p>
-        {% endcomment %}
-        <p style="margin-top: 1.8rem; color: var(--muted); font-style: italic;">More sections coming soon.</p>
-      </div>
-      <figure class="hero-image" style="margin: 0;">
-        <img src="/assets/images/timgad-aerial-bw.jpg" alt="Stone walls of houses at Timgad rising out of the plain, with mountains beyond.">
-        <figcaption>The remains of houses in Timgad's northeastern quarter, looking south toward the Aurès mountains.</figcaption>
-      </figure>
+<section class="hero-bleed">
+  <img class="hero-bleed-image"
+       src="{{ '/assets/images/timgad-aerial-bw.jpg' | relative_url }}"
+       alt="Stone walls of houses at Timgad rising out of the plain, with mountains beyond.">
+  <div class="hero-bleed-overlay"></div>
+  <div class="container-bleed">
+    <div class="hero-bleed-content fade-in">
+      <p class="hero-eyebrow">Open digital humanities project</p>
+      <h1>The rhythms, smells, and work <br><span class="accent">of a provincial Roman home.</span></h1>
+      <p class="hero-lede">{{ site.description }}</p>
+      {% comment %} Hero CTAs temporarily hidden during review.
+      <p style="margin-top: 1.8rem;">
+        <a href="/why-timgad/" style="display: inline-block; background: var(--terracotta); color: white; padding: 0.7rem 1.4rem; border-radius: var(--radius); border: none; font-weight: 600; font-size: 0.92rem;">Start with Timgad &rarr;</a>
+        &nbsp;&nbsp;
+        <a href="/grid/" style="font-weight: 600; color: var(--terracotta-soft);">View the interactive grid</a>
+      </p>
+      {% endcomment %}
     </div>
   </div>
+  <p class="hero-bleed-caption">The remains of houses in Timgad's northeastern quarter, looking south toward the Aurès mountains.</p>
 </section>
 
-<section style="padding: 4rem 0 1rem;">
-  <div class="container">
+<section class="container fade-in" style="padding: 5rem 0 2rem;">
+  <div class="page-content">
     {{ content }}
   </div>
 </section>
+
+{% include arch-ornament.html %}
 
 {% comment %} Feature cards and latest posts temporarily hidden during review.
 <section style="padding: 1rem 0 4rem;">
