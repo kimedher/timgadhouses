@@ -89,7 +89,7 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">Fentress, Elizabeth. 2020. "Sacred Transactions: Religion and Markets in Roman Urbanism." In <em>Urban Space and Urban History in the Roman World</em>, edited by Miko Flohr, 179–197. London: Routledge.</p>
 
-  <p class="bib-entry">Fentress, Elizabeth. 2022. <em>If These Walls Could Talk</em>.</p>
+  <p class="bib-entry">Fentress, Elizabeth. 2022. "If These Walls Could Talk: Reflections on Houses and Identity." In <em>The Language of the Urban Domestic Architecture as an Expression of Identity in the Roman World</em>, edited by Álvaro Corrales Álvarez, 215–225. MYTRA 11. Mérida: Instituto de Arqueología de Mérida (CSIC).</p>
 
   <p class="bib-entry">Flohr, Miko, ed. 2020. <em>Urban Space and Urban History in the Roman World</em>. London: Routledge.</p>
 
