@@ -79,9 +79,9 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">Bullo, Silvia, and Francesca Ghedini, eds. 2003. <em>Amplissimae atque ornatissimae domus</em>. 2 vols. Antenor Quaderni 2.1–2.2. Rome: Quasar.</p>
 
-  <p class="bib-entry">Daniels, Megan. n.d. "Punic Domestic Architecture at Volubilis."</p>
+  <p class="bib-entry">Daniels, Robert. 1995. "Punic Influence in the Domestic Architecture of Roman Volubilis (Morocco)." <em>Oxford Journal of Archaeology</em> 14 (1): 79–95.</p>
 
-  <p class="bib-entry">Dross-Krupe, Kerstin, ed. 2016. <em>Textile Production and Trade in the Roman World</em>.</p>
+  <p class="bib-entry">Droß-Krüpe, Kerstin. 2016. "Spatial Concentration and Dispersal of Roman Textile Crafts." In <em>Urban Craftsmen and Traders in the Roman World</em>, edited by Andrew Wilson and Miko Flohr, 331–350. Oxford: Oxford University Press.</p>
 
   <p class="bib-entry">Dufton, J. Andrew. 2019. "The Architect and the Archaeologist: The Domestic Architecture of Roman Timgad."</p>
 
