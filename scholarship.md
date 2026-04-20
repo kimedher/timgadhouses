@@ -53,7 +53,7 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 <div class="biblio">
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Wilson, Andrew. 2001. "Timgad and Textile Production." In <em>Economies Beyond Agriculture in the Classical World</em>, edited by David J. Mattingly and John Salmon, 271–296. London: Routledge.
-  <span class="bib-annotation">The paper that forced the field to take Timgad's industrial neighbourhood seriously. Wilson's count of more than twenty fullonicae, twice the number attested at Pompeii, reframes the city as a working town, not a monumental showpiece.</span></p>
+  <span class="bib-annotation">Wilson's count of more than twenty fullonicae, twice the number attested at Pompeii, reframes the city as a working town, not a monumental showpiece.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Amraoui, Touatia. 2018. "Crafts in Roman North Africa." In <em>The Economy of Roman North Africa</em>. Cambridge: Cambridge University Press.
   <span class="bib-annotation">Amraoui's body of work, and this synthesis in particular, is where productive domesticity in the Maghreb gets its modern baseline. She also revises Wilson's fullonica count downward under tighter identification criteria, an exemplary case of the field correcting itself.</span></p>
@@ -143,7 +143,7 @@ The Timgad studied today is the Timgad that Albert Ballu and his teams uncovered
   <span class="bib-annotation">The founding architectural record. Ballu's plans, however idealized, are the reference every later reconstruction still checks itself against.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Boeswillwald, Émile, René Cagnat, and Albert Ballu. 1905. <em>Timgad, une cité africaine sous l'Empire romain</em>. Paris: Leroux.
-  <span class="bib-annotation">The synthesis that fixed the wider scholarly image of Timgad. Its framing (monumental civic center, hinted-at domestic life, sweeping chronology) is the version of the city the project works to complicate.</span></p>
+  <span class="bib-annotation">The synthesis that fixed the wider scholarly image of Timgad. Its framing (monumental civic center, hinted-at domestic life, sweeping chronology) is the version of the city that this project works to complicate.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord: répertoire de plans publiés." <em>Mélanges de l'École française de Rome: Antiquité</em> 81 (2): 659–724.
   <span class="bib-annotation">The standard comparative catalogue of North African peristyle houses, still the reference point for any domestic-architecture comparison in the region. Rebuffat also warns explicitly against trusting Courtois's 1951 plans as precise, a warning worth keeping visible.</span></p>
