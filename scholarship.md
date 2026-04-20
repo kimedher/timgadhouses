@@ -24,13 +24,13 @@ Space syntax, first developed by Hillier and Hanson, treats a built environment 
 <div class="biblio">
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Hillier, Bill, and Julienne Hanson. 1984. <em>The Social Logic of Space</em>. Cambridge: Cambridge University Press.
-  <span class="bib-annotation">The founding statement of space syntax. Buildings are read as configurations of accessible spaces, not as aesthetic objects, and the grammar of those configurations is what carries social meaning. Every access graph and depth calculation on this project descends from this book.</span></p>
+  <span class="bib-annotation">The founding statement of space syntax. Buildings are read as configurations of accessible spaces, not as aesthetic objects, and the grammar of those configurations is what carries social meaning.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Allison, Penelope M., ed. 1999. <em>The Archaeology of Household Activities</em>. London: Routledge.
   <span class="bib-annotation">Reframed Roman domestic studies around what people actually did in rooms rather than what an architectural typology assigned them to do. This is the move that lets a workshop inside a "house" be read as part of how the household actually worked.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.
-  <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against. Engaged with here critically, since reading Timgad through a Pompeian template is exactly what the dissertation pushes back on.</span></p>
+  <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against.</span></p>
 
   <p class="bib-entry">Fisher, Kevin. 2023. <em>Monumentality, Place-making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. London: Equinox Press.</p>
 
