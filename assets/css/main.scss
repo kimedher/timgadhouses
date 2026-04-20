@@ -102,16 +102,16 @@ img {
 
 /* Pull quotes use Fraunces italic as a deliberate editorial accent */
 blockquote {
-  margin: 2.5em 0;
-  padding: 0 0 0 1.6em;
+  margin: 1.4em 0;
+  padding: 0 0 0 1.3em;
   border-left: 2px solid var(--terracotta);
   font-family: var(--serif);
   font-weight: 400;
   font-style: italic;
-  font-size: 1.3rem;
+  font-size: 1.02rem;
   line-height: 1.5;
   color: var(--teal-dark);
-  font-variation-settings: "opsz" 48;
+  font-variation-settings: "opsz" 36;
 }
 
 blockquote p:last-child { margin-bottom: 0; }
