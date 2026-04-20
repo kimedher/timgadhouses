@@ -95,4 +95,4 @@ The project also owes its shape to the AMNE department's ongoing support, and to
 
 ## How to get in touch
 
-Corrections, questions, and suggestions are welcome. Email [km2133@student.ubc.ca](mailto:km2133@student.ubc.ca), or open an issue on the [project repository](https://github.com/kimedher/timgadhouses/issues).
+Corrections, questions, and suggestions are welcome. Email [km2133@student.ubc.ca](mailto:km2133@student.ubc.ca).
