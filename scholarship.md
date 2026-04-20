@@ -19,7 +19,7 @@ Where a work is a core source for this project, a short italicized note follows 
 
 ## Space syntax, household archaeology, and method
 
-Space syntax is the method that lets a house plan be read mathematically, by turning rooms and doorways into a graph of how people actually moved through the building. Household archaeology begins from a different angle, insisting that the house itself, and the life actually lived inside it, is where the bigger claims about Roman society either hold up or fall apart. Every access graph, every room retagged, every plan redrawn in this project descends from these two traditions.
+Space syntax, first developed by Hillier and Hanson, lets us treat a built environment as a structured, relational system, one with the power to guide and constrain movement, visibility, and interaction. Access analysis, visibility analysis, depth mapping, and integration measures can reveal how domestic spaces at Timgad controlled circulation, encounters, sensory exposure, privacy, and labor. Household archaeology approaches the same house from the other side, insisting on it as an arena of social and economic practice where routinized movement, as Swenson and Bourdieu each argue in their own registers, produces the dispositions and the misrecognized power relations a built environment reproduces without ever naming out loud. Read together, the two traditions treat the house as both evidence and agent, something that shapes lived experience at the same time as it is shaped by it. Every access graph, every room retagged, every plan redrawn in this project descends from that pairing.
 
 <div class="biblio">
 
@@ -48,7 +48,7 @@ Space syntax is the method that lets a house plan be read mathematically, by tur
 
 ## Roman North Africa and Timgad
 
-The regional frame and the Timgad-specific scholarship belong together here. Over the last two decades, the field has finally stopped treating Roman North Africa as a colonial curiosity at the edge of the empire, and started reading Timgad for what it actually was: a well-documented, economically distinctive, locally-lived-in Roman city. These are the works that place Timgad inside the wider empire, and this project inside the revival of Maghrebi archaeology.
+The regional frame and the Timgad-specific scholarship belong together here. North African houses have long been read in the shadows of Vitruvius and Pompeii, measured against metropolitan Italian ideals and, when they fell short of those ideals, dismissed as incomplete or "irregular" versions of a supposedly more Roman original. The last two decades have started to undo that inheritance. Scholars like Amraoui, Dufton, McCarty, and Yelles have turned back toward the Maghreb on its own terms, reading Timgad as what it actually was: a well-documented, economically active, locally-lived-in city during the so-called "African boom," not a colonial curiosity at the edge of the empire. These are the works that place Timgad inside the wider Roman world, and this project inside the revival of Maghrebi archaeology.
 
 <div class="biblio">
 
@@ -111,7 +111,7 @@ The regional frame and the Timgad-specific scholarship belong together here. Ove
 
   <p class="bib-entry">Malek, Ammar-Aziz. 2005. "Entre jardin et mosaïque: la <em>domus</em> nord-africaine." PhD diss., Université de Paris-Sorbonne.</p>
 
-  <p class="bib-entry">McCarty, Matthew M. n.d. "Reforesting Roman Africa: Woodland Resources, Worship, and Colonial Erasures."</p>
+  <p class="bib-entry">McCarty, Matthew M. 2022. "Reforesting Roman Africa: Woodland Resources, Worship, and Colonial Erasures." <em>The Journal of Roman Studies</em> 112: 105–141. <a href="https://doi.org/10.1017/S0075435822000338">https://doi.org/10.1017/S0075435822000338</a>.</p>
 
   <p class="bib-entry">Miller, Stephen G., et al. 2024. "The Houses of Hellenistic and Roman Tel."</p>
 
@@ -224,7 +224,8 @@ For this project, space syntax and household archaeology give us the architectur
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Bourdieu, Pierre. 1977. <em>Outline of a Theory of Practice</em>. Translated by Richard Nice. Cambridge: Cambridge University Press.
   <span class="bib-annotation">The source of <em>habitus</em>, the durable dispositions that let a built environment and a set of bodily practices reproduce a social order without anyone naming the rules out loud. Domestic architecture is where habitus becomes visible.</span></p>
 
-  <p class="bib-entry">Woolf, Greg. 1998. <em>Becoming Roman: The Origins of Provincial Civilization in Gaul</em>. Cambridge: Cambridge University Press.</p>
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Woolf, Greg. 1998. <em>Becoming Roman: The Origins of Provincial Civilization in Gaul</em>. Cambridge: Cambridge University Press.
+  <span class="bib-annotation">Reframed provincial identity as something actively authored by local communities rather than handed down from Rome. Woolf's Gaul is not an exemplar to imitate but a parallel to work alongside: his insistence that provincial civilization is locally made sits directly next to the claim this project wants to make for Numidia and Timgad.</span></p>
 
 </div>
 
