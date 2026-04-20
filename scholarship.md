@@ -8,9 +8,7 @@ last_updated: 2026-04-20
 
 This page is the project's public reading list. It collects the works that shape how the houses of Timgad are read here, from the colonial-era excavation reports that produced the physical record to the theoretical frames that let us read that record critically. Entries are grouped by the four questions this project lives inside: how space carries meaning, how Roman North Africa has been studied, how the colonial archive was built, and how identity and domestic life intersect.
 
-Where a work is especially load-bearing for the project, a short italicized note follows the citation. All entries are in Chicago author-date format. A more detailed internal record, including page-level notes on the houses each source mentions, lives in the project's literature-review database and will be released alongside the first Zenodo deposit.
-
-Further reading links at the bottom of the [Timgad overview](/timgad/) and [Houses](/houses/) pages point to the relevant section below, and the [Methods](/methods/) page carries its own shorter theoretical bibliography inline with each technique.
+Where a work is a core source for this project, a short italicized note follows the citation. All entries are in Chicago author-date format. A more detailed internal record, including page-level notes on the houses each source mentions, lives in the project's literature-review database and will be released at a later time.
 
 <p class="scholarship-nav">
 <a href="#space-syntax-household-archaeology-and-method">Space syntax and household archaeology</a> ·
@@ -21,7 +19,7 @@ Further reading links at the bottom of the [Timgad overview](/timgad/) and [Hous
 
 ## Space syntax, household archaeology, and method
 
-Space syntax turns a house plan into something that can be read mathematically. Household archaeology insists that the house is the place where the coarser abstractions of Roman society either hold or fall apart. The works below are the methodological floor under everything the project does, from how plans are redrawn to how rooms are interpreted.
+Space syntax is the method that lets a house plan be read mathematically, by turning rooms and doorways into a graph of how people actually moved through the building. Household archaeology begins from a different angle, insisting that the house itself, and the life actually lived inside it, is where the bigger claims about Roman society either hold up or fall apart. Every access graph, every room retagged, every plan redrawn in this project descends from these two traditions.
 
 <div class="biblio">
 
@@ -50,7 +48,7 @@ Space syntax turns a house plan into something that can be read mathematically. 
 
 ## Roman North Africa and Timgad
 
-The regional frame and the modern Timgad-specific scholarship belong together here. Recent work has finally stopped treating the city as provincial exotica and started treating it for what it is, a well-documented, economically distinctive, locally lived-in Roman city. These works are how the project situates Timgad inside the wider empire, and inside the revival of North African archaeology over the last two decades.
+The regional frame and the Timgad-specific scholarship belong together here. Over the last two decades, the field has finally stopped treating Roman North Africa as a colonial curiosity at the edge of the empire, and started reading Timgad for what it actually was: a well-documented, economically distinctive, locally-lived-in Roman city. These are the works that place Timgad inside the wider empire, and this project inside the revival of Maghrebi archaeology.
 
 <div class="biblio">
 
@@ -213,7 +211,7 @@ The Timgad studied today is the Timgad that Albert Ballu and his teams uncovered
 
 ## Habitus, identity, and discrepant experience
 
-Space syntax and household archaeology give us the architecture. Bourdieu's <em>habitus</em> and Mattingly's <em>discrepant identities</em> give us the lives lived inside it. Yvon Thébert's line that <em>domus</em> referred not only to the walls but also to the people within them is the project's organizing claim, and these works are where it comes from.
+For this project, space syntax and household archaeology give us the architecture, while Bourdieu's <em>habitus</em> and Mattingly's <em>discrepant identities</em> give us the lives lived inside it. Yvon Thébert's line that <em>domus</em> referred not only to the walls but also to the people within them is the project's organizing claim, and these works are a sample of where it comes from.
 
 <div class="biblio">
 
@@ -232,4 +230,4 @@ Space syntax and household archaeology give us the architecture. Bourdieu's <em>
 
 <hr class="biblio-hr">
 
-<p class="biblio-note">This page is maintained by hand and will grow. Corrections and suggestions are warmly welcomed. Works in press, conference papers, and unpublished theses that Kim has read but has not yet catalogued here are tracked in the internal literature-review database and will filter onto this page as they become load-bearing for the project.</p>
+<p class="biblio-note">This page is maintained by hand and will grow. Corrections and suggestions are warmly welcomed. Works in press, conference papers, and unpublished theses that Kim has read but has not yet catalogued here are tracked in the internal literature-review database and will filter onto this page as they earn their place in the argument.</p>
