@@ -39,8 +39,8 @@ The theoretical frame comes from Pierre Bourdieu's <span class="hl-blue">*habitu
 ## About the Author
 
 <figure style="float: right; max-width: 280px; margin: 0 0 1.5rem 1.8rem;">
-  <img src="/assets/images/kim-fieldwork.jpg" alt="Kim Edher crouched in an excavation trench, with a trowel and brush at her feet.">
-  <figcaption>On site during fieldwork.</figcaption>
+  <img src="/assets/images/kim-portrait.jpg" alt="A portrait of Kim Edher in a baby blue trench coat, smiling, with the Tokyo skyline in the background.">
+  <figcaption>Tokyo, 2026.</figcaption>
 </figure>
 
 Kim Edher is an instructor of Classical Studies at Langara College and a PhD candidate in the Ancient Mediterranean and Near Eastern Studies (AMNE) department at the University of British Columbia (UBC). Her dissertation, *House, Home, and Habitus: Reconstructing Lived Experiences at Timgad*, is supervised by Dr. Matthew McCarty, whose scholarship on Roman North Africa and on the politics of how archaeological knowledge gets made has shaped this project's questions from the start. Committee members Dr. Kevin Fisher, in digital archaeology and space syntax, and Dr. Katharine Huemoeller, in Roman social history and lived experience, have grounded the work in both its methods and its humanity. Having had the chance to learn from all three across her master's and doctoral coursework, Kim carries what they taught her not only into this research but into how she shows up in her own classroom as both instructor and scholar. For that, she is deeply grateful.
