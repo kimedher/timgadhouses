@@ -660,7 +660,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 1925, title: 'House at the East Rampart',
       person: 'Albert Ballu with M. Godet',
       type: 'discovery',
-      desc: 'A six-column portico house with reception hall 6.80 by 11.60 m, atrium 7.35 by 6.10 m, a lead water piping system, and connection to small baths. Visitor count of 10,266 recorded in 1926.',
+      desc: 'A six-column portico house with reception hall 6.80 by 11.60 m, atrium 7.35 by 6.10 m, a lead water piping system, and connection to small baths.',
       houses: 'House at the East Rampart',
       source: 'Ballu 1925 to 1926, BIAA (SRC_024)'
     },
