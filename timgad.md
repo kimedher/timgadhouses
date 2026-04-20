@@ -58,3 +58,15 @@ The phrase is kept in use here for searchability and cross-disciplinary clarity.
 ## What to read next
 
 For the argument the project is built around and the person running it, start with the [About page](/about/). For the domestic corpus that is the main subject of this work, see [Houses](/houses/). For the analytical tools and scholarship that ground the reading, see [Methods](/methods/).
+
+## How to cite this page
+
+If you are a student using this page for a paper, or a researcher referencing it in your own work, something like the following will work in most citation styles. Adjust the access date to the day you actually read the page.
+
+<div class="subsection-refs">
+  <p><strong>Chicago (author-date):</strong> Edher, Kim. 2026. "Timgad." <em>Houses of Roman Timgad</em>. Accessed [Month Day, Year]. https://timgadhouses.org/timgad/.</p>
+  <p><strong>MLA (9th edition):</strong> Edher, Kim. "Timgad." <em>Houses of Roman Timgad</em>, 2026, timgadhouses.org/timgad/. Accessed [Day Month Year].</p>
+  <p><strong>APA (7th edition):</strong> Edher, K. (2026). <em>Timgad</em>. Houses of Roman Timgad. https://timgadhouses.org/timgad/</p>
+</div>
+
+All text and images on this site are shared under a [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted, which means you are welcome to quote, paraphrase, or reproduce anything here for schoolwork, research, or teaching, as long as you credit the source. If you use this page in a paper and want to check a phrasing, flag a correction, or ask a follow-up question, email [km2133@student.ubc.ca](mailto:km2133@student.ubc.ca).
