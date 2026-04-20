@@ -10,7 +10,7 @@ Timgad sits on a high plain in the Aurès Mountains of northeastern Algeria, in 
 
 <figure class="image-panel">
   <img src="/assets/images/timgad-1900-plan.png" alt="A hand-drawn site plan of Timgad as excavated by the end of 1900, with labeled features including the Capitole, Forum, Théâtre, Marché, the cardo and decumanus maximus, the Grand Thermes hors les murs to the north, the Thermes Sud, and the Porte Nord and Porte Ouest gates.">
-  <figcaption>Excavations of Timgad, general plan at the end of 1900. A. Ballu, <em>Rapport sur les fouilles de Timgad</em> (Ministère de l'Instruction Publique et des Beaux-Arts, 1901).</figcaption>
+  <figcaption>Excavations of Timgad, general plan at the end of 1900. A. Ballu, "Les fouilles de Timgad," <em>Bulletin Monumental</em> 65 (1901): 415–433.</figcaption>
 </figure>
 
 ## From imperial plan to lived reality
