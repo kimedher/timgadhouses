@@ -669,6 +669,39 @@ figcaption {
   vertical-align: -0.02em;
 }
 
+/* ---------- Research interests tag list (About the Author) ---------- */
+
+.research-interests-label {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 1.4rem 0 0.6rem;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.55rem;
+}
+
+.tag-list li {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  padding: 0.32rem 0.85rem;
+  background: rgba(184, 216, 227, 0.32);
+  color: var(--teal-dark);
+  border-radius: 14px;
+  border: 1px solid rgba(184, 216, 227, 0.55);
+}
+
 /* ---------- Identity spectrum visual (terminology section, Timgad page) ---------- */
 
 .identity-spectrum {
