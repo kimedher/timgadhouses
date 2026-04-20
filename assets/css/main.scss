@@ -180,8 +180,8 @@ main {
 
 .site-header {
   padding: 1.4rem 0;
-  border-bottom: 1px solid var(--baby-blue);
-  background: transparent;
+  border-bottom: 1px solid var(--teal-dark);
+  background: rgba(27, 107, 111, 0.5); /* --teal at 50% */
   position: sticky;
   top: 0;
   z-index: 50;
@@ -201,7 +201,7 @@ main {
   font-family: var(--sans);
   font-weight: 700;
   font-size: 1.05rem;
-  color: var(--teal);
+  color: var(--terracotta);
   text-decoration: none;
   border: none;
   letter-spacing: -0.005em;
@@ -210,7 +210,7 @@ main {
   gap: 0.6rem;
 }
 
-.site-title:hover { color: var(--teal-dark); }
+.site-title:hover { color: var(--terracotta-soft); }
 
 .site-title .logo-mark {
   width: 28px;
@@ -243,7 +243,7 @@ main {
 
 .site-nav a {
   font-family: var(--sans);
-  color: var(--teal);
+  color: var(--bg);
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -255,8 +255,8 @@ main {
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: var(--teal-dark);
-  border-bottom-color: var(--teal);
+  color: var(--terracotta-soft);
+  border-bottom-color: var(--terracotta);
 }
 
 /* ---------- Hero (full-bleed with overlay) ---------- */
