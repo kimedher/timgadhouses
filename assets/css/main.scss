@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg: #FAF7F2;
+  --bg: #F2EBDA;
   --bg-soft: #F1ECE3;
   --text: #1F2933;
   --text-muted: #6B7380;
@@ -326,6 +326,7 @@ main {
   color: #FFF8EE;
   margin: 0 0 1.4rem;
   letter-spacing: -0.025em;
+  text-wrap: balance;
 }
 
 /* The accent line is the only place the serif italic appears in the hero */
