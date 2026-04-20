@@ -732,7 +732,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 1969, title: 'Germain mosaic corpus, 189 mosaics cataloged',
       person: 'Suzanne Germain',
       type: 'publication',
-      desc: 'Comprehensive mosaic corpus cataloging 189 mosaics across all Timgad buildings. Schematic plans link mosaics to room locations (figs. 3, 6, 7, 10, 12). Museum inventory numbers for 120+ pieces. The standard reference for Timgad\'s decorative program.',
+      desc: "Comprehensive mosaic corpus cataloging 189 mosaics across all Timgad buildings. Schematic plans link mosaics to room locations (figs. 3, 6, 7, 10, 12), with museum inventory numbers for 120+ pieces. The standard reference for Timgad's decorative program, though its approach is primarily art historical, extracting pavements from their architectural contexts rather than reading them as part of integrated domestic environments. Essential for mosaic identification, limited for spatial or architectural reconstruction.",
       houses: 'All houses with mosaics',
       source: 'Germain 1969 (SRC_032)'
     },
