@@ -780,7 +780,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 2011, title: 'Amraoui, industrial quarter of Timgad',
       person: 'Touatia Amraoui',
       type: 'publication',
-      desc: 'Reassessment of the state of the question on Timgad\'s industrial quarter. First Algerian-led systematic engagement with the production archaeology at the site since independence.',
+      desc: "A reassessment of the state of the question on Timgad's industrial quarter, pulling scattered references from earlier reports into a coherent study. Part of a renewed engagement with Maghrebi production archaeology by scholars with roots in the region, and the groundwork for Amraoui's fuller treatments in 2018 and 2020.",
       houses: 'Industrial quarter',
       source: 'Amraoui 2011'
     },
@@ -804,7 +804,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 2024, title: 'Yelles, Chronocarto de Timgad',
       person: 'Anissa Yelles',
       type: 'publication',
-      desc: 'GIS-based reconstruction of the Ballu excavation archives. Confirms that Ballu explicitly borrowed Fiorelli\'s Pompeian insula numbering system, locking the "African Pompeii" framing into the archaeological record from the start.',
+      desc: 'Part of Yelles\'s <a href="https://timgadpro.hypotheses.org/" target="_blank" rel="noopener">Timgad Archives Project (TIMaP)</a> at AOROC, ENS Paris, in collaboration with the École française de Rome and the North African Heritage Archives Network (NAHAN). Using the Chronocarto GIS platform, Yelles reconstructs Ballu\'s excavation documentation from the 1880s onward and shows that Ballu\'s adoption of a sequential insula numbering was explicitly modeled on Fiorelli\'s Pompeii, embedding the "African Pompeii" framing in the colony\'s earliest archaeological record. A foundational digital-humanities contribution to rereading Timgad\'s excavation history with the tools of contemporary spatial analysis.',
       houses: 'Archival reassessment of all Ballu excavations',
       source: 'Yelles 2024 (SRC_053)'
     },
