@@ -44,9 +44,9 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">Blanchard-Lemée, Michèle. 1998. "Dans les jardins de Djemila." <em>Antiquités africaines</em> 34: 185–197.</p>
 
-  <p class="bib-entry">Bouchareb, Abdelouahab. 2009. "Timgad: renouveau urbain, nouvelle urbanité (à partir du IIe s.)."</p>
+  <p class="bib-entry">Bouchareb, Abdelouahab. 2009. "Timgad: renouveau urbain, nouvelle urbanité (à partir du IIe s.)." <em>Réflexion(s)</em>, September 2009. Université Mentouri de Constantine.</p>
 
-  <p class="bib-entry">Briand-Ponsart, Claude. 1996. <em>Fondations privées en Afrique du Nord</em>.</p>
+  <p class="bib-entry">Briand-Ponsart, Claude. 1999. "Quelques remarques à propos des fondations privées en Afrique du Nord romaine (Ier–IIIe s. ap. J.-C.)." In <em>L'Afrique du Nord antique: cultures et paysages. Actes du colloque de Nantes (mai 1996)</em>, 87–110. Besançon: Institut des Sciences et Techniques de l'Antiquité.</p>
 
   <p class="bib-entry">Bullo, Silvia, Francesca Ghedini, and Paola Zanovello, eds. 2003. <em>Amplissimae atque ornatissimae domus (Aug., civ., II, 20, 26): l'edilizia residenziale nelle città della Tunisia romana</em>. 2 vols. Antenor Quaderni 2.1–2.2. Rome: Quasar.</p>
 
@@ -70,7 +70,7 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">Kherrour, Louardi, Sofiane Hattab, and Mohamed A. Rezzaz. 2020. "Archaeological Sites and Tourism: Protection and Valorization, Case of Timgad (Batna) Algeria." <em>GeoJournal of Tourism and Geosites</em> 28 (1): 289–302.</p>
 
-  <p class="bib-entry">Laghmouche, B., et al. 2024. "Urban Changes in Late Roman North African Cities: Thamugadi as a Case Study." <em>Journal of Ancient History and Archaeology</em> 11 (1): 176–193.</p>
+  <p class="bib-entry">Laghmouche, Boubakar, Dalila Houglaouène, and Meriem Naimi Ait-Aoudia. 2024. "Urban Changes in Late Roman North African Cities: Thamugadi (Timgad, Algeria) as a Case Study." In <em>Innovative Approaches to Cultural Heritage and Sustainable Urban Development: Integrating Tradition and Modernity</em>, edited by Hourakhsh Ahmad Nia and Rokhsaneh Rahbarianyazd. Istanbul: Cinius Yayınları.</p>
 
   <p class="bib-entry">Leone, Anna. 2007. <em>Changing Townscapes in North Africa from Late Antiquity to the Arab Conquest</em>. Munera 28. Bari: Edipuglia.</p>
 
@@ -80,9 +80,9 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">McCarty, Matthew M. 2022. "Reforesting Roman Africa: Woodland Resources, Worship, and Colonial Erasures." <em>The Journal of Roman Studies</em> 112: 105–141. <a href="https://doi.org/10.1017/S0075435822000338">https://doi.org/10.1017/S0075435822000338</a>.</p>
 
-  <p class="bib-entry">Miller, Shulamit, Yuli Gekht, S. Rebecca Martin, Sveta Matskevich, and Ilan Sharon. 2024. "The Houses of Hellenistic–Roman Tel Dor: A Study of Domestic Social Practices and Economic Activities." <em>Journal of Eastern Mediterranean Archaeology and Heritage Studies</em> 12 (2): 115–151.</p>
+  <p class="bib-entry">Miller, Shulamit, Yuli Gekht, S. Rebecca Martin, Sveta Matskevich, and Ilan Sharon. 2024. "The Houses of Hellenistic–Roman Tel Dor: A Study of Domestic Social Practices and Economic Activities." <em>Journal of Eastern Mediterranean Archaeology and Heritage Studies</em> 12 (2): 115–149.</p>
 
-  <p class="bib-entry">Monteix, Nicolas. 2016. "<em>Pompeiis in Pistrinis</em>: Bakeries and Baking in Roman Italy."</p>
+  <p class="bib-entry">Monteix, Nicolas. 2016. "Contextualizing the Operational Sequence: Pompeian Bakeries as a Case Study." In <em>Urban Craftsmen and Traders in the Roman World</em>, edited by Andrew Wilson and Miko Flohr, 153–182. Oxford: Oxford University Press.</p>
 
   <p class="bib-entry">Pavis d'Escurac, Henriette. 1980. "Flaminat et société dans la colonie de Timgad." <em>Antiquités africaines</em> 15: 183–200.</p>
 
@@ -94,7 +94,7 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">Wilson, Andrew. 2002. "Urban Production in the Roman World: The View from North Africa." <em>Papers of the British School at Rome</em> 70: 231–273.</p>
 
-  <p class="bib-entry">Wilson, Andrew. 2018. "Roman Villas in North Africa." In <em>The Roman Villa in the Mediterranean Basin: Late Republic to Late Antiquity</em>, edited by Annalisa Marzano and Guy P. R. Métraux, 266–307. Cambridge: Cambridge University Press.</p>
+  <p class="bib-entry">Wilson, R. J. A. 2018. "Roman Villas in North Africa." In <em>The Roman Villa in the Mediterranean Basin: Late Republic to Late Antiquity</em>, edited by Annalisa Marzano and Guy P. R. Métraux, 266–307. Cambridge: Cambridge University Press.</p>
 
   <p class="bib-entry">Wuilleumier, Pierre. 1928. "Mobilier de l'Afrique romaine." <em>Mélanges d'archéologie et d'histoire</em> 45: 123–149.</p>
 
@@ -214,7 +214,7 @@ Space syntax, first developed by Hillier and Hanson, treats a built environment 
 
   <p class="bib-entry">Fisher, Kevin D. 2023. <em>Monumentality, Place-Making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. Sheffield: Equinox Publishing.</p>
 
-  <p class="bib-entry">Grahame, Mark. 1997. "Public and Private in the Roman House: Investigating the Social Order of the Casa del Fauno." In <em>Domestic Space in the Roman World: Pompeii and Beyond</em>, edited by Ray Laurence and Andrew Wallace-Hadrill, 137–164. Journal of Roman Archaeology Supplementary Series 22. Portsmouth, RI: Journal of Roman Archaeology.</p>
+  <p class="bib-entry">Grahame, Mark. 1997. "Public and Private in the Roman House: The Spatial Order of the Casa del Fauno." In <em>Domestic Space in the Roman World: Pompeii and Beyond</em>, edited by Ray Laurence and Andrew Wallace-Hadrill, 137–164. Journal of Roman Archaeology Supplementary Series 22. Portsmouth, RI: Journal of Roman Archaeology.</p>
 
   <p class="bib-entry">Rapoport, Amos. 1990. <em>The Meaning of the Built Environment: A Nonverbal Communication Approach</em>. Tucson: University of Arizona Press.</p>
 
