@@ -10,7 +10,7 @@ Static site built with Jekyll and hosted on GitHub Pages. Custom layouts and a s
 
 ## Citation and contact
 
-Kim Edher, kimedher@gmail.com. Project context and preferred citation will be posted on the site.
+Kim Edher, km2133@student.ubc.ca. Project context and preferred citation will be posted on the site.
 
 ## License
 
