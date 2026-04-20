@@ -10,7 +10,7 @@ last_updated: 2026-04-19
 
 Houses of Roman Timgad is an open digital humanities project that runs alongside a PhD dissertation in progress. This website is the public, open-access companion to that longer work.
 
-It has three purposes.
+It serves three purposes:
 
 <div class="numbered-block warm">
   <div class="card">
@@ -72,11 +72,26 @@ The theoretical frame comes from Pierre Bourdieu's <span class="hl-blue">*habitu
   <figcaption style="font-size: 0.68rem; opacity: 0.7; margin-top: 0.35rem;">Shibuya Sky, 2026.</figcaption>
 </figure>
 
-Kim Edher is an instructor of Classical Studies at Langara College and a PhD candidate in the Ancient Mediterranean and Near Eastern Studies (AMNE) department at the University of British Columbia (UBC). Her dissertation, *House, Home, and Habitus: Reconstructing Lived Experiences at Timgad*, is supervised by Dr. Matthew McCarty, whose scholarship on Roman North Africa and on the politics of how archaeological knowledge gets made has shaped this project's questions from the start. Committee members Dr. Kevin Fisher, in digital archaeology and space syntax, and Dr. Katharine Huemoeller, in Roman social history and lived experience, have grounded the work in both its methods and its humanity. Having had the chance to learn from all three across her master's and doctoral coursework, Kim carries what they taught her not only into this research but into how she shows up in her own classroom as both instructor and scholar. For that, she is deeply grateful.
+Kim Edher is a PhD candidate in Classical Archaeology in the Ancient Mediterranean and Near Eastern Studies (AMNE) department at the University of British Columbia (UBC), and an instructor of Classical Studies and History at Langara College. Her dissertation examines domestic spaces across Roman North Africa (<span class="hl-arabic">**المغرب العربي**</span>), drawing on Timgad, Volubilis, and Bulla Regia to understand how people actually lived and worked in these spaces. The work uses spatial analysis, sensory reconstruction, and digital tools to bring marginalized spaces and people to life.
+
+Her MA thesis explored rural religious practices at rock sanctuaries in Roman Spain, including fieldwork at Ilduro in modern Cabrera de Mar. In her teaching at Langara, Kim relishes helping students discover how the ancient world illuminates contemporary challenges.
+
+<p class="research-interests-label">Research interests</p>
+<ul class="tag-list">
+  <li>Social history</li>
+  <li>Provincial identities and cultural negotiation</li>
+  <li>Non-elite and enslaved experiences</li>
+  <li>Household archaeology</li>
+  <li>Spatial and sensory analysis</li>
+  <li>Digital humanities and public archaeology</li>
+  <li>Pedagogy and decolonizing approaches</li>
+</ul>
 
 ## Acknowledgments
 
-This project owes its shape to Kim's committee at UBC, to the AMNE department's ongoing support, and to the many researchers, past and present, whose published and unpublished work on Timgad makes it possible to ask new questions at all. Specific intellectual debts are named on the Scholarship page when it launches. The excavators whose colonial-era work forms the core of the evidence base are acknowledged alongside the critical scholarship that continues to rethink their records.
+This project owes its shape, first and foremost, to Kim's committee at UBC: her supervisor Dr. Matthew McCarty, whose scholarship on Roman North Africa and on the politics of how archaeological knowledge gets made has shaped its questions from the start; Dr. Kevin Fisher, who has grounded the methodological side in digital archaeology and space syntax; and Dr. Katharine Huemoeller, whose scholarship in Roman social history and lived experience has held the human core of the work in view. Having had the chance to learn from all three across her master's and doctoral coursework, Kim carries what they taught her not only into this research but into how she shows up in her own classroom as both instructor and scholar. For that, she is deeply grateful.
+
+The project also owes its shape to the AMNE department's ongoing support, and to the many researchers, past and present, whose published and unpublished work on Timgad makes it possible to ask new questions at all. Specific intellectual debts are named on the Scholarship page when it launches. The excavators whose colonial-era work forms the core of the evidence base are acknowledged alongside the critical scholarship that continues to rethink their records.
 
 ## How to get in touch
 
