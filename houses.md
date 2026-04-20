@@ -41,7 +41,7 @@ For the city that holds these houses, see the [Timgad page](/timgad/). For the a
 
 ## Further reading
 
-A working bibliography on Roman and ancient houses, domestic space, and North African domestic architecture. These are the works this project reads alongside, draws from, and argues with.
+A short working bibliography on Roman and ancient houses, domestic space, and North African domestic architecture. These are the works this project reads alongside, draws from, and argues with. For the full project bibliography organized by theme, see [Scholarship](/scholarship/#space-syntax-household-archaeology-and-method).
 
 <div class="subsection-refs">
   <p>Allison, Penelope. 1993. "How Do We Identify the Use of Space in Roman Housing?" In <em>Functional and Spatial Analysis of Wall Painting</em>, edited by E. Moormann, 1–8. Leiden: Babesch.</p>
