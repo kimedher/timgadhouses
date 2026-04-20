@@ -7,8 +7,8 @@ last_updated: 2026-04-19
 ---
 
 <figure class="image-panel image-panel--wide">
-  <img src="/assets/images/timgad-panorama.jpg" alt="A wide colour panorama of Timgad looking across the excavated city, with the columns of the Capitol rising at the far left, the colonnaded decumanus maximus running through the centre, the Arch of Trajan standing to the right, and the Aurès Mountains on the horizon.">
-  <figcaption>Panorama of Timgad looking east across the site, with the Capitol columns at left, the colonnaded decumanus, and the Arch of Trajan at centre-right. Photograph by Hamza-sia, 2014, <a href="https://commons.wikimedia.org/wiki/File:Timgad_Ruins_Panorama.jpg">CC BY-SA 3.0, via Wikimedia Commons</a>.</figcaption>
+  <img src="/assets/images/timgad-aerial-bw.jpg" alt="A sepia-toned aerial photograph of Timgad taken in the early twentieth century, showing the excavated orthogonal street grid, the Arch of Trajan, and the colonnaded decumanus maximus receding into the open plain beyond the ruins.">
+  <figcaption>Aerial view of Timgad showing the excavated grid, the Arch of Trajan, and the decumanus maximus running through the colony. Photograph by A. Ballu, 1903. Heritage and Photography Media Library.</figcaption>
 </figure>
 
 Timgad sits on a high plain in the Aurès Mountains of northeastern Algeria, in what was the Roman province of Numidia and is today the Batna province of a sovereign post-colonial state. The city is known in Arabic as <span class="hl-arabic">**تيمقاد**</span>, in Latin as <span class="hl-blue">*Colonia Marciana Traiana Thamugadi*</span> (a name likely rooted in a Berber/Amazigh toponym), and in French-colonial and Anglophone scholarship simply as Timgad. This page is the brief overview of where Timgad is, how it was founded, and why reading its remains is more than simply a question of archaeological curiosity.
