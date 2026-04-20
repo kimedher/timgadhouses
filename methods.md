@@ -12,16 +12,16 @@ Every claim this project makes about Timgad rests on a set of methods, and each 
 
 Space syntax is a family of techniques for turning a building plan into something that can be analyzed mathematically. Four moves matter most here:
 
-- **Redrawing plans** from the original excavation reports converts the architectural remains into clean, analyzable spatial units, with each room, corridor, and courtyard as its own node.
-- **Justified access graphs** reveal the spatial hierarchy of a house by showing how deep each space sits from the street entrance. A room one step in is experienced differently than a room four steps in.
-- **Step depth** measures how many spaces a user passes through to reach any given point. It is a proxy for how visible, private, or controlled a space is.
-- **Visibility graphs** map what can be seen from each location inside a house. Sight lines do social work. Who can see whom, and from where, structures how people encounter each other in a space.
+- <span class="hl-blue">**Redrawing plans**</span> from the original excavation reports converts the architectural remains into clean, analyzable spatial units, with each room, corridor, and courtyard as its own node.
+- <span class="hl-blue">**Justified access graphs**</span> reveal the spatial hierarchy of a house by showing how deep each space sits from the street entrance. A room one step in is experienced differently than a room four steps in.
+- <span class="hl-blue">**Step depth**</span> measures how many spaces a user passes through to reach any given point. It is a proxy for how visible, private, or controlled a space is.
+- <span class="hl-blue">**Visibility graphs**</span> map what can be seen from each location inside a house. Sight lines do social work. Who can see whom, and from where, structures how people encounter each other in a space.
 
 Space syntax does not tell us what happened inside a room. It tells us what the architecture made easy, hard, likely, or impossible.
 
 <div class="subsection-refs">
-  <p>Hillier, Bill, and Julienne Hanson. 1984. <em>The Social Logic of Space</em>. Cambridge: Cambridge University Press.</p>
   <p>Fisher, Kevin. 2023. <em>Monumentality, Place-making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. London: Equinox Press.</p>
+  <p>Hillier, Bill, and Julienne Hanson. 1984. <em>The Social Logic of Space</em>. Cambridge: Cambridge University Press.</p>
   <p>Rapoport, Amos. 1990. <em>The Meaning of the Built Environment</em>. Tucson: University of Arizona Press.</p>
 </div>
 
@@ -57,19 +57,11 @@ The goal is not to throw out the excavation record. It is to read it with open e
 Household archaeology, the subdiscipline that asks how houses worked as social and economic units rather than simply as buildings, is the broader conversation this project takes part in. Most of its foundational work was built on the remarkably preserved houses of Roman Italy, with Pompeii and Herculaneum at the center. This project draws on those tools carefully, using the field's insights while pushing back on its Pompeian defaults and widening the frame to North Africa, where the houses tell a different story.
 
 <div class="subsection-refs">
-  <p>Wilson, R. J. A. 2016. "Roman Villas in North Africa." In <em>The Cambridge Companion to the Roman Economy</em>, edited by Walter Scheidel, 266–307. Cambridge: Cambridge University Press.</p>
-  <p>Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.</p>
   <p>Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life, Vol. 1</em>, edited by Paul Veyne, 319–409. Cambridge, MA: Belknap Press.</p>
-</div>
-
-## Comparative framework
-
-Timgad is the primary site, but it is read in conversation with other North African cities where domestic architecture has been well studied, especially Volubilis (Mauretania Tingitana, in modern Morocco) and Bulla Regia (in modern Tunisia). The aim is to trace regional patterns across Roman North Africa rather than to treat Timgad as a one-off.
-
-<div class="subsection-refs">
-  <p>Bullo, Silvia, and Francesca Ghedini, eds. 2003. <em>Amplissimae atque ornatissimae domus: L'edilizia residenziale nelle città della Tunisia romana</em>. Rome: Quasar.</p>
+  <p>Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.</p>
+  <p>Wilson, R. J. A. 2016. "Roman Villas in North Africa." In <em>The Cambridge Companion to the Roman Economy</em>, edited by Walter Scheidel, 266–307. Cambridge: Cambridge University Press.</p>
 </div>
 
 ## What this method is not
 
-This project is not trying to determine whether any given house is Roman, Punic, or Numidian. That question, as framed, is the problem, not the answer. The more useful question, and the one this method supports, is how spatial organization structured social relationships and made some practices easier or harder for the people inside. That is a question about <span class="hl-coral">houses as active agents in the making of provincial life</span>, and that is the question this project is built to answer.
+This project is <span class="hl-coral">*not*</span> trying to <span class="hl-coral">determine whether any given house is Roman, Punic, or Numidian</span>. That question, as framed, is the problem, not the answer. The more useful question, and the one this method supports, is how spatial organization structured social relationships and made some practices easier or harder for the people inside. That is a question about <span class="hl-blue">houses as active agents in the making of provincial life</span>, and that is the question this project is built to answer.
