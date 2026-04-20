@@ -231,4 +231,4 @@ For this project, space syntax and household archaeology give us the architectur
 
 <hr class="biblio-hr">
 
-<p class="biblio-note">This page is maintained by hand and will grow. Corrections and suggestions are warmly welcomed. Works in press, conference papers, and unpublished theses that Kim has read but has not yet catalogued here are tracked in the internal literature-review database and will filter onto this page as they earn their place in the argument.</p>
+<p class="biblio-note">Works in press, conference papers, and unpublished theses that Kim has read but has not yet cataloged here are tracked in the internal literature-review database and will filter onto this page as the project evolves.</p>
