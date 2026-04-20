@@ -25,13 +25,13 @@ Space syntax turns a house plan into something that can be read mathematically. 
 
 <div class="biblio">
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Hillier, Bill, and Julienne Hanson. 1984. <em>The Social Logic of Space</em>. Cambridge: Cambridge University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Hillier, Bill, and Julienne Hanson. 1984. <em>The Social Logic of Space</em>. Cambridge: Cambridge University Press.
   <span class="bib-annotation">The founding statement of space syntax. Buildings are read as configurations of accessible spaces, not as aesthetic objects, and the grammar of those configurations is what carries social meaning. Every access graph and depth calculation on this project descends from this book.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Allison, Penelope M., ed. 1999. <em>The Archaeology of Household Activities</em>. London: Routledge.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Allison, Penelope M., ed. 1999. <em>The Archaeology of Household Activities</em>. London: Routledge.
   <span class="bib-annotation">Reframed Roman domestic studies around what people actually did in rooms rather than what an architectural typology assigned them to do. This is the move that lets a workshop in a "house" stop being an anomaly.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.
   <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against. Used here as a foil, since reading Timgad through a Pompeian template is exactly what this project pushes back on.</span></p>
 
   <p class="bib-entry">Fisher, Kevin. 2023. <em>Monumentality, Place-making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. London: Equinox Press.</p>
@@ -54,13 +54,13 @@ The regional frame and the modern Timgad-specific scholarship belong together he
 
 <div class="biblio">
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Wilson, Andrew. 2001. "Timgad and Textile Production." In <em>Economies Beyond Agriculture in the Classical World</em>, edited by David J. Mattingly and John Salmon, 271–296. London: Routledge.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Wilson, Andrew. 2001. "Timgad and Textile Production." In <em>Economies Beyond Agriculture in the Classical World</em>, edited by David J. Mattingly and John Salmon, 271–296. London: Routledge.
   <span class="bib-annotation">The paper that forced the field to take Timgad's industrial neighbourhood seriously. Wilson's count of more than twenty fullonicae, twice the number attested at Pompeii, reframes the city as a working town, not a monumental showpiece.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Amraoui, Touatia. 2018. "Crafts in Roman North Africa." In <em>The Economy of Roman North Africa</em>. Cambridge: Cambridge University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Amraoui, Touatia. 2018. "Crafts in Roman North Africa." In <em>The Economy of Roman North Africa</em>. Cambridge: Cambridge University Press.
   <span class="bib-annotation">Amraoui's body of work, and this synthesis in particular, is where productive domesticity in the Maghreb gets its modern baseline. She also revises Wilson's fullonica count downward under tighter identification criteria, an exemplary case of the field correcting itself.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Dufton, J. Andrew. 2019. "The Architectural and Social Dynamics of Gentrification in Roman North Africa." <em>American Journal of Archaeology</em> 123 (2): 263–290.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Dufton, J. Andrew. 2019. "The Architectural and Social Dynamics of Gentrification in Roman North Africa." <em>American Journal of Archaeology</em> 123 (2): 263–290.
   <span class="bib-annotation">Reads wall-rebuild sequences across multiple North African cities as evidence of elite displacement of smaller households over the second and third centuries. Methodologically sympathetic to what this project is trying to do for Timgad specifically.</span></p>
 
   <p class="bib-entry">Amraoui, Touatia. 2011. "Le quartier industriel de Timgad: un état de la question." In <em>La ville au quotidien: regards croisés sur l'habitat et l'artisanat</em>, edited by C. Fontaine et al., 223–232. Aix-en-Provence: Presses Universitaires de Provence.</p>
@@ -141,16 +141,16 @@ The Timgad studied today is the Timgad that Albert Ballu and his teams uncovered
 
 <div class="biblio">
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Ballu, Albert. 1897. <em>Les ruines de Timgad (Antique Thamugadi)</em>. Paris: Imprimerie Nationale.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Ballu, Albert. 1897. <em>Les ruines de Timgad (Antique Thamugadi)</em>. Paris: Imprimerie Nationale.
   <span class="bib-annotation">The founding architectural record. Ballu's plans, however idealized, are the reference every later reconstruction still checks itself against.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Boeswillwald, Émile, René Cagnat, and Albert Ballu. 1905. <em>Timgad, une cité africaine sous l'Empire romain</em>. Paris: Leroux.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Boeswillwald, Émile, René Cagnat, and Albert Ballu. 1905. <em>Timgad, une cité africaine sous l'Empire romain</em>. Paris: Leroux.
   <span class="bib-annotation">The synthesis that fixed the wider scholarly image of Timgad. Its framing (monumental civic center, hinted-at domestic life, sweeping chronology) is the version of the city the project works to complicate.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord: répertoire de plans publiés." <em>Mélanges de l'École française de Rome: Antiquité</em> 81 (2): 659–724.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord: répertoire de plans publiés." <em>Mélanges de l'École française de Rome: Antiquité</em> 81 (2): 659–724.
   <span class="bib-annotation">The standard comparative catalogue of North African peristyle houses, still the reference point for any domestic-architecture comparison in the region. Rebuffat also warns explicitly against trusting Courtois's 1951 plans as precise, a warning worth keeping visible.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Yelles, Anissa. 2024. "Archives croisées d'Albert Ballu à Timgad: étude spatiale de la ville et de ses fouilles." <em>Frontières</em> 10.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Yelles, Anissa. 2024. "Archives croisées d'Albert Ballu à Timgad: étude spatiale de la ville et de ses fouilles." <em>Frontières</em> 10.
   <span class="bib-annotation">The critical turn the field needed. Yelles reads Ballu's photographic and excavation archives against each other to recover what his published reports flattened out, and to show what colonial-era documentation chose to foreground.</span></p>
 
   <p class="bib-entry">Ballu, Albert. 1897. <em>Guide de Timgad, antique Thamugadi</em>.</p>
@@ -217,13 +217,13 @@ Space syntax and household archaeology give us the architecture. Bourdieu's <em>
 
 <div class="biblio">
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life, Vol. I: From Pagan Rome to Byzantium</em>, edited by Paul Veyne, 319–409. Cambridge, MA: Belknap Press of Harvard University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life, Vol. I: From Pagan Rome to Byzantium</em>, edited by Paul Veyne, 319–409. Cambridge, MA: Belknap Press of Harvard University Press.
   <span class="bib-annotation">The essay whose opening move, that <em>domus</em> refers not only to the walls but also to the people within them, is the organizing quotation of this entire site. Thébert also does the work of taking North African houses seriously on their own terms, rather than as provincial echoes of Italy.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Mattingly, David J. 2011. <em>Imperialism, Power, and Identity: Experiencing the Roman Empire</em>. Princeton: Princeton University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Mattingly, David J. 2011. <em>Imperialism, Power, and Identity: Experiencing the Roman Empire</em>. Princeton: Princeton University Press.
   <span class="bib-annotation">The case for <em>discrepant identities</em>, the framework that replaces a single "Roman" identity with the many partial, layered, sometimes contradictory identities people actually held inside the empire. This project reads Timgad's houses as evidence of that multiplicity.</span></p>
 
-  <p class="bib-entry"><span class="bib-anchor-tag">Anchor</span> Bourdieu, Pierre. 1977. <em>Outline of a Theory of Practice</em>. Translated by Richard Nice. Cambridge: Cambridge University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Bourdieu, Pierre. 1977. <em>Outline of a Theory of Practice</em>. Translated by Richard Nice. Cambridge: Cambridge University Press.
   <span class="bib-annotation">The source of <em>habitus</em>, the durable dispositions that let a built environment and a set of bodily practices reproduce a social order without anyone naming the rules out loud. Domestic architecture is where habitus becomes visible.</span></p>
 
   <p class="bib-entry">Woolf, Greg. 1998. <em>Becoming Roman: The Origins of Provincial Civilization in Gaul</em>. Cambridge: Cambridge University Press.</p>
