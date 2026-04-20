@@ -31,7 +31,8 @@
         </a>
         <nav class="site-nav">
           <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
-          <a href="{{ '/why-timgad/' | relative_url }}"{% if page.url contains '/why-timgad' %} class="active"{% endif %}>Timgad</a>
+          <a href="{{ '/timgad/' | relative_url }}"{% if page.url contains '/timgad' %} class="active"{% endif %}>Timgad</a>
+          <a href="{{ '/houses/' | relative_url }}"{% if page.url contains '/houses' %} class="active"{% endif %}>Houses</a>
           <div class="nav-item has-dropdown{% if page.url contains '/methods' or page.url contains '/grid' or page.url contains '/gis' or page.url contains '/data' %} nav-item--active{% endif %}">
             <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Research<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
             <div class="nav-dropdown" role="menu">
@@ -64,7 +65,8 @@
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">The project</strong><br>
             <a href="{{ '/about/' | relative_url }}">About</a>
-            <br><a href="{{ '/why-timgad/' | relative_url }}">Timgad</a>
+            <br><a href="{{ '/timgad/' | relative_url }}">Timgad</a>
+            <br><a href="{{ '/houses/' | relative_url }}">Houses</a>
           </div>
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Research</strong><br>
