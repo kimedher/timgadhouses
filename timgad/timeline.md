@@ -724,7 +724,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 1962, title: 'Algerian Independence',
       person: '',
       type: 'context',
-      desc: 'After a decolonial war costing an estimated 140,000 Algerian and 30,000 French lives, Algeria wins independence. Custody of Timgad and its archaeological record returns to the people of the Maghreb, though the French-era archive remains the primary documentary base for excavation history.',
+      desc: "After a war of liberation that took hundreds of thousands of Algerian lives and displaced many more, Algeria won its sovereignty back from France. Timgad, along with the rest of the country's archaeological record, returned to the custodianship of the people whose ancestors had built, inhabited, and outlasted it. The French-era archive endures as the main documentary base for excavation history, a colonial inheritance that Algerian and Maghrebi scholars continue to reread on their own terms.",
       houses: '',
       source: 'Historical context'
     },
