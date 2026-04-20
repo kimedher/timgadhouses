@@ -23,6 +23,11 @@ Scholarship on Roman houses has spent more than a century measuring every provin
 
 The first is the <span class="hl-coral">**Vitruvian Legacy**</span>, where one atypical elite form, preserved spectacularly at a handful of Italian sites, has become the measuring stick for houses across the empire. The second is <span class="hl-coral">**Colonial Echoes**</span>. Most of Timgad was excavated between the 1880s and the 1950s by French archaeologists who saw themselves as heirs to Rome's "civilizing mission," and that self-understanding shaped what they recorded and what they ignored. Their reports are still the bulk of the evidence base. The third is the <span class="hl-coral">**Absent House**</span>, where even scholars who have pushed back hard against Romanization have continued to treat provincial domestic space as background rather than as the place where identities were actually made.
 
+<figure class="image-panel">
+  <img src="/assets/images/timgad-1886-theater.jpg" alt="A sepia photograph from 1886 showing Timgad's theatre during excavation, with horse-drawn carts and stacked stone blocks in the foreground and the ruins of the city spreading toward the horizon.">
+  <figcaption>Timgad's theatre during early French excavations. Photograph: E. Duthoit, 1886. Heritage and Photography Media Library.</figcaption>
+</figure>
+
 At the heart of this project sits one research question:
 
 > <span class="hl-blue">How did houses at Timgad create distinctive forms of economic and social life for their users during North Africa's second- and third-century economic boom?</span>
