@@ -31,10 +31,19 @@
         </a>
         <nav class="site-nav">
           <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
-          <a href="{{ '/methods/' | relative_url }}"{% if page.url contains '/methods' %} class="active"{% endif %}>Methods</a>
-          {% comment %} Other pages temporarily hidden during review. Restore by removing these comment tags.
-          <a href="{{ '/why-timgad/' | relative_url }}"{% if page.url contains '/why-timgad' %} class="active"{% endif %}>Why Timgad</a>
-          <a href="{{ '/grid/' | relative_url }}"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
+          {% comment %} Timgad page temporarily hidden until launch.
+          <a href="{{ '/why-timgad/' | relative_url }}"{% if page.url contains '/why-timgad' %} class="active"{% endif %}>Timgad</a>
+          {% endcomment %}
+          <div class="nav-item has-dropdown{% if page.url contains '/methods' or page.url contains '/grid' or page.url contains '/gis' or page.url contains '/data' %} nav-item--active{% endif %}">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Research<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
+            <div class="nav-dropdown" role="menu">
+              <a href="{{ '/methods/' | relative_url }}" role="menuitem"{% if page.url contains '/methods' %} class="active"{% endif %}>Methods</a>
+              <a href="{{ '/grid/' | relative_url }}" role="menuitem"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
+              <a href="{{ '/gis/' | relative_url }}" role="menuitem"{% if page.url contains '/gis' %} class="active"{% endif %}>GIS</a>
+              <a href="{{ '/data/' | relative_url }}" role="menuitem"{% if page.url contains '/data' %} class="active"{% endif %}>Data</a>
+            </div>
+          </div>
+          {% comment %} Notes and Cite temporarily hidden until launch.
           <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' or page.url contains '/20' %} class="active"{% endif %}>Notes</a>
           <a href="{{ '/cite/' | relative_url }}"{% if page.url contains '/cite' %} class="active"{% endif %}>Cite</a>
           {% endcomment %}
@@ -57,11 +66,16 @@
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">The project</strong><br>
             <a href="{{ '/about/' | relative_url }}">About</a>
-            <br><a href="{{ '/methods/' | relative_url }}">Methods</a>
-            {% comment %} Other links temporarily hidden until their pages launch.
-            <br><a href="{{ '/why-timgad/' | relative_url }}">Why Timgad</a>
-            <br><a href="{{ '/cite/' | relative_url }}">Cite &amp; contribute</a>
+            {% comment %} Timgad hidden until launch.
+            <br><a href="{{ '/why-timgad/' | relative_url }}">Timgad</a>
             {% endcomment %}
+          </div>
+          <div>
+            <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Research</strong><br>
+            <a href="{{ '/methods/' | relative_url }}">Methods</a>
+            <br><a href="{{ '/grid/' | relative_url }}">Grid</a>
+            <br><a href="{{ '/gis/' | relative_url }}">GIS</a>
+            <br><a href="{{ '/data/' | relative_url }}">Data</a>
           </div>
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">License &amp; credit</strong><br>
@@ -76,6 +90,45 @@
   </div>
 
   <script>
+    /* Dropdown nav toggle (click + keyboard) */
+    (function() {
+      var toggles = document.querySelectorAll('.nav-dropdown-toggle');
+      toggles.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          var item = this.closest('.nav-item');
+          var nowOpen = !item.classList.contains('open');
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(other) {
+            if (other !== item) {
+              other.classList.remove('open');
+              var t = other.querySelector('.nav-dropdown-toggle');
+              if (t) t.setAttribute('aria-expanded', 'false');
+            }
+          });
+          item.classList.toggle('open', nowOpen);
+          this.setAttribute('aria-expanded', nowOpen ? 'true' : 'false');
+        });
+      });
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item.has-dropdown')) {
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(el) {
+            el.classList.remove('open');
+            var t = el.querySelector('.nav-dropdown-toggle');
+            if (t) t.setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(el) {
+            el.classList.remove('open');
+            var t = el.querySelector('.nav-dropdown-toggle');
+            if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); }
+          });
+        }
+      });
+    })();
+
     /* Fade in elements as they scroll into view. */
     (function() {
       if (!('IntersectionObserver' in window)) {
