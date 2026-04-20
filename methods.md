@@ -3,7 +3,6 @@ layout: page
 title: Methods
 subtitle: The tools, theories, and assumptions this project rests on.
 permalink: /methods/
-show_citation: true
 last_updated: 2026-04-19
 ---
 
