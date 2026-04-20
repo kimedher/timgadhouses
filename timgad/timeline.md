@@ -55,7 +55,7 @@ Timgad has been excavated for nearly 150 years, across three very different poli
 
 <h2 class="timeline-h2">Notes on reliability</h2>
 
-<p>Rezkallah (2020) confirms that the southeastern quarter of Timgad has no prior surveys of record. The 12 houses in Rebuffat's catalog have standardized 1:500 plans and are the most reliable comparative base. Five further houses are known from Ballu's 1911 monograph but not in Rebuffat (Maisons 25, 27, 38, 72, 73). The largest documented house, the Maison à l'ouest des Thermes des Filadelfes at roughly 2,469 square meters, was excavated in 1921 and 1922. Andrew Wilson (2001) identified at least 22 fullonicae, twice the number attested at Pompeii, concentrated in the northeastern quarter.</p>
+<p>Rezkallah (2020) confirms that the southeastern quarter of Timgad has no prior surveys of record. The 12 houses in Rebuffat's catalog have standardized 1:500 plans and are the most reliable comparative base. Five further houses are known from Ballu's 1911 monograph but not in Rebuffat (Maisons 25, 27, 38, 72, 73). The largest documented house, the Maison à l'ouest des Thermes des Filadelfes at roughly 2,469 square meters, was excavated in 1921 and 1922. Andrew Wilson (2001) identified at least 22 fullonicae, twice the number attested at Pompeii, concentrated in the northeastern quarter. Amraoui (2018) has since revised that figure downward to 12 fullonicae under stricter identification criteria, of which only five can be precisely located today (Bande NW, Ilots 11, 21, 30, 32).</p>
 
 <style>
 /* ========================================================================
