@@ -6,7 +6,7 @@ permalink: /timgad/
 last_updated: 2026-04-19
 ---
 
-<figure class="image-panel">
+<figure class="image-panel image-panel--wide">
   <img src="/assets/images/timgad-panorama.jpg" alt="A wide colour panorama of Timgad looking across the excavated city, with the columns of the Capitol rising at the far left, the colonnaded decumanus maximus running through the centre, the Arch of Trajan standing to the right, and the Aurès Mountains on the horizon.">
   <figcaption>Panorama of Timgad looking east across the site, with the Capitol columns at left, the colonnaded decumanus, and the Arch of Trajan at centre-right. Photograph by Hamza-sia, 2014, <a href="https://commons.wikimedia.org/wiki/File:Timgad_Ruins_Panorama.jpg">CC BY-SA 3.0, via Wikimedia Commons</a>.</figcaption>
 </figure>
