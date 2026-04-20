@@ -52,7 +52,7 @@ Scholarship on Roman houses has spent more than a century measuring every provin
 
 <figure class="image-panel">
   <img src="/assets/images/timgad-1886-theater.jpg" alt="A sepia photograph from 1886 showing Timgad's theatre during excavation, with horse-drawn carts and stacked stone blocks in the foreground and the ruins of the city spreading toward the horizon.">
-  <figcaption>Timgad's theatre during early French excavations. Photograph: E. Duthoit, 1886. Heritage and Photography Media Library.</figcaption>
+  <figcaption>Timgad's theatre during early French excavations. Photograph by E. Duthoit, 1886. Heritage and Photography Media Library.</figcaption>
 </figure>
 
 At the heart of this project sits one research question:

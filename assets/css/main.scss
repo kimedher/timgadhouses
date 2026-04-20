@@ -660,6 +660,39 @@ figcaption {
   font-weight: 700;
 }
 
+/* Arabic accent: slightly larger, terracotta, used for the city's name in Arabic */
+.hl-arabic {
+  font-size: 1.18em;
+  color: var(--terracotta-deep);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  vertical-align: -0.02em;
+}
+
+/* ---------- Identity spectrum visual (terminology section, Timgad page) ---------- */
+
+.identity-spectrum {
+  margin: 2.4rem auto 2.8rem;
+  max-width: 480px;
+  text-align: center;
+}
+
+.spectrum-bar {
+  height: 22px;
+  background: linear-gradient(to right, #F4F1EA, #4F4F4F);
+  border-radius: 11px;
+  border: 1px solid var(--hairline);
+}
+
+.spectrum-caption {
+  margin: 0.7rem 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+}
+
 /* ---------- Image panel (editorial figure in body) ---------- */
 
 .image-panel {
@@ -685,6 +718,15 @@ figcaption {
   font-style: italic;
   letter-spacing: 0.02em;
   line-height: 1.5;
+}
+
+/* Inside an italic figcaption, em/i should render upright so book and journal
+   titles still stand out from the surrounding caption text. */
+.image-panel figcaption em,
+.image-panel figcaption i,
+figcaption em,
+figcaption i {
+  font-style: normal;
 }
 
 .image-panel figcaption a {
