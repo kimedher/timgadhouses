@@ -6,6 +6,11 @@ permalink: /timgad/timeline/
 last_updated: 2026-04-20
 ---
 
+<figure class="image-panel">
+  <img src="/assets/images/timgad-1922-aerial.jpg" alt="An aerial black and white photograph of Timgad taken in 1922 showing the rectilinear grid of insulae, the Capitol columns rising above the forum area, and the semicircular theatre visible at the bottom centre. The excavated city contrasts with the open ground surrounding it.">
+  <figcaption>Timgad seen from above on 16 April 1922, partway through Albert Ballu's long directorship. ETH Library Zürich, Image Archive (Ans_05341-031-AL-FL), <a href="https://commons.wikimedia.org/wiki/File:Timgad_from_above_1922.tif">public domain, via Wikimedia Commons</a>.</figcaption>
+</figure>
+
 <p class="timeline-lede">
 Timgad has been excavated for nearly 150 years, across three rather different political landscapes. This timeline lays out the scholarly record in a single view: the directors who ran each campaign, the publications that shaped how the city has been read, and the house-by-house discoveries that built the domestic corpus. Hover or tap any event for detail.
 </p>
