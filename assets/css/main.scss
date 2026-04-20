@@ -219,15 +219,15 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--baby-blue);
+  background: var(--terracotta);
   border-radius: 50%;
-  color: var(--terracotta-deep);
+  color: var(--teal);
   transition: background 0.18s, color 0.18s;
 }
 
 .site-title:hover .logo-mark {
-  background: var(--terracotta);
-  color: var(--baby-blue-soft);
+  background: var(--baby-blue);
+  color: var(--terracotta-deep);
 }
 
 .site-title .logo-mark svg {
@@ -805,7 +805,7 @@ figcaption {
 
 .pullquote-question {
   font-family: var(--serif);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.5;
@@ -813,7 +813,7 @@ figcaption {
   text-align: center;
   margin: 2rem auto 2.8rem;
   max-width: 620px;
-  padding: 1.8rem 2.2rem;
+  padding: 1.7rem 2rem;
   background: rgba(228, 240, 244, 0.55);
   border-radius: var(--radius);
   border-left: 4px solid var(--baby-blue-mid);
