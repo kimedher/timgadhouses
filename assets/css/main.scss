@@ -787,6 +787,18 @@ figcaption {
   box-shadow: 0 10px 28px rgba(16, 74, 77, 0.10);
 }
 
+/* Invisible bridge fills the gap between toggle and dropdown
+   so the cursor doesn't lose hover when moving down to the menu. */
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+}
+
 .nav-item.has-dropdown:hover .nav-dropdown,
 .nav-item.has-dropdown.open .nav-dropdown,
 .nav-item.has-dropdown:focus-within .nav-dropdown {
