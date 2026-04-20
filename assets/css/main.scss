@@ -1032,6 +1032,94 @@ figcaption i {
   margin: 0;
 }
 
+/* ---------- Scholarship / Bibliography ---------- */
+
+.scholarship-nav {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+  margin: 1.4rem 0 2.6rem;
+  padding: 0.85rem 1.1rem;
+  background: var(--bg-soft);
+  border-left: 3px solid var(--baby-blue-mid);
+  line-height: 1.7;
+}
+
+.scholarship-nav a {
+  color: var(--teal-dark);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--baby-blue-mid);
+  padding-bottom: 1px;
+}
+
+.scholarship-nav a:hover {
+  color: var(--terracotta-deep);
+  border-bottom-color: var(--terracotta);
+}
+
+.biblio {
+  margin: 1.4rem 0 3.2rem;
+  padding-top: 0.2rem;
+}
+
+.bib-entry {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text);
+  padding-left: 1.6rem;
+  text-indent: -1.6rem;
+  margin: 0 0 1.05rem 0;
+}
+
+.bib-entry em,
+.bib-entry i {
+  font-style: italic;
+}
+
+.bib-anchor-tag {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--terracotta-deep);
+  background: rgba(232, 196, 174, 0.35);
+  padding: 0.12rem 0.5rem 0.1rem;
+  border-radius: 2px;
+  margin-right: 0.55rem;
+  vertical-align: 0.06em;
+  text-indent: 0;
+}
+
+.bib-annotation {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--terracotta-deep);
+  margin: 0.35rem 0 0 0;
+  text-indent: 0;
+  padding-left: 0;
+}
+
+.biblio-hr {
+  border: none;
+  border-top: 1px solid var(--hairline);
+  margin: 2.8rem 0 1.6rem;
+}
+
+.biblio-note {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 40rem;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 640px) {
@@ -1090,5 +1178,18 @@ figcaption i {
   .post-content > p:first-of-type::first-letter,
   .page-content > p:first-of-type::first-letter {
     font-size: 2.7em;
+  }
+  .scholarship-nav {
+    font-size: 0.78rem;
+    padding: 0.7rem 0.9rem;
+    line-height: 1.8;
+  }
+  .bib-entry {
+    font-size: 0.86rem;
+    padding-left: 1.3rem;
+    text-indent: -1.3rem;
+  }
+  .bib-annotation {
+    font-size: 0.84rem;
   }
 }
