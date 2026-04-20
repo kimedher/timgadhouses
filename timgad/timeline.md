@@ -7,7 +7,15 @@ last_updated: 2026-04-20
 ---
 
 <p class="timeline-lede">
-Timgad has been excavated for nearly 150 years, across three very different political eras. This timeline lays out the scholarly record in a single view: the directors who ran each campaign, the publications that shaped how the city has been read, and the house-by-house discoveries that built the domestic corpus. Hover or tap any event for detail. The timeline is continuously updated as new scholarship is read and catalogued. Omissions and corrections are inevitable on a record this long, and readers who spot one are warmly invited to be in touch.
+Timgad has been excavated for nearly 150 years, across three very different political eras. This timeline lays out the scholarly record in a single view: the directors who ran each campaign, the publications that shaped how the city has been read, and the house-by-house discoveries that built the domestic corpus. Hover or tap any event for detail.
+</p>
+
+<p class="timeline-note">
+<svg class="timeline-note-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+  <path d="M11.3 1.7a1 1 0 0 1 1.4 0l1.6 1.6a1 1 0 0 1 0 1.4L5.5 13.5 2 14l.5-3.5L11.3 1.7z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="10" y1="3" x2="13" y2="6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+</svg>
+<span>The timeline is continuously updated as new scholarship is read and catalogued. Omissions and corrections are inevitable on a record this long, and readers who spot one are warmly invited to be in touch.</span>
 </p>
 
 <div class="timeline-controls">
@@ -65,8 +73,30 @@ Timgad has been excavated for nearly 150 years, across three very different poli
 .timeline-lede {
   font-size: 1.05rem;
   color: var(--text);
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 0.5rem;
   line-height: 1.7;
+}
+
+.timeline-note {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0 0 2rem;
+  padding: 0.55rem 0 0.55rem 0.9rem;
+  border-left: 2px solid var(--terracotta);
+  background: rgba(199, 123, 90, 0.04);
+  border-radius: 0 3px 3px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  max-width: 720px;
+}
+
+.timeline-note-icon {
+  color: var(--terracotta-deep, var(--terracotta));
+  flex-shrink: 0;
+  margin-top: 0.15rem;
 }
 
 /* Filters */
