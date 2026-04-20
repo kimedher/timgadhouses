@@ -71,7 +71,7 @@ The scholarly record of Timgad runs from the first reconnaissance in 1880 throug
 
 ## What to read next
 
-For the argument the project is built around and the person running it, start with the [About page](/about/). For the domestic corpus that is the main subject of this work, see [Houses](/houses/). For the analytical tools and scholarship that ground the reading, see [Methods](/methods/).
+For the argument the project is built around and the person running it, start with the [About page](/about/). For the domestic corpus that is the main subject of this work, see [Houses](/houses/). For the analytical tools that ground the reading, see [Methods](/methods/). For the full bibliography organized by theme, including the colonial-era excavation reports that sit behind everything on this page, see [Scholarship](/scholarship/#colonial-era-excavation-and-its-sources).
 
 ## How to cite
 
