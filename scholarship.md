@@ -19,7 +19,7 @@ Where a work is a core source for this project, a short italicized note follows 
 
 ## Space syntax, household archaeology, and method
 
-Space syntax, first developed by Hillier and Hanson, treats a built environment as a relational system that shapes movement, visibility, and interaction. Its tools let us measure how houses at Timgad structured circulation, encounters, privacy, and labor. Household archaeology comes at the same house from the other side, reading it as an arena of daily practice where, as Swenson and Bourdieu both argue, repeated movement through rooms quietly reproduces the social order. Together, the two traditions treat the house as both evidence and agent. Every access graph, every room retagged, every plan redrawn in this project descends from that pairing.
+Space syntax, first developed by Hillier and Hanson, treats a built environment as a relational system that shapes movement, visibility, and interaction. Its tools let us measure how houses at Timgad structured circulation, encounters, privacy, and labor. Household archaeology comes at the same house from the other side, reading it as an arena of daily practice where, as Swenson and Bourdieu both argue, repeated movement through rooms quietly reproduces the social order. Together, the two traditions treat the house as both evidence and agent. How this project reads Timgad, and the wider argument it hopes to make about provincial life in the Roman empire, descends from that pairing.
 
 <div class="biblio">
 
