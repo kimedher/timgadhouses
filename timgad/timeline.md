@@ -31,7 +31,7 @@ Timgad has been excavated for nearly 150 years, across three very different poli
 </div>
 
 <div class="timeline-viz-wrap">
-  <svg id="timeline-svg" class="timeline-svg" viewBox="0 0 1180 520" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Horizontal chronological timeline of Timgad excavations, 1880 to present">
+  <svg id="timeline-svg" class="timeline-svg" viewBox="0 0 1180 340" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Horizontal chronological timeline of Timgad excavations, 1880 to present">
     <!-- Dynamically populated by JS -->
   </svg>
   <div class="timeline-hover" id="timeline-hover" aria-live="polite"></div>
@@ -165,10 +165,10 @@ Timgad has been excavated for nearly 150 years, across three very different poli
 .timeline-svg .tl-era-label {
   font-size: 10px;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   fill: var(--text);
-  fill-opacity: 0.55;
+  fill-opacity: 0.6;
 }
 .timeline-svg .tl-director-label {
   font-size: 11px;
@@ -179,6 +179,16 @@ Timgad has been excavated for nearly 150 years, across three very different poli
   font-size: 9px;
   font-weight: 500;
   fill: rgba(255, 255, 255, 0.8);
+}
+.timeline-svg .tl-director-label-outside {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--text);
+}
+.timeline-svg .tl-director-sub-outside {
+  font-size: 9px;
+  font-weight: 500;
+  fill: var(--text-muted);
 }
 .timeline-svg .tl-era-band { opacity: 0.35; }
 .timeline-svg .tl-decade-line {
@@ -442,7 +452,7 @@ Timgad has been excavated for nearly 150 years, across three very different poli
   const ERAS = [
     {
       start: 1880, end: 1962,
-      label: 'French Colonial Period',
+      label: 'French Colonial',
       color: '#C77B5A',
       y: 100, height: 24
     },
@@ -454,7 +464,7 @@ Timgad has been excavated for nearly 150 years, across three very different poli
     },
     {
       start: 2000, end: 2027,
-      label: 'Modern Digital Scholarship',
+      label: 'Digital Scholarship',
       color: '#1B6B6F',
       y: 100, height: 24
     }
@@ -779,7 +789,7 @@ Timgad has been excavated for nearly 150 years, across three very different poli
   // LAYOUT CONSTANTS
   // ====================================================================
 
-  const VB_W = 1180, VB_H = 520;
+  const VB_W = 1180, VB_H = 340;
   const MARGIN_L = 50, MARGIN_R = 50;
   const MIN_YEAR = 1878, MAX_YEAR = 2027;
 
@@ -825,7 +835,7 @@ Timgad has been excavated for nearly 150 years, across three very different poli
     return e;
   }
 
-  // Era bands
+  // Era bands with left-anchored labels (prevents clipping of narrower eras)
   ERAS.forEach(era => {
     const eraX = x(era.start);
     const eraW = x(era.end) - eraX;
@@ -833,10 +843,9 @@ Timgad has been excavated for nearly 150 years, across three very different poli
       x: eraX, y: ERA_Y, width: eraW, height: ERA_H,
       fill: era.color, class: 'tl-era-band', rx: 3
     }));
-    // era label centered
     svg.appendChild(el('text', {
-      x: eraX + eraW / 2, y: ERA_Y + ERA_H / 2 + 4,
-      'text-anchor': 'middle', class: 'tl-era-label'
+      x: eraX + 10, y: ERA_Y + ERA_H / 2 + 4,
+      'text-anchor': 'start', class: 'tl-era-label'
     }, era.label));
   });
 
@@ -853,7 +862,8 @@ Timgad has been excavated for nearly 150 years, across three very different poli
     }, yr));
   }
 
-  // Director tenure bars
+  // Director tenure bars. Label goes inside if bar is wide enough, otherwise outside to the right in dark text.
+  const DIRECTOR_MIN_INSIDE_W = 140;
   DIRECTORS.forEach(d => {
     const yPos = DIRECTORS_Y_START + d.row * (DIRECTOR_H + DIRECTOR_GAP);
     const dX = x(d.start);
@@ -862,20 +872,27 @@ Timgad has been excavated for nearly 150 years, across three very different poli
       x: dX, y: yPos, width: dW, height: DIRECTOR_H,
       fill: d.color, class: 'tl-director-bar', rx: 4
     }));
-    svg.appendChild(el('text', {
-      x: dX + 10, y: yPos + 13,
-      class: 'tl-director-label'
-    }, d.name));
-    if (d.sub) {
+    const subText = (d.sub ? d.sub + ' · ' : '') + d.start + ' to ' + d.end;
+    if (dW >= DIRECTOR_MIN_INSIDE_W) {
+      // Inside the bar, white text
+      svg.appendChild(el('text', {
+        x: dX + 10, y: yPos + 13,
+        class: 'tl-director-label'
+      }, d.name));
       svg.appendChild(el('text', {
         x: dX + 10, y: yPos + 24,
         class: 'tl-director-sub'
-      }, d.sub + ' · ' + d.start + ' to ' + d.end));
+      }, subText));
     } else {
+      // Outside the bar, dark text
       svg.appendChild(el('text', {
-        x: dX + 10, y: yPos + 24,
-        class: 'tl-director-sub'
-      }, d.start + ' to ' + d.end));
+        x: dX + dW + 8, y: yPos + 13,
+        class: 'tl-director-label-outside'
+      }, d.name));
+      svg.appendChild(el('text', {
+        x: dX + dW + 8, y: yPos + 24,
+        class: 'tl-director-sub-outside'
+      }, subText));
     }
   });
 
