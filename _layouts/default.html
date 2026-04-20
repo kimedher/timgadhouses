@@ -43,10 +43,10 @@
             <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Research<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
             <div class="nav-dropdown" role="menu">
               <a href="{{ '/methods/' | relative_url }}" role="menuitem"{% if page.url contains '/methods' %} class="active"{% endif %}>Methods</a>
+              <a href="{{ '/scholarship/' | relative_url }}" role="menuitem"{% if page.url contains '/scholarship' %} class="active"{% endif %}>Scholarship</a>
               <a href="{{ '/grid/' | relative_url }}" role="menuitem"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
               <a href="{{ '/gis/' | relative_url }}" role="menuitem"{% if page.url contains '/gis' %} class="active"{% endif %}>GIS</a>
               <a href="{{ '/data/' | relative_url }}" role="menuitem"{% if page.url contains '/data' %} class="active"{% endif %}>Data</a>
-              <a href="{{ '/scholarship/' | relative_url }}" role="menuitem"{% if page.url contains '/scholarship' %} class="active"{% endif %}>Scholarship</a>
             </div>
           </div>
           {% comment %} Notes and Cite temporarily hidden until launch.
@@ -79,10 +79,10 @@
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Research</strong><br>
             <a href="{{ '/methods/' | relative_url }}">Methods</a>
+            <br><a href="{{ '/scholarship/' | relative_url }}">Scholarship</a>
             <br><a href="{{ '/grid/' | relative_url }}">Grid</a>
             <br><a href="{{ '/gis/' | relative_url }}">GIS</a>
             <br><a href="{{ '/data/' | relative_url }}">Data</a>
-            <br><a href="{{ '/scholarship/' | relative_url }}">Scholarship</a>
           </div>
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">License &amp; credit</strong><br>
