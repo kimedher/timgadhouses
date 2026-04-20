@@ -33,7 +33,7 @@ Third-party images, including historical photographs and images drawn from Wikim
 
 This is a work in progress, and errors are inevitable. If you spot a typo, a misattribution, or a substantive problem with an argument, please let us know. The two easiest paths are:
 
-- **Email.** Write to [kimedher@gmail.com](mailto:kimedher@gmail.com) with the page URL and what needs fixing.
+- **Email.** Write to [km2133@student.ubc.ca](mailto:km2133@student.ubc.ca) with the page URL and what needs fixing.
 - **GitHub.** Open an issue in the [project repository](https://github.com/{{ site.github_username }}/timgadhouses/issues) if you prefer public, tracked corrections.
 
 Substantive contributions, including additional scholarship for the bibliography, photographs you have permission to share, or corrections to house identifiers, are very welcome. A formal contribution protocol will be published on the Methods page once the site grows beyond its initial phase.
