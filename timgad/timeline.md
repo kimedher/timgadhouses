@@ -812,7 +812,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 2024, title: 'Laghmouche et al., Late Roman urban changes',
       person: 'Laghmouche et al.',
       type: 'publication',
-      desc: 'Five houses with Late Roman restoration evidence documented. Only the Corfidius Crementius house is precisely dated (4th c. AD, via Lepelley 1981 epigraphy). The paper acknowledges imprecise dating across the corpus as a major limitation, pointing toward future work on domestic chronology.',
+      desc: 'Five houses with Late Roman restoration evidence documented. Only the Corfidius Crementius house is precisely dated (4th c. AD, via Lepelley 1981 epigraphy). The paper acknowledges imprecise dating across the corpus as a major limitation, and calls for future work to establish secure dates for when individual houses were built, modified, and abandoned.',
       houses: 'Sertius, House N of Capitol, House near Filadelfes, Insula 61, Corfidius Crementius',
       source: 'Laghmouche 2024 (SRC_052)'
     }
