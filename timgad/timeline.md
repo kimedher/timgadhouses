@@ -604,7 +604,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 1911, title: 'Sept années de découvertes, 1903 to 1910',
       person: 'Albert Ballu',
       type: 'publication',
-      desc: 'The definitive early excavation report. Houses pp. 49 to 89. City-wide plan. Houses described as "manifestly reconstructed on earlier dwellings" with extensive commercial-residential mixing (shops, fulling vats). Per Rebuffat (1969), this remains the authoritative source for peristyle identification at Timgad.',
+      desc: 'The definitive early excavation report. Houses pp. 49 to 89. City-wide plan. Houses described as "manifestly reconstructed on earlier dwellings" with extensive commercial-residential mixing (shops, fulling vats). Rebuffat (1969) treats it as the canonical record for peristyles at Timgad.',
       houses: 'All numbered Maisons 25 to 90, plus many unnumbered',
       source: 'Ballu 1911 (SRC_017)'
     },
