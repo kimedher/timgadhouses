@@ -25,9 +25,9 @@
   --terracotta-deep: #A65D40;
   --hairline: #E3D9C9;
   --hairline-soft: #EDE6D9;
-  --max-content: 720px;
-  --max-wide: 1100px;
-  --max-bleed: 1320px;
+  --max-content: 820px;
+  --max-wide: 1180px;
+  --max-bleed: 1400px;
   --radius: 4px;
   --sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
   --serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
@@ -180,8 +180,13 @@ main {
 
 .site-header {
   padding: 1.4rem 0;
-  border-bottom: 1px solid var(--terracotta-soft);
+  border-bottom: 1px solid var(--baby-blue);
   background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .site-header .container-wide {
@@ -196,7 +201,7 @@ main {
   font-family: var(--sans);
   font-weight: 700;
   font-size: 1.05rem;
-  color: var(--terracotta-deep);
+  color: var(--teal);
   text-decoration: none;
   border: none;
   letter-spacing: -0.005em;
@@ -205,7 +210,7 @@ main {
   gap: 0.6rem;
 }
 
-.site-title:hover { color: var(--terracotta); }
+.site-title:hover { color: var(--teal-dark); }
 
 .site-title .logo-mark {
   width: 28px;
@@ -238,7 +243,7 @@ main {
 
 .site-nav a {
   font-family: var(--sans);
-  color: var(--terracotta-deep);
+  color: var(--teal);
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -250,8 +255,8 @@ main {
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: var(--terracotta);
-  border-bottom-color: var(--terracotta-deep);
+  color: var(--teal-dark);
+  border-bottom-color: var(--teal);
 }
 
 /* ---------- Hero (full-bleed with overlay) ---------- */
