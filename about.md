@@ -72,9 +72,9 @@ The theoretical frame comes from Pierre Bourdieu's <span class="hl-blue">*habitu
   <figcaption style="font-size: 0.68rem; opacity: 0.7; margin-top: 0.35rem;">Shibuya Sky, 2026.</figcaption>
 </figure>
 
-Kim Edher is a PhD candidate in Classical Archaeology in the Ancient Mediterranean and Near Eastern Studies (AMNE) department at the University of British Columbia (UBC), and an instructor of Classical Studies and History at Langara College. Her dissertation examines domestic spaces across Roman North Africa (المغرب العربي), drawing on Timgad, Volubilis, and Bulla Regia to understand how people actually lived and worked in these spaces.
+Kim Edher is an instructor of Classical Studies and History at Langara College and a PhD candidate in Classical Archaeology in the Ancient Mediterranean and Near Eastern Studies (AMNE) department at the University of British Columbia (UBC). Her dissertation examines domestic spaces across Roman North Africa (المغرب العربي), drawing on Timgad, Volubilis, and Bulla Regia to understand how people actually lived and worked in these spaces. The work uses spatial analysis, sensory reconstruction, and digital tools to bring marginalized spaces and people to life.
 
-Her MA thesis explored rural religious practices at rock sanctuaries in Roman Spain, including fieldwork at Ilduro in modern Cabrera de Mar. In her teaching at Langara, Kim relishes helping students discover how the ancient world illuminates contemporary challenges.
+Her MA thesis explored rural religious practices at rock sanctuaries in Roman Spain, building on three seasons of fieldwork at Ilduro in modern Cabrera de Mar. At Langara, she teaches courses on the ancient Greek and Roman worlds, with a focus on the people and places too often left at the margins of the story, and on the threads that still connect antiquity to the present.
 
 <p class="research-interests-label">Research interests</p>
 <ul class="tag-list">
