@@ -26,35 +26,33 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Wilson, Andrew. 2001. "Timgad and Textile Production." In <em>Economies Beyond Agriculture in the Classical World</em>, edited by David J. Mattingly and John Salmon, 271–296. London: Routledge.
   <span class="bib-annotation">Wilson's count of more than twenty fullonicae, twice the number attested at Pompeii, reframes the city as a working town, not a monumental showpiece.</span></p>
 
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Amraoui, Touatia. 2018. "Crafts in Roman North Africa." In <em>The Economy of Roman North Africa</em>. Cambridge: Cambridge University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Amraoui, Touatia. 2020. "Crafts in Roman North Africa: Some Examples of Technical Transfer and Permanence through Grain Mills and Fullonicae." In <em>Mobile Technologies in the Ancient Sahara and Beyond</em>, edited by Chloë N. Duckworth, Aurélie Cuénod, and David J. Mattingly, 115–142. Cambridge: Cambridge University Press.
   <span class="bib-annotation">Amraoui's body of work, and this synthesis in particular, is where productive domesticity in the Maghreb gets its modern baseline. She also revises Wilson's fullonica count downward under tighter identification criteria, an exemplary case of the field correcting itself.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Dufton, J. Andrew. 2019. "The Architectural and Social Dynamics of Gentrification in Roman North Africa." <em>American Journal of Archaeology</em> 123 (2): 263–290.
   <span class="bib-annotation">Reads wall-rebuild sequences across multiple North African cities as evidence of elite displacement of smaller households over the second and third centuries. Methodologically sympathetic to what this project is trying to do for Timgad specifically.</span></p>
 
-  <p class="bib-entry">Amraoui, Touatia. 2011. "Le quartier industriel de Timgad: un état de la question." In <em>La ville au quotidien: regards croisés sur l'habitat et l'artisanat</em>, edited by C. Fontaine et al., 223–232. Aix-en-Provence: Presses Universitaires de Provence.</p>
+  <p class="bib-entry">Amraoui, Touatia. 2011. "Le quartier industriel de Timgad: un état de la question." In <em>La ville au quotidien: regards croisés sur l'habitat et l'artisanat</em>, edited by Souen Fontaine, Stéphanie Sartre, and Amel Tekki, 223–232. Aix-en-Provence: Presses Universitaires de Provence.</p>
 
   <p class="bib-entry">Amraoui, Touatia. 2017. <em>L'artisanat dans les cités antiques de l'Algérie (Ier siècle avant notre ère – VIIe siècle après notre ère)</em>. Archaeopress Roman Archaeology 26. Oxford: Archaeopress.</p>
 
   <p class="bib-entry">Amraoui, Touatia. 2020. "The Archaeology of Urban Workshops in the Roman Maghreb." In <em>Urban Space and Urban History in the Roman World</em>, edited by Miko Flohr, 221–240. London: Routledge.</p>
 
-  <p class="bib-entry">Benton, Jessica. 2020. "The Bakeries of Volubilis: Process, Space, and Integration."</p>
+  <p class="bib-entry">Benton, Jared. 2020. "The Bakeries of Volubilis: Process, Space, and Interconnectivity." <em>Mouseion: Journal of the Classical Association of Canada</em> 17 (2): 241–272.</p>
 
-  <p class="bib-entry">Benton, Jessica, et al. 2023. "The Bakery in the Maison à la Citerne at Volubilis."</p>
+  <p class="bib-entry">Benton, Jared, Christy Schirmer, Ruth Pelling, Sarah Bulger, Drew Messing, and Ireland O'Hare. 2023. "The Bakery in the Maison à la Citerne at Volubilis." <em>Mouseion: Journal of the Classical Association of Canada</em> 20 (2): 121–155.</p>
 
-  <p class="bib-entry">Blanchard-Lemée, Michèle. 1998. "Dans les jardins de Djemila."</p>
+  <p class="bib-entry">Blanchard-Lemée, Michèle. 1998. "Dans les jardins de Djemila." <em>Antiquités africaines</em> 34: 185–197.</p>
 
-  <p class="bib-entry">Bouchareb, Abderrahim. 2009. "Timgad: renouveau urbain, nouvelle urbanité (à partir du IIe s.)."</p>
+  <p class="bib-entry">Bouchareb, Abdelouahab. 2009. "Timgad: renouveau urbain, nouvelle urbanité (à partir du IIe s.)."</p>
 
   <p class="bib-entry">Briand-Ponsart, Claude. 1996. <em>Fondations privées en Afrique du Nord</em>.</p>
 
-  <p class="bib-entry">Bullo, Silvia, and Francesca Ghedini, eds. 2003. <em>Amplissimae atque ornatissimae domus</em>. 2 vols. Antenor Quaderni 2.1–2.2. Rome: Quasar.</p>
+  <p class="bib-entry">Bullo, Silvia, Francesca Ghedini, and Paola Zanovello, eds. 2003. <em>Amplissimae atque ornatissimae domus (Aug., civ., II, 20, 26): l'edilizia residenziale nelle città della Tunisia romana</em>. 2 vols. Antenor Quaderni 2.1–2.2. Rome: Quasar.</p>
 
-  <p class="bib-entry">Daniels, Robert. 1995. "Punic Influence in the Domestic Architecture of Roman Volubilis (Morocco)." <em>Oxford Journal of Archaeology</em> 14 (1): 79–95.</p>
+  <p class="bib-entry">Daniels, Robert. 1995. "Punic Influence in the Domestic Architecture of Roman Volubilis (Morocco)." <em>Oxford Journal of Archaeology</em> 14 (1): 79–96.</p>
 
-  <p class="bib-entry">Droß-Krüpe, Kerstin. 2016. "Spatial Concentration and Dispersal of Roman Textile Crafts." In <em>Urban Craftsmen and Traders in the Roman World</em>, edited by Andrew Wilson and Miko Flohr, 331–350. Oxford: Oxford University Press.</p>
-
-  <p class="bib-entry">Dufton, J. Andrew. 2019. "The Architect and the Archaeologist: The Domestic Architecture of Roman Timgad."</p>
+  <p class="bib-entry">Droß-Krüpe, Kerstin. 2016. "Spatial Concentration and Dispersal of Roman Textile Crafts." In <em>Urban Craftsmen and Traders in the Roman World</em>, edited by Miko Flohr and Andrew Wilson, 334–351. Oxford: Oxford University Press.</p>
 
   <p class="bib-entry">Ellis, Simon P. 1988. "The End of the Roman House." <em>American Journal of Archaeology</em> 92 (4): 565–576.</p>
 
@@ -64,9 +62,7 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">Flohr, Miko, ed. 2020. <em>Urban Space and Urban History in the Roman World</em>. London: Routledge.</p>
 
-  <p class="bib-entry">Flohr, Miko, ed. 2024. <em>A Companion to Cities in the Greco-Roman World</em>. Hoboken, NJ: Wiley-Blackwell.</p>
-
-  <p class="bib-entry">Guizani, Samir. n.d. "L'architecture domestique antique en Tunisie." Survey article, 131–136.</p>
+  <p class="bib-entry">Flohr, Miko, and Arjan Zuiderhoek, eds. 2024. <em>A Companion to Cities in the Greco-Roman World</em>. Blackwell Companions to the Ancient World. Hoboken, NJ: Wiley-Blackwell.</p>
 
   <p class="bib-entry">Hobson, Matthew S. 2015. <em>The North African Boom: Evaluating Economic Growth in the Roman Province of Africa Proconsularis (146 B.C.–A.D. 439)</em>. Journal of Roman Archaeology Supplementary Series 100. Portsmouth, RI: <em>Journal of Roman Archaeology</em>.</p>
 
@@ -80,27 +76,27 @@ The regional frame and the Timgad-specific scholarship belong together here. Nor
 
   <p class="bib-entry">Leveau, Philippe. 1978. "La situation coloniale de l'Afrique romaine." <em>Annales. Économies, Sociétés, Civilisations</em> 33 (1): 89–92.</p>
 
-  <p class="bib-entry">Malek, Ammar-Aziz. 2005. "Entre jardin et mosaïque: la <em>domus</em> nord-africaine." PhD diss., Université de Paris-Sorbonne.</p>
+  <p class="bib-entry">Malek, Amina-Aïcha. 1999. "Le sentiment de la nature dans les <em>domus</em> de l'Afrique romaine, IIᵉ–Vᵉ siècles." PhD diss., École des Hautes Études en Sciences Sociales (EHESS).</p>
 
   <p class="bib-entry">McCarty, Matthew M. 2022. "Reforesting Roman Africa: Woodland Resources, Worship, and Colonial Erasures." <em>The Journal of Roman Studies</em> 112: 105–141. <a href="https://doi.org/10.1017/S0075435822000338">https://doi.org/10.1017/S0075435822000338</a>.</p>
 
-  <p class="bib-entry">Miller, Stephen G., et al. 2024. "The Houses of Hellenistic and Roman Tel."</p>
+  <p class="bib-entry">Miller, Shulamit, Yuli Gekht, S. Rebecca Martin, Sveta Matskevich, and Ilan Sharon. 2024. "The Houses of Hellenistic–Roman Tel Dor: A Study of Domestic Social Practices and Economic Activities." <em>Journal of Eastern Mediterranean Archaeology and Heritage Studies</em> 12 (2): 115–151.</p>
 
   <p class="bib-entry">Monteix, Nicolas. 2016. "<em>Pompeiis in Pistrinis</em>: Bakeries and Baking in Roman Italy."</p>
 
   <p class="bib-entry">Pavis d'Escurac, Henriette. 1980. "Flaminat et société dans la colonie de Timgad." <em>Antiquités africaines</em> 15: 183–200.</p>
 
-  <p class="bib-entry">Quinn, Josephine Crawley. 2003. "Roman Africa." In <em>Romanization? Digressus Supplement 1</em>, 7–34.</p>
+  <p class="bib-entry">Quinn, Josephine Crawley. 2003. "Roman Africa?" In <em>'Romanization'? Digressus Supplement 1</em>, edited by Andrew Merryweather and Jonathan Prag, 7–34.</p>
 
   <p class="bib-entry">Rezkallah, Younès. 2020. "Le SIG des fouilles de l'antique Thamugadi: premiers résultats." <em>AOURAS</em> 10: 355–369.</p>
 
   <p class="bib-entry">Stone, David L. 1998. "Culture and Investment in the Rural Landscape: The North African <em>bonus agricola</em>." <em>Antiquités africaines</em> 34: 103–113.</p>
 
-  <p class="bib-entry">Wilson, Andrew. n.d. "Urban Production in the Roman World: The View from North Africa." <em>Papers of the British School at Rome</em>, and related articles.</p>
+  <p class="bib-entry">Wilson, Andrew. 2002. "Urban Production in the Roman World: The View from North Africa." <em>Papers of the British School at Rome</em> 70: 231–273.</p>
 
-  <p class="bib-entry">Wilson, Andrew. 2016. "Roman Villas in North Africa." In <em>The Roman Villa in the Mediterranean Basin</em>, edited by Annalisa Marzano and Guy P. R. Métraux, 266–307. Cambridge: Cambridge University Press.</p>
+  <p class="bib-entry">Wilson, Andrew. 2018. "Roman Villas in North Africa." In <em>The Roman Villa in the Mediterranean Basin: Late Republic to Late Antiquity</em>, edited by Annalisa Marzano and Guy P. R. Métraux, 266–307. Cambridge: Cambridge University Press.</p>
 
-  <p class="bib-entry">Wuilleumier, Pierre. 1928. "Mobilier de l'Afrique romaine." <em>Revue africaine</em> 69: 221–240.</p>
+  <p class="bib-entry">Wuilleumier, Pierre. 1928. "Mobilier de l'Afrique romaine." <em>Mélanges d'archéologie et d'histoire</em> 45: 123–149.</p>
 
 </div>
 
@@ -110,19 +106,19 @@ The Timgad studied today is the Timgad that Albert Ballu and his teams uncovered
 
 <div class="biblio">
 
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Ballu, Albert. 1897. <em>Les ruines de Timgad (Antique Thamugadi)</em>. Paris: Imprimerie Nationale.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Ballu, Albert. 1897. <em>Les ruines de Timgad (antique Thamugadi)</em>. Paris: Ernest Leroux.
   <span class="bib-annotation">The founding architectural record. Ballu's plans, however idealized, are the reference every later reconstruction still checks itself against.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Boeswillwald, Émile, René Cagnat, and Albert Ballu. 1905. <em>Timgad, une cité africaine sous l'Empire romain</em>. Paris: Leroux.
   <span class="bib-annotation">The synthesis that fixed the wider scholarly image of Timgad. Its framing (monumental civic center, hinted-at domestic life, sweeping chronology) is the version of the city that this project works to complicate.</span></p>
 
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord: répertoire de plans publiés." <em>Mélanges de l'École française de Rome: Antiquité</em> 81 (2): 659–724.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord: répertoire de plans publiés." <em>Mélanges d'archéologie et d'histoire</em> 81 (2): 659–724.
   <span class="bib-annotation">The standard comparative catalogue of North African peristyle houses, still the reference point for any domestic-architecture comparison in the region. Rebuffat also warns explicitly against trusting Courtois's 1951 plans as precise, a warning worth keeping visible.</span></p>
 
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Yelles, Anissa. 2024. "Archives croisées d'Albert Ballu à Timgad: étude spatiale de la ville et de ses fouilles." <em>Frontières</em> 10.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Yelles, Anissa. 2024. "Archives croisées d'Albert Ballu à Timgad: étude spatiale de la ville et de ses fouilles." <em>Frontière·s</em> 10.
   <span class="bib-annotation">The critical turn the field needed. Yelles reads Ballu's photographic and excavation archives against each other to recover what his published reports flattened out, and to show what colonial-era documentation chose to foreground.</span></p>
 
-  <p class="bib-entry">Ballu, Albert. 1897. <em>Guide de Timgad, antique Thamugadi</em>.</p>
+  <p class="bib-entry">Ballu, Albert. 1897. <em>Guide de Timgad, antique Thamugadi</em>. Paris: Ernest Leroux.</p>
 
   <p class="bib-entry">Ballu, Albert. 1901–1926. <em>Rapports sur les travaux de fouilles en Algérie</em>. Annual official reports. Paris and Algiers: Service des Monuments Historiques de l'Algérie. Reports cited individually: 1901, 1904, 1905–1909, 1911–1912, 1916–1919, 1921–1922, 1923, 1924, 1925–1926.</p>
 
@@ -132,21 +128,21 @@ The Timgad studied today is the Timgad that Albert Ballu and his teams uncovered
 
   <p class="bib-entry">Boissière, Gustave. 1883. <em>L'Algérie romaine</em>. 2nd ed. Paris: Hachette.</p>
 
-  <p class="bib-entry">Cagnat, René. 1891. "Les fouilles de Timgad, séance du 15 mai 1891." <em>Comptes rendus de l'Académie des Inscriptions et Belles-Lettres</em> 35 (3): 379–384.</p>
+  <p class="bib-entry">Cagnat, René. 1891. "Les fouilles de Timgad, séance du 15 mai 1891." <em>Comptes rendus de l'Académie des Inscriptions et Belles-Lettres</em> 35 (3): 209–218.</p>
 
   <p class="bib-entry">Cagnat, René. 1892. <em>L'armée romaine d'Afrique et l'occupation militaire de l'Afrique sous les empereurs</em>. Paris: Imprimerie Nationale.</p>
 
-  <p class="bib-entry">Cagnat, René. 1902. "Note sur des découvertes nouvelles survenues en Afrique." <em>Comptes rendus de l'Académie des Inscriptions et Belles-Lettres</em>.</p>
+  <p class="bib-entry">Cagnat, René. 1902. "Note sur des découvertes nouvelles survenues en Afrique." <em>Comptes rendus de l'Académie des Inscriptions et Belles-Lettres</em> 46 (1): 37–46.</p>
 
-  <p class="bib-entry">Cagnat, René. 1904. "Le tracé primitif de Thamugadi." <em>Comptes rendus de l'Académie des Inscriptions et Belles-Lettres</em>.</p>
+  <p class="bib-entry">Cagnat, René. 1904. "Le tracé primitif de Thamugadi." <em>Comptes rendus de l'Académie des Inscriptions et Belles-Lettres</em> 48 (4): 460–469.</p>
 
-  <p class="bib-entry">Cagnat, René. 1909. <em>Carthage, Timgad, Tébessa et les villes antiques de l'Afrique du Nord</em>.</p>
+  <p class="bib-entry">Cagnat, René. 1909. <em>Carthage, Timgad, Tébessa et les villes antiques de l'Afrique du Nord</em>. Les villes d'art célèbres. Paris: H. Laurens.</p>
 
-  <p class="bib-entry">Christofle, Marcel. 1930. <em>Rapport sur les travaux de fouilles effectués en 1927, 1928 et 1929</em>. Algiers: Service des Monuments Historiques de l'Algérie.</p>
+  <p class="bib-entry">Christofle, Marcel. 1930. <em>Rapport sur les travaux de fouilles et consolidations effectués en 1927, 1928 et 1929 par le Service des Monuments Historiques de l'Algérie</em>. Alger: Jules Carbonel.</p>
 
-  <p class="bib-entry">Christofle, Marcel. 1935. <em>Rapport sur les travaux de fouilles effectués en 1930, 1931 et 1932</em>. Algiers: Service des Monuments Historiques de l'Algérie.</p>
+  <p class="bib-entry">Christofle, Marcel. 1935. <em>Rapport sur les travaux de fouilles et de consolidations effectués en 1930, 1931 et 1932 par le Service des Monuments Historiques de l'Algérie</em>. Alger: Jules Carbonel.</p>
 
-  <p class="bib-entry">Christofle, Marcel. 1938. <em>Rapport sur les travaux de fouilles effectués en 1933, 1934, 1935 et 1936</em>. Algiers: Service des Monuments Historiques de l'Algérie.</p>
+  <p class="bib-entry">Christofle, Marcel. 1938. <em>Rapport sur les travaux de fouilles et de consolidation effectués en 1933, 1934, 1935 et 1936 par le Service des Monuments Historiques de l'Algérie</em>. Alger: Jules Carbonel.</p>
 
   <p class="bib-entry">Courtois, Christian. 1951. <em>Timgad, antique Thamugadi</em>. Algiers: Service des Antiquités de l'Algérie.</p>
 
@@ -154,29 +150,27 @@ The Timgad studied today is the Timgad that Albert Ballu and his teams uncovered
 
   <p class="bib-entry">Gosden, Chris. 2004. <em>Archaeology and Colonialism: Cultural Contact from 5000 BC to the Present</em>. Cambridge: Cambridge University Press.</p>
 
-  <p class="bib-entry">Gsell, Stéphane. 1901–1911. <em>Les monuments antiques de l'Algérie</em>. 2 vols. Paris: Fontemoing.</p>
+  <p class="bib-entry">Gsell, Stéphane. 1901. <em>Les monuments antiques de l'Algérie</em>. 2 vols. Paris: Fontemoing.</p>
 
-  <p class="bib-entry">Lassus, Jean. 1966. <em>Thamugadi (Timgad): archéologie et histoire</em>. Algiers: Direction de l'intérieur.</p>
+  <p class="bib-entry">Lassus, Jean. 1966. "Une opération immobilière à Timgad." In <em>Mélanges d'archéologie et d'histoire offerts à André Piganiol</em>, edited by Raymond Chevallier, 1221–1231. Paris: SEVPEN.</p>
 
   <p class="bib-entry">Lassus, Jean. 1981. <em>La forteresse byzantine de Thamugadi. Fouilles à Timgad, 1938–1956</em>. Études d'Antiquités africaines. Paris: CNRS.</p>
 
-  <p class="bib-entry">Le Glay, Marcel, and Serge Tourrenc. 1985. "Nouvelles inscriptions de Timgad sur des légats de la troisième Légion Auguste." <em>Antiquités africaines</em> 21: 103–140.</p>
+  <p class="bib-entry">Le Glay, Marcel, and Serge Tourrenc. 1985. "Nouvelles inscriptions de Timgad sur des légats de la troisième Légion Auguste." <em>Antiquités africaines</em> 21: 103–136.</p>
 
   <p class="bib-entry">Lepelley, Claude. 1981. <em>Les cités de l'Afrique romaine au Bas-Empire</em>, Tome II: <em>Notices d'histoire municipale</em>. Paris: Études Augustiniennes.</p>
 
   <p class="bib-entry">Leschi, Louis. 1947. "Découvertes récentes à Timgad: Aqua Septimiana Felix." <em>Comptes rendus de l'Académie des Inscriptions et Belles-Lettres</em> 91 (1): 87–99.</p>
 
-  <p class="bib-entry">Leveau, Philippe. 1988. "Review: <em>La forteresse byzantine de Thamugadi</em> (Lassus 1981)." <em>Revue des Études Anciennes</em> 90 (3): 487–489.</p>
+  <p class="bib-entry">Leveau, Philippe. 1988. "Review: <em>La forteresse byzantine de Thamugadi</em> (Lassus 1981)." <em>Revue des Études Anciennes</em> 90 (3-4): 487–488.</p>
 
-  <p class="bib-entry">Pachtère, Félix-Georges de. 1911. <em>Inventaire des mosaïques de la Gaule et de l'Afrique</em>, Tome III: <em>Afrique Proconsulaire, Numidie, Maurétanies (Algérie)</em>. Paris: Leroux.</p>
+  <p class="bib-entry">Pachtère, Félix-Georges de. 1911. <em>Inventaire des mosaïques de la Gaule et de l'Afrique</em>, Tome III: <em>Afrique proconsulaire, Numidie, Maurétanie (Algérie)</em>. Paris: Ernest Leroux.</p>
 
-  <p class="bib-entry">Pallu de Lessert, Aimé-Clément. 1896. <em>Fastes des provinces africaines (Proconsulaire, Numidie, Maurétanies) sous la domination romaine</em>. Tome I. Paris: Ernest Leroux.</p>
+  <p class="bib-entry">Pallu de Lessert, Augustin-Clément. 1896. <em>Fastes des provinces africaines (Proconsulaire, Numidie, Maurétanies) sous la domination romaine</em>. Tome I: <em>République et Haut Empire</em>. Paris: Ernest Leroux.</p>
 
-  <p class="bib-entry">Poinssot, Julien. 1884. "Inscriptions inédites de Lambèse et de Timgad."</p>
+  <p class="bib-entry">Poinssot, Julien. 1884. "Inscriptions inédites de Lambèse et de Timgad." <em>Bulletin trimestriel des antiquités africaines</em> 2: 202–208.</p>
 
   <p class="bib-entry">Rebuffat, René. 1974. "Maisons à péristyle d'Afrique du Nord: répertoire de plans publiés II." <em>Mélanges de l'École française de Rome: Antiquité</em> 86 (1): 445–499.</p>
-
-  <p class="bib-entry">The Bystander. 1905. "Timgad: The African Pompeii." <em>The Bystander</em>, 3 May 1905.</p>
 
 </div>
 
@@ -186,7 +180,7 @@ For this project, space syntax and household archaeology give us the architectur
 
 <div class="biblio">
 
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life, Vol. I: From Pagan Rome to Byzantium</em>, edited by Paul Veyne, 319–409. Cambridge, MA: Belknap Press of Harvard University Press.
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life, Vol. I: From Pagan Rome to Byzantium</em>, edited by Paul Veyne, translated by Arthur Goldhammer, 313–409. Cambridge, MA: Belknap Press of Harvard University Press.
   <span class="bib-annotation">The essay whose opening move, that <em>domus</em> refers not only to the walls but also to the people within them, is the organizing quotation of this entire site. Thébert's work remains foundational, shaping how Wallace-Hadrill and many of the scholars who followed came to think about the relationship between public and private in Roman domestic space. He also took North African houses seriously on their own terms, rather than as provincial echoes of Italy.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Mattingly, David J. 2011. <em>Imperialism, Power, and Identity: Experiencing the Roman Empire</em>. Princeton: Princeton University Press.
@@ -218,17 +212,17 @@ Space syntax, first developed by Hillier and Hanson, treats a built environment 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.
   <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against.</span></p>
 
-  <p class="bib-entry">Fisher, Kevin. 2023. <em>Monumentality, Place-making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. London: Equinox Press.</p>
+  <p class="bib-entry">Fisher, Kevin D. 2023. <em>Monumentality, Place-Making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. Sheffield: Equinox Publishing.</p>
 
-  <p class="bib-entry">Grahame, Mark. 1997. "Public and Private in the Roman House: The Spatial Order of the Casa del Fauno." In <em>Domestic Space in the Roman World: Pompeii and Beyond</em>, edited by Ray Laurence and Andrew Wallace-Hadrill, supplement, 137–164. Portsmouth, RI: <em>Journal of Roman Archaeology</em>.</p>
+  <p class="bib-entry">Grahame, Mark. 1997. "Public and Private in the Roman House: Investigating the Social Order of the Casa del Fauno." In <em>Domestic Space in the Roman World: Pompeii and Beyond</em>, edited by Ray Laurence and Andrew Wallace-Hadrill, 137–164. Journal of Roman Archaeology Supplementary Series 22. Portsmouth, RI: Journal of Roman Archaeology.</p>
 
   <p class="bib-entry">Rapoport, Amos. 1990. <em>The Meaning of the Built Environment: A Nonverbal Communication Approach</em>. Tucson: University of Arizona Press.</p>
 
-  <p class="bib-entry">Assassi, Abdelhalim, and Ammar Mebarki. 2021. "Spatial Configuration Analysis via Digital Tools of the Roman Town Timgad." <em>Mediterranean Archaeology and Archaeometry</em> 21 (1): 71–97.</p>
+  <p class="bib-entry">Assassi, Abdelhalim, and Ahmed Mebarki. 2021. "Spatial Configuration Analysis via Digital Tools of the Archeological Roman Town Timgad, Algeria." <em>Mediterranean Archaeology and Archaeometry</em> 21 (1): 71–84.</p>
 
-  <p class="bib-entry">Djourdi, Hana, Azeddine Belakehal, and Paola Zanovello. 2025. "The Luminous Ambience of an Ancient Roman Public Building: Rogatianus Library in Thamugadi City."</p>
+  <p class="bib-entry">Djouadi, Hana, Azeddine Belakehal, and Paola Zanovello. 2025. "The Luminous Ambience of an Ancient Roman Public Building: A Characterization of the Inner Daylit Environment of Rogatianus Library in Thamugadi City (Timgad, Algeria)." <em>Heritage</em> 8 (8): 300.</p>
 
-  <p class="bib-entry">Guedouh, Marouane Samir, et al. 2025. "Military Strategies of Roman Cities Establishment Based on the Space Syntax Analysis Applied to the Vestiges of Timgad."</p>
+  <p class="bib-entry">Guedouh, Marouane Samir, et al. 2025. "Military Strategies of Roman Cities Establishment Based on the Space Syntax Analysis Applied to the Vestiges of Timgad." <em>Heritage</em> 8 (8): 324.</p>
 
 </div>
 
