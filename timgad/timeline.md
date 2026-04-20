@@ -804,7 +804,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 2024, title: 'Yelles, Chronocarto de Timgad',
       person: 'Anissa Yelles',
       type: 'publication',
-      desc: 'Part of Yelles\'s <a href="https://timgadpro.hypotheses.org/" target="_blank" rel="noopener">Timgad Archives Project (TIMaP)</a> at AOROC, ENS Paris, in collaboration with the École française de Rome and the North African Heritage Archives Network (NAHAN). Using the Chronocarto GIS platform, Yelles reconstructs Ballu\'s excavation documentation from the 1880s onward and shows that Ballu\'s adoption of a sequential insula numbering was explicitly modeled on Fiorelli\'s Pompeii, embedding the "African Pompeii" framing in the colony\'s earliest archaeological record. A foundational digital-humanities contribution to rereading Timgad\'s excavation history with the tools of contemporary spatial analysis.',
+      desc: 'This paper is part of Yelles\'s <a href="https://timgadpro.hypotheses.org/" target="_blank" rel="noopener">Timgad Archives Project (TIMaP)</a> at AOROC, ENS Paris, developed in collaboration with the École française de Rome and the North African Heritage Archives Network (NAHAN). Using the Chronocarto GIS platform, Yelles reconstructs Ballu\'s excavation documentation from the 1880s onward. The study stands as a foundational digital-humanities contribution to rereading Timgad\'s excavation history with the tools of contemporary spatial analysis.',
       houses: 'Archival reassessment of all Ballu excavations',
       source: 'Yelles 2024 (SRC_053)'
     },
