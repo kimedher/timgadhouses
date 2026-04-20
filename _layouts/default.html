@@ -91,9 +91,20 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.12 });
+      }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
       document.querySelectorAll('.fade-in').forEach(function(el) {
         observer.observe(el);
+      });
+      /* Safety net: any fade-in still hidden after the first paint
+         gets revealed on next animation frame, so tall content that
+         straddles the viewport never gets stuck at opacity 0. */
+      requestAnimationFrame(function() {
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+          var rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('in-view');
+          }
+        });
       });
     })();
   </script>
