@@ -52,26 +52,6 @@ The goal is not to throw out the excavation record. It is to read it with open e
   <p>Yelles, Anissa. 2024. "Timgad et les archives de fouilles: Relectures et perspectives." In <em>Rome, archéologie et histoire urbaine: trente ans après l'Urbs (1987)</em>, edited by C. Courrier, M. Tarpin, A. Vanel, and N. Tran, 485–508. Rome: École Française de Rome.</p>
 </div>
 
-## A note on the numbering system
-
-This project catalogues Timgad's houses with a quadrant-based system, TIMG.{Quadrant}.I{n}.H{n}, anchored to the Cardo and Decumanus Maximus and radiating outward from their intersection. The method is adapted from Giuseppe Fiorelli's Region.Insula.Entrance system at Pompeii, formalized in the 1860s and codified in his <em>Descrizione di Pompei</em> (1875), the long-established disciplinary standard for referencing Roman urban architecture.
-
-Adopting a Pompeian method for Timgad requires a word of explanation, because the "African Pompeii" framing imposed on Timgad in its earliest excavation record is one of the things this project pushes back on. Albert Ballu, in the late nineteenth century, explicitly invoked Fiorelli's Pompeii as a model, but what he actually implemented was a sequential 1-to-31 walking-order numbering that reflected his own itinerary through the site rather than the city's structure. That gesture, alongside the rhetorical branding of Timgad as Rome's African Pompeii, flattened Timgad into a colonial analogue and built that framing into the record from the start. Anissa Yelles's 2024 archival work has since documented this borrowing in detail.
-
-The numerical grid system employed in this project uses Fiorelli's actual method rather than Ballu's derivative of it. Fiorelli's logic is spatial and structural. It anchors the reference system to the city's own defining axes, which at Timgad are the Cardo and Decumanus Maximus, not to any excavator's walking order or to a Pompeian analogue. Applying that logic on Timgad's own terms is a rejection of Ballu's framing, not a continuation of it. The underlying methodology travels well across Roman colonial cities precisely because it is spatially rigorous and hierarchically extensible, and using it makes Timgad's houses immediately legible to any Roman archaeologist without asking the city to pretend to be Pompeii.
-
-A concordance spreadsheet keeps every TIMG identifier in translation with Ballu 1903, Ballu 1911, Germain 1969, Rebuffat 1969 and 1974, and Wilson 2001. Prior scholarship is preserved as a translation layer, not erased, so any existing citation can be resolved into the TIMG system and back again without information loss. The concordance is still in active development and will be published on this site once it has been through further review.
-
-<div class="subsection-refs">
-  <p>Ballu, Albert. 1897. <em>Les ruines de Timgad (antique Thamugadi)</em>. Paris: Ernest Leroux.</p>
-  <p>Ballu, Albert. 1903. <em>Les ruines de Timgad (antique Thamugadi): Nouvelles découvertes</em>. Paris: Ernest Leroux.</p>
-  <p>Fiorelli, Giuseppe. 1875. <em>Descrizione di Pompei</em>. Naples: Tipografia Italiana.</p>
-  <p>Germain, Suzanne. 1969. <em>Les mosaïques de Timgad: Étude descriptive et analytique</em>. Paris: Éditions du Centre National de la Recherche Scientifique.</p>
-  <p>Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord: Répertoire de plans publiés." <em>Mélanges de l'École française de Rome</em> 81 (2): 659–724.</p>
-  <p>Wilson, Andrew I. 2001. "Timgad and Textile Production." In <em>Economies Beyond Agriculture in the Classical World</em>, edited by David J. Mattingly and John Salmon, 271–296. London: Routledge.</p>
-  <p>Yelles, Anissa. 2024. "Timgad et les archives de fouilles: Relectures et perspectives." In <em>Rome, archéologie et histoire urbaine: trente ans après l'Urbs (1987)</em>, edited by C. Courrier, M. Tarpin, A. Vanel, and N. Tran, 485–508. Rome: École Française de Rome.</p>
-</div>
-
 ## Household archaeology
 
 Household archaeology, the subdiscipline that asks how houses worked as social and economic units rather than simply as buildings, is the broader conversation this project takes part in. Most of its foundational work was built on the remarkably preserved houses of Roman Italy, with Pompeii and Herculaneum at the center. This project draws on those tools carefully, using the field's insights while pushing back on its Pompeian defaults and widening the frame to North Africa, where the houses tell a different story.
