@@ -38,3 +38,23 @@ The question of how homes shape the people who live in them is not only a questi
 ## What to read next
 
 For the city that holds these houses, see the [Timgad page](/timgad/). For the analytical tools this project uses, see [Methods](/methods/). Individual case studies will appear here as they are completed.
+
+## Further reading
+
+A working bibliography on Roman and ancient houses, domestic space, and North African domestic architecture. These are the works this project reads alongside, draws from, and argues with.
+
+<div class="subsection-refs">
+  <p>Allison, Penelope. 1993. "How Do We Identify the Use of Space in Roman Housing?" In <em>Functional and Spatial Analysis of Wall Painting</em>, edited by E. Moormann, 1–8. Leiden: Babesch.</p>
+  <p>Daniels, R. 1995. "Punic Influence in the Domestic Architecture of Roman Volubilis (Morocco)." <em>Oxford Journal of Archaeology</em> 14 (1): 79–95.</p>
+  <p>Grahame, M. 2000. <em>Reading Space: Social Interaction and Identity in the Houses of Roman Pompeii</em>. Oxford: Archaeopress.</p>
+  <p>Hanson, J. 2003. <em>Decoding Homes and Houses</em>. Cambridge: Cambridge University Press.</p>
+  <p>Nevett, L. 1999. <em>House and Society in the Ancient Greek World</em>. Cambridge: Cambridge University Press.</p>
+  <p>Platts, H. 2019. <em>Multisensory Living in Ancient Rome: Power and Space in Roman Houses</em>. London: Bloomsbury.</p>
+  <p>Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord I." <em>Mélanges d'archéologie et d'histoire</em> 81 (2): 657–705.</p>
+  <p>———. 1974. "Maisons à péristyle d'Afrique du Nord. Répertoire de plans publiés (II)." <em>Mélanges de l'École française de Rome. Antiquité</em> 86 (1): 445–499.</p>
+  <p>Scott, Eleanor. 1997. <em>The Archaeology of Roman Domestic Space</em>. London: Routledge.</p>
+  <p>Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life</em>, vol. 1, edited by P. Veyne, 319–409. Cambridge, MA: Belknap Press.</p>
+  <p>Wallace-Hadrill, A. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.</p>
+  <p>Wilson, R. J. A. 2003. "Domestic Architecture and Identity in Roman Africa." In <em>Romanization and the City: Creation, Transformations, and Failures</em>, edited by Elizabeth Fentress, 209–212. Portsmouth, RI: Journal of Roman Archaeology.</p>
+  <p>Wilson, R. J. A. 2016. "Roman Villas in North Africa." In <em>The Cambridge Companion to the Roman Economy</em>, edited by Walter Scheidel, 266–307. Cambridge: Cambridge University Press.</p>
+</div>
