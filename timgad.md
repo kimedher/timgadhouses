@@ -9,8 +9,8 @@ last_updated: 2026-04-19
 Timgad sits on a high plain in the Aurès Mountains of northeastern Algeria, in what was the Roman province of Numidia and is today the Batna province of a sovereign post-colonial state. In Arabic, تيمقاد. In Latin, <span class="hl-blue">*Colonia Marciana Traiana Thamugadi*</span>, a name likely rooted in a Berber/Amazigh toponym. In French-colonial and Anglophone scholarship, Timgad. This page is the short version of what the city is, how it got here, and why reading its remains is not only an archaeological question.
 
 <figure class="image-panel">
-  <img src="/assets/images/timgad-1886-theater.jpg" alt="A sepia photograph from 1886 showing Timgad's theatre during excavation, with horse-drawn carts and stacked stone blocks in the foreground and the ruins of the city spreading toward the horizon.">
-  <figcaption>Timgad's theatre during early French excavations. Photograph: E. Duthoit, 1886. Heritage and Photography Media Library.</figcaption>
+  <img src="/assets/images/timgad-1900-plan.png" alt="A hand-drawn site plan of Timgad as excavated by the end of 1900, with labeled features including the Capitole, Forum, Théâtre, Marché, the cardo and decumanus maximus, the Grand Thermes hors les murs to the north, the Thermes Sud, and the Porte Nord and Porte Ouest gates.">
+  <figcaption>Excavations of Timgad, general plan at the end of 1900. A. Ballu, Ministère de l'Instruction Publique et des Beaux-Arts (1901).</figcaption>
 </figure>
 
 ## A city founded in one moment, lived for five centuries
