@@ -6,45 +6,16 @@ permalink: /scholarship/
 last_updated: 2026-04-20
 ---
 
-This page is the project's public reading list. It collects the works that shape how the houses of Timgad are read here, from the colonial-era excavation reports that produced the physical record to the theoretical frames that let us read that record critically. Entries are grouped by the four questions this project lives inside: how space carries meaning, how Roman North Africa has been studied, how the colonial archive was built, and how identity and domestic life intersect.
+This page is the project's public reading list. It collects the works that shape how the houses of Timgad are read here, from the colonial-era excavation reports that produced the physical record to the theoretical frames that let us read that record critically. Entries are grouped by the four questions this project lives inside: how Roman North Africa has been studied, how the colonial archive was built, how identity and domestic life intersect, and how space carries meaning.
 
 Where a work is a core source for this project, a short italicized note follows the citation. All entries are in Chicago author-date format. A more detailed internal record, including page-level notes on the houses each source mentions, lives in the project's literature-review database and will be released at a later time.
 
 <p class="scholarship-nav">
-<a href="#space-syntax-household-archaeology-and-method">Space syntax and household archaeology</a> ·
 <a href="#roman-north-africa-and-timgad">Roman North Africa and Timgad</a> ·
 <a href="#colonial-era-excavation-and-its-sources">Colonial-era excavation and its sources</a> ·
-<a href="#habitus-identity-and-discrepant-experience">Habitus, identity, and discrepant experience</a>
+<a href="#habitus-identity-and-discrepant-experience">Habitus, identity, and discrepant experience</a> ·
+<a href="#space-syntax-household-archaeology-and-method">Space syntax and household archaeology</a>
 </p>
-
-## Space syntax, household archaeology, and method
-
-Space syntax, first developed by Hillier and Hanson, treats a built environment as a relational system that shapes movement, visibility, and interaction. Its tools let us measure how houses at Timgad structured circulation, encounters, privacy, and labor. Household archaeology comes at the same house from the other side, reading it as an arena of daily practice where, as Swenson and Bourdieu both argue, repeated movement through rooms quietly reproduces the social order. Together, the two traditions treat the house as both evidence and agent. They shape how this project reads Timgad, and the wider argument it hopes to make about provincial life in the Roman empire.
-
-<div class="biblio">
-
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Hillier, Bill, and Julienne Hanson. 1984. <em>The Social Logic of Space</em>. Cambridge: Cambridge University Press.
-  <span class="bib-annotation">The founding statement of space syntax. Buildings are read as configurations of accessible spaces, not as aesthetic objects, and the grammar of those configurations is what carries social meaning.</span></p>
-
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Allison, Penelope M., ed. 1999. <em>The Archaeology of Household Activities</em>. London: Routledge.
-  <span class="bib-annotation">Reframed Roman domestic studies around what people actually did in rooms rather than what an architectural typology assigned them to do. This is the move that lets a workshop inside a "house" be read as part of how the household actually worked.</span></p>
-
-  <p class="bib-entry"><span class="bib-core-tag">Core</span> Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.
-  <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against.</span></p>
-
-  <p class="bib-entry">Fisher, Kevin. 2023. <em>Monumentality, Place-making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. London: Equinox Press.</p>
-
-  <p class="bib-entry">Grahame, Mark. 1997. "Public and Private in the Roman House: The Spatial Order of the Casa del Fauno." In <em>Domestic Space in the Roman World: Pompeii and Beyond</em>, edited by Ray Laurence and Andrew Wallace-Hadrill, supplement, 137–164. Portsmouth, RI: <em>Journal of Roman Archaeology</em>.</p>
-
-  <p class="bib-entry">Rapoport, Amos. 1990. <em>The Meaning of the Built Environment: A Nonverbal Communication Approach</em>. Tucson: University of Arizona Press.</p>
-
-  <p class="bib-entry">Assassi, Abdelhalim, and Ammar Mebarki. 2021. "Spatial Configuration Analysis via Digital Tools of the Roman Town Timgad." <em>Mediterranean Archaeology and Archaeometry</em> 21 (1): 71–97.</p>
-
-  <p class="bib-entry">Djourdi, Hana, Azeddine Belakehal, and Paola Zanovello. 2025. "The Luminous Ambience of an Ancient Roman Public Building: Rogatianus Library in Thamugadi City."</p>
-
-  <p class="bib-entry">Guedouh, Marouane Samir, et al. 2025. "Military Strategies of Roman Cities Establishment Based on the Space Syntax Analysis Applied to the Vestiges of Timgad."</p>
-
-</div>
 
 ## Roman North Africa and Timgad
 
@@ -232,3 +203,32 @@ For this project, space syntax and household archaeology give us the architectur
 <hr class="biblio-hr">
 
 <p class="biblio-note">Works in press, conference papers, and unpublished theses that Kim has read but has not yet cataloged here are tracked in the internal literature-review database and will filter onto this page as the project evolves.</p>
+## Space syntax, household archaeology, and method
+
+Space syntax, first developed by Hillier and Hanson, treats a built environment as a relational system that shapes movement, visibility, and interaction. Its tools let us measure how houses at Timgad structured circulation, encounters, privacy, and labor. Household archaeology comes at the same house from the other side, reading it as an arena of daily practice where, as Swenson and Bourdieu both argue, repeated movement through rooms quietly reproduces the social order. Together, the two traditions treat the house as both evidence and agent. They shape how this project reads Timgad, and the wider argument it hopes to make about provincial life in the Roman empire.
+
+<div class="biblio">
+
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Hillier, Bill, and Julienne Hanson. 1984. <em>The Social Logic of Space</em>. Cambridge: Cambridge University Press.
+  <span class="bib-annotation">The founding statement of space syntax. Buildings are read as configurations of accessible spaces, not as aesthetic objects, and the grammar of those configurations is what carries social meaning.</span></p>
+
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Allison, Penelope M., ed. 1999. <em>The Archaeology of Household Activities</em>. London: Routledge.
+  <span class="bib-annotation">Reframed Roman domestic studies around what people actually did in rooms rather than what an architectural typology assigned them to do. This is the move that lets a workshop inside a "house" be read as part of how the household actually worked.</span></p>
+
+  <p class="bib-entry"><span class="bib-core-tag">Core</span> Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.
+  <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against.</span></p>
+
+  <p class="bib-entry">Fisher, Kevin. 2023. <em>Monumentality, Place-making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. London: Equinox Press.</p>
+
+  <p class="bib-entry">Grahame, Mark. 1997. "Public and Private in the Roman House: The Spatial Order of the Casa del Fauno." In <em>Domestic Space in the Roman World: Pompeii and Beyond</em>, edited by Ray Laurence and Andrew Wallace-Hadrill, supplement, 137–164. Portsmouth, RI: <em>Journal of Roman Archaeology</em>.</p>
+
+  <p class="bib-entry">Rapoport, Amos. 1990. <em>The Meaning of the Built Environment: A Nonverbal Communication Approach</em>. Tucson: University of Arizona Press.</p>
+
+  <p class="bib-entry">Assassi, Abdelhalim, and Ammar Mebarki. 2021. "Spatial Configuration Analysis via Digital Tools of the Roman Town Timgad." <em>Mediterranean Archaeology and Archaeometry</em> 21 (1): 71–97.</p>
+
+  <p class="bib-entry">Djourdi, Hana, Azeddine Belakehal, and Paola Zanovello. 2025. "The Luminous Ambience of an Ancient Roman Public Building: Rogatianus Library in Thamugadi City."</p>
+
+  <p class="bib-entry">Guedouh, Marouane Samir, et al. 2025. "Military Strategies of Roman Cities Establishment Based on the Space Syntax Analysis Applied to the Vestiges of Timgad."</p>
+
+</div>
+
