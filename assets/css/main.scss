@@ -733,6 +733,12 @@ figcaption {
   max-width: 640px;
 }
 
+/* Wider variant for panoramas and banner-style figures that benefit from
+   filling the full text column (and matching its margins). */
+.image-panel--wide {
+  max-width: var(--max-content);
+}
+
 .image-panel img {
   width: 100%;
   height: auto;
