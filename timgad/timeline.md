@@ -65,10 +65,8 @@ Timgad has been excavated for nearly 150 years, across three very different poli
 .timeline-lede {
   font-size: 1.05rem;
   color: var(--text);
-  max-width: 780px;
-  margin: 1rem auto 2rem;
-  text-align: center;
-  line-height: 1.65;
+  margin: 1rem 0 2rem;
+  line-height: 1.7;
 }
 
 /* Filters */
