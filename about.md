@@ -23,7 +23,7 @@ It has three purposes.
   </div>
   <div class="card">
     <span class="num">3</span>
-    <p><strong>Makes space for shorter essays</strong> at the edges of the dissertation, on method, scholarship, and teaching.</p>
+    <p><strong>Makes space for shorter essays</strong> and field notes at the edges of the dissertation, on method, scholarship, teaching, and the questions that houses raise when taken seriously.</p>
   </div>
 </div>
 
@@ -42,7 +42,7 @@ Scholarship on Roman houses has spent more than a century measuring every provin
   </div>
   <div class="card">
     <span class="num">2</span>
-    <p><strong>Colonial Echoes.</strong> Most of Timgad was excavated between the 1880s and the 1950s by French archaeologists who saw themselves as heirs to Rome's "civilizing mission." That self-understanding shaped what they recorded and what they ignored, and their reports are still the bulk of the evidence base.</p>
+    <p><strong>Colonial Echoes.</strong> French archaeologists excavated Timgad from the 1880s through the 1950s, seeing themselves as heirs to Rome's "civilizing mission." Their biases still run through the reports that form most of the evidence base.</p>
   </div>
   <div class="card">
     <span class="num">3</span>
