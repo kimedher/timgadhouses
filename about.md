@@ -1,35 +1,49 @@
 ---
 layout: page
 title: About the Project
-subtitle: What this site is, who is doing it, and why.
+subtitle: Why houses at Timgad...
 permalink: /about/
 show_citation: true
-last_updated: 2026-04-18
-published: false
+last_updated: 2026-04-19
 ---
 
-## What this site is
+## About this website
 
-Houses of Roman Timgad is an open source digital humanities project based on a PhD dissertation in progress. It has three purposes. First, it publishes an accessible catalog of the roughly one hundred houses excavated at Timgad since 1881, so that researchers, students, and curious readers can actually look at the evidence. Second, it shares the data, the methods, and the reasoning behind the research, under permissive licenses, so that others can build on the work. Third, it makes space for reflection and essay writing at the edges of the dissertation, on method, on scholarship, and on the questions that houses raise when we take them seriously.
+Houses of Roman Timgad is an open digital humanities project that runs alongside a PhD dissertation in progress. This website is the public, open-access companion to that longer work.
 
-The site is built to stay lean during the dissertation years. Pages will grow as the research grows. What is here now is a foundation. What will be added over the next two years is a searchable house database, a timeline of excavations at Timgad from 1881 to the present, an annotated bibliography, and a small teaching resources section drawing on classroom experience at Langara College.
+It has three purposes. First, it <span class="hl-coral">shares selected data</span> from the roughly one hundred houses excavated at Timgad since 1881, releasing catalog entries and research outputs where making them open serves the field. Second, it <span class="hl-coral">documents the journey and the insights along the way</span>, the methods being tried, the reasoning behind choices, and the questions that surface as the research develops. Third, it <span class="hl-coral">makes space for shorter essays</span> at the edges of the dissertation, on method, scholarship, and teaching.
 
-## The argument behind the work
+The full synthesis of the research will appear in the dissertation and, eventually, in a book. This website is designed to share in kind, not everything, but enough to keep the work in conversation as it grows. Over the coming years, five core endeavors will shape what gets added: a <span class="hl-blue">comprehensive catalog</span> of the excavated houses, <span class="hl-blue">microanalyses</span> of five primary case studies using space syntax and 3D modeling, an <span class="hl-blue">open-access database</span> releasing selected excavation data in a standardized form, a <span class="hl-blue">decolonizing approach</span> to the colonial-era sources most of that data sits inside, and a <span class="hl-blue">comparative framework</span> drawing on Volubilis and Bulla Regia to trace regional patterns across Roman North Africa.
 
-Scholarship on Roman houses has spent more than a century measuring every provincial site against the elite urban villas of Pompeii and the ideals laid out in Vitruvius. Timgad's houses rarely fit that template, and so they have been treated either as failed imitations or ignored entirely. This project starts from a different premise: houses were not passive reflections of a culture imported from Rome. They were active workshops where provincial life was made. Workshops were integrated into domestic spaces. Economic production, family life, and social ritual shared walls. The people who lived inside them, veterans, local Numidians, and workshop owners, were not becoming Roman or resisting Rome. They were making something else.
+## The argument
 
-The central research question is how domestic architecture at Timgad created distinctive forms of economic and social life during North Africa's second and third century economic boom. The methods draw on space syntax analysis, digital reconstruction, comparative work with houses at Volubilis and Bulla Regia, and a critical reading of the colonial-era excavation reports that are still the bulk of the evidence base. The theoretical frame comes from Bourdieu's concept of habitus and David Mattingly's "discrepant identities."
+<span class="hl-coral">Houses are not passive containers. They are active agents.</span> They shape how the people inside them move, work, gather, and see one another. They carry that shaping forward across generations as habit, posture, and expectation.
 
-## Who is doing this
+Scholarship on Roman houses has spent more than a century measuring every provincial site through the lens of Pompeii, the atrium-peristyle house as a yardstick, and the ideals laid out in Vitruvius. Timgad's houses rarely fit that template. As a result, they have been read as failed imitations, or left out of the conversation altogether. This project starts from a different premise, and it responds to three prevailing problems in how Roman houses have been read.
 
-<figure style="float: right; max-width: 280px; margin: 0 0 1.5rem 1.8rem;">
-  <img src="/assets/images/kim-fieldwork.jpg" alt="Kim Edher crouched in an excavation trench, with a trowel and brush at her feet.">
-  <figcaption>On site during fieldwork.</figcaption>
+The first is the <span class="hl-coral">**Vitruvian Legacy**</span>, where one atypical elite form, preserved spectacularly at a handful of Italian sites, has become the measuring stick for houses across the empire. The second is <span class="hl-coral">**Colonial Echoes**</span>. Most of Timgad was excavated between the 1880s and the 1950s by French archaeologists who saw themselves as heirs to Rome's "civilizing mission," and that self-understanding shaped what they recorded and what they ignored. Their reports are still the bulk of the evidence base. The third is the <span class="hl-coral">**Absent House**</span>, where even scholars who have pushed back hard against Romanization have continued to treat provincial domestic space as background rather than as the place where identities were actually made.
+
+<figure class="image-panel">
+  <img src="/assets/images/timgad-1886-theater.jpg" alt="A sepia photograph from 1886 showing Timgad's theatre during excavation, with horse-drawn carts and stacked stone blocks in the foreground and the ruins of the city spreading toward the horizon.">
+  <figcaption>Timgad's theatre during early French excavations. Photograph: E. Duthoit, 1886. Heritage and Photography Media Library.</figcaption>
 </figure>
 
-Kim Edher is a PhD student in Ancient Mediterranean and Near Eastern Studies at the University of British Columbia, working on domestic architecture in Roman North Africa. Her dissertation, *House, Home, and Habitus: Reconstructing Lived Experiences at Timgad*, is supervised by Dr. Matthew McCarty with committee members Dr. Kevin Fisher and Dr. Katharine Huemoeller. Alongside her doctoral research, Kim teaches classics and ancient history at Langara College.
+At the heart of this project sits one research question:
 
-Fieldwork at Timgad is planned for spring and autumn 2026, with archival research preceding it at Saint-Germain-en-Laye and Aix-en-Provence. The open-access house database, alongside a comparative framework drawing on Volubilis and Bulla Regia, is intended as a standing contribution to the field regardless of the specific theoretical claims the dissertation makes.
+> <span class="hl-blue">How did houses at Timgad create distinctive forms of economic and social life for their users during North Africa's second- and third-century economic boom?</span>
+
+The short version of the answer this project is building toward: <span class="hl-coral">domestic architecture at Timgad shows provincial inhabitants actively negotiating their relationships to empire through spatial practice, not as passive recipients of Roman culture, but as agents shaping their own forms of belonging.</span>
+
+The theoretical frame comes from Pierre Bourdieu's <span class="hl-blue">*habitus*</span>, the idea that daily movement through space produces embodied social dispositions, and from David Mattingly's <span class="hl-blue">discrepant identities</span>, the recognition that provincial inhabitants held multiple, context-dependent identities at once. Methods draw on space syntax, 3D reconstruction, and a critical reading of the colonial excavation reports that still carry most of the evidence.
+
+## About the Author
+
+<figure style="float: right; max-width: 280px; margin: 0 0 1.5rem 1.8rem;">
+  <img src="/assets/images/kim-portrait.jpg" alt="A portrait of Kim Edher in a baby blue trench coat, smiling, with the Tokyo skyline in the background.">
+  <figcaption>Tokyo, 2026.</figcaption>
+</figure>
+
+Kim Edher is an instructor of Classical Studies at Langara College and a PhD candidate in the Ancient Mediterranean and Near Eastern Studies (AMNE) department at the University of British Columbia (UBC). Her dissertation, *House, Home, and Habitus: Reconstructing Lived Experiences at Timgad*, is supervised by Dr. Matthew McCarty, whose scholarship on Roman North Africa and on the politics of how archaeological knowledge gets made has shaped this project's questions from the start. Committee members Dr. Kevin Fisher, in digital archaeology and space syntax, and Dr. Katharine Huemoeller, in Roman social history and lived experience, have grounded the work in both its methods and its humanity. Having had the chance to learn from all three across her master's and doctoral coursework, Kim carries what they taught her not only into this research but into how she shows up in her own classroom as both instructor and scholar. For that, she is deeply grateful.
 
 ## Acknowledgments
 
@@ -37,4 +51,4 @@ This project owes its shape to Kim's committee at UBC, to the AMNE department's 
 
 ## How to get in touch
 
-Corrections, questions, and suggestions are welcome. The easiest paths are the email and GitHub links on the [Cite and Contribute](/cite/) page. If you teach with any of the material here, or find something on the site useful for your own work, Kim would genuinely like to hear about it.
+Corrections, questions, and suggestions are welcome. Email [km2133@student.ubc.ca](mailto:km2133@student.ubc.ca), or open an issue on the [project repository](https://github.com/kimedher/timgadhouses/issues).
