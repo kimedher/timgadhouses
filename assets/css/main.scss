@@ -720,6 +720,35 @@ figcaption {
   background: var(--bg-soft);
 }
 
+/* ---------- Citation reference blocks (per-subsection) ---------- */
+
+.subsection-refs {
+  font-family: var(--serif);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--terracotta-deep);
+  margin: 0.4rem 0 2.8rem 0;
+  padding: 0.95rem 1.3rem;
+  border-left: 3px solid var(--terracotta-soft);
+  background: rgba(232, 196, 174, 0.1);
+  line-height: 1.6;
+  letter-spacing: 0.005em;
+}
+
+.subsection-refs p {
+  margin: 0 0 0.5rem 0;
+}
+
+.subsection-refs p:last-child {
+  margin-bottom: 0;
+}
+
+.subsection-refs em,
+.subsection-refs i {
+  font-style: italic;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 640px) {
