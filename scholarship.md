@@ -216,16 +216,16 @@ For this project, space syntax and household archaeology give us the architectur
 <div class="biblio">
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life, Vol. I: From Pagan Rome to Byzantium</em>, edited by Paul Veyne, 319–409. Cambridge, MA: Belknap Press of Harvard University Press.
-  <span class="bib-annotation">The essay whose opening move, that <em>domus</em> refers not only to the walls but also to the people within them, is the organizing quotation of this entire site. Thébert also does the work of taking North African houses seriously on their own terms, rather than as provincial echoes of Italy.</span></p>
+  <span class="bib-annotation">The essay whose opening move, that <em>domus</em> refers not only to the walls but also to the people within them, is the organizing quotation of this entire site. Thébert's work remains foundational, shaping how Wallace-Hadrill and many of the scholars who followed came to think about the relationship between public and private in Roman domestic space. He also took North African houses seriously on their own terms, rather than as provincial echoes of Italy.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Mattingly, David J. 2011. <em>Imperialism, Power, and Identity: Experiencing the Roman Empire</em>. Princeton: Princeton University Press.
-  <span class="bib-annotation">The case for <em>discrepant identities</em>, the framework that replaces a single "Roman" identity with the many partial, layered, sometimes contradictory identities people actually held inside the empire. This project reads Timgad's houses as evidence of that multiplicity.</span></p>
+  <span class="bib-annotation">The case for <em>discrepant identities</em>, the framework that replaces a single "Roman" identity with the many partial, layered, sometimes contradictory identities people actually held inside the empire.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Bourdieu, Pierre. 1977. <em>Outline of a Theory of Practice</em>. Translated by Richard Nice. Cambridge: Cambridge University Press.
   <span class="bib-annotation">The source of <em>habitus</em>, the durable dispositions that let a built environment and a set of bodily practices reproduce a social order without anyone naming the rules out loud. Domestic architecture is where habitus becomes visible.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Woolf, Greg. 1998. <em>Becoming Roman: The Origins of Provincial Civilization in Gaul</em>. Cambridge: Cambridge University Press.
-  <span class="bib-annotation">Reframed provincial identity as something actively authored by local communities rather than handed down from Rome. Woolf's Gaul is not an exemplar to imitate but a parallel to work alongside: his insistence that provincial civilization is locally made sits directly next to the claim this project wants to make for Numidia and Timgad.</span></p>
+  <span class="bib-annotation">Reframed provincial identity as something actively authored by local communities rather than handed down from Rome.</span></p>
 
 </div>
 
