@@ -19,7 +19,7 @@ Where a work is a core source for this project, a short italicized note follows 
 
 ## Space syntax, household archaeology, and method
 
-Space syntax, first developed by Hillier and Hanson, lets us treat a built environment as a structured, relational system that guides and constrains movement, visibility, and interaction. Access, visibility, depth, and integration analyses can reveal how domestic spaces at Timgad controlled circulation, encounters, privacy, and labor. Household archaeology approaches the same house from the other side, insisting on it as an arena of social practice where routinized movement, as Swenson and Bourdieu both argue, produces the dispositions and misrecognized power relations a house reproduces without ever naming out loud. Together, the two traditions treat the house as both evidence and agent. Every access graph, every room retagged, every plan redrawn in this project descends from that pairing.
+Space syntax, first developed by Hillier and Hanson, treats a built environment as a relational system that shapes movement, visibility, and interaction. Its tools let us measure how houses at Timgad structured circulation, encounters, privacy, and labor. Household archaeology comes at the same house from the other side, reading it as an arena of daily practice where, as Swenson and Bourdieu both argue, repeated movement through rooms quietly reproduces the social order. Together, the two traditions treat the house as both evidence and agent. Every access graph, every room retagged, every plan redrawn in this project descends from that pairing.
 
 <div class="biblio">
 
@@ -27,10 +27,10 @@ Space syntax, first developed by Hillier and Hanson, lets us treat a built envir
   <span class="bib-annotation">The founding statement of space syntax. Buildings are read as configurations of accessible spaces, not as aesthetic objects, and the grammar of those configurations is what carries social meaning. Every access graph and depth calculation on this project descends from this book.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Allison, Penelope M., ed. 1999. <em>The Archaeology of Household Activities</em>. London: Routledge.
-  <span class="bib-annotation">Reframed Roman domestic studies around what people actually did in rooms rather than what an architectural typology assigned them to do. This is the move that lets a workshop in a "house" stop being an anomaly.</span></p>
+  <span class="bib-annotation">Reframed Roman domestic studies around what people actually did in rooms rather than what an architectural typology assigned them to do. This is the move that lets a workshop inside a "house" be read as part of how the household actually worked.</span></p>
 
   <p class="bib-entry"><span class="bib-core-tag">Core</span> Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.
-  <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against. Used here as a foil, since reading Timgad through a Pompeian template is exactly what this project pushes back on.</span></p>
+  <span class="bib-annotation">The comparative baseline that nearly every Roman house study is still measured against. Engaged with here critically, since reading Timgad through a Pompeian template is exactly what the dissertation pushes back on.</span></p>
 
   <p class="bib-entry">Fisher, Kevin. 2023. <em>Monumentality, Place-making and Social Interaction on Late Bronze Age Cyprus</em>. Monographs in Mediterranean Archaeology 17. London: Equinox Press.</p>
 
