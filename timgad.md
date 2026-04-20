@@ -55,6 +55,10 @@ This site uses the phrase "Roman North Africa" where it is conventional, but wit
 
 The phrase is kept in use here for searchability and cross-disciplinary clarity. The point of this section is that you should treat it as imperfect shorthand, not as a description of who the people inside these houses actually were.
 
+## A timeline of excavation
+
+The scholarly record of Timgad runs from the first reconnaissance in 1880 through the most recent digital work of the 2020s, across three very different political eras. The [Timeline of Excavation](/timgad/timeline/) lays that record out in a single interactive view: the directors who ran each campaign, the landmark publications, and the house-by-house discoveries that built the domestic corpus the dissertation is reading.
+
 ## What to read next
 
 For the argument the project is built around and the person running it, start with the [About page](/about/). For the domestic corpus that is the main subject of this work, see [Houses](/houses/). For the analytical tools and scholarship that ground the reading, see [Methods](/methods/).
