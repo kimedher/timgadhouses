@@ -25,7 +25,6 @@
   --terracotta-deep: #A65D40;
   --hairline: #E3D9C9;
   --hairline-soft: #EDE6D9;
-  --coral-fog: #EFDDCF;
   --max-content: 720px;
   --max-wide: 1100px;
   --max-bleed: 1320px;
@@ -181,12 +180,8 @@ main {
 
 .site-header {
   padding: 1.4rem 0;
-  border-bottom: 1px solid var(--hairline);
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-  background: rgba(239, 221, 207, 0.92); /* --coral-fog */
+  border-bottom: 1px solid var(--terracotta-soft);
+  background: transparent;
 }
 
 .site-header .container-wide {
@@ -201,7 +196,7 @@ main {
   font-family: var(--sans);
   font-weight: 700;
   font-size: 1.05rem;
-  color: var(--text);
+  color: var(--terracotta-deep);
   text-decoration: none;
   border: none;
   letter-spacing: -0.005em;
@@ -210,7 +205,7 @@ main {
   gap: 0.6rem;
 }
 
-.site-title:hover { color: var(--terracotta-deep); }
+.site-title:hover { color: var(--terracotta); }
 
 .site-title .logo-mark {
   width: 28px;
@@ -243,7 +238,7 @@ main {
 
 .site-nav a {
   font-family: var(--sans);
-  color: var(--text);
+  color: var(--terracotta-deep);
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -255,8 +250,8 @@ main {
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: var(--teal);
-  border-bottom-color: var(--terracotta);
+  color: var(--terracotta);
+  border-bottom-color: var(--terracotta-deep);
 }
 
 /* ---------- Hero (full-bleed with overlay) ---------- */
@@ -749,6 +744,81 @@ figcaption {
   font-style: italic;
 }
 
+/* ---------- Numbered card grid (for three-purposes / three-problems blocks) ---------- */
+
+.numbered-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin: 2rem 0 2.6rem;
+}
+
+.numbered-block .card {
+  padding: 1.6rem 1.5rem 1.4rem;
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.numbered-block .num {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 500;
+  font-variation-settings: 'opsz' 72;
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.55rem;
+  letter-spacing: -0.02em;
+}
+
+.numbered-block .card p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.numbered-block .card p strong {
+  font-weight: 600;
+}
+
+/* Warm variant (purposes) */
+.numbered-block.warm .card {
+  background: rgba(232, 196, 174, 0.22);
+  border-left: 3px solid var(--terracotta-soft);
+}
+.numbered-block.warm .num { color: var(--terracotta-deep); }
+.numbered-block.warm .card p strong { color: var(--terracotta-deep); }
+
+/* Cool variant (problems) */
+.numbered-block.cool .card {
+  background: rgba(184, 216, 227, 0.25);
+  border-left: 3px solid var(--baby-blue);
+}
+.numbered-block.cool .num { color: var(--baby-blue-deep); }
+.numbered-block.cool .card p strong { color: var(--baby-blue-deep); }
+
+/* ---------- Research-question pull-quote ---------- */
+
+.pullquote-question {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--baby-blue-deep);
+  text-align: center;
+  margin: 2rem auto 2.8rem;
+  max-width: 620px;
+  padding: 1.8rem 2.2rem;
+  background: rgba(228, 240, 244, 0.55);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--baby-blue-mid);
+  border-right: 4px solid var(--baby-blue-mid);
+}
+
+.pullquote-question p {
+  margin: 0;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 640px) {
@@ -769,6 +839,17 @@ figcaption {
   }
   .site-nav { gap: 1.2rem; }
   .site-nav a { font-size: 0.72rem; }
+  .numbered-block {
+    grid-template-columns: 1fr;
+    gap: 0.95rem;
+  }
+  .numbered-block .num {
+    font-size: 2.6rem;
+  }
+  .pullquote-question {
+    font-size: 1.15rem;
+    padding: 1.4rem 1.4rem;
+  }
   .post-content > p:first-of-type::first-letter,
   .page-content > p:first-of-type::first-letter {
     font-size: 2.7em;
