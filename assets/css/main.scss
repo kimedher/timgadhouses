@@ -292,7 +292,7 @@ main {
 .hero-bleed-content {
   position: relative;
   z-index: 3;
-  padding: 7rem 0 6.5rem;
+  padding: 3.5rem 0 10rem;
   color: #FFF8EE;
   max-width: 760px;
 }
@@ -351,16 +351,17 @@ main {
 
 .hero-bleed-caption {
   position: absolute;
-  right: 1.5rem;
-  bottom: 1rem;
+  right: 1.25rem;
+  bottom: 0.7rem;
   z-index: 3;
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.6rem;
   font-style: italic;
-  color: rgba(255, 248, 238, 0.6);
-  max-width: 320px;
+  color: rgba(255, 248, 238, 0.42);
+  max-width: 260px;
   text-align: right;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
+  line-height: 1.35;
 }
 
 /* Legacy hero (kept for non-home pages) */
@@ -470,12 +471,13 @@ figure img {
 
 figcaption {
   font-family: var(--sans);
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
   font-style: italic;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
+  opacity: 0.82;
 }
 
 /* ---------- Feature cards (homepage) ---------- */
@@ -752,11 +754,12 @@ figcaption {
   margin-top: 0.9rem;
   text-align: center;
   font-family: var(--sans);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
   font-style: italic;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  opacity: 0.82;
 }
 
 /* Inside an italic figcaption, em/i should render upright so book and journal
@@ -1034,7 +1037,7 @@ figcaption i {
 @media (max-width: 640px) {
   body { font-size: 16px; }
   .hero-bleed-content {
-    padding: 4.5rem 0 4rem;
+    padding: 2.5rem 0 6rem;
   }
   .hero-bleed-caption {
     position: relative;
