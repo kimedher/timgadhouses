@@ -25,7 +25,7 @@ There is a contemporary edge to this. Anyone who fit a desk into the corner of a
 
 ## Around a hundred houses
 
-Timgad preserves roughly one hundred excavated houses, among the largest single-site assemblages of excavated domestic architecture in Roman North Africa. Despite that, only a handful have received meaningful modern analysis. <span class="hl-coral">That gap is most of the reason this project exists.</span>
+Timgad preserves roughly one hundred excavated houses, among the largest single-site assemblages of excavated domestic architecture in Roman North Africa. Despite that, only a handful have received meaningful modern analysis. <span class="hl-coral">That gap is a big part of why this project even exists.</span>
 
 Most of what we can read about these houses lives in three kinds of evidence. First, <span class="hl-blue">archaeological documentation</span>, from the French excavation reports beginning in the 1880s through Germain's 1969 catalog and more recent analytical work by Rebuffat, Amraoui, and Ardeleanu. Second, <span class="hl-blue">epigraphic evidence</span>, especially the foundation inscription of the colony and the civic inscriptions that fix the households in a social world of named local elites. Third, <span class="hl-blue">literary sources</span> like Procopius, Apuleius, and the North African church fathers Tertullian and Augustine, useful for context, thin on domestic specifics.
 
