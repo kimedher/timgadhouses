@@ -31,6 +31,7 @@
         </a>
         <nav class="site-nav">
           <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
+          <a href="{{ '/methods/' | relative_url }}"{% if page.url contains '/methods' %} class="active"{% endif %}>Methods</a>
           {% comment %} Other pages temporarily hidden during review. Restore by removing these comment tags.
           <a href="{{ '/why-timgad/' | relative_url }}"{% if page.url contains '/why-timgad' %} class="active"{% endif %}>Why Timgad</a>
           <a href="{{ '/grid/' | relative_url }}"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
@@ -56,6 +57,7 @@
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">The project</strong><br>
             <a href="{{ '/about/' | relative_url }}">About</a>
+            <br><a href="{{ '/methods/' | relative_url }}">Methods</a>
             {% comment %} Other links temporarily hidden until their pages launch.
             <br><a href="{{ '/why-timgad/' | relative_url }}">Why Timgad</a>
             <br><a href="{{ '/cite/' | relative_url }}">Cite &amp; contribute</a>
