@@ -716,8 +716,8 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       year: 1951, title: 'Courtois, Timgad, antique Thamugadi',
       person: 'Christian Courtois',
       type: 'publication',
-      desc: 'Popular interpretive synthesis. Frequently cited, but Rebuffat (1969, p. 676) specifically warns that many of its plans are "fantaisistes" (fanciful) and not architecturally precise. Use with caution.',
-      houses: 'Schematic plans, use with caution',
+      desc: 'Popular interpretive synthesis that remains widely cited. Rebuffat (1969, p. 676) flags many of its plans as "fantaisistes" (fanciful) and therefore architecturally imprecise, meaning the volume is better treated as a source for reception history rather than for the plans themselves.',
+      houses: 'Schematic plans, read for interpretive framing more than architectural precision',
       source: 'Courtois 1951 (SRC_030)'
     },
     {
