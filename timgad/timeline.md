@@ -7,7 +7,7 @@ last_updated: 2026-04-20
 ---
 
 <p class="timeline-lede">
-Timgad has been excavated for nearly 150 years, across three very different political eras. This timeline lays out the scholarly record in a single view: the directors who ran each campaign, the publications that shaped how the city has been read, and the house-by-house discoveries that built the domestic corpus. Hover or tap any event for detail.
+Timgad has been excavated for nearly 150 years, across three rather different political landscapes. This timeline lays out the scholarly record in a single view: the directors who ran each campaign, the publications that shaped how the city has been read, and the house-by-house discoveries that built the domestic corpus. Hover or tap any event for detail.
 </p>
 
 <p class="timeline-note">
