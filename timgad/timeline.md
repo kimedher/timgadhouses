@@ -43,13 +43,53 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   </div>
 </div>
 
-<div class="timeline-viz-wrap">
+<div class="timeline-viz-wrap" id="timeline-viz-wrap">
   <svg id="timeline-svg" class="timeline-svg" viewBox="0 0 1180 340" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Horizontal chronological timeline of Timgad excavations, 1880 to present">
     <!-- Dynamically populated by JS -->
   </svg>
   <div class="timeline-hover" id="timeline-hover" aria-live="polite"></div>
 </div>
-<p class="timeline-scroll-hint">Swipe the timeline left and right to see the full span.</p>
+<div class="timeline-actions">
+  <span class="timeline-scroll-hint">Scroll the timeline horizontally to see the full span.</span>
+  <button type="button" class="timeline-expand-btn" id="timeline-expand-btn" aria-label="Open timeline in fullscreen">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="15 3 21 3 21 9"></polyline>
+      <polyline points="9 21 3 21 3 15"></polyline>
+      <line x1="21" y1="3" x2="14" y2="10"></line>
+      <line x1="3" y1="21" x2="10" y2="14"></line>
+    </svg>
+    <span>Expand</span>
+  </button>
+</div>
+
+<script>
+(function() {
+  var btn = document.getElementById('timeline-expand-btn');
+  var wrap = document.getElementById('timeline-viz-wrap');
+  if (!btn || !wrap) return;
+  var canFullscreen = !!(wrap.requestFullscreen || wrap.webkitRequestFullscreen);
+  if (!canFullscreen) {
+    /* iPhone Safari and other engines without element-level fullscreen:
+       fall back to opening the current page in a new tab, where pinch-zoom
+       and the horizontal scroll are the native reading experience. */
+    btn.addEventListener('click', function() {
+      window.open(window.location.href, '_blank', 'noopener');
+    });
+    return;
+  }
+  btn.addEventListener('click', function() {
+    if (document.fullscreenElement || document.webkitFullscreenElement) {
+      (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    } else {
+      var req = wrap.requestFullscreen || wrap.webkitRequestFullscreen;
+      var p = req.call(wrap);
+      if (p && p.catch) p.catch(function() {
+        window.open(window.location.href, '_blank', 'noopener');
+      });
+    }
+  });
+})();
+</script>
 
 <div class="timeline-detail" id="timeline-detail">
   <div class="td-empty">
@@ -170,47 +210,104 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 .tf-swatch--publication { background: var(--baby-blue-deep); }
 .tf-swatch--context     { background: var(--text-muted); }
 
-/* Main visualization */
+/* Main visualization.
+   The SVG is rendered at a wider-than-native 1600px so the labels and bars
+   come in at a comfortable reading size. The wrap stays within the page
+   reading column and scrolls horizontally to expose the rest of the SVG. */
 .timeline-viz-wrap {
   position: relative;
-  max-width: var(--max-wide);
-  margin: 0 auto 1.5rem;
+  max-width: var(--max-content);
+  margin: 0 auto 0.6rem;
   background: #fff;
   border: 1px solid var(--hairline);
   border-radius: 8px;
-  padding: 1.2rem 0.8rem 0.4rem;
+  padding: 1rem 0.6rem 0.6rem;
   box-shadow: 0 1px 2px rgba(31, 41, 51, 0.03);
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .timeline-svg {
-  width: 100%;
+  width: 1600px;
+  min-width: 1600px;
   height: auto;
   display: block;
   font-family: var(--sans);
   user-select: none;
 }
 
-/* On wider screens, break the viz out of the narrow text container
-   so the SVG can render at or near its native 1180x340 size instead of
-   being squeezed to roughly 236px tall inside the 820px reading column. */
-@media (min-width: 900px) {
-  .timeline-viz-wrap {
-    width: min(100vw - 2rem, 1180px);
-    margin-left: calc(50% - min(50vw - 1rem, 590px));
-    margin-right: calc(50% - min(50vw - 1rem, 590px));
-    max-width: none;
-  }
+.timeline-actions {
+  max-width: var(--max-content);
+  margin: 0 auto 1.4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+}
+
+.timeline-expand-btn {
+  background: transparent;
+  border: 1px solid var(--hairline);
+  color: var(--teal-dark);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.timeline-expand-btn:hover {
+  background: rgba(27, 107, 111, 0.08);
+  border-color: var(--teal);
+  color: var(--teal-dark);
+}
+
+.timeline-expand-btn svg {
+  flex: 0 0 auto;
 }
 
 .timeline-scroll-hint {
-  display: none;
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   color: var(--text-muted);
-  letter-spacing: 0.04em;
-  text-align: center;
-  margin: -0.4rem auto 1.2rem;
-  max-width: var(--max-wide);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/* Fullscreen styling: when the wrap enters browser fullscreen, push the SVG
+   bigger so it fills the screen width, and let the wrap take the full height. */
+.timeline-viz-wrap:fullscreen,
+.timeline-viz-wrap:-webkit-full-screen {
+  background: var(--bg);
+  max-width: none;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.timeline-viz-wrap:fullscreen .timeline-svg,
+.timeline-viz-wrap:-webkit-full-screen .timeline-svg {
+  width: 2400px;
+  min-width: 2400px;
+  height: auto;
+  margin: auto;
 }
 
 .timeline-svg text { fill: var(--text); }
@@ -483,19 +580,11 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
 /* Responsive */
 @media (max-width: 720px) {
-  /* Let the viz use its full native width and scroll horizontally instead of shrinking. */
-  .timeline-viz-wrap {
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    padding: 1rem 0.6rem 0.6rem;
+  .timeline-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
   }
-  .timeline-svg {
-    width: 1180px;
-    min-width: 1180px;
-    min-height: 360px;
-  }
-  .timeline-scroll-hint { display: block; }
   .timeline-filter { font-size: 0.7rem; }
   .tf-chip { padding: 0.35rem 0.7rem; font-size: 0.72rem; }
   .tl-event {
