@@ -185,10 +185,21 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 .timeline-svg {
   width: 100%;
   height: auto;
-  min-height: 420px;
   display: block;
   font-family: var(--sans);
   user-select: none;
+}
+
+/* On wider screens, break the viz out of the narrow text container
+   so the SVG can render at or near its native 1180x340 size instead of
+   being squeezed to roughly 236px tall inside the 820px reading column. */
+@media (min-width: 900px) {
+  .timeline-viz-wrap {
+    width: min(100vw - 2rem, 1180px);
+    margin-left: calc(50% - min(50vw - 1rem, 590px));
+    margin-right: calc(50% - min(50vw - 1rem, 590px));
+    max-width: none;
+  }
 }
 
 .timeline-scroll-hint {
