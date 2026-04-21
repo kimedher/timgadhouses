@@ -13,5 +13,3 @@ This page documents the GIS side of the project as it grows. The spatial work is
 Current focus: block-by-block wall tracing from satellite imagery, georeferenced against historical excavation plans.
 
 *Screenshots and short captions to follow as the work develops. Treat anything posted here as in-progress visualization rather than a final research output.*
-
-{% include cite-block.html %}
