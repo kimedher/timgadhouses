@@ -10,8 +10,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg: #F6F0E4;
-  --bg-soft: #F1ECE3;
+  --bg: #F9F4EB;
+  --bg-soft: #F4EFE5;
   --text: #1F2933;
   --text-muted: #6B7380;
   --teal: #1B6B6F;
@@ -499,7 +499,7 @@ figcaption {
 
 .feature-card:hover {
   border-top-color: var(--terracotta);
-  background: #F5EFE3;
+  background: #F8F2E6;
   transform: translateY(-2px);
 }
 
@@ -859,7 +859,7 @@ figcaption i {
   top: calc(100% + 10px);
   right: 0;
   min-width: 168px;
-  background: rgba(246, 240, 228, 0.97); /* --bg slightly transparent */
+  background: rgba(249, 244, 235, 0.97); /* --bg slightly transparent */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--hairline);
