@@ -33,7 +33,7 @@ The city was laid out on a strict orthogonal grid, with two main streets meeting
 
 <figure class="image-panel">
   <img src="/assets/images/house-plan-rooms.png" alt="A city plan of Timgad showing its dense rectilinear grid of insulae, with workshops and other functional buildings labeled around the periphery, including a pottery workshop, bronze foundry, possible cloth market, late kilns, and the North-east Baths.">
-  <figcaption>A plan of Timgad showing the rectilinear grid and the distribution of workshops across the city. After A. I. Wilson, "Timgad and Textile Production," in <em>Economies beyond Agriculture in the Classical World</em>, ed. D. J. Mattingly and J. Salmon (2001), fig. 8.</figcaption>
+  <figcaption>A plan of Timgad showing the rectilinear grid and the distribution of workshops across the city. After A. Wilson, "Timgad and Textile Production," in <em>Economies beyond Agriculture in the Classical World</em>, ed. D. J. Mattingly and J. Salmon (2001), fig. 8.</figcaption>
 </figure>
 
 What is most useful about Timgad for this project is not the symmetry of the founding moment but how quickly that moment was outgrown. By the middle of the second century CE, the rapid growth of the city had already ripped through its own foundational confines. The lived reality of its inhabitants exceeded the imperial vision of orderly colonial space almost immediately, and the city went on being inhabited and rebuilt for the next five centuries, until the Maures drove out the inhabitants and, according to Procopius, destroyed it in late antiquity to prevent Byzantine reoccupation.
