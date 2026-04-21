@@ -49,3 +49,5 @@ A concordance spreadsheet keeps every TIMG identifier in translation with Ballu 
 <h2>Downloading the data</h2>
 
 The underlying data for the grid will be published as GeoJSON and CSV under a Creative Commons license once the current audit is complete. For now, the data is in active flux and not distributed externally.
+
+{% include cite-block.html %}
