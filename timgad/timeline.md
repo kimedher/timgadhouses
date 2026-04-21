@@ -49,6 +49,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   </svg>
   <div class="timeline-hover" id="timeline-hover" aria-live="polite"></div>
 </div>
+<p class="timeline-scroll-hint">Swipe the timeline left and right to see the full span.</p>
 
 <div class="timeline-detail" id="timeline-detail">
   <div class="td-empty">
@@ -184,9 +185,21 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 .timeline-svg {
   width: 100%;
   height: auto;
+  min-height: 420px;
   display: block;
   font-family: var(--sans);
   user-select: none;
+}
+
+.timeline-scroll-hint {
+  display: none;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: -0.4rem auto 1.2rem;
+  max-width: var(--max-wide);
 }
 
 .timeline-svg text { fill: var(--text); }
@@ -459,7 +472,19 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
 /* Responsive */
 @media (max-width: 720px) {
-  .timeline-svg { min-height: 360px; }
+  /* Let the viz use its full native width and scroll horizontally instead of shrinking. */
+  .timeline-viz-wrap {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0.6rem 0.6rem;
+  }
+  .timeline-svg {
+    width: 1180px;
+    min-width: 1180px;
+    min-height: 360px;
+  }
+  .timeline-scroll-hint { display: block; }
   .timeline-filter { font-size: 0.7rem; }
   .tf-chip { padding: 0.35rem 0.7rem; font-size: 0.72rem; }
   .tl-event {

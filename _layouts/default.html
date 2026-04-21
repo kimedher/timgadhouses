@@ -29,7 +29,12 @@
           </span>
           Houses of Roman Timgad
         </a>
-        <nav class="site-nav">
+        <button type="button" class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" id="site-nav">
           <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
           <div class="nav-item has-dropdown{% if page.url contains '/timgad' %} nav-item--active{% endif %}">
             <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Timgad<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
@@ -97,6 +102,48 @@
   </div>
 
   <script>
+    /* Mobile hamburger toggle */
+    (function() {
+      var header = document.querySelector('.site-header');
+      var btn = document.querySelector('.nav-toggle');
+      if (!header || !btn) return;
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var isOpen = header.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        btn.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+        if (!isOpen) {
+          /* collapse any open sub-dropdowns when closing the hamburger */
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(el) {
+            el.classList.remove('open');
+            var t = el.querySelector('.nav-dropdown-toggle');
+            if (t) t.setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+      /* close the mobile menu when a link is tapped */
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          if (header.classList.contains('nav-open')) {
+            header.classList.remove('nav-open');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('aria-label', 'Open navigation');
+          }
+        });
+      });
+      /* close when viewport grows past the mobile breakpoint */
+      var mq = window.matchMedia('(min-width: 769px)');
+      var onChange = function(e) {
+        if (e.matches && header.classList.contains('nav-open')) {
+          header.classList.remove('nav-open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation');
+        }
+      };
+      if (mq.addEventListener) mq.addEventListener('change', onChange);
+      else if (mq.addListener) mq.addListener(onChange);
+    })();
+
     /* Dropdown nav toggle (click + keyboard) */
     (function() {
       var toggles = document.querySelectorAll('.nav-dropdown-toggle');
