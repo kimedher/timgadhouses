@@ -1,0 +1,12 @@
+{%- comment -%}
+  cite-block.html — page-scoped citation + license, quiet footer.
+  Uses page.title and page.url so each page renders its own correct
+  citation without any per-page maintenance. Intended as the last block
+  on substantive content pages.
+{%- endcomment -%}
+<hr class="cite-divider">
+<h3 class="cite-heading">How to cite</h3>
+<div class="cite-block">
+  <p>Edher, Kim. 2026. &ldquo;{{ page.title }}.&rdquo; <em>Houses of Roman Timgad</em>. Accessed [Month Day, Year]. https://timgadhouses.org{{ page.url }}.</p>
+</div>
+<p class="cite-license">All content is licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: quote or reproduce freely with credit.</p>

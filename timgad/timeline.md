@@ -1189,3 +1189,5 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
 })();
 </script>
+
+{% include cite-block.html %}

@@ -226,3 +226,5 @@ Space syntax, first developed by Hillier and Hanson, treats a built environment 
 
 </div>
 
+{% include cite-block.html %}
+

@@ -65,3 +65,5 @@ Household archaeology, the subdiscipline that asks how houses worked as social a
 ## What this method is not
 
 This project is <span class="hl-coral">*not*</span> trying to <span class="hl-coral">determine whether any given house is Roman, Punic, or Numidian</span>. That question, as framed, is the problem, not the answer. The more useful question, and the one this method supports, is how spatial organization structured social relationships and made some practices easier or harder for the people inside. That is a question about <span class="hl-blue">houses as active agents in the making of provincial life</span>, and that is the question this project is built to answer.
+
+{% include cite-block.html %}

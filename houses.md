@@ -58,3 +58,5 @@ A short working bibliography on Roman and ancient houses, domestic space, and No
   <p>Wilson, R. J. A. 2003. "Domestic Architecture and Identity in Roman Africa." In <em>Romanization and the City: Creation, Transformations, and Failures</em>, edited by Elizabeth Fentress, 209–212. Portsmouth, RI: Journal of Roman Archaeology.</p>
   <p>Wilson, R. J. A. 2016. "Roman Villas in North Africa." In <em>The Cambridge Companion to the Roman Economy</em>, edited by Walter Scheidel, 266–307. Cambridge: Cambridge University Press.</p>
 </div>
+
+{% include cite-block.html %}
