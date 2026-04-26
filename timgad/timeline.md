@@ -654,6 +654,14 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const EVENTS = [
     {
+      year: 1875, title: 'Masqueray opens the first excavations',
+      person: 'Émile Masqueray',
+      type: 'campaign',
+      desc: 'Working with a battalion of soldiers, Masqueray carries out the first excavations at the site. Among the finds is a portion of the inscription known as the Album municipal of Timgad. He also produces an early sector by sector description of the visible city, working from what was still largely a buried site.',
+      houses: 'Album municipal inscription; sector by sector description',
+      source: 'Masqueray 1876; Yelles 2024'
+    },
+    {
       year: 1880, title: 'Initial reconnaissance of the site',
       person: 'Gen. de Beylié; Cdt. Playfair',
       type: 'campaign',
@@ -662,20 +670,20 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       source: 'Pre-excavation reconnaissance'
     },
     {
-      year: 1881, title: 'Systematic French excavations begin',
-      person: 'Albert Ballu, René Cagnat',
-      type: 'campaign',
-      desc: 'The Service des Monuments Historiques opens formal excavations under French colonial administration. The forum, theater, and major public buildings are uncovered in rapid succession. Trajan foundation inscription discovered.',
-      houses: 'Forum, theater, Capitole, judicial basilica',
-      source: 'Cagnat 1891 (SRC_002)'
-    },
-    {
       year: 1883, title: 'Boissière, L\'Algérie romaine',
       person: 'Gaston Boissière',
       type: 'publication',
       desc: 'Early monograph framing Timgad within the broader archaeological project of Roman Algeria. Establishes the site as one of major scholarly interest.',
       houses: 'General references',
       source: 'Boissière 1883 (SRC_001)'
+    },
+    {
+      year: 1885, title: 'Duthoit directs the first major campaign',
+      person: 'Edmond Duthoit',
+      type: 'campaign',
+      desc: 'The architect Edmond Duthoit runs the first large scale fieldwork at Timgad between 1885 and 1887, concentrated on the forum, the theater, and the Arch of Trajan. Duthoit leaves no written excavation report, but a substantial archive of photographs and plans survives at the Médiathèque du patrimoine et de la photographie and at the municipal archives in Amiens.',
+      houses: 'Forum, theater, Arch of Trajan',
+      source: 'Yelles 2024, p. 86'
     },
     {
       year: 1891, title: 'Cagnat reports to the Académie',
@@ -846,12 +854,28 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       source: 'Courtois 1951 (SRC_030)'
     },
     {
+      year: 1957, title: 'Tourrenc, the last programmed excavations',
+      person: 'Serge Tourrenc',
+      type: 'campaign',
+      desc: 'Serge Tourrenc directs the last programmed excavations at Timgad between 1957 and 1962. As head of the Constantine South circumscription, which also covered Lambèse and Khenchela, his work at Timgad was confined to a few targeted sectors. In 1959, fieldwork at the Temple du Génie recovered the dedicatory inscription, and parallel work in the Byzantine fortress sector revealed Legio III Augusta legate inscriptions reused in later construction.',
+      houses: 'Temple du Génie inscription; Byzantine fort reused inscriptions',
+      source: 'Tourrenc 1968; Lassus 1981'
+    },
+    {
       year: 1962, title: 'Algerian Independence',
       person: '',
       type: 'context',
       desc: "After a war of liberation that took hundreds of thousands of Algerian lives and displaced many more, Algeria won its sovereignty back from France. Timgad, along with the rest of the country's archaeological record, returned to the custodianship of the people whose ancestors had built, inhabited, and outlasted it. The French-era archive endures as the main documentary base for excavation history, a colonial inheritance that Algerian and Maghrebi scholars continue to reread on their own terms.",
       houses: '',
       source: 'Historical context'
+    },
+    {
+      year: 1967, title: 'Post-independence return to the Byzantine fortress',
+      person: 'Jean Lassus, Marcel Le Glay, Jean-Claude Golvin',
+      type: 'campaign',
+      desc: 'Five years after independence, a short return mission documents the Byzantine fortress sector. Lassus and Le Glay work alongside Jean-Claude Golvin. These are among the last fieldwork visits by the colonial-era generation of scholars.',
+      houses: 'Byzantine fortress documentation',
+      source: 'Lassus 1981'
     },
     {
       year: 1969, title: 'Germain mosaic corpus, 189 mosaics cataloged',
