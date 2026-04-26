@@ -630,13 +630,6 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const DIRECTORS = [
     {
-      start: 1885, end: 1888,
-      name: 'Edmond Duthoit',
-      sub: '',
-      color: '#104A4D',
-      row: 0
-    },
-    {
       start: 1890, end: 1926,
       name: 'Albert Ballu',
       sub: 'with René Cagnat',
