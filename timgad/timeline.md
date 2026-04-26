@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A Timeline of Excavation
-subtitle: Who excavated what part of Timgad, when, and what they published about it. 1880 through the present.
+subtitle: Who excavated what part of Timgad, when, and what they published about it. 1870s through the present.
 permalink: /timgad/timeline/
 last_updated: 2026-04-20
 ---
@@ -44,7 +44,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 </div>
 
 <div class="timeline-viz-wrap" id="timeline-viz-wrap">
-  <svg id="timeline-svg" class="timeline-svg" viewBox="0 0 1180 340" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Horizontal chronological timeline of Timgad excavations, 1880 to present">
+  <svg id="timeline-svg" class="timeline-svg" viewBox="0 0 1180 340" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Horizontal chronological timeline of Timgad excavations, 1870 to present">
     <!-- Dynamically populated by JS -->
   </svg>
   <div class="timeline-hover" id="timeline-hover" aria-live="polite"></div>
@@ -609,7 +609,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const ERAS = [
     {
-      start: 1880, end: 1962,
+      start: 1875, end: 1962,
       label: 'French Colonial',
       color: '#C77B5A',
       y: 100, height: 24
@@ -973,7 +973,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const VB_W = 1180, VB_H = 340;
   const MARGIN_L = 50, MARGIN_R = 50;
-  const MIN_YEAR = 1878, MAX_YEAR = 2027;
+  const MIN_YEAR = 1872, MAX_YEAR = 2027;
 
   const ERA_Y = 70;     // era bands
   const ERA_H = 26;
@@ -1032,7 +1032,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   });
 
   // Decade grid lines and labels (1880, 1890, ..., 2020)
-  for (let yr = 1880; yr <= 2020; yr += 10) {
+  for (let yr = 1870; yr <= 2020; yr += 10) {
     const xp = x(yr);
     svg.appendChild(el('line', {
       x1: xp, y1: ERA_Y - 8, x2: xp, y2: VB_H - 40,
