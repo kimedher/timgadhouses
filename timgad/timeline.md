@@ -44,7 +44,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 </div>
 
 <div class="timeline-viz-wrap" id="timeline-viz-wrap">
-  <svg id="timeline-svg" class="timeline-svg" viewBox="0 0 1180 340" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Horizontal chronological timeline of Timgad excavations, 1870 to present">
+  <svg id="timeline-svg" class="timeline-svg" viewBox="0 0 1180 380" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Horizontal chronological timeline of Timgad excavations, 1870 to present">
     <!-- Dynamically populated by JS -->
   </svg>
   <div class="timeline-hover" id="timeline-hover" aria-live="polite"></div>
@@ -614,7 +614,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   const ERAS = [
     {
       start: 1875, end: 1962,
-      label: 'French Colonial (occupation begins 1830)',
+      label: 'French Colonial',
       color: '#C77B5A',
       y: 100, height: 24
     },
@@ -969,7 +969,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   // LAYOUT CONSTANTS
   // ====================================================================
 
-  const VB_W = 1180, VB_H = 340;
+  const VB_W = 1180, VB_H = 380;
   const MARGIN_L = 50, MARGIN_R = 50;
   const MIN_YEAR = 1870, MAX_YEAR = 2030;
 
@@ -1088,7 +1088,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   const EVENTS_TOP_BASE = DIRECTORS_Y_START - 18;   // events rising above directors
   const EVENTS_TOP_STEP = 18;
   const EVENTS_BOT_BASE = DIRECTORS_Y_START + 3 * (DIRECTOR_H + DIRECTOR_GAP) + 10;
-  const EVENTS_BOT_STEP = 18;
+  const EVENTS_BOT_STEP = 16;
 
   // Assign lane (row number from the anchor) to avoid label collisions.
   // Events laid above director bars (publications, context) rise upward; below (campaigns, discoveries) go downward.
@@ -1110,7 +1110,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   EVENTS.forEach((ev, idx) => {
     ev._id = 'ev' + idx;
     ev._x = x(ev.year);
-    const goUp = (ev.type === 'publication' || ev.type === 'context');
+    const goUp = false;  // All events lay below the director bars to keep the era band clear
     if (goUp) {
       ev._lane = assignLane(ev._x, topLanes);
       ev._dotY = EVENTS_TOP_BASE - ev._lane * EVENTS_TOP_STEP;
@@ -1122,7 +1122,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   // Draw guide lines from each event dot to the axis (or director bars)
   EVENTS.forEach(ev => {
-    const goUp = (ev.type === 'publication' || ev.type === 'context');
+    const goUp = false;  // All events lay below the director bars to keep the era band clear
     const targetY = goUp
       ? DIRECTORS_Y_START - 2
       : DIRECTORS_Y_START + 3 * (DIRECTOR_H + DIRECTOR_GAP) + 2;
