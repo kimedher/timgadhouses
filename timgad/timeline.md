@@ -323,6 +323,17 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   text-transform: uppercase;
   fill: var(--text);
 }
+.timeline-svg .tl-era-prelude {
+  font-size: 8px;
+  font-style: italic;
+  fill: var(--text);
+  fill-opacity: 0.65;
+  letter-spacing: 0.04em;
+}
+.timeline-svg .tl-era-prelude-arrow {
+  fill: var(--text);
+  fill-opacity: 0.5;
+}
 .timeline-svg .tl-director-label {
   font-size: 11px;
   font-weight: 600;
@@ -608,8 +619,9 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const ERAS = [
     {
-      start: 1830, end: 1962,
+      start: 1870, end: 1962,
       label: 'French Colonial',
+      prelude: '(since 1830)',
       color: '#C77B5A',
       y: 100, height: 24
     },
@@ -1018,8 +1030,24 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       x: eraX, y: ERA_Y, width: eraW, height: ERA_H,
       fill: era.color, class: 'tl-era-band', rx: 3
     }));
+    let labelX = eraX + 10;
+    if (era.prelude) {
+      // Left-pointing arrow signpost for "this era extends earlier than the chart shows"
+      const ax = eraX + 8;
+      const ay = ERA_Y + ERA_H / 2;
+      const aw = 5, ah = 5;
+      svg.appendChild(el('polygon', {
+        points: ax + ',' + ay + ' ' + (ax + aw) + ',' + (ay - ah) + ' ' + (ax + aw) + ',' + (ay + ah),
+        class: 'tl-era-prelude-arrow'
+      }));
+      svg.appendChild(el('text', {
+        x: ax + aw + 5, y: ay + 3,
+        'text-anchor': 'start', class: 'tl-era-prelude'
+      }, era.prelude));
+      labelX = ax + aw + 5 + 62;  // leave room for the prelude annotation
+    }
     svg.appendChild(el('text', {
-      x: eraX + 10, y: ERA_Y + ERA_H / 2 + 4,
+      x: labelX, y: ERA_Y + ERA_H / 2 + 4,
       'text-anchor': 'start', class: 'tl-era-label'
     }, era.label));
   });
