@@ -621,7 +621,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       y: 100, height: 24
     },
     {
-      start: 2000, end: 2032,
+      start: 2000, end: 2030,
       label: 'Digital Scholarship',
       color: '#1B6B6F',
       y: 100, height: 24
@@ -630,7 +630,14 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const DIRECTORS = [
     {
-      start: 1881, end: 1926,
+      start: 1885, end: 1888,
+      name: 'Edmond Duthoit',
+      sub: '',
+      color: '#104A4D',
+      row: 0
+    },
+    {
+      start: 1890, end: 1926,
       name: 'Albert Ballu',
       sub: 'with René Cagnat',
       color: '#104A4D',
@@ -973,7 +980,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const VB_W = 1180, VB_H = 340;
   const MARGIN_L = 50, MARGIN_R = 50;
-  const MIN_YEAR = 1872, MAX_YEAR = 2032;
+  const MIN_YEAR = 1870, MAX_YEAR = 2030;
 
   const ERA_Y = 70;     // era bands
   const ERA_H = 26;
