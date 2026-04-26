@@ -1028,7 +1028,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   for (let yr = 1870; yr <= 2030; yr += 10) {
     const xp = x(yr);
     svg.appendChild(el('line', {
-      x1: xp, y1: ERA_Y - 8, x2: xp, y2: VB_H - 40,
+      x1: xp, y1: ERA_Y + ERA_H + 4, x2: xp, y2: VB_H - 40,
       class: 'tl-decade-line'
     }));
     svg.appendChild(el('text', {
