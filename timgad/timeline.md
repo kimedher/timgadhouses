@@ -608,7 +608,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const ERAS = [
     {
-      start: 1875, end: 1962,
+      start: 1830, end: 1962,
       label: 'French Colonial',
       color: '#C77B5A',
       y: 100, height: 24
