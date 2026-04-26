@@ -621,7 +621,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       y: 100, height: 24
     },
     {
-      start: 2000, end: 2027,
+      start: 2000, end: 2032,
       label: 'Digital Scholarship',
       color: '#1B6B6F',
       y: 100, height: 24
@@ -973,7 +973,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
 
   const VB_W = 1180, VB_H = 340;
   const MARGIN_L = 50, MARGIN_R = 50;
-  const MIN_YEAR = 1872, MAX_YEAR = 2027;
+  const MIN_YEAR = 1872, MAX_YEAR = 2032;
 
   const ERA_Y = 70;     // era bands
   const ERA_H = 26;
@@ -1032,7 +1032,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   });
 
   // Decade grid lines and labels (1880, 1890, ..., 2020)
-  for (let yr = 1870; yr <= 2020; yr += 10) {
+  for (let yr = 1870; yr <= 2030; yr += 10) {
     const xp = x(yr);
     svg.appendChild(el('line', {
       x1: xp, y1: ERA_Y - 8, x2: xp, y2: VB_H - 40,
