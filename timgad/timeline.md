@@ -322,7 +322,11 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   letter-spacing: 0.08em;
   text-transform: uppercase;
   fill: var(--text);
-  fill-opacity: 0.6;
+  fill-opacity: 0.7;
+  paint-order: stroke;
+  stroke: var(--bg);
+  stroke-width: 3px;
+  stroke-linejoin: round;
 }
 .timeline-svg .tl-director-label {
   font-size: 11px;
@@ -610,20 +614,14 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   const ERAS = [
     {
       start: 1875, end: 1962,
-      label: 'French Colonial',
+      label: 'French Colonial (occupation begins 1830)',
       color: '#C77B5A',
       y: 100, height: 24
     },
     {
-      start: 1962, end: 2000,
+      start: 1962, end: 2030,
       label: 'Post-Independence',
       color: '#8FBDCF',
-      y: 100, height: 24
-    },
-    {
-      start: 2000, end: 2030,
-      label: 'Digital Scholarship',
-      color: '#1B6B6F',
       y: 100, height: 24
     }
   ];
