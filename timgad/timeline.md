@@ -322,11 +322,6 @@ Timgad has been excavated for nearly 150 years, across three rather different po
   letter-spacing: 0.08em;
   text-transform: uppercase;
   fill: var(--text);
-  fill-opacity: 0.7;
-  paint-order: stroke;
-  stroke: var(--bg);
-  stroke-width: 3px;
-  stroke-linejoin: round;
 }
 .timeline-svg .tl-director-label {
   font-size: 11px;
