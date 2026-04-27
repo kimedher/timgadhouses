@@ -680,7 +680,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Early monograph framing Timgad within the broader archaeological project of Roman Algeria. Establishes the site as one of major scholarly interest.',
       houses: 'General references',
-      source: 'Boissière 1883 (SRC_001)'
+      source: 'Boissière 1883'
     },
     {
       year: 1885, title: 'Duthoit directs the first major campaign',
@@ -696,7 +696,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'First formal report on the Timgad excavations to the Académie des Inscriptions. Documents the founding by Trajan and the Third Augustan Legion, the cardo/decumanus grid, and the emerging forum complex.',
       houses: 'General city description',
-      source: 'Cagnat 1891, CRAI (SRC_003)'
+      source: 'Cagnat 1891, CRAI'
     },
     {
       year: 1897, title: 'Les ruines de Timgad, the founding monograph',
@@ -704,7 +704,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'The first major monograph on the excavations. 244 pages with 8 plans, 32 phototype plates, and 41 drawings. Contains the earliest house plans, including the Maison des Jardinières. Published with state subsidy by the Imprimerie Nationale.',
       houses: 'Maison des Jardinières (M70), and many unnumbered domus types',
-      source: 'Ballu 1897 (SRC_006)'
+      source: 'Ballu 1897'
     },
     {
       year: 1897, title: 'Guide de Timgad published',
@@ -712,7 +712,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Companion tourist and scholarly guide in the "Guides en Algérie et en Tunisie" series. Three domus types described in detail (pp. 90 to 92), including a house with stables and stone mangers.',
       houses: 'Three domus typologies described',
-      source: 'Ballu 1897, Guide (SRC_007)'
+      source: 'Ballu 1897, Guide'
     },
     {
       year: 1901, title: 'Houses of Sertius and Hermaphrodite excavated',
@@ -720,7 +720,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'discovery',
       desc: 'Two of the most important elite peristyle houses at Timgad are cleared. Maison de Sertius has a triclinium of 16 by 25 ft with triple bays. Maison de l\'Hermaphrodite has a complete peristyle and tripartite triclinium.',
       houses: 'Maison de Sertius, Maison de l\'Hermaphrodite',
-      source: 'Ballu 1903 (SRC_010); Gsell 1902 (SRC_008)'
+      source: 'Ballu 1903; Gsell 1902'
     },
     {
       year: 1901, title: '1901 campaign, four insulae documented',
@@ -728,7 +728,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'campaign',
       desc: 'Annual report for the 1901 season. Decumanus maximus cleared to the eastern gate. Four insulae with domestic features recorded room by room. Small thermae documented near the basilica.',
       houses: '4 insulae with domestic features',
-      source: 'Gsell 1902, BCTH (SRC_008)'
+      source: 'Gsell 1902, BCTH'
     },
     {
       year: 1905, title: 'Timgad, une cité africaine, the great synthesis',
@@ -736,7 +736,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'The most influential early monograph on Timgad, co-authored by the three principal figures of the campaigns. Documents the Maison de la Piscina (67/75) and Maisons 83 and 90. Contains figures (40, 152, 156, 166) reproduced in almost every later scholarly work.',
       houses: 'Maisons 67/75 (Piscina), 83, 90',
-      source: 'Boeswillwald, Cagnat & Ballu 1905 (SRC_014)'
+      source: 'Boeswillwald, Cagnat & Ballu 1905'
     },
     {
       year: 1911, title: 'Sept années de découvertes, 1903 to 1910',
@@ -744,7 +744,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'The definitive early excavation report. Houses pp. 49 to 89. City-wide plan. Houses described as "manifestly reconstructed on earlier dwellings" with extensive commercial-residential mixing (shops, fulling vats). Rebuffat (1969) treats it as the canonical record for peristyles at Timgad.',
       houses: 'All numbered Maisons 25 to 90, plus many unnumbered',
-      source: 'Ballu 1911 (SRC_017)'
+      source: 'Ballu 1911'
     },
     {
       year: 1911, title: 'Gsell, Atlas archéologique de l\'Algérie',
@@ -760,7 +760,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Inventaire des mosaïques de la Gaule et de l\'Afrique, Tome III. Timgad material pp. 67 to 179. The earliest systematic visual corpus of Timgad mosaics with locational data, predating Germain by 58 years.',
       houses: 'All buildings with mosaic floors',
-      source: 'Pachtère 1911 (SRC_020)'
+      source: 'Pachtère 1911'
     },
     {
       year: 1912, title: 'Sixteen fulling establishments briefly described',
@@ -776,7 +776,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'campaign',
       desc: 'Annual reports covering 1916 to 1919. Three zones of houses north and south of the boulevards cleared. Christian chapel documented, with the Maison des Jardinières mosaic (Germain 1) reused within it.',
       houses: 'Three zones of houses, Christian chapel',
-      source: 'Ballu 1916 to 1919, BIAA (SRC_021)'
+      source: 'Ballu 1916 to 1919, BIAA'
     },
     {
       year: 1922, title: 'Maison des Filadelfes, the largest house at Timgad',
@@ -784,7 +784,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'discovery',
       desc: 'The Maison à l\'ouest des Thermes des Filadelfes is uncovered at roughly 2,469 square meters, the largest documented private residence at Timgad. Two divisions with atrium and peristyle courts, 15+ decorated rooms, six mosaics, a private thermal suite, three shops, and a peristyle well 1.90 m in diameter.',
       houses: 'Maison des Filadelfes (~2,469 m²)',
-      source: 'Ballu 1921 to 1922, BIAA (SRC_022)'
+      source: 'Ballu 1921 to 1922, BIAA'
     },
     {
       year: 1924, title: 'Theater Quarter House and Maison 102',
@@ -792,7 +792,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'discovery',
       desc: 'Four-section house in the theater quarter with atrium, three columns, mosaic floor, shop component, and a pool 1.20 m square. Maison 102 plan published (courtyard with portico on two sides).',
       houses: 'Theater Quarter House, Maison 102',
-      source: 'Ballu 1924, BIAA (SRC_023)'
+      source: 'Ballu 1924, BIAA'
     },
     {
       year: 1925, title: 'House at the East Rampart',
@@ -800,7 +800,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'discovery',
       desc: 'A six-column portico house with reception hall 6.80 by 11.60 m, atrium 7.35 by 6.10 m, a lead water piping system, and connection to small baths.',
       houses: 'House at the East Rampart',
-      source: 'Ballu 1925 to 1926, BIAA (SRC_024)'
+      source: 'Ballu 1925 to 1926, BIAA'
     },
     {
       year: 1927, title: 'Christofle succeeds Ballu',
@@ -808,7 +808,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'campaign',
       desc: 'After Ballu\'s 45-year tenure, Marcel Christofle takes over direction of excavations. The new campaigns run roughly 1927 to 1936 and focus on previously unreported structures, producing new plans rather than reproducing Ballu\'s.',
       houses: 'Transfer of direction',
-      source: 'Christofle 1930 (SRC_025, SRC_026)'
+      source: 'Christofle 1930'
     },
     {
       year: 1928, title: 'Entrepôt and Maison du quartier est',
@@ -816,7 +816,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'discovery',
       desc: 'Large house north of the Capitole (peristyle, 8 sandstone columns) documented. The Entrepôt recorded (Rebuffat No. 9) with double passages, apse chamber, and peristyle mosaics 3.85 by 3.60 m. Maison du quartier est (Rebuffat No. 10) documented.',
       houses: 'House N of Capitole, Entrepôt, Maison du quartier est',
-      source: 'Christofle 1930 (SRC_025)'
+      source: 'Christofle 1930'
     },
     {
       year: 1931, title: 'Fullonicae plans published',
@@ -824,7 +824,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'First publication of detailed plans for the fulling installations in the northeastern industrial quarter (pp. 69 to 77). Seven plans, later redrawn by Andrew Wilson (2001). These remain the primary source for Timgad\'s textile economy.',
       houses: '7 fullonicae plans + cellar at Trajan\'s Arc',
-      source: 'Christofle 1935 (SRC_027)'
+      source: 'Christofle 1935'
     },
     {
       year: 1935, title: 'House south of the theater, 20+ rooms',
@@ -832,7 +832,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'discovery',
       desc: 'Single intact residence south of the theater with 20+ rooms, a 12-column peristyle, and a central well 9.80 m deep (iron dovetail cramps cast in lead). Initially misidentified as multiple houses. Three further houses north of the Decumanus Maximus documented. Large late house built on the necropolis (30.45 by 28.65 m) with reused Corinthian columns.',
       houses: 'House S of theater, 3 houses N of Decumanus, late house on necropolis',
-      source: 'Christofle 1938 (SRC_028)'
+      source: 'Christofle 1938'
     },
     {
       year: 1938, title: 'Byzantine fortress excavations begin',
@@ -840,7 +840,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'campaign',
       desc: 'Excavations of the Byzantine fortress of Aqua Septimiana Felix, roughly 300 m south of the Roman city. Originally initiated by Ballu in 1910, renewed in 1939 at the request of the Byzantine Studies Congress. Roman city materials (including from the Maison des Jardinières) were systematically reused in Byzantine fortress construction.',
       houses: 'Byzantine fortress, suburban 2nd-c. houses',
-      source: 'Lassus 1981 (SRC_034); Leschi 1947 (SRC_029)'
+      source: 'Lassus 1981; Leschi 1947'
     },
     {
       year: 1947, title: 'Leschi, Aqua Septimiana Felix',
@@ -848,7 +848,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Study of the Caracalla-era inscription (October to December 213 AD) documenting a monumental complex with viridiarium, painted porticoes, bronze balustrade, and paved plaza. Evidence for the Serapis cult and Dea patria at Timgad.',
       houses: 'Monumental complex at the Byzantine fortress site',
-      source: 'Leschi 1947 (SRC_029)'
+      source: 'Leschi 1947'
     },
     {
       year: 1951, title: 'Courtois, Timgad, antique Thamugadi',
@@ -856,7 +856,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Popular interpretive synthesis that remains widely cited. Rebuffat (1969, p. 676) flags many of its plans as "fantaisistes" (fanciful) and therefore architecturally imprecise, meaning the volume is better treated as a source for reception history rather than for the plans themselves.',
       houses: 'Schematic plans, read for interpretive framing more than architectural precision',
-      source: 'Courtois 1951 (SRC_030)'
+      source: 'Courtois 1951'
     },
     {
       year: 1957, title: 'Tourrenc, the last programmed excavations',
@@ -888,7 +888,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: "Comprehensive mosaic corpus cataloging 189 mosaics across all Timgad buildings. Schematic plans link mosaics to room locations (figs. 3, 6, 7, 10, 12), with museum inventory numbers for 120+ pieces. The standard reference for Timgad's decorative program, though its approach is primarily art historical, extracting pavements from their architectural contexts rather than reading them as part of integrated domestic environments. Essential for mosaic identification, limited for spatial or architectural reconstruction.",
       houses: 'All houses with mosaics',
-      source: 'Germain 1969 (SRC_032)'
+      source: 'Germain 1969'
     },
     {
       year: 1969, title: 'Rebuffat\'s peristyle repertoire',
@@ -896,7 +896,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'The foundational catalog of North African peristyle houses. Twelve Timgad houses documented with standardized 1:500 plans. Methodological corrections to earlier colonial-era work. Rebuffat\'s numbering system is still in use today, including in this project\'s database.',
       houses: '12 houses: Sertius, Hermaphrodite, Corfidius, Piscina, Jardinières, 83, 90, 102, Entrepôt, Quartier est, Filadelfes, Optat',
-      source: 'Rebuffat 1969 (SRC_033)'
+      source: 'Rebuffat 1969'
     },
     {
       year: 1974, title: 'Rebuffat, Part II',
@@ -920,7 +920,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Long-delayed monograph publishing the 1938 to 1956 Byzantine fortress excavations. The definitive account of Aqua Septimiana Felix and of the systematic reuse of Roman city materials.',
       houses: 'Byzantine fortress, suburban houses',
-      source: 'Lassus 1981 (SRC_034)'
+      source: 'Lassus 1981'
     },
     {
       year: 2001, title: 'Wilson, Timgad and Textile Production',
@@ -928,7 +928,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Identifies at least 22 fullonicae, twice the number attested at Pompeii, concentrated in the northeast quarter. Seven plans redrawn from Christofle 1935. Directly challenges the "consumer city" model of Roman urbanism. Forum vestiarum inscription recovered.',
       houses: '22+ fullonicae, NE industrial zone, Sertius market',
-      source: 'Wilson 2001 (SRC_040)'
+      source: 'Wilson 2001'
     },
     {
       year: 2011, title: 'Amraoui, industrial quarter of Timgad',
@@ -944,7 +944,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Reads Timgad\'s domestic architecture for gentrification dynamics, specifically elite property consolidation during the Severan boom. Critical engagement with colonial excavation practices, using the archive against itself rather than on its own terms.',
       houses: 'Property consolidation patterns citywide',
-      source: 'Dufton 2019 (SRC_046, SRC_047)'
+      source: 'Dufton 2019'
     },
     {
       year: 2020, title: 'Rezkallah, first GIS of Timgad excavations',
@@ -952,7 +952,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Vectorization of the 1960 master plan and 18 insula survey plans. Identifies the southeast quarter as having no prior surveys of record. Critiques arbitrary restorations. First systematic GIS treatment of the Timgad excavation record.',
       houses: '18 insulae surveyed, SE quarter flagged as undocumented',
-      source: 'Rezkallah 2020 (SRC_051)'
+      source: 'Rezkallah 2020'
     },
     {
       year: 2024, title: 'Yelles, Chronocarto de Timgad',
@@ -960,7 +960,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'This paper is part of Yelles\'s <a href="https://timgadpro.hypotheses.org/" target="_blank" rel="noopener">Timgad Archives Project (TIMaP)</a> at AOROC, ENS Paris, developed in collaboration with the École française de Rome and the North African Heritage Archives Network (NAHAN). Using the Chronocarto GIS platform, Yelles reconstructs Ballu\'s excavation documentation from the 1880s onward. The study stands as a foundational digital-humanities contribution to rereading Timgad\'s excavation history with the tools of contemporary spatial analysis.',
       houses: 'Archival reassessment of all Ballu excavations',
-      source: 'Yelles 2024 (SRC_053)'
+      source: 'Yelles 2024'
     },
     {
       year: 2024, title: 'Laghmouche et al., Late Roman urban changes',
@@ -968,7 +968,7 @@ Timgad has been excavated for nearly 150 years, across three rather different po
       type: 'publication',
       desc: 'Five houses with Late Roman restoration evidence documented. Only the Corfidius Crementius house is precisely dated (4th c. AD, via Lepelley 1981 epigraphy). The paper acknowledges imprecise dating across the corpus as a major limitation, and calls for future work to establish secure dates for when individual houses were built, modified, and abandoned.',
       houses: 'Sertius, House N of Capitol, House near Filadelfes, Insula 61, Corfidius Crementius',
-      source: 'Laghmouche 2024 (SRC_052)'
+      source: 'Laghmouche 2024'
     }
   ];
 
