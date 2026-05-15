@@ -3,7 +3,7 @@ layout: page
 title: Interactive Grid of Timgad
 subtitle: The urban plan of Timgad, block by block, with house identifiers mapped to the streets.
 permalink: /grid/
-last_updated: 2026-04-19
+last_updated: 2026-05-14
 ---
 
 <div class="callout-warn">
