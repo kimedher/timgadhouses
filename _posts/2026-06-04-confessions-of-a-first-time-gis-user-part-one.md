@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Confessions of a first-time GIS user, part one: gathering the plans"
+title: "Confessions of a first-time GIS user: part one"
 date: 2026-06-04
 categories: [workflow]
 tags: [timgad, gis, qgis, georeferencing, methods, fieldnotes]
