@@ -37,6 +37,17 @@ Here is the part that surprised me most. The first real step in my GIS workflow 
 
 Before you can georeference anything, you need something to georeference. For me that meant the published excavation plans of Timgad's houses, the drawings made by the people who dug these blocks over the last century and more. And those plans live in books, scattered across libraries in North America and a few across the pond. Some of these volumes are old, large, and not exactly available at my local branch, nor were they light to carry, mind you.
 
+<div class="image-pair">
+  <figure>
+    <img src="{{ '/assets/images/report-from-paris.jpg' | relative_url }}" alt="Holding a large red archaeological report in front of a mirror">
+    <figcaption>A particularly large excavation report, newly arrived from Paris.</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/images/koerner-stacks.jpg' | relative_url }}" alt="A long aisle of book stacks at Koerner Library, UBC">
+    <figcaption>The stacks at Koerner Library, UBC.</figcaption>
+  </figure>
+</div>
+
 So step one was a month of detective work and a great deal of patience. I owe an enormous thank you to the interlibrary loan librarians at UBC, who tracked down volume after volume for me, including some that took real effort to locate. ILL librarians are unsung heroes of any project like this.
 
 A fair question here is: a lot of these books are already digitized, so why bother with the physical copies? Two reasons, and both of them matter for spatial work.
@@ -46,6 +57,17 @@ The first is the foldouts. Many excavation reports include large fold-out plans 
 The second is resolution. Even when a plan was scanned, it was often done at the resolution of a standard library scanner, at a DPI too low to be useful once I zoom in to trace individual walls. A plan that looks fine on a screen at full-page size falls apart into mush the moment you need detail.
 
 So a good chunk of that first month was waiting, and then scanning. I worked through the physical volumes on high-quality scanners, unfolding the plans properly and capturing them at high DPI so that the lines would hold up under magnification. Tedious, yes. The higher the DPI setting, the longer it takes to scan, think around 5 minutes per page. Yes, that was "fun." But the quality of every spatial decision I make later depends on the quality of these source images, so it was worth doing slowly and doing once. I owe that advice to my wise supervisor, who truly was there to advise me every step of the way.
+
+<div class="image-pair">
+  <figure>
+    <img src="{{ '/assets/images/ik-barber-exterior.jpg' | relative_url }}" alt="The stone exterior of the Irving K. Barber Learning Centre at UBC">
+    <figcaption>The Irving K. Barber Learning Centre, UBC.</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/images/chapman-scanning.jpg' | relative_url }}" alt="The timber-roofed Chapman Learning Commons reading hall inside IK Barber">
+    <figcaption>The Chapman Learning Commons inside IK Barber, where I spent hours scanning house plans.</figcaption>
+  </figure>
+</div>
 
 Alongside the plans, I gathered the other layers I would need, chiefly satellite and aerial imagery of the site, so that the historical drawings would have something real and modern to be matched against. This part is less straightforward than it sounds, because not every satellite image of Timgad is actually usable. Cloud cover is the obvious problem. A single bank of cloud sitting over the site can hide the exact walls I need to see. The subtler problem is shadow. Imagery captured when the sun sits low throws long shadows off every standing stone (confusing for colonnades and the like), and then those shadows can swallow a wall line, or worse, masquerade as one that is not really there. So I found myself doing something I never expected to care about, comparing captures of the same patch of ground taken on different days, hunting for the clearest, flattest-lit, least-clouded version. I leaned on high-resolution imagery from providers like Airbus alongside the standard basemaps, weighing each scene for clarity rather than just grabbing the first one that loaded. A clean, low-shadow image makes every later step easier, and a bad one quietly sabotages your tracing before you have drawn a single line.
 
