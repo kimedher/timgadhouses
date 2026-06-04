@@ -26,3 +26,6 @@ exclude:
   - node_modules
   - .sass-cache
   - .jekyll-cache
+
+# Posts live under the Journal section with clean URLs
+permalink: /notes/:title/
