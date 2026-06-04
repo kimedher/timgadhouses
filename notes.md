@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Notes & Essays
-subtitle: Short pieces on method, scholarship, teaching, and what is changing in how we read provincial Roman houses.
+title: Journal
+subtitle: Field notes from my own workflow, written as the project happens, not after.
 permalink: /notes/
-last_updated: 2026-04-18
-published: false
+last_updated: 2026-06-04
+published: true
 ---
+
+<p class="page-intro">A quick word on what this is, since "journal" can mean a few things. This is not an academic journal, peer reviewed and final. It is not quite a personal diary either. Think of it as a set of field notes, but of my own making: honest write-ups of how this project actually comes together, written while it is happening rather than tidied up years later. Some posts walk through a workflow or a tool I am learning. Some work through a question about Roman houses. All of them are written in real time, with the false starts left in, because the process is part of the story.</p>
 
 <ul class="post-list">
   {% for post in site.posts %}
