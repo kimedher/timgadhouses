@@ -93,4 +93,4 @@ Here is the thing I would tell my past self, the one still reading one more repo
 
 With the plans (finally) anchored, the real work could start. In part two I will walk through the drawing workflow I settled on, block by block, house by house, and the decisions that turned out to matter most, including the surprisingly stubborn question of what counts as a wall, how to handle the gaps, and what to do when a source contradicts itself.
 
-*First shared on [Instagram](https://www.instagram.com/p/DZOBwT3kt9e/).*
+*Also shared on [Instagram](https://www.instagram.com/p/DZOBwT3kt9e/).*
