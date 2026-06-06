@@ -15,7 +15,10 @@ excerpt: >-
 ---
 
 <figure class="image-panel">
-  <img src="{{ '/assets/images/readiness-acting-your-way.jpg' | relative_url }}" alt="A person sitting on a bed with a laptop, beneath the words: what if instead of waiting to feel ready you just acted your way to readiness?">
+  <a href="https://www.instagram.com/p/DZP9ASGCYyy/" target="_blank" rel="noopener">
+    <img src="{{ '/assets/images/readiness-acting-your-way.jpg' | relative_url }}" alt="A person sitting on a bed with a laptop, beneath the words: what if instead of waiting to feel ready you just acted your way to readiness?">
+  </a>
+  <figcaption>First shared on <a href="https://www.instagram.com/p/DZP9ASGCYyy/" target="_blank" rel="noopener">Instagram</a>.</figcaption>
 </figure>
 
 I used to think I needed everything to be perfect before I could start.
