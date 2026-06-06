@@ -2,6 +2,7 @@
 layout: post
 title: "On acting your way to readiness"
 date: 2026-06-06
+image: /assets/images/readiness-acting-your-way.jpg
 categories: [reflection]
 tags: [phd, academia, procrastination, productivity, fieldnotes]
 reading_time: 5
