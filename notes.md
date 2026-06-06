@@ -14,7 +14,7 @@ published: true
   <li>
     <p class="post-meta">
       {{ post.date | date: "%B %-d, %Y" }}
-      {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
+      {% if post.reading_time %} · <span class="post-readtime">{{ post.reading_time }} min read</span>{% endif %}
       {% if post.categories %} · {{ post.categories | join: ', ' }}{% endif %}
     </p>
     <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
