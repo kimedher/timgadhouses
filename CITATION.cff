@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: Houses of Roman Timgad
+message: If you use this resource, please cite it as below.
+type: dataset
+authors:
+  - family-names: Edher
+    given-names: Kim
+abstract: >-
+  An open digital humanities project cataloging over a hundred houses excavated
+  at Roman Timgad (Thamugadi, Algeria), and the lives lived within their walls.
+  The project publishes the data behind a critical reading of provincial Roman
+  domestic architecture, foregrounding veterans, workshop owners, and local
+  Numidians rather than a single Pompeian template.
+keywords:
+  - Roman archaeology
+  - Timgad
+  - Thamugadi
+  - domestic architecture
+  - Roman North Africa
+  - digital humanities
+  - GIS
+  - space syntax
+license: CC-BY-4.0
+url: https://timgadhouses.org
+repository-code: https://github.com/kimedher/timgadhouses
