@@ -16,7 +16,7 @@ Kim Edher, km2133@student.ubc.ca.
 
 This project is archived on Zenodo with a citable DOI. Suggested citation:
 
-> Edher, Kim. *Houses of Roman Timgad*. 2026â€“. https://timgadhouses.org. https://doi.org/10.5281/zenodo.21116238
+> Edher, Kim. *Houses of Roman Timgad*. 2026–. https://timgadhouses.org. https://doi.org/10.5281/zenodo.21116238
 
 ## License
 
