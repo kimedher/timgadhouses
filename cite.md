@@ -12,6 +12,8 @@ published: false
 If you use text, images, or data from this project in your own work, please cite it. A suggested format:
 
 > Edher, Kim. *Houses of Roman Timgad*. 2026–. https://timgadhouses.org
+>
+> A persistent, citable version is archived on Zenodo: https://doi.org/10.5281/zenodo.21116238
 
 For a specific page, add the page title and date accessed:
 
