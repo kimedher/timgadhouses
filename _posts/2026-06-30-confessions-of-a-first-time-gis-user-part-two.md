@@ -4,7 +4,7 @@ title: "Confessions of a first-time GIS user: part two"
 date: 2026-06-30
 categories: [workflow]
 tags: [timgad, gis, qgis, digitizing, polygons, database, methods, fieldnotes]
-reading_time: 9
+reading_time: 12
 published: true
 excerpt: >-
   Part one ended with the plans anchored and the map ready to be drawn on.
