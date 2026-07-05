@@ -5,7 +5,7 @@ date: 2026-06-06
 image: /assets/images/readiness-acting-your-way.jpg
 categories: [reflection]
 tags: [phd, academia, procrastination, productivity, fieldnotes]
-reading_time: 5
+reading_time: 4
 published: true
 excerpt: >-
   I used to think I needed everything to be perfect before I could start, so
