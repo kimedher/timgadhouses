@@ -47,7 +47,7 @@ A concordance spreadsheet keeps every TIMG identifier in translation with Ballu 
 The underlying data for the grid will be published as GeoJSON and CSV under a Creative Commons license once the current audit is complete. For now, the data is in active flux and not distributed externally.
 
 <div class="callout-warn">
-  <p><strong>A note on the wet paint.</strong> This grid is a work in progress, and I've published it early on purpose. It pulls straight from the same database as the house catalog, so the blocks update whenever the data does, and right now the data is still moving. Numbers will shift, and some assignments will turn out to be wrong. I would rather fix things in the open than wait for perfect. Please refrain from citing the grid for the moment, as it remains a work in progress. Once the data settles, I will update this note to reflect its reliability as a stable version for future reference.</p>
+  <p><strong>A note on the wet paint.</strong> This grid is a work in progress, and I've published it early on purpose. It pulls straight from the same database as the house catalog, so the blocks update whenever the data does, and right now the data is still moving. Numbers will shift, and some assignments will turn out to be wrong. I would rather fix things in the open than wait for perfect. Once the data settles, I will update this note to reflect its reliability as a stable version for future reference.</p>
 </div>
 
 {% include cite-block.html %}
