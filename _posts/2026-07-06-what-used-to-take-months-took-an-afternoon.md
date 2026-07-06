@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What used to take me months took an afternoon"
+title: "What used to take me months took an afternoon with AI"
 date: 2026-07-06
 categories: [reflections]
 tags: [ai, ethics, digital-humanities, accessibility, methods, fieldnotes]
