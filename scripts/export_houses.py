@@ -35,9 +35,9 @@ def zone(q):
 def type_class(bt):
     t = bt.lower()
     if "elite" in t or "flamen" in t: return "Elite house"
-    if "collective" in t: return "Possibly collective"
-    if "warehouse" in t or "mixed-use" in t: return "Warehouse / mixed-use"
+    if "collective" in t or "warehouse" in t or "mixed-use" in t: return "Mixed-use / other"
     if "block" in t or "insula" in t: return "Residential block"
+    if "isolated" in t: return "Freestanding house"
     if "house" in t or "residential" in t: return "House"
     return "Uncertain"
 

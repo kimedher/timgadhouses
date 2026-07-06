@@ -68,8 +68,8 @@
     <option value="">Building type: all</option>
     {% for t in hc_types %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
   </select>
-  <select id="hc-conf" aria-label="Filter by identification confidence">
-    <option value="">Confidence: all</option>
+  <select id="hc-conf" aria-label="Filter by mapping confidence">
+    <option value="">Mapping confidence: all</option>
     <option value="high">High</option>
     <option value="medium">Medium</option>
     <option value="low">Low</option>
@@ -93,7 +93,7 @@
   <article class="hc-card"
     data-zone="{{ house.zone | escape }}"
     data-type="{{ house.type_class | escape }}"
-    data-conf="{{ house.confidence | escape }}"
+    data-conf="{{ house.mapping_confidence | escape }}"
     data-name="{{ house.name_en | downcase | escape }}"
     data-gid="{{ house.grid_id | escape }}"
     data-area="{{ house.area_m2 | default: 0 }}"
@@ -104,7 +104,7 @@
     <p class="hc-meta">{{ house.zone | escape }}{% if house.area_m2 %} &middot; &asymp;{{ house.area_m2 }} m&sup2;{% endif %}</p>
     <div class="hc-badges">
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
-      <span class="hc-badge hc-badge--{{ house.confidence | escape }}">{{ house.confidence | escape }} confidence</span>
+      <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">mapping: {{ house.mapping_confidence | escape }}</span>
       {% if house.sample %}<span class="hc-badge hc-badge--full">full record</span>{% endif %}
     </div>
     {% if house.notes != "" %}<p class="hc-note">{{ house.notes | truncate: 180 | escape }}</p>{% endif %}
