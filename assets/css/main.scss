@@ -592,14 +592,11 @@ figcaption {
 /* Journal intro blurb: set apart from the post list with a soft divider and
    generous space so the "what this is" note reads separately from the entries. */
 .page-content > p.page-intro {
-  font-size: 0.76rem;
+  font-size: 0.84rem;
   color: var(--text-muted);
-  background: rgba(199, 123, 90, 0.12);
-  border-left: 4px solid var(--terracotta);
-  border-radius: var(--radius);
-  padding: 1.2rem 1.5rem;
+  padding-bottom: 2.25rem;
   margin-bottom: 2.75rem;
-  line-height: 1.65;
+  border-bottom: 1px solid var(--hairline-soft);
 }
 
 .post-list {
@@ -616,7 +613,7 @@ figcaption {
   border: 1px solid var(--hairline);
   border-left: 4px solid var(--terracotta-soft);
   border-radius: var(--radius);
-  background: linear-gradient(135deg, #FFFFFF 0%, var(--bg-soft) 100%);
+  background: rgba(199, 123, 90, 0.12);
   transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
   animation: post-card-in 0.7s ease-out backwards;
 }
@@ -648,7 +645,7 @@ figcaption {
 /* Newest post gets the teal treatment plus a "Latest" pill. */
 .post-list li:first-child {
   border-left-color: var(--teal);
-  background: linear-gradient(135deg, var(--baby-blue-soft) 0%, var(--bg-soft) 85%);
+  background: var(--baby-blue-soft);
 }
 
 .post-list li:first-child:hover { border-left-color: var(--teal-dark); }
