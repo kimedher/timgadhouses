@@ -52,6 +52,7 @@
             <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Houses<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
             <div class="nav-dropdown" role="menu">
               <a href="{{ '/houses/' | relative_url }}" role="menuitem"{% if page.url == '/houses/' %} class="active"{% endif %}>Overview</a>
+              <a href="{{ '/houses/catalog/' | relative_url }}" role="menuitem"{% if page.url contains '/houses/catalog' %} class="active"{% endif %}>Catalog</a>
               <a href="{{ '/methods/' | relative_url }}" role="menuitem"{% if page.url contains '/methods' %} class="active"{% endif %}>Methods</a>
               <a href="{{ '/grid/' | relative_url }}" role="menuitem"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
               <a href="{{ '/gis/' | relative_url }}" role="menuitem"{% if page.url contains '/gis' %} class="active"{% endif %}>GIS</a>
@@ -90,6 +91,7 @@
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Houses</strong><br>
             <a href="{{ '/houses/' | relative_url }}">Overview</a>
+            <br><a href="{{ '/houses/catalog/' | relative_url }}">Catalog</a>
             <br><a href="{{ '/methods/' | relative_url }}">Methods</a>
             <br><a href="{{ '/grid/' | relative_url }}">Grid</a>
             <br><a href="{{ '/gis/' | relative_url }}">GIS</a>
