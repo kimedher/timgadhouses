@@ -592,13 +592,14 @@ figcaption {
 /* Journal intro blurb: set apart from the post list with a soft divider and
    generous space so the "what this is" note reads separately from the entries. */
 .page-content > p.page-intro {
-  font-size: 0.84rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
-  background: var(--baby-blue-soft);
-  border-left: 3px solid var(--baby-blue-mid);
+  background: rgba(199, 123, 90, 0.12);
+  border-left: 4px solid var(--terracotta);
   border-radius: var(--radius);
-  padding: 1.35rem 1.6rem;
+  padding: 1.2rem 1.5rem;
   margin-bottom: 2.75rem;
+  line-height: 1.65;
 }
 
 .post-list {
