@@ -48,15 +48,14 @@
               <a href="{{ '/timgad/timeline/' | relative_url }}" role="menuitem"{% if page.url contains '/timgad/timeline' %} class="active"{% endif %}>Timeline</a>
             </div>
           </div>
-          <div class="nav-item has-dropdown{% if page.url contains '/houses' or page.url contains '/methods' or page.url contains '/grid' or page.url contains '/gis' or page.url contains '/data' %} nav-item--active{% endif %}">
+          <div class="nav-item has-dropdown{% if page.url contains '/houses' or page.url contains '/methods' or page.url contains '/grid' or page.url contains '/gis' %} nav-item--active{% endif %}">
             <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Houses<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
             <div class="nav-dropdown" role="menu">
               <a href="{{ '/houses/' | relative_url }}" role="menuitem"{% if page.url == '/houses/' %} class="active"{% endif %}>Overview</a>
               <a href="{{ '/houses/catalog/' | relative_url }}" role="menuitem"{% if page.url contains '/houses/catalog' %} class="active"{% endif %}>Catalog</a>
-              <a href="{{ '/methods/' | relative_url }}" role="menuitem"{% if page.url contains '/methods' %} class="active"{% endif %}>Methods</a>
               <a href="{{ '/grid/' | relative_url }}" role="menuitem"{% if page.url contains '/grid' %} class="active"{% endif %}>Grid</a>
               <a href="{{ '/gis/' | relative_url }}" role="menuitem"{% if page.url contains '/gis' %} class="active"{% endif %}>GIS</a>
-              <a href="{{ '/data/' | relative_url }}" role="menuitem"{% if page.url contains '/data' %} class="active"{% endif %}>Data</a>
+              <a href="{{ '/methods/' | relative_url }}" role="menuitem"{% if page.url contains '/methods' %} class="active"{% endif %}>Methods</a>
             </div>
           </div>
           <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' %} class="active"{% endif %}>Journal</a>
@@ -92,10 +91,9 @@
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Houses</strong><br>
             <a href="{{ '/houses/' | relative_url }}">Overview</a>
             <br><a href="{{ '/houses/catalog/' | relative_url }}">Catalog</a>
-            <br><a href="{{ '/methods/' | relative_url }}">Methods</a>
             <br><a href="{{ '/grid/' | relative_url }}">Grid</a>
             <br><a href="{{ '/gis/' | relative_url }}">GIS</a>
-            <br><a href="{{ '/data/' | relative_url }}">Data</a>
+            <br><a href="{{ '/methods/' | relative_url }}">Methods</a>
           </div>
           <div>
             <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Follow</strong><br>
