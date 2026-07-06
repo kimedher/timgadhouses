@@ -3,7 +3,7 @@ layout: page
 title: Journal
 subtitle: Field notes from my own workflow, written as the project happens, not after.
 permalink: /notes/
-last_updated: 2026-06-04
+last_updated_from_posts: true
 published: true
 ---
 
