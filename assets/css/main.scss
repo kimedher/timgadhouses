@@ -642,13 +642,14 @@ figcaption {
   transform: translateY(-2px);
 }
 
-/* Newest post gets the teal treatment plus a "Latest" pill. */
-.post-list li:first-child {
-  border-left-color: var(--teal);
-  background: var(--baby-blue-soft);
+/* Cards alternate between the brand terracotta wash and a soft teal wash,
+   the same translucent tone as the site header. */
+.post-list li:nth-child(even) {
+  background: rgba(27, 107, 111, 0.12);
+  border-left-color: rgba(27, 107, 111, 0.45);
 }
 
-.post-list li:first-child:hover { border-left-color: var(--teal-dark); }
+.post-list li:nth-child(even):hover { border-left-color: var(--teal-dark); }
 
 .post-list li:first-child::after {
   content: "Latest";
