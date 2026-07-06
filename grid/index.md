@@ -7,7 +7,7 @@ last_updated: 2026-05-14
 ---
 
 <div class="callout-warn">
-  <p><strong>A note on the wet paint.</strong> The interactive grid is live but still maturing. The viewer now reads directly from the same house database that powers the catalog, so block assignments update with the data, but numbers may still shift as corrections come in and errors are expected. The goal of publishing this now is to show what is possible with the corpus, not to provide a stable reference. Please avoid citing the grid in its current form; a stable, citable release will be announced once the data has settled.</p>
+  <p><strong>A note on the wet paint.</strong> This grid is a work in progress, and I've published it early on purpose. It pulls straight from the same database as the house catalog, so the blocks update whenever the data does, and right now the data is still moving. Numbers will shift, and some assignments will turn out to be wrong. I would rather fix things in the open than wait for perfect. Just don't cite the grid yet; once the data settles I'll announce a stable version you can reference.</p>
 </div>
 
 Timgad was laid out on a strict rectilinear grid, two main streets crossing at right angles with regular rectangular blocks between them. Each block, called an *insula* in Latin, is identified here by a quadrant-based reference that locates it relative to the city's central axes. Individual houses are keyed to the insula they sit inside, so that a house identifier like `TIMG.SE.I20.H2` can be traced directly to its place in the city.
