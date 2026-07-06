@@ -7,12 +7,12 @@ last_updated: 2026-05-14
 ---
 
 <div class="callout-warn">
-  <p><strong>A note on the wet paint.</strong> The interactive grid is live but still in an experimental stage. The viewer and its underlying database are being updated together, which means some blocks are incomplete, numbers may shift as corrections come in, and errors are expected. The goal of publishing this now is to show what is possible with the corpus, not to provide a stable reference. Please avoid citing the grid in its current form; a stable, citable release will be announced once the data has settled.</p>
+  <p><strong>A note on the wet paint.</strong> The interactive grid is live but still maturing. The viewer now reads directly from the same house database (v12) that powers the catalog, so block assignments update with the data, but numbers may still shift as corrections come in and errors are expected. The goal of publishing this now is to show what is possible with the corpus, not to provide a stable reference. Please avoid citing the grid in its current form; a stable, citable release will be announced once the data has settled.</p>
 </div>
 
 Timgad was laid out on a strict rectilinear grid, two main streets crossing at right angles with regular rectangular blocks between them. Each block, called an *insula* in Latin, is identified here by a quadrant-based reference that locates it relative to the city's central axes. Individual houses are keyed to the insula they sit inside, so that a house identifier like `TIMG.SE.I20.H2` can be traced directly to its place in the city.
 
-The viewer below is the current working version. It shows the city grid and the identifiers assigned to each block, based on the standardized system described in the [numbering rationale](#numbering-rationale) below. As individual house records are added to the database, they will be linked from their insula.
+The viewer below is the current working version. It shows the city grid and the identifiers assigned to each block, based on the standardized system described in the [numbering rationale](#numbering-rationale) below. Blocks holding a house in the database appear in green and click through to that house's record; houses with full records in the [catalog](/houses/catalog/) are marked with a check.
 
 <p style="margin: 2rem 0;">
   <a href="/grid/viewer.html" style="display: inline-block; background: var(--teal); color: white; padding: 0.8rem 1.4rem; border-radius: var(--radius); border: none; font-weight: 600; font-size: 0.95rem;">Open the full-screen grid &rarr;</a>
