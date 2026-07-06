@@ -6,10 +6,6 @@ permalink: /grid/
 last_updated: 2026-07-06
 ---
 
-<div class="callout-warn">
-  <p><strong>A note on the wet paint.</strong> This grid is a work in progress, and I've published it early on purpose. It pulls straight from the same database as the house catalog, so the blocks update whenever the data does, and right now the data is still moving. Numbers will shift, and some assignments will turn out to be wrong. I would rather fix things in the open than wait for perfect. Please refrain from citing the grid for the moment, as it remains a work in progress. Once the data settles, I will update this note to reflect its reliability as a stable version for future reference.</p>
-</div>
-
 Timgad was laid out on a strict rectilinear grid, two main streets crossing at right angles with regular rectangular blocks between them. Each block, called an *insula* in Latin, is identified here by a quadrant-based reference that locates it relative to the city's central axes. Individual houses are keyed to the insula they sit inside, so that a house identifier like `TIMG.SE.I20.H2` can be traced directly to its place in the city.
 
 The viewer below is the current working version. It shows the city grid and the identifiers assigned to each block, based on the standardized system described in the [numbering rationale](#numbering-rationale) below. Blocks holding a house in the database appear in green and click through to that house's record; houses with full records in the [catalog](/houses/catalog/) are marked with a check.
@@ -49,5 +45,9 @@ A concordance spreadsheet keeps every TIMG identifier in translation with Ballu 
 <h2>Downloading the data</h2>
 
 The underlying data for the grid will be published as GeoJSON and CSV under a Creative Commons license once the current audit is complete. For now, the data is in active flux and not distributed externally.
+
+<div class="callout-warn">
+  <p><strong>A note on the wet paint.</strong> This grid is a work in progress, and I've published it early on purpose. It pulls straight from the same database as the house catalog, so the blocks update whenever the data does, and right now the data is still moving. Numbers will shift, and some assignments will turn out to be wrong. I would rather fix things in the open than wait for perfect. Please refrain from citing the grid for the moment, as it remains a work in progress. Once the data settles, I will update this note to reflect its reliability as a stable version for future reference.</p>
+</div>
 
 {% include cite-block.html %}
