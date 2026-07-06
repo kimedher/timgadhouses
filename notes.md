@@ -15,7 +15,7 @@ published: true
     <p class="post-meta">
       {{ post.date | date: "%B %-d, %Y" }}
       {% if post.reading_time %} · <span class="post-readtime">{{ post.reading_time }} min read</span>{% endif %}
-      {% if post.categories %} · {{ post.categories | join: ', ' }}{% endif %}
+      {% for cat in post.categories %}<span class="post-cat">{{ cat }}</span>{% endfor %}
     </p>
     <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
     {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>{% endif %}
