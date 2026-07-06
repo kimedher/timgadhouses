@@ -1,0 +1,159 @@
+<style>
+.hc-controls {
+  display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;
+  padding: 1rem; background: var(--bg-soft);
+  border: 1px solid var(--hairline); border-radius: var(--radius);
+  margin: 1.6rem 0 0.7rem;
+}
+.hc-controls select, .hc-controls input[type="search"] {
+  font-family: var(--sans); font-size: 0.78rem; color: var(--text);
+  background: #fff; border: 1px solid var(--hairline);
+  border-radius: 999px; padding: 0.42rem 0.9rem; outline: none;
+  transition: border-color 0.18s;
+}
+.hc-controls select:focus, .hc-controls input[type="search"]:focus { border-color: var(--baby-blue-deep); }
+.hc-controls input[type="search"] { flex: 1; min-width: 170px; }
+.hc-count { font-size: 0.8rem; color: var(--text-muted); margin: 0 0 1.3rem; }
+.hc-count button {
+  font-family: var(--sans); font-size: 0.78rem; color: var(--teal);
+  background: none; border: none; cursor: pointer; text-decoration: underline; padding: 0;
+}
+.hc-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1rem; align-items: stretch;
+}
+.hc-card {
+  background: #fff; border: 1px solid var(--hairline);
+  border-radius: var(--radius); padding: 1.05rem 1.15rem;
+  display: flex; flex-direction: column; gap: 0.4rem;
+  transition: border-color 0.18s, transform 0.18s;
+}
+.hc-card:hover { border-color: var(--baby-blue-deep); transform: translateY(-2px); }
+.hc-name { font-weight: 600; font-size: 0.95rem; line-height: 1.35; margin: 0; }
+.hc-name .hc-fr { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--text-muted); }
+.hc-id {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.68rem; color: var(--baby-blue-deep); letter-spacing: 0.03em; margin: 0;
+}
+.hc-meta { font-size: 0.76rem; color: var(--text-muted); margin: 0; }
+.hc-badges { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.15rem; }
+.hc-badge {
+  font-size: 0.64rem; font-weight: 600; letter-spacing: 0.02em;
+  padding: 0.16rem 0.6rem; border-radius: 999px;
+}
+.hc-badge--type { background: var(--baby-blue-soft); color: var(--teal-dark); }
+.hc-badge--high { background: var(--teal); color: #fff; }
+.hc-badge--medium { background: var(--baby-blue); color: var(--teal-dark); }
+.hc-badge--low { background: var(--terracotta-soft); color: #7A3F26; }
+.hc-note { font-size: 0.77rem; color: var(--text); margin: 0.15rem 0 0; line-height: 1.55; }
+.hc-pub { font-size: 0.7rem; color: var(--text-muted); margin: 0.3rem 0 0; border-top: 1px solid var(--hairline-soft); padding-top: 0.5rem; }
+.hc-empty {
+  grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;
+  font-family: var(--serif); font-style: italic; color: var(--text-muted); display: none;
+}
+</style>
+
+{% assign hc_houses = site.data.houses.houses %}
+{% assign hc_zones = hc_houses | map: "zone" | uniq | sort %}
+{% assign hc_types = hc_houses | map: "type_class" | uniq | sort %}
+
+<div class="hc-controls">
+  <select id="hc-zone" aria-label="Filter by location">
+    <option value="">Location: all</option>
+    {% for z in hc_zones %}<option value="{{ z }}">{{ z }}</option>{% endfor %}
+  </select>
+  <select id="hc-type" aria-label="Filter by building type">
+    <option value="">Building type: all</option>
+    {% for t in hc_types %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
+  </select>
+  <select id="hc-conf" aria-label="Filter by identification confidence">
+    <option value="">Confidence: all</option>
+    <option value="high">High</option>
+    <option value="medium">Medium</option>
+    <option value="low">Low</option>
+  </select>
+  <select id="hc-sort" aria-label="Sort houses">
+    <option value="name">Sort: name</option>
+    <option value="gid">Sort: grid ID</option>
+    <option value="area">Sort: area, where recorded</option>
+  </select>
+  <input type="search" id="hc-search" placeholder="Search names and identifiers" aria-label="Search houses">
+</div>
+<p class="hc-count"><span id="hc-count" aria-live="polite">Showing all {{ site.data.houses.count }} houses.</span> <button id="hc-clear" type="button">Clear filters</button></p>
+
+<div class="hc-grid" id="hc-grid">
+  <p class="hc-empty" id="hc-empty">No houses match these filters.</p>
+  {% for house in hc_houses %}
+  <article class="hc-card"
+    data-zone="{{ house.zone | escape }}"
+    data-type="{{ house.type_class | escape }}"
+    data-conf="{{ house.confidence | escape }}"
+    data-name="{{ house.name_en | downcase | escape }}"
+    data-gid="{{ house.grid_id | escape }}"
+    data-area="{{ house.area_m2 | default: 0 }}"
+    data-search="{{ house.name | append: ' ' | append: house.alternate_names | append: ' ' | append: house.grid_id | downcase | escape }}">
+    <p class="hc-name">{{ house.name_en | escape }}{% if house.name_fr != "" %} <span class="hc-fr">({{ house.name_fr | escape }})</span>{% endif %}</p>
+    <p class="hc-id">{{ house.grid_id | escape }}</p>
+    <p class="hc-meta">{{ house.zone | escape }}{% if house.area_m2 %} &middot; &asymp;{{ house.area_m2 }} m&sup2;{% endif %}</p>
+    <div class="hc-badges">
+      <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
+      <span class="hc-badge hc-badge--{{ house.confidence | escape }}">{{ house.confidence | escape }} confidence</span>
+    </div>
+    {% if house.notes != "" %}<p class="hc-note">{{ house.notes | truncate: 180 | escape }}</p>{% endif %}
+    {% if house.first_published_by != "" %}<p class="hc-pub">First published by {{ house.first_published_by | truncate: 90 | escape }}</p>{% endif %}
+  </article>
+  {% endfor %}
+</div>
+
+<script>
+(function () {
+  var grid = document.getElementById('hc-grid');
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.hc-card'));
+  var total = cards.length;
+  var countEl = document.getElementById('hc-count');
+  var emptyEl = document.getElementById('hc-empty');
+  var controls = {
+    zone: document.getElementById('hc-zone'),
+    type: document.getElementById('hc-type'),
+    conf: document.getElementById('hc-conf'),
+    sort: document.getElementById('hc-sort'),
+    search: document.getElementById('hc-search')
+  };
+
+  function apply() {
+    var q = controls.search.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (c) {
+      var ok = (!controls.zone.value || c.dataset.zone === controls.zone.value) &&
+               (!controls.type.value || c.dataset.type === controls.type.value) &&
+               (!controls.conf.value || c.dataset.conf === controls.conf.value) &&
+               (!q || c.dataset.search.indexOf(q) !== -1);
+      c.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    var s = controls.sort.value;
+    var sorted = cards.slice().sort(function (a, b) {
+      if (s === 'area') return (parseInt(b.dataset.area, 10) || 0) - (parseInt(a.dataset.area, 10) || 0);
+      if (s === 'gid') return a.dataset.gid.localeCompare(b.dataset.gid, 'en', { numeric: true });
+      return a.dataset.name.localeCompare(b.dataset.name);
+    });
+    sorted.forEach(function (c) { grid.appendChild(c); });
+    emptyEl.style.display = shown ? 'none' : 'block';
+    countEl.textContent = shown === total
+      ? 'Showing all ' + total + ' houses.'
+      : 'Showing ' + shown + ' of ' + total + ' houses.';
+  }
+
+  Object.keys(controls).forEach(function (k) {
+    controls[k].addEventListener('input', apply);
+  });
+  document.getElementById('hc-clear').addEventListener('click', function () {
+    controls.zone.selectedIndex = 0;
+    controls.type.selectedIndex = 0;
+    controls.conf.selectedIndex = 0;
+    controls.sort.selectedIndex = 0;
+    controls.search.value = '';
+    apply();
+  });
+})();
+</script>
