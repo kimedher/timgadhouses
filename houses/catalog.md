@@ -15,5 +15,5 @@ Filter by location within the city, by building type, by mapping confidence, or 
 {% include house-catalog.html %}
 
 <div class="callout-warn">
-  <p><strong>A note on the wet paint.</strong> The catalog reads directly from the current version of the house database (v12), which is still being refined as sources are checked against one another. Names, identifiers, and classifications may shift as corrections come in. A stable, citable release will be announced in the <a href="/notes/">Journal</a>.</p>
+  <p><strong>A note on the wet paint.</strong> The catalog reads directly from the current version of the house database, which is still being refined as sources are checked against one another. Names, identifiers, and classifications may shift as corrections come in. A stable, citable release will be announced in the <a href="/notes/">Journal</a>.</p>
 </div>
