@@ -47,6 +47,8 @@
 .hc-badge--low { background: var(--terracotta-soft); color: #7A3F26; }
 .hc-note { font-size: 0.77rem; color: var(--text); margin: 0.15rem 0 0; line-height: 1.55; }
 .hc-pub { font-size: 0.7rem; color: var(--text-muted); margin: 0.3rem 0 0; border-top: 1px solid var(--hairline-soft); padding-top: 0.5rem; }
+.hc-pending { font-size: 0.74rem; font-family: var(--serif); font-style: italic; color: var(--terracotta-deep); margin: 0.15rem 0 0; }
+.hc-badge--full { background: var(--teal-dark); color: #fff; }
 .hc-empty {
   grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;
   font-family: var(--serif); font-style: italic; color: var(--text-muted); display: none;
@@ -72,6 +74,10 @@
     <option value="medium">Medium</option>
     <option value="low">Low</option>
   </select>
+  <select id="hc-full" aria-label="Filter by record depth">
+    <option value="">Records: all</option>
+    <option value="1">Full records only</option>
+  </select>
   <select id="hc-sort" aria-label="Sort houses">
     <option value="name">Sort: name</option>
     <option value="gid">Sort: grid ID</option>
@@ -91,6 +97,7 @@
     data-name="{{ house.name_en | downcase | escape }}"
     data-gid="{{ house.grid_id | escape }}"
     data-area="{{ house.area_m2 | default: 0 }}"
+    data-full="{% if house.sample %}1{% else %}0{% endif %}"
     data-search="{{ house.name | append: ' ' | append: house.alternate_names | append: ' ' | append: house.grid_id | downcase | escape }}">
     <p class="hc-name">{{ house.name_en | escape }}{% if house.name_fr != "" %} <span class="hc-fr">({{ house.name_fr | escape }})</span>{% endif %}</p>
     <p class="hc-id">{{ house.grid_id | escape }}</p>
@@ -98,8 +105,10 @@
     <div class="hc-badges">
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
       <span class="hc-badge hc-badge--{{ house.confidence | escape }}">{{ house.confidence | escape }} confidence</span>
+      {% if house.sample %}<span class="hc-badge hc-badge--full">full record</span>{% endif %}
     </div>
     {% if house.notes != "" %}<p class="hc-note">{{ house.notes | truncate: 180 | escape }}</p>{% endif %}
+    {% unless house.sample %}<p class="hc-pending">Full record in preparation.</p>{% endunless %}
     {% if house.first_published_by != "" %}<p class="hc-pub">First published by {{ house.first_published_by | truncate: 90 | escape }}</p>{% endif %}
   </article>
   {% endfor %}
@@ -116,6 +125,7 @@
     zone: document.getElementById('hc-zone'),
     type: document.getElementById('hc-type'),
     conf: document.getElementById('hc-conf'),
+    full: document.getElementById('hc-full'),
     sort: document.getElementById('hc-sort'),
     search: document.getElementById('hc-search')
   };
@@ -127,6 +137,7 @@
       var ok = (!controls.zone.value || c.dataset.zone === controls.zone.value) &&
                (!controls.type.value || c.dataset.type === controls.type.value) &&
                (!controls.conf.value || c.dataset.conf === controls.conf.value) &&
+               (!controls.full.value || c.dataset.full === controls.full.value) &&
                (!q || c.dataset.search.indexOf(q) !== -1);
       c.style.display = ok ? '' : 'none';
       if (ok) shown++;
@@ -151,6 +162,7 @@
     controls.zone.selectedIndex = 0;
     controls.type.selectedIndex = 0;
     controls.conf.selectedIndex = 0;
+    controls.full.selectedIndex = 0;
     controls.sort.selectedIndex = 0;
     controls.search.value = '';
     apply();

@@ -10,6 +10,14 @@ import openpyxl
 
 XLSX, OUT = sys.argv[1], sys.argv[2]
 
+# The 12-house dissertation sample publishes full records (notes, references).
+# All other houses publish index metadata only until the analysis is defended.
+SAMPLE_IDS = {
+    "TIMG.E-SW.I1", "TIMG.E-SW.I2", "TIMG.SW.I5", "TIMG.E-SE.I4",
+    "TIMG.NW.I6", "TIMG.E-SE.I5", "TIMG.NE.I1", "TIMG.E-NW.I14",
+    "TIMG.SE.I7", "TIMG.E-NW.I18", "TIMG.E-NW.I19", "TIMG.E-NW.I6",
+}
+
 def clean(v):
     if v is None: return ""
     return re.sub(r"\s+", " ", str(v)).strip()
@@ -71,6 +79,11 @@ for r in ws.iter_rows(min_row=2):
         "possible_duplicate_of": clean(row["Possible Duplicate Of"]),
         "notes": clean(row["Notes"]),
     })
+    h = houses[-1]
+    h["sample"] = h["grid_id"] in SAMPLE_IDS
+    if not h["sample"]:
+        h["notes"] = ""
+        h["key_references"] = ""
 
 houses.sort(key=lambda h: h["grid_id"])
 out = {"version": "v12 FINAL 2026-07-05", "generated_from": "Timgad_Houses_Database_v12_FINAL_2026-07-05.xlsx, HOUSES sheet", "count": len(houses), "houses": houses}
@@ -80,4 +93,5 @@ print("wrote", OUT, "houses:", len(houses))
 import collections
 print("type_class:", dict(collections.Counter(h["type_class"] for h in houses)))
 print("zones:", dict(collections.Counter(h["zone"] for h in houses)))
-print("areas parsed:", sum(1 for h in houses if h["area_m2"])) 
+print("areas parsed:", sum(1 for h in houses if h["area_m2"]))
+print("full records (sample):", sum(1 for h in houses if h["sample"])) 
