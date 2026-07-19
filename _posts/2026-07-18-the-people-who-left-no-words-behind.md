@@ -4,7 +4,7 @@ title: "The people who left no words behind"
 date: 2026-07-18
 categories: [reflection]
 tags: [archaeology, timgad, houses, domestic-architecture, why-i-do-this]
-reading_time: 6
+reading_time: 7
 published: true
 excerpt: >-
   Most of history was written by a powerful few. Archaeology is how we hear

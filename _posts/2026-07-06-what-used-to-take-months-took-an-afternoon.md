@@ -2,7 +2,7 @@
 layout: post
 title: "What used to take me months took an afternoon with AI"
 date: 2026-07-06
-categories: [reflections]
+categories: [reflection]
 tags: [ai, ethics, digital-humanities, accessibility, methods, fieldnotes]
 reading_time: 15
 image: /assets/images/kim-with-and-without-ai.jpg
