@@ -19,6 +19,11 @@ excerpt: >-
   <figcaption>A composite Roman atrium house, the kind every textbook starts with. Drawn for this post; no single real house looks exactly like this, which is rather the point.</figcaption>
 </figure>
 
+<div style="max-width:640px;margin:-8px auto 36px;font-size:0.85rem;line-height:1.9;color:#6B7380;border-top:1px solid #E3D9C9;border-bottom:1px solid #E3D9C9;padding:14px 6px;">
+<strong style="letter-spacing:2px;font-size:0.72rem;color:#A65D40;">THE ROOMS, BRIEFLY</strong><br>
+<em>taberna</em>: a shop or workshop opening onto the street, often rented out · <em>fauces</em>: the narrow entrance corridor, literally "jaws" · atrium: the front hall, open to the sky at its centre · <em>impluvium</em>: the rain pool beneath that opening · <em>cubiculum</em>: a small private room, often for sleeping · <em>tablinum</em>: the reception room where the owner received visitors · <em>andron</em>: the corridor linking atrium and garden · <em>cella</em>: a small store room, sometimes where enslaved staff slept · <em>culina</em>: the kitchen · <em>peristylium</em>: the colonnaded garden court · <em>triclinium</em>: the dining room, named for its three couches · <em>oecus</em>: a formal hall for entertaining · <em>exedra</em>: an open-fronted sitting room off the garden
+</div>
+
 I spend most of my working days staring at floor plans. Tracing them, redrawing them, arguing with them. And somewhere along the way I realized that a plan is not really a technical drawing at all. It is a text, and like any text it rewards knowing how to read it.
 
 So here is the short field guide I wish someone had handed me years ago. Four steps, one catch, and one warning about textbooks.
