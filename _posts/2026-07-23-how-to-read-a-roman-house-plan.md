@@ -98,4 +98,4 @@ That is where this site is heading next: close-ups of individual houses across t
 
 A few places to start if you want to go deeper. <span style='color:#A65D40;font-weight:600;'>Mark Grahame</span>, <em>Reading Space: Social Interaction and Identity in the Houses of Roman Pompeii</em> (Oxford: Archaeopress, 2000). <span style='color:#A65D40;font-weight:600;'>Sandra R. Joshel and Lauren Hackworth Petersen</span>, <em>The Material Life of Roman Slaves</em> (Cambridge: Cambridge University Press, 2014). <span style='color:#A65D40;font-weight:600;'>Andrew Wallace-Hadrill</span>, <em>Houses and Society in Pompeii and Herculaneum</em> (Princeton: Princeton University Press, 1994). <span style='color:#A65D40;font-weight:600;'>Yvon Thébert</span>, "Private Life and Domestic Architecture in Roman Africa," in <em>A History of Private Life, Volume I</em> (Cambridge, MA: Harvard University Press, 1987).
 
-<!-- After the Instagram carousel goes live, add: <p><em>Also shared as a field guide on <a href="IG_POST_URL">Instagram</a>.</em></p> -->
+<p><em>Also shared as a field guide on <a href="https://www.instagram.com/p/DbJMsuHGK5p/">Instagram</a>.</em></p>
