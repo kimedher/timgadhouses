@@ -25,18 +25,20 @@ So here is the short field guide I wish someone had handed me years ago. Four st
 
 ## Start at the door
 
-There is usually only one main entrance, and everything in the plan is choreographed from it. In the classic Italian version, a narrow corridor called the fauces runs from the street straight into the heart of the house, and the view from that doorway was designed. Stand at the threshold of a well preserved atrium house and you can often see clear through the entrance corridor, across the atrium, into the tablinum where the owner received visitors, and beyond it to the garden. That sightline is not an accident. It is the house introducing its owner before a single word is spoken.
+Bigger Roman houses usually had several doors: the formal entrance, wide shop doors, and often a discreet back door, the <em>posticum</em>, that let the household come and go unseen. Roman writers even joke about slipping out the back to avoid the clients waiting at the front. The first house in my Timgad database has nine external entrances. So the rule is not one door. It is one designed door.
+
+The principal entrance carried the performance. In the classic Italian version, a narrow corridor called the <em>fauces</em> runs from the street straight into the heart of the house, and the view from that threshold was composed: through the entrance corridor, across the atrium, into the <em>tablinum</em> where the owner received visitors, and beyond it to the garden. Andrew Wallace-Hadrill has shown how this visual axis structured the social logic of the whole house. The sightline is not an accident. It is the house introducing its owner before a single word is spoken, and more recent work on Pompeii's entranceways keeps adding texture, secondary doors within the same doorway, screens, angled views. The front of a Roman house was less a wall with a hole in it than an instrument for managing attention.
 
 <figure class="image-panel">
   <img src="{{ '/assets/images/house-plan-guide-door.png' | relative_url }}" alt="The same Roman house plan with the entrance corridor highlighted and a dotted arrow leading from the street through the fauces toward the atrium">
-  <figcaption>One way in. The fauces controls both entry and the first thing a visitor sees.</figcaption>
+  <figcaption>The designed entrance. Other doors served the household; this one performed for visitors.</figcaption>
 </figure>
 
-Notice what else faces the street: shops. The rooms flanking the entrance, the tabernae, usually opened wide onto the street and often had no connection to the house behind them at all. Many were rentals. A grand house wore a working commercial face, which tells you something important about how comfortably money and domesticity lived together in the Roman world.
+Notice what else faces the street: shops. The rooms flanking the entrance, the <em>tabernae</em>, usually opened wide onto the street and often had no connection to the house behind them at all. Many were rentals. A grand house wore a working commercial face, which tells you something important about how comfortably money and domesticity lived together in the Roman world.
 
 ## Find the courtyard
 
-The open space is the heart of the house. Light, air, and water lived here. In an atrium house the roof sloped inward to a rectangular opening, and rain fell through it into a shallow pool called the impluvium, which fed a cistern below. In grander houses a second, greener heart sat further back: the peristyle, a colonnaded garden the family wrapped their best rooms around.
+The open space is the heart of the house. Light, air, and water lived here. In an atrium house the roof sloped inward to a rectangular opening, and rain fell through it into a shallow pool called the <em>impluvium</em>, which fed a cistern below. In grander houses a second, greener heart sat further back: the peristyle, a colonnaded garden the family wrapped their best rooms around.
 
 <figure class="image-panel">
   <img src="{{ '/assets/images/house-plan-guide-courtyard.png' | relative_url }}" alt="The Roman house plan with the atrium and peristyle garden shaded in teal, marking the open-air spaces">
@@ -65,7 +67,7 @@ The most expensive mosaics sit where guests were meant to linger. Decoration was
 
 ## The people the plan will not show
 
-Here is the catch, and it is the part of all this that interests me most. Those tidy Latin labels describe the owner's house. Enslaved people lived and worked in all of it: cooking in the culina, serving in the triclinium, sleeping in corridors, cells, and doorways, moving constantly along routes the plan never names. Sandra Joshel and Lauren Petersen have argued that if you want to find enslaved people in Roman houses, you should stop looking for their rooms and start following their movement, through service corridors, back stairs, and the gaps between the grand spaces. The same problem applies to women and to children, who are everywhere in the household and almost nowhere in the labels.
+Here is the catch, and it is the part of all this that interests me most. Those tidy Latin labels describe the owner's house. Enslaved people lived and worked in all of it: cooking in the <em>culina</em>, serving in the <em>triclinium</em>, sleeping in corridors, cells, and doorways, moving constantly along routes the plan never names. Sandra Joshel and Lauren Petersen have argued that if you want to find enslaved people in Roman houses, you should stop looking for their rooms and start following their movement, through service corridors, back stairs, and the gaps between the grand spaces. The same problem applies to women and to children, who are everywhere in the household and almost nowhere in the labels.
 
 <figure class="image-panel">
   <img src="{{ '/assets/images/house-plan-guide-people.png' | relative_url }}" alt="The Roman house plan with the room labels faded out and unnamed dotted routes threading through every room and corridor">
