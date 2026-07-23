@@ -223,20 +223,16 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--terracotta);
-  border-radius: 50%;
-  color: var(--baby-blue);
-  transition: background 0.18s, color 0.18s;
+  transition: transform 0.18s;
 }
 
 .site-title:hover .logo-mark {
-  background: var(--baby-blue);
-  color: var(--terracotta-deep);
+  transform: scale(1.08);
 }
 
 .site-title .logo-mark svg {
-  width: 18px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
 }
 
 .site-nav {
