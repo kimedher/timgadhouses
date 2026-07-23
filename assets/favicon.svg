@@ -6,7 +6,7 @@
   <!-- body -->
   <rect x="405" y="416" width="450" height="320" fill="#E8C4AE"/>
   <!-- soft teal panel (behind columns) -->
-  <rect x="495" y="492" width="252" height="186" fill="#85B5B8"/>
+  <rect x="495" y="492" width="252" height="186" fill="#A7C9CB"/>
   <!-- frame beams -->
   <rect x="447" y="461" width="366" height="20" rx="10" fill="#1F5E63"/>
   <rect x="447" y="691" width="366" height="20" rx="10" fill="#1F5E63"/>
