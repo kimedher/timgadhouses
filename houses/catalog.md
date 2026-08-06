@@ -3,7 +3,7 @@ layout: page
 title: The House Catalog
 subtitle: Every house in the database, in one filterable view.
 permalink: /houses/catalog/
-last_updated: 2026-07-06
+last_updated: 2026-08-06
 ---
 
 <div class="callout-warn">
@@ -11,9 +11,11 @@ last_updated: 2026-07-06
 </div>
 
 
-The catalog below lists every house in the project database, {{ site.data.houses.count }} at the last count, from the peristyle houses that made it into the guidebooks to buildings known only from a line in an excavation report. Each entry carries the identifier it holds in the [interactive grid](/grid/), so a record here can be traced to its block in the city.
+The catalog below lists every house in the project database, {{ site.data.houses.count }} as of database v13 (August 2026), from the peristyle houses that made it into the guidebooks to buildings known only from a line in an excavation report. Each entry carries the identifier it holds in the [interactive grid](/grid/), so a record here can be traced to its block in the city.
 
-Records come at two depths, and that is deliberate. Twelve houses, the working sample for my dissertation analysis, carry full records with notes and references. The rest appear as index entries, name, location, type, and confidence, with full records to follow as the analysis is verified and defended. Publishing the index beside the worked examples shows where the corpus actually stands, and where the work still is. Each record carries a mapping confidence rating, my own assessment of how securely the entry can be placed on the city grid.
+Records come at two depths, and that is deliberate. Twelve houses, the working sample for my dissertation analysis, carry full records with notes and references. The rest appear as index entries, name, location, type, and confidence, with full records to follow as the analysis is verified and defended. Publishing the index beside the worked examples shows where the corpus actually stands, and where the work still is. Each record carries a mapping confidence rating, my own assessment of how securely the entry can be placed on the city grid. Each record carries a verification status from the project's source-verification protocol (see [Methods](/methods/)).
+
+The catalog currently reads from database v13 (August 1, 2026). v13: source-verification pass; 99 corrections applied, verification status published per record.
 
 Filter by location within the city, by building type, by mapping confidence, or show only the full records. The search box covers names, alternate names, and identifiers.
 

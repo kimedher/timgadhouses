@@ -45,6 +45,9 @@
 .hc-badge--high { background: var(--teal); color: #fff; }
 .hc-badge--medium { background: var(--baby-blue); color: var(--teal-dark); }
 .hc-badge--low { background: var(--terracotta-soft); color: #7A3F26; }
+.hc-badge--verified { background: var(--baby-blue-soft); color: var(--teal-dark); border: 1px solid var(--baby-blue-mid); }
+.hc-badge--partial { background: var(--bg-soft); color: var(--text-muted); border: 1px solid var(--hairline); }
+.hc-badge--review { background: var(--bg-soft); color: var(--terracotta-deep); border: 1px solid var(--terracotta-soft); }
 .hc-note { font-size: 0.77rem; color: var(--text); margin: 0.15rem 0 0; line-height: 1.55; }
 .hc-pub { font-size: 0.7rem; color: var(--text-muted); margin: 0.3rem 0 0; border-top: 1px solid var(--hairline-soft); padding-top: 0.5rem; }
 .hc-pending { font-size: 0.74rem; font-family: var(--serif); font-style: italic; color: var(--terracotta-deep); margin: 0.15rem 0 0; }
@@ -105,6 +108,7 @@
     <div class="hc-badges">
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
       <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">mapping: {{ house.mapping_confidence | escape }}</span>
+      <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Verified{% elsif house.verification_status == "partial" %}Partially verified{% else %}Under review{% endif %}</span>
       {% if house.sample %}<span class="hc-badge hc-badge--full">full record</span>{% endif %}
     </div>
     {% if house.notes != "" %}<p class="hc-note">{{ house.notes | truncate: 180 | escape }}</p>{% endif %}

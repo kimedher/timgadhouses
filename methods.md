@@ -49,7 +49,7 @@ The goal is not to throw out the excavation record. It is to read it with open e
 
 <div class="subsection-refs">
   <p>Gosden, Chris. 2004. <em>Archaeology and Colonialism: Cultural Contact from 5000 BC to the Present</em>. Cambridge: Cambridge University Press.</p>
-  <p>Yelles, Anissa. 2024. "Timgad et les archives de fouilles: Relectures et perspectives." In <em>Rome, archéologie et histoire urbaine: trente ans après l'Urbs (1987)</em>, edited by C. Courrier, M. Tarpin, A. Vanel, and N. Tran, 485–508. Rome: École Française de Rome.</p>
+  <p>Yelles, Anissa. 2024. "Timgad et les archives de fouilles: relectures et perspectives." In <em>Rome, archéologie et histoire urbaine: trente ans après l'Urbs (1987)</em>, edited by C. Courrier, M. Tarpin, A. Vanel, and N. Tran, 485–508. Rome: École Française de Rome.</p>
 </div>
 
 ## Household archaeology
@@ -59,7 +59,7 @@ Household archaeology, the subdiscipline that asks how houses worked as social a
 <div class="subsection-refs">
   <p>Thébert, Yvon. 1987. "Private Life and Domestic Architecture in Roman Africa." In <em>A History of Private Life, Vol. 1</em>, edited by Paul Veyne, 319–409. Cambridge, MA: Belknap Press.</p>
   <p>Wallace-Hadrill, Andrew. 1994. <em>Houses and Society in Pompeii and Herculaneum</em>. Princeton: Princeton University Press.</p>
-  <p>Wilson, R. J. A. 2016. "Roman Villas in North Africa." In <em>The Cambridge Companion to the Roman Economy</em>, edited by Walter Scheidel, 266–307. Cambridge: Cambridge University Press.</p>
+  <p>Wilson, R. J. A. 2018. "Roman Villas in North Africa." In <em>The Roman Villa in the Mediterranean Basin: Late Republic to Late Antiquity</em>, edited by Annalisa Marzano and Guy P. R. Métraux, 266–307. Cambridge: Cambridge University Press.</p>
 </div>
 
 ## What this method is not

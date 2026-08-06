@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Export the Timgad houses database (v12 xlsx, HOUSES sheet) to _data/houses.json.
+"""Export the Timgad houses database (v13 xlsx, HOUSES sheet) to _data/houses.json.
 
 Raw columns are copied verbatim. Derived fields (marked _derived in name comments):
 name_en / name_fr (split on final parenthetical), zone, type_class, area_m2.
+verification_status is the v13 "Verification Status" column normalized to
+verified / partial / review.
 Usage: python3 export_houses.py <xlsx path> <output json path>
 """
 import json, re, sys
@@ -41,6 +43,18 @@ def type_class(bt):
     if "house" in t or "residential" in t: return "House"
     return "Uncertain"
 
+VSTATUS = {
+    "VERIFIED": "verified",
+    "PARTIALLY VERIFIED": "partial",
+    "NEEDS REVIEW": "review",
+}
+
+def verification_status(v):
+    key = clean(v).upper()
+    if key not in VSTATUS:
+        raise ValueError(f"Unexpected Verification Status: {v!r}")
+    return VSTATUS[key]
+
 def area_m2(raw):
     if not raw: return None
     m = re.search(r"~?\s*([\d][\d\s.,]*)\s*m²", raw)
@@ -72,6 +86,7 @@ for r in ws.iter_rows(min_row=2):
         "type_class": type_class(clean(row["Building Type"])),
         "confidence": clean(row["Confidence"]).lower(),
         "mapping_confidence": clean(row["Mapping Confidence"]).lower(),
+        "verification_status": verification_status(row["Verification Status"]),
         "area_raw": ar,
         "area_m2": area_m2(ar),
         "first_published_by": clean(row["First Published By"]),
@@ -86,7 +101,7 @@ for r in ws.iter_rows(min_row=2):
         h["key_references"] = ""
 
 houses.sort(key=lambda h: h["grid_id"])
-out = {"version": "v12 FINAL 2026-07-05", "generated_from": "Timgad_Houses_Database_v12_FINAL_2026-07-05.xlsx, HOUSES sheet", "count": len(houses), "houses": houses}
+out = {"version": "v13 VERIFIED 2026-08-01", "generated_from": "Timgad_Houses_Database_v13_VERIFIED_2026-08-01.xlsx, HOUSES sheet", "count": len(houses), "houses": houses}
 with open(OUT, "w", encoding="utf-8") as f:
     json.dump(out, f, ensure_ascii=False, indent=1)
 print("wrote", OUT, "houses:", len(houses))

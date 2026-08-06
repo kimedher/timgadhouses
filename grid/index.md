@@ -39,7 +39,7 @@ A concordance spreadsheet keeps every TIMG identifier in translation with Ballu 
   <p>Germain, Suzanne. 1969. <em>Les mosaïques de Timgad: Étude descriptive et analytique</em>. Paris: Éditions du Centre National de la Recherche Scientifique.</p>
   <p>Rebuffat, René. 1969. "Maisons à péristyle d'Afrique du Nord: Répertoire de plans publiés." <em>Mélanges de l'École française de Rome</em> 81 (2): 659–724.</p>
   <p>Wilson, Andrew I. 2001. "Timgad and Textile Production." In <em>Economies Beyond Agriculture in the Classical World</em>, edited by David J. Mattingly and John Salmon, 271–296. London: Routledge.</p>
-  <p>Yelles, Anissa. 2024. "Timgad et les archives de fouilles: Relectures et perspectives." In <em>Rome, archéologie et histoire urbaine: trente ans après l'Urbs (1987)</em>, edited by C. Courrier, M. Tarpin, A. Vanel, and N. Tran, 485–508. Rome: École Française de Rome.</p>
+  <p>Yelles, Anissa. 2024. "Timgad et les archives de fouilles: relectures et perspectives." In <em>Rome, archéologie et histoire urbaine: trente ans après l'Urbs (1987)</em>, edited by C. Courrier, M. Tarpin, A. Vanel, and N. Tran, 485–508. Rome: École Française de Rome.</p>
 </div>
 
 <h2>Downloading the data</h2>
