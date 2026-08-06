@@ -3,7 +3,7 @@ layout: page
 title: The House Catalog
 subtitle: Every house in the database, in one filterable view.
 permalink: /houses/catalog/
-last_updated: 2026-08-06
+last_updated: 2026-08-02
 ---
 
 <div class="callout-warn">
