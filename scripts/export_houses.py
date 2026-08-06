@@ -7,10 +7,21 @@ verification_status is the v13 "Verification Status" column normalized to
 verified / partial / review.
 Usage: python3 export_houses.py <xlsx path> <output json path>
 """
-import datetime, json, re, sys
+import csv, datetime, json, os, re, sys
 import openpyxl
 
 XLSX, OUT = sys.argv[1], sys.argv[2]
+
+# Public-notes overlay: prose rewrites of the working notes, keyed by grid_id.
+# When a grid_id appears here, its note replaces the xlsx note at export time,
+# so the public site carries readable prose while the database keeps its
+# working shorthand.
+OVERLAY_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "public_notes.csv")
+PUBLIC_NOTES = {}
+if os.path.exists(OVERLAY_CSV):
+    with open(OVERLAY_CSV, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            PUBLIC_NOTES[row["grid_id"].strip()] = row["note"].strip()
 
 # The 12-house dissertation sample publishes full records (notes, references).
 # All other houses publish index metadata only until the analysis is defended.
@@ -32,9 +43,28 @@ def strip_editorial_tags(s):
     s = re.sub(r",\s*v1\d+\]", "]", s)
     return re.sub(r"\s+", " ", s).strip()
 
+def clean_citation(s):
+    # Drop internal workflow tokens from public citation fields; the xlsx
+    # keeps them. Applied to first_published_by only.
+    s = re.sub(
+        r"\s*\((?:printed; verify in text|printed; needs scan receipt|"
+        r"probable; needs scan receipt|exact page needs Kim)\)", "", s)
+    s = s.replace("BIAA-Af-Alg-24, ", "").replace("(BIAA-Af-Alg-24)", "")
+    s = re.sub(r"(:\s*)~(\d)", r"\1\2", s)  # "Ballu 1911: ~78-79" -> ": 78-79"
+    return re.sub(r"\s+", " ", s).strip()
+
 def split_name(name):
-    m = re.match(r"^(.*?)\s*\(([^()]*)\)\s*$", name)
-    if m: return m.group(1).strip(), m.group(2).strip()
+    # Split off the final balanced parenthetical as the French name; handles
+    # nested parentheses like "House 83 (formerly 91) (Maison 83 (ex-91))".
+    if name.endswith(")"):
+        depth = 0
+        for i in range(len(name) - 1, -1, -1):
+            if name[i] == ")":
+                depth += 1
+            elif name[i] == "(":
+                depth -= 1
+                if depth == 0:
+                    return name[:i].strip(), name[i + 1:-1].strip()
     return name, ""
 
 def zone(q):
@@ -97,7 +127,7 @@ for r in ws.iter_rows(min_row=2):
         "verification_status": verification_status(row["Verification Status"]),
         "area_raw": ar,
         "area_m2": area_m2(ar),
-        "first_published_by": clean(row["First Published By"]),
+        "first_published_by": clean_citation(clean(row["First Published By"])),
         "key_references": clean(row["Key References"]),
         "possible_duplicate_of": clean(row["Possible Duplicate Of"]),
         "notes": strip_editorial_tags(clean(row["Notes"])),
@@ -107,6 +137,8 @@ for r in ws.iter_rows(min_row=2):
     if not h["sample"]:
         h["notes"] = ""
         h["key_references"] = ""
+    if h["grid_id"] in PUBLIC_NOTES:
+        h["notes"] = PUBLIC_NOTES[h["grid_id"]]
 
 houses.sort(key=lambda h: h["grid_id"])
 out = {"generated": datetime.date.today().isoformat(), "count": len(houses), "houses": houses}
