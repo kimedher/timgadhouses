@@ -24,10 +24,13 @@ def clean(v):
     if v is None: return ""
     return re.sub(r"\s+", " ", str(v)).strip()
 
-def strip_version_tags(s):
-    # Public output stays version-silent: keep "[moved from X]" provenance
-    # tags but drop database-version tokens like ", v13".
-    return re.sub(r",\s*v1\d+\]", "]", s)
+def strip_editorial_tags(s):
+    # Public output stays clean: drop "[moved from ...]" editorial markers
+    # and database-version tokens like ", v13". The xlsx keeps its markers;
+    # this is export-side only.
+    s = re.sub(r"\s*\[moved from[^\]]*\]\s*", " ", s, flags=re.IGNORECASE)
+    s = re.sub(r",\s*v1\d+\]", "]", s)
+    return re.sub(r"\s+", " ", s).strip()
 
 def split_name(name):
     m = re.match(r"^(.*?)\s*\(([^()]*)\)\s*$", name)
@@ -97,7 +100,7 @@ for r in ws.iter_rows(min_row=2):
         "first_published_by": clean(row["First Published By"]),
         "key_references": clean(row["Key References"]),
         "possible_duplicate_of": clean(row["Possible Duplicate Of"]),
-        "notes": strip_version_tags(clean(row["Notes"])),
+        "notes": strip_editorial_tags(clean(row["Notes"])),
     })
     h = houses[-1]
     h["sample"] = h["grid_id"] in SAMPLE_IDS
