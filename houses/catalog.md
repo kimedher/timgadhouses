@@ -7,11 +7,11 @@ last_updated: 2026-08-06
 ---
 
 <div class="callout-warn">
-  <p><strong>A note on the wet paint.</strong> The catalog reads directly from the current version of the house database, which is still being refined as sources are checked against one another. Names, identifiers, and classifications may shift as corrections come in. A stable, citable release will be announced in the <a href="/notes/">Journal</a>.</p>
+  <p><strong>A note on the wet paint.</strong> The catalog reads directly from the current house database, which is still being refined as sources are checked against one another. Names, identifiers, and classifications may shift as corrections come in. A stable, citable release will be announced in the <a href="/notes/">Journal</a>.</p>
 </div>
 
 
-The catalog below lists every house in the project database, {{ site.data.houses.count }} as of database v13 (August 2026), from the peristyle houses that made it into the guidebooks to buildings known only from a line in an excavation report. Each entry carries the identifier it holds in the [interactive grid](/grid/), so a record here can be traced to its block in the city.
+The catalog below lists every house in the project database, {{ site.data.houses.count }} as of August 2026, from the peristyle houses that made it into the guidebooks to buildings known only from a line in an excavation report. Each entry carries the identifier it holds in the [interactive grid](/grid/), so a record here can be traced to its block in the city.
 
 Records come at two depths, and that is deliberate. Twelve houses, the working sample for my dissertation analysis, carry full records with notes and references. The rest appear as index entries, name, location, type, and confidence, with full records to follow as the analysis is verified and defended. Publishing the index beside the worked examples shows where the corpus actually stands, and where the work still is. Each record carries a mapping confidence rating, my own assessment of how securely the entry can be placed on the city grid. Each house also shows how much of its record has been checked against the original publications: **<span class="vstatus-term">Verified</span>** (findings line up with the excavation reports and current scholarship), **<span class="vstatus-term">Partially verified</span>** (largely checked against publications, with further review still under way), or **<span class="vstatus-term">Under review</span>** (a known question is being resolved).
 

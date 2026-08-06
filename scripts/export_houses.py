@@ -7,7 +7,7 @@ verification_status is the v13 "Verification Status" column normalized to
 verified / partial / review.
 Usage: python3 export_houses.py <xlsx path> <output json path>
 """
-import json, re, sys
+import datetime, json, re, sys
 import openpyxl
 
 XLSX, OUT = sys.argv[1], sys.argv[2]
@@ -23,6 +23,11 @@ SAMPLE_IDS = {
 def clean(v):
     if v is None: return ""
     return re.sub(r"\s+", " ", str(v)).strip()
+
+def strip_version_tags(s):
+    # Public output stays version-silent: keep "[moved from X]" provenance
+    # tags but drop database-version tokens like ", v13".
+    return re.sub(r",\s*v1\d+\]", "]", s)
 
 def split_name(name):
     m = re.match(r"^(.*?)\s*\(([^()]*)\)\s*$", name)
@@ -92,7 +97,7 @@ for r in ws.iter_rows(min_row=2):
         "first_published_by": clean(row["First Published By"]),
         "key_references": clean(row["Key References"]),
         "possible_duplicate_of": clean(row["Possible Duplicate Of"]),
-        "notes": clean(row["Notes"]),
+        "notes": strip_version_tags(clean(row["Notes"])),
     })
     h = houses[-1]
     h["sample"] = h["grid_id"] in SAMPLE_IDS
@@ -101,7 +106,7 @@ for r in ws.iter_rows(min_row=2):
         h["key_references"] = ""
 
 houses.sort(key=lambda h: h["grid_id"])
-out = {"version": "v13 VERIFIED 2026-08-01", "generated_from": "Timgad_Houses_Database_v13_VERIFIED_2026-08-01.xlsx, HOUSES sheet", "count": len(houses), "houses": houses}
+out = {"generated": datetime.date.today().isoformat(), "count": len(houses), "houses": houses}
 with open(OUT, "w", encoding="utf-8") as f:
     json.dump(out, f, ensure_ascii=False, indent=1)
 print("wrote", OUT, "houses:", len(houses))

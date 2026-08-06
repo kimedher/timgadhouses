@@ -53,6 +53,15 @@
 .hc-pending { font-size: 0.74rem; font-family: var(--serif); font-style: italic; color: var(--terracotta-deep); margin: 0.15rem 0 0; }
 .hc-badge--full { background: var(--teal-dark); color: #fff; }
 .vstatus-term { color: var(--teal-dark); }
+.hc-expand { margin: 0.15rem 0 0; }
+.hc-expand summary { cursor: pointer; list-style: none; }
+.hc-expand summary::-webkit-details-marker { display: none; }
+.hc-expand-label { font-size: 0.7rem; color: var(--text-muted); text-decoration: underline; white-space: nowrap; }
+.hc-expand .hc-less { display: none; }
+.hc-expand[open] .hc-more-word { display: none; }
+.hc-expand[open] .hc-less { display: inline; }
+.hc-expand[open] .hc-expand-preview { display: none; }
+.hc-expand > p { margin: 0.15rem 0 0; }
 .hc-empty {
   grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;
   font-family: var(--serif); font-style: italic; color: var(--text-muted); display: none;
@@ -112,9 +121,9 @@
       <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Verified{% elsif house.verification_status == "partial" %}Partially verified{% else %}Under review{% endif %}</span>
       {% if house.sample %}<span class="hc-badge hc-badge--full">full record</span>{% endif %}
     </div>
-    {% if house.notes != "" %}<p class="hc-note">{{ house.notes | truncate: 180 | escape }}</p>{% endif %}
+    {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes | escape }}</p></details>{% else %}<p class="hc-note">{{ house.notes | escape }}</p>{% endif %}{% endif %}
     {% unless house.sample %}<p class="hc-pending">Full record in preparation.</p>{% endunless %}
-    {% if house.first_published_by != "" %}<p class="hc-pub">First published by {{ house.first_published_by | truncate: 90 | escape }}</p>{% endif %}
+    {% if house.first_published_by != "" %}{% if house.first_published_by.size > 90 %}<details class="hc-expand hc-pub"><summary><span class="hc-expand-preview">First published by {{ house.first_published_by | truncate: 90 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p>First published by {{ house.first_published_by | escape }}</p></details>{% else %}<p class="hc-pub">First published by {{ house.first_published_by | escape }}</p>{% endif %}{% endif %}
   </article>
   {% endfor %}
 </div>
