@@ -117,9 +117,9 @@
     <p class="hc-meta">{{ house.zone | escape }}{% if house.area_m2 %} &middot; &asymp;{{ house.area_m2 }} m&sup2;{% endif %}</p>
     <div class="hc-badges">
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
-      <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">mapping: {{ house.mapping_confidence | escape }}</span>
+      <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Mapping: {{ house.mapping_confidence | escape }}</span>
       <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Verified{% elsif house.verification_status == "partial" %}Partially verified{% else %}Under review{% endif %}</span>
-      {% if house.sample %}<span class="hc-badge hc-badge--full">full record</span>{% endif %}
+      {% if house.sample %}<span class="hc-badge hc-badge--full">Full record</span>{% endif %}
     </div>
     {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes | escape }}</p></details>{% else %}<p class="hc-note">{{ house.notes | escape }}</p>{% endif %}{% endif %}
     {% unless house.sample %}<p class="hc-pending">Full record in preparation.</p>{% endunless %}
