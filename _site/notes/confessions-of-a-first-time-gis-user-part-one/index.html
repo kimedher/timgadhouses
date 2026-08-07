@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confessions of a first-time GIS user: part one · Houses of Roman Timgad</title>
+  <meta name="description" content="An open digital humanities project cataloging over a hundred houses excavated at Roman Timgad, and the lives lived within their walls.">
+  <link rel="canonical" href="https://timgadhouses.org/notes/confessions-of-a-first-time-gis-user-part-one/">
+  <link rel="alternate" type="application/atom+xml" title="Houses of Roman Timgad" href="https://timgadhouses.org/feed.xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/main.css?v=202608072252">
+  <!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Confessions of a first-time GIS user: part one | Houses of Roman Timgad</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Confessions of a first-time GIS user: part one" />
+<meta name="author" content="Kim Edher" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="This is my first time ever properly using GIS software. There, I said it. What follows is the honest version of how a textual, archival, deeply non-spatial researcher got friendly with QGIS, starting not with the software at all but with a month of chasing down plans." />
+<meta name="twitter:description" property="og:description" content="This is my first time ever properly using GIS software. There, I said it. What follows is the honest version of how a textual, archival, deeply non-spatial researcher got friendly with QGIS, starting not with the software at all but with a month of chasing down plans." />
+<link rel="canonical" href="https://timgadhouses.org/notes/confessions-of-a-first-time-gis-user-part-one/" />
+<meta property="og:url" content="https://timgadhouses.org/notes/confessions-of-a-first-time-gis-user-part-one/" />
+<meta property="og:site_name" content="Houses of Roman Timgad" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-06-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2026-06-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Confessions of a first-time GIS user: part one" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kim Edher"},"dateModified":"2026-06-04T00:00:00+00:00","datePublished":"2026-06-04T00:00:00+00:00","description":"This is my first time ever properly using GIS software. There, I said it. What follows is the honest version of how a textual, archival, deeply non-spatial researcher got friendly with QGIS, starting not with the software at all but with a month of chasing down plans.","headline":"Confessions of a first-time GIS user: part one","mainEntityOfPage":{"@type":"WebPage","@id":"https://timgadhouses.org/notes/confessions-of-a-first-time-gis-user-part-one/"},"url":"https://timgadhouses.org/notes/confessions-of-a-first-time-gis-user-part-one/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+  <div class="site-wrap">
+
+    <header class="site-header">
+      <div class="container-wide">
+        <a href="/" class="site-title">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="278 187 700 700">
+              <circle cx="628" cy="537" r="350" fill="#C77B5A"/>
+              <polygon points="430,338 808,338 886,416 370,416" fill="#E8C4AE"/>
+              <rect x="405" y="416" width="450" height="320" fill="#E8C4AE"/>
+              <rect x="495" y="492" width="252" height="186" fill="#A7C9CB"/>
+              <rect x="447" y="461" width="366" height="20" rx="10" fill="#1F5E63"/>
+              <rect x="447" y="691" width="366" height="20" rx="10" fill="#1F5E63"/>
+              <rect x="455" y="466" width="18" height="240" rx="9" fill="#1F5E63"/>
+              <rect x="524" y="466" width="18" height="240" rx="9" fill="#1F5E63"/>
+              <rect x="700" y="466" width="18" height="240" rx="9" fill="#1F5E63"/>
+              <rect x="769" y="466" width="18" height="240" rx="9" fill="#1F5E63"/>
+              <g fill="#F5E2D3">
+                <rect x="578" y="534" width="40" height="44"/>
+                <rect x="626" y="534" width="40" height="44"/>
+                <rect x="578" y="586" width="40" height="44"/>
+                <rect x="626" y="586" width="40" height="44"/>
+              </g>
+            </svg>
+          </span>
+          Houses of Roman Timgad
+        </a>
+        <button type="button" class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" id="site-nav">
+          <a href="/about/">About</a>
+          <div class="nav-item has-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Timgad<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
+            <div class="nav-dropdown" role="menu">
+              <a href="/timgad/" role="menuitem">Overview</a>
+              <a href="/timgad/timeline/" role="menuitem">Timeline</a>
+            </div>
+          </div>
+          <div class="nav-item has-dropdown">
+            <button type="button" class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">Houses<span class="nav-dropdown-caret" aria-hidden="true"></span></button>
+            <div class="nav-dropdown" role="menu">
+              <a href="/houses/" role="menuitem">Overview</a>
+              <a href="/houses/catalog/" role="menuitem">Catalog</a>
+              <a href="/grid/" role="menuitem">Grid</a>
+              <a href="/gis/" role="menuitem">GIS</a>
+              <a href="/methods/" role="menuitem">Methods</a>
+            </div>
+          </div>
+          <a href="/notes/" class="active">Journal</a>
+          <a href="/scholarship/">Scholarship</a>
+          
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article class="post">
+  <div class="container">
+    <header class="page-header fade-in">
+      <h1>Confessions of a first-time GIS user: part one</h1>
+      <p class="meta">
+        June 4, 2026
+         · 8 min read
+         · workflow
+      </p>
+    </header>
+
+    <div class="post-content fade-in">
+      <p>This is my first time ever properly using GIS software. There, I said it.</p>
+
+<p>If I am being entirely truthful, I did use it once, in a grad seminar my supervisor ran a few years back. Okay, fine, probably closer to a decade ago. It was a great entry point, and like many of us do with many things, I treated it as a shiny new toy I enjoyed for one weekend and then never touched again. It sat in the drawer of skills I wasn’t even sure I would come back to someday.</p>
+
+<p>But then “someday” arrived when I successfully defended my prospectus and sat down with my supervisor immediately afterwards, and was told, in so many words, to get rather friendly with GIS for the first stage of my dissertation research. So I did what any reasonable person does with a clear and slightly intimidating instruction. I put it off as long as I possibly could.</p>
+
+<p>First, though, a little context for why an archaeologist is suddenly living in mapping software at all. My dissertation reads Timgad’s houses spatially, block by block, comparing the neat walled grid against the messier neighborhoods that grew up outside it. To do that, I need every house in one place and anchored to where it actually sits on the ground. And here is the catch that makes this harder than it sounds: only a handful of Timgad’s houses have ever been drawn up as individual house plans. For most of the city, what exists is the same large grid plan, surveyed once and then reused and reproduced for decades on end, a lovely overview that tells you where the blocks sit but almost nothing about the walls, rooms, and thresholds inside them. GIS is how I begin to fill that gap, turning scattered drawings and satellite imagery into a single map I can actually read a house from.</p>
+
+<h2 id="the-very-long-warm-up">The very long warm-up</h2>
+
+<p>I want to be honest about this part, because I think a lot of researchers will recognize it, even if we struggle to admit it to ourselves at times.</p>
+
+<p>When a project asks you to learn a genuinely new method, it is easy to retreat into the work you already know you are good at. For me that meant reading, close textual analysis, and working through old excavation reports and the secondary literature. The things that feel like home to me, academically speaking at least. Nothing beats an actual home, of course. I study houses for a reason, clearly, although we are getting off topic now. Every hour I spent in what was second nature for me research-wise was a genuine and rather <em>real</em> hour of research, but it was also, quietly, an hour I was <em>not</em> spending learning to draw a wall in QGIS, much to my supervisor’s dismay. And there was always an excuse, always more to read, more to research, more to “know” before I felt truly “ready.”</p>
+
+<p>I even built an entire website. Hello, <a href="http://timgadhouses.org">timgadhouses.org</a>. Yes, that is quite literally how this site came to be, a last-ditch effort to further procrastinate doing something relatively simple but also plainly uncomfortable. Somehow creating a website from scratch felt more in my wheelhouse than using GIS software. Now, this is a real scholarly home for this project and I am proud of it, but again, if we are being candid, which, hi, we very much are, it was a very productive way to avoid actually drawing these houses. Procrastination with a custom domain is still procrastination. It just has better typography.</p>
+
+<p>What I will say, for anyone stuck in the same warm-up loop, is that the avoidance was not the enemy I thought it was. Some of it was me building the scaffolding I needed to feel steady enough to start. At a certain point the scaffolding was done, the excuses ran thin, my supervisor can further attest to this, and I finally settled in. And once I started, the thing I had built up into a wall turned out to be a door.</p>
+
+<h2 id="step-one-was-not-software-at-all">Step one was not software at all</h2>
+
+<p>Here is the part that surprised me most. The first real step in my GIS workflow had nothing to do with GIS.</p>
+
+<p>Before you can georeference anything, you need something to georeference. For me that meant the published excavation plans of Timgad’s houses, the drawings made by the people who dug these blocks over the last century and more. And those plans live in books, scattered across libraries in North America and a few across the pond. Some of these volumes are old, large, and not exactly available at my local branch, nor were they light to carry, mind you.</p>
+
+<div class="image-pair">
+  <figure>
+    <img src="/assets/images/report-from-paris.jpg" alt="Holding a large red archaeological report in front of a mirror" />
+    <figcaption>A particularly large excavation report, newly arrived from Paris.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/koerner-stacks.jpg" alt="A long aisle of book stacks at Koerner Library, UBC" />
+    <figcaption>The stacks at Koerner Library, UBC.</figcaption>
+  </figure>
+</div>
+
+<p>So step one was a month of detective work and a great deal of patience. I owe an enormous thank you to the interlibrary loan librarians at UBC, who tracked down volume after volume for me, including some that took real effort to locate. ILL librarians are unsung heroes of any project like this.</p>
+
+<p>A fair question here is: a lot of these books are already digitized, so why bother with the physical copies? Two reasons, and both of them matter for spatial work.</p>
+
+<p>The first is the foldouts. Many excavation reports include large fold-out plans bound into the back of the volume. When some of these books were digitized, whoever scanned them photographed the pages flat and never unfolded the plans, come on guys. So the single most important image in the whole book, for me at least, would be entirely missing from the digital version, or would show up as a sad folded rectangle. A pity, and yet a common one.</p>
+
+<p>The second is resolution. Even when a plan was scanned, it was often done at the resolution of a standard library scanner, at a DPI too low to be useful once I zoom in to trace individual walls. A plan that looks fine on a screen at full-page size falls apart into mush the moment you need detail.</p>
+
+<p>So a good chunk of that first month was waiting, and then scanning. I worked through the physical volumes on high-quality scanners, unfolding the plans properly and capturing them at high DPI so that the lines would hold up under magnification. Tedious, yes. The higher the DPI setting, the longer it takes to scan, think around 5 minutes per page. Yes, that was “fun.” But the quality of every spatial decision I make later depends on the quality of these source images, so it was worth doing slowly and doing once. I owe that advice to my wise supervisor, who truly was there to advise me every step of the way.</p>
+
+<div class="image-pair">
+  <figure>
+    <img src="/assets/images/ik-barber-exterior.jpg" alt="The stone exterior of the Irving K. Barber Learning Centre at UBC" />
+    <figcaption>The Irving K. Barber Learning Centre, UBC.</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/chapman-scanning.jpg" alt="The timber-roofed Chapman Learning Commons reading hall inside IK Barber" />
+    <figcaption>The Chapman Learning Commons inside IK Barber, where I spent hours scanning house plans.</figcaption>
+  </figure>
+</div>
+
+<p>Alongside the plans, I gathered the other layers I would need, chiefly satellite and aerial imagery of the site, so that the historical drawings would have something real and modern to be matched against. This part is less straightforward than it sounds, because not every satellite image of Timgad is actually usable. Cloud cover is the obvious problem. A single bank of cloud sitting over the site can hide the exact walls I need to see. The subtler problem is shadow. Imagery captured when the sun sits low throws long shadows off every standing stone (confusing for colonnades and the like), and then those shadows can swallow a wall line, or worse, masquerade as one that is not really there. So I found myself doing something I never expected to care about, comparing captures of the same patch of ground taken on different days, hunting for the clearest, flattest-lit, least-clouded version. I leaned on high-resolution imagery from providers like Airbus alongside the standard basemaps, weighing each scene for clarity rather than just grabbing the first one that loaded. A clean, low-shadow image makes every later step easier, and a bad one quietly sabotages your tracing before you have drawn a single line.</p>
+
+<h2 id="georeferencing-or-teaching-a-flat-drawing-where-it-lives">Georeferencing, or teaching a flat drawing where it lives</h2>
+
+<p>With the plans scanned and the imagery in hand, I finally opened QGIS for the project in earnest. The first real GIS task was georeferencing.</p>
+
+<p>Georeferencing, not that I am the expert, only having done it a handful of times, but here we go, is the process of taking an image that knows nothing about the world, a scanned drawing, and telling it where on Earth it belongs. You match points on the old plan to known locations on the satellite imagery, the corner of a known structure, an intersection of streets in the grid, a fixed feature you can identify in both. Place enough of these matched points and the software can stretch, rotate, and settle the historical drawing into real-world coordinates so that it overlays the modern site correctly.</p>
+
+<p>When it works, it feels a little like magic. A drawing made by a French excavator a century ago suddenly snaps into place over a satellite image, and the walls he recorded line up with the stones still standing today.</p>
+
+<p>When it does not work, it teaches you patience. Old plans are not perfectly accurate, paper distorts, and excavators drew with the conventions and the errors of their moment. Part of the skill, it turns out, is knowing how much to trust each source and where to let the modern imagery win.</p>
+
+<p>That is where part one ends. The plans are gathered, scanned, and anchored to the real world. The map is finally ready to be drawn on.</p>
+
+<h2 id="there-is-no-such-thing-as-ready">There is no such thing as “ready”</h2>
+
+<p>For now, the confession stands. I am a first-time GIS user, I avoided it for longer than I would like to admit, and the work that finally got me started was not glamorous. It was a month, or three, of emails to librarians, stacks of borrowed books, and many visits to a specialty library with a high-quality scanner. The software came after.</p>
+
+<p>And when the software finally arrived, I promptly got it wrong. The very first time I georeferenced my plans, I set every single one to the wrong coordinate reference system. If you do not yet know what a CRS is, do not worry, part two will get to it. For now, just know that it is the setting that tells QGIS which model of the Earth your coordinates are measured against, and that choosing the wrong one sends your beautifully matched plan to roughly the wrong place on the planet. So I had done all the careful, patient work of anchoring each drawing, and then watched it land in the wrong spot. Every plan. I had to go back and redo the lot.</p>
+
+<p>Here is the thing I would tell my past self, the one still reading one more report in order to feel ready. There is no such thing as ready. We spend so much time thinking and planning and gathering, as if preparation were a door we eventually walk through into competence. It isn’t. Ready is really just beginning, and then redoing, and then redoing again. The wrong CRS was not a sign that I shouldn’t have started. It <em>was</em> the start. The hardest part was never the software, or waiting for inter-library loans to arrive, or the tedious scanner process. It was taking that first action before I felt prepared to, and then being willing to do it badly, and then to do it again, until it was right.</p>
+
+<p>With the plans (finally) anchored, the real work could start. In part two I will walk through the drawing workflow I settled on, block by block, house by house, and the decisions that turned out to matter most, including the surprisingly stubborn question of what counts as a wall, how to handle the gaps, and what to do when a source contradicts itself.</p>
+
+<p><em>Also shared on <a href="https://www.instagram.com/p/DZOBwT3kt9e/">Instagram</a>.</em></p>
+
+    </div>
+
+    <aside class="citation-block">
+      <strong>Cite this post</strong>
+      <code>Edher, K. (2026). "Confessions of a first-time GIS user: part one." Houses of Roman Timgad. https://timgadhouses.org/notes/confessions-of-a-first-time-gis-user-part-one/</code>
+    </aside>
+  </div>
+</article>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container-wide">
+        
+<div class="ornament" aria-hidden="true">
+  <span class="ornament-rule"></span>
+  <svg viewBox="0 0 140 56" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">
+    <!-- base line -->
+    <line x1="4" y1="52" x2="136" y2="52" />
+    <!-- entablature (top band) -->
+    <line x1="10" y1="20" x2="130" y2="20" />
+    <line x1="10" y1="16" x2="130" y2="16" />
+    <!-- left smaller arch -->
+    <path d="M18 52 L18 32 Q18 26 24 26 Q30 26 30 32 L30 52" />
+    <!-- central tall arch -->
+    <path d="M52 52 L52 24 Q52 10 70 10 Q88 10 88 24 L88 52" />
+    <!-- right smaller arch -->
+    <path d="M110 52 L110 32 Q110 26 116 26 Q122 26 122 32 L122 52" />
+    <!-- engaged columns between arches -->
+    <line x1="40" y1="20" x2="40" y2="52" />
+    <line x1="100" y1="20" x2="100" y2="52" />
+    <!-- attic crown -->
+    <line x1="20" y1="12" x2="120" y2="12" />
+    <circle cx="70" cy="4.5" r="1.1" fill="currentColor" stroke="none" />
+  </svg>
+  <span class="ornament-rule"></span>
+</div>
+
+        <div class="footer-row">
+          <div>
+            <div class="footer-tagline">Where work, home, and identity shared a roof.</div>
+            <div>Open data, open scholarship.</div>
+          </div>
+          <div>
+            <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">The project</strong><br>
+            <a href="/about/">About</a>
+            <br><a href="/timgad/">Timgad</a>
+            <br><a href="/timgad/timeline/">Timeline</a>
+            <br><a href="/notes/">Journal</a>
+            <br><a href="/scholarship/">Scholarship</a>
+          </div>
+          <div>
+            <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Houses</strong><br>
+            <a href="/houses/">Overview</a>
+            <br><a href="/houses/catalog/">Catalog</a>
+            <br><a href="/grid/">Grid</a>
+            <br><a href="/gis/">GIS</a>
+            <br><a href="/methods/">Methods</a>
+          </div>
+          <div>
+            <strong style="color: var(--text); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em;">Follow</strong><br>
+            <span style="display:inline-flex; gap:0.95rem; margin-top:0.45rem; align-items:center;"><a href="https://www.instagram.com/fieldnotesinprogress" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.facebook.com/fieldnotesinprogress1" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a><a href="https://x.com/timgadhouses" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.66l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg></a><a href="https://www.tiktok.com/@fieldnotesinprogress" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a href="https://www.youtube.com/@fieldnotesinprogress" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a></span>
+          </div>
+          <div class="footer-credit">
+            <strong>License &amp; credit</strong><br>
+            Text and images © 2026 Kim Edher, CC BY 4.0 unless noted.<br>
+            Code under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.<br>
+            Built in the open on <a href="https://github.com/kimedher/timgadhouses">GitHub</a>.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    /* Mobile hamburger toggle */
+    (function() {
+      var header = document.querySelector('.site-header');
+      var btn = document.querySelector('.nav-toggle');
+      if (!header || !btn) return;
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var isOpen = header.classList.toggle('nav-open');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        btn.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+        if (!isOpen) {
+          /* collapse any open sub-dropdowns when closing the hamburger */
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(el) {
+            el.classList.remove('open');
+            var t = el.querySelector('.nav-dropdown-toggle');
+            if (t) t.setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+      /* close the mobile menu when a link is tapped */
+      document.querySelectorAll('.site-nav a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          if (header.classList.contains('nav-open')) {
+            header.classList.remove('nav-open');
+            btn.setAttribute('aria-expanded', 'false');
+            btn.setAttribute('aria-label', 'Open navigation');
+          }
+        });
+      });
+      /* close when viewport grows past the mobile breakpoint */
+      var mq = window.matchMedia('(min-width: 769px)');
+      var onChange = function(e) {
+        if (e.matches && header.classList.contains('nav-open')) {
+          header.classList.remove('nav-open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation');
+        }
+      };
+      if (mq.addEventListener) mq.addEventListener('change', onChange);
+      else if (mq.addListener) mq.addListener(onChange);
+    })();
+
+    /* Dropdown nav toggle (click + keyboard) */
+    (function() {
+      var toggles = document.querySelectorAll('.nav-dropdown-toggle');
+      toggles.forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          var item = this.closest('.nav-item');
+          var nowOpen = !item.classList.contains('open');
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(other) {
+            if (other !== item) {
+              other.classList.remove('open');
+              var t = other.querySelector('.nav-dropdown-toggle');
+              if (t) t.setAttribute('aria-expanded', 'false');
+            }
+          });
+          item.classList.toggle('open', nowOpen);
+          this.setAttribute('aria-expanded', nowOpen ? 'true' : 'false');
+        });
+      });
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.nav-item.has-dropdown')) {
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(el) {
+            el.classList.remove('open');
+            var t = el.querySelector('.nav-dropdown-toggle');
+            if (t) t.setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.nav-item.has-dropdown.open').forEach(function(el) {
+            el.classList.remove('open');
+            var t = el.querySelector('.nav-dropdown-toggle');
+            if (t) { t.setAttribute('aria-expanded', 'false'); t.focus(); }
+          });
+        }
+      });
+    })();
+
+    /* Fade in elements as they scroll into view. */
+    (function() {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+          el.classList.add('in-view');
+        });
+        return;
+      }
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
+      document.querySelectorAll('.fade-in').forEach(function(el) {
+        observer.observe(el);
+      });
+      /* Safety net: any fade-in still hidden after the first paint
+         gets revealed on next animation frame, so tall content that
+         straddles the viewport never gets stuck at opacity 0. */
+      requestAnimationFrame(function() {
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+          var rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('in-view');
+          }
+        });
+      });
+    })();
+  </script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1c67827453d44dc8ad4280bbc6245395"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+</body>
+</html>
