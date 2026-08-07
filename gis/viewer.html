@@ -43,12 +43,19 @@ L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/
 }).addTo(map);
 
 const COLORS = {
-  houses: '#C0392B', baths: '#2E6DA4', religious_buildings: '#4C8A3F',
-  social_buildings: '#8E5BA6', economic_buildings: '#B9770E', gates: '#D4AC0D',
-  roads: '#E4C580', insulae: '#bbbbbb',
-  walls: '#2C3E50', doorways: '#E67E22', colonnades: '#8E44AD',
-  open_spaces: '#A9DFBF', water_features: '#5DADE2', mosaics: '#F1948A',
-  stairs: '#7F8C8D', water_channels: '#3498DB'
+  houses: '#89CFF0', baths: '#F8A5C2', religious_buildings: '#E74C3C',
+  social_buildings: '#9B59B6', economic_buildings: '#2ECC71', gates: '#800020',
+  roads: '#FE9306', insulae: '#F4D03F',
+  walls: '#FFFFFF', doorways: '#FDBF6F', colonnades: '#B2DF8A',
+  open_spaces: '#EBB27B', water_features: '#40E0D0', mosaics: '#D295B2',
+  stairs: '#D0F362', water_channels: '#00BFFF'
+};
+const STROKES = {
+  houses: '#5AA5D1', baths: '#D47FA6', religious_buildings: '#C0392B',
+  social_buildings: '#7D3C98', economic_buildings: '#1E8449', gates: '#5C0017',
+  roads: '#D4AC0D', insulae: '#D4AC0D',
+  open_spaces: '#A16B4D', water_features: '#2BB5A5', mosaics: '#4E152C',
+  stairs: '#9CBF2F'
 };
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
@@ -76,15 +83,14 @@ function popup(props, layerName) {
 }
 
 const baseStyle = {
-  insulae: f => ({ color:'#888', weight:1, fillColor:'#bbb', fillOpacity:0.08, dashArray:'3 3' }),
-  roads:   f => ({ color:'#C9A227', weight:1, fillColor:COLORS.roads, fillOpacity:0.55 }),
-  houses:  f => ({ color:'#922B21', weight:1.5, fillColor:COLORS.houses, fillOpacity:0.45 }),
-  default: n => f => ({ color:COLORS[n]||'#555', weight:1.5, fillColor:COLORS[n]||'#555', fillOpacity:0.45 })
+  insulae: f => ({ color:'#D4AC0D', weight:1.2, fillColor:'#F4D03F', fillOpacity:0.30 }),
+  roads:   f => ({ color:'#D4AC0D', weight:0.8, fillColor:'#FE9306', fillOpacity:0.30 }),
+  default: n => f => ({ color:STROKES[n]||COLORS[n]||'#555', weight:1.2, fillColor:COLORS[n]||'#555', fillOpacity:0.39 })
 };
 const lineStyle = {
-  walls: { color:COLORS.walls, weight:2 }, doorways: { color:COLORS.doorways, weight:3 },
-  colonnades: { color:COLORS.colonnades, weight:2, dashArray:'1 5' },
-  water_channels: { color:COLORS.water_channels, weight:2, dashArray:'6 3' }
+  walls: { color:'#FFFFFF', weight:2.2 }, doorways: { color:'#FDBF6F', weight:3 },
+  colonnades: { color:'#B2DF8A', weight:2 },
+  water_channels: { color:'#00BFFF', weight:2, dashArray:'6 3' }
 };
 
 const CITY = ['insulae','roads','gates','baths','social_buildings','religious_buildings','economic_buildings','houses'];
@@ -136,7 +142,7 @@ Promise.all(CITY.concat(DETAIL).map(n =>
     const div = L.DomUtil.create('div', 'legend-box');
     div.innerHTML = ['houses','baths','religious_buildings','social_buildings','economic_buildings','gates','roads','insulae']
       .map(n => '<div><span class="sw" style="background:' + COLORS[n] + '"></span>' + LABELS[n] + '</div>').join('')
-      + '<div class="note">Zoom in to a traced house to see walls, doorways &amp; mosaics. Grey dashed blocks are not yet digitized.</div>';
+      + '<div class="note">Colours follow the QGIS project symbology. Zoom in to a traced house to see walls, doorways &amp; mosaics.</div>';
     return div;
   };
   legend.addTo(map);
