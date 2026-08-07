@@ -23,6 +23,15 @@ if os.path.exists(OVERLAY_CSV):
         for row in csv.DictReader(f):
             PUBLIC_NOTES[row["grid_id"].strip()] = row["note"].strip()
 
+# Analysis-progress overlay: grid_ids with a status of "drawn" or "case_study";
+# every house absent from the csv exports as "pending".
+ANALYSIS_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analysis_status.csv")
+ANALYSIS_STATUS = {}
+if os.path.exists(ANALYSIS_CSV):
+    with open(ANALYSIS_CSV, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            ANALYSIS_STATUS[row["grid_id"].strip()] = row["status"].strip()
+
 # The 12-house dissertation sample publishes full records (notes, references).
 # All other houses publish index metadata only until the analysis is defended.
 SAMPLE_IDS = {
@@ -125,6 +134,7 @@ for r in ws.iter_rows(min_row=2):
         "confidence": clean(row["Confidence"]).lower(),
         "mapping_confidence": clean(row["Mapping Confidence"]).lower(),
         "verification_status": verification_status(row["Verification Status"]),
+        "analysis_status": ANALYSIS_STATUS.get(clean(row["Grid ID"]), "pending"),
         "area_raw": ar,
         "area_m2": area_m2(ar),
         "first_published_by": clean_citation(clean(row["First Published By"])),

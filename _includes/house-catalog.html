@@ -48,6 +48,9 @@
 .hc-badge--verified { background: var(--baby-blue-soft); color: var(--teal-dark); border: 1px solid var(--baby-blue-mid); }
 .hc-badge--partial { background: var(--bg-soft); color: var(--text-muted); border: 1px solid var(--hairline); }
 .hc-badge--review { background: var(--bg-soft); color: var(--terracotta-deep); border: 1px solid var(--terracotta-soft); }
+.hc-badge--an-pending { background: var(--bg-soft); color: var(--text-muted); border: 1px solid var(--hairline); }
+.hc-badge--an-drawn { background: #fff; color: var(--teal-dark); border: 1px solid var(--teal); }
+.hc-badge--an-case_study { background: var(--teal-dark); color: #fff; }
 .hc-note { font-size: 0.77rem; color: var(--text); margin: 0.15rem 0 0; line-height: 1.55; }
 .hc-pub { font-size: 0.7rem; color: var(--text-muted); margin: 0.3rem 0 0; border-top: 1px solid var(--hairline-soft); padding-top: 0.5rem; }
 .hc-pending { font-size: 0.74rem; font-family: var(--serif); font-style: italic; color: var(--terracotta-deep); margin: 0.15rem 0 0; }
@@ -116,6 +119,7 @@
     <li><strong>Building type</strong>: the structure's classification from the published record. A freestanding house was recorded as a detached building; a house shares walls with its neighbours inside a city block; a residential block is a whole block holding several dwellings; elite houses are the large peristyle residences; mixed-use covers everything that blurred living and working.</li>
     <li><strong>Location badge</strong>: how securely the house can be placed on the city grid — certain, probable, or uncertain.</li>
     <li><strong>Sources badge</strong>: how much of the record has been checked against the original publications — checked, partly checked, or under review.</li>
+    <li><strong>Analysis badge</strong>: how far my own analysis of the house has progressed — pending (cataloged, awaiting redrawing), drawn (redrawn as measurable vector geometry in my GIS), or case study (selected for full micro-analysis: space syntax, movement, and visibility).</li>
     <li><strong>Full record</strong>: one of the houses with complete notes and references; <strong>Full record to follow</strong>: an index entry whose full write-up is still to come.</li>
   </ul>
 </details>
@@ -140,6 +144,7 @@
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
       <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Location: {% if house.mapping_confidence == "high" %}certain{% elsif house.mapping_confidence == "medium" %}probable{% else %}uncertain{% endif %}</span>
       <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Sources: checked{% elsif house.verification_status == "partial" %}Sources: partly checked{% else %}Sources: under review{% endif %}</span>
+      <span class="hc-badge hc-badge--an-{{ house.analysis_status | escape }}">Analysis: {% if house.analysis_status == "case_study" %}case study{% else %}{{ house.analysis_status | escape }}{% endif %}</span>
       {% if house.sample %}<span class="hc-badge hc-badge--full">Full record</span>{% endif %}
     </div>
     {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes | escape }}</p></details>{% else %}<p class="hc-note">{{ house.notes | escape }}</p>{% endif %}{% endif %}
