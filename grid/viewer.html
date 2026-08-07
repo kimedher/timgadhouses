@@ -264,7 +264,7 @@ function detailForHouses(tid, houses, cellG) {
     if (h.sample && h.key_references) add("Key references", esc(h.key_references));
     html += `<div class="detail-grid">${rows}</div>`;
     if (h.sample && h.notes) html += `<p class="note-text">${esc(h.notes)}</p>`;
-    if (!h.sample) html += `<p class="note-text" style="font-style:italic;color:#A65D40">Full record in preparation; index entry only.</p>`;
+    if (!h.sample) html += `<p class="note-text" style="font-style:italic;color:#A65D40">Full record to follow; index entry only.</p>`;
   });
   html += `<a class="cat-link" href="/houses/catalog/" target="_top">View in the house catalog \u2192</a></div>`;
   return html;

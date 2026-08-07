@@ -122,7 +122,7 @@
       {% if house.sample %}<span class="hc-badge hc-badge--full">Full record</span>{% endif %}
     </div>
     {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes | escape }}</p></details>{% else %}<p class="hc-note">{{ house.notes | escape }}</p>{% endif %}{% endif %}
-    {% unless house.sample %}<p class="hc-pending">Full record in preparation.</p>{% endunless %}
+    {% unless house.sample %}<p class="hc-pending">Full record to follow.</p>{% endunless %}
     {% if house.first_published_by != "" %}{% if house.first_published_by.size > 90 %}<details class="hc-expand hc-pub"><summary><span class="hc-expand-preview">First published by {{ house.first_published_by | truncate: 90 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p>First published by {{ house.first_published_by | escape }}</p></details>{% else %}<p class="hc-pub">First published by {{ house.first_published_by | escape }}</p>{% endif %}{% endif %}
   </article>
   {% endfor %}
