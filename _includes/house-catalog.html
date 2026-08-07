@@ -80,6 +80,10 @@
   grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;
   font-family: var(--serif); font-style: italic; color: var(--text-muted); display: none;
 }
+.hc-gridlink { font-size: 0.7rem; margin: 0.3rem 0 0; }
+.hc-gridlink a { color: var(--teal); font-weight: 600; text-decoration: none; }
+.hc-gridlink a:hover { text-decoration: underline; }
+.hc-card--target { border-color: var(--baby-blue-deep); box-shadow: 0 0 0 2px var(--baby-blue-soft); }
 </style>
 
 {% assign hc_houses = site.data.houses.houses %}
@@ -128,7 +132,7 @@
 <div class="hc-grid" id="hc-grid">
   <p class="hc-empty" id="hc-empty">No houses match these filters.</p>
   {% for house in hc_houses %}
-  <article class="hc-card"
+  <article class="hc-card" id="{{ house.grid_id | escape }}"
     data-zone="{{ house.zone | escape }}"
     data-type="{{ house.type_class | escape }}"
     data-conf="{{ house.mapping_confidence | escape }}"
@@ -150,6 +154,7 @@
     {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes | escape }}</p></details>{% else %}<p class="hc-note">{{ house.notes | escape }}</p>{% endif %}{% endif %}
     {% unless house.sample %}<p class="hc-pending">Full record to follow.</p>{% endunless %}
     {% if house.first_published_by != "" %}{% if house.first_published_by.size > 90 %}<details class="hc-expand hc-pub"><summary><span class="hc-expand-preview">First published by {{ house.first_published_by | truncate: 90 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p>First published by {{ house.first_published_by | escape }}</p></details>{% else %}<p class="hc-pub">First published by {{ house.first_published_by | escape }}</p>{% endif %}{% endif %}
+    <p class="hc-gridlink"><a href="/grid/viewer.html#{{ house.grid_id | escape }}">View on the insula grid &rarr;</a></p>
   </article>
   {% endfor %}
 </div>
@@ -208,5 +213,13 @@
     apply();
   });
   apply();
+
+  if (location.hash) {
+    var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target && target.classList.contains('hc-card')) {
+      target.classList.add('hc-card--target');
+      target.scrollIntoView();
+    }
+  }
 })();
 </script>
