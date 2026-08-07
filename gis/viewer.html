@@ -31,7 +31,7 @@ header.bar .prog { font-size: 11px; color: #1B6B6F; font-weight: 600; margin-lef
 <body>
 <header class="bar">
   <h1>Timgad — Live GIS Map</h1>
-  <span class="sub">Every feature drawn from satellite imagery, updated as digitization proceeds. Zoom in on a traced house for walls &amp; doorways.</span>
+  <span class="sub">Every feature drawn from satellite imagery, updated as digitization proceeds. Zoom in on a traced house for its courts, mosaics &amp; water features.</span>
   <span class="prog" id="progress"></span>
 </header>
 <div id="map"></div>
@@ -93,8 +93,8 @@ const lineStyle = {
   water_channels: { color:'#00BFFF', weight:2, dashArray:'6 3' }
 };
 
-const CITY = ['insulae','roads','gates','baths','social_buildings','religious_buildings','economic_buildings','houses'];
-const DETAIL = ['open_spaces','mosaics','water_features','stairs','walls','doorways','colonnades','water_channels'];
+const CITY = ['insulae','roads','gates','baths','social_buildings','religious_buildings','houses'];
+const DETAIL = ['open_spaces','mosaics','water_features','stairs','water_channels'];
 const LABELS = {
   insulae:'Insulae (blocks)', roads:'Roads', gates:'Gates', baths:'Baths',
   social_buildings:'Public buildings', religious_buildings:'Religious buildings',
@@ -109,7 +109,7 @@ Promise.all(CITY.concat(DETAIL).map(n =>
 )).then(results => {
   for (const { n, gj } of results) {
     if (!gj) continue;
-    const isLine = ['walls','doorways','colonnades','water_channels'].includes(n);
+    const isLine = ['water_channels'].includes(n);
     const lyr = L.geoJSON(gj, {
       style: isLine ? (lineStyle[n]||{}) : (baseStyle[n] || baseStyle.default(n)),
       onEachFeature: (f, l) => l.bindPopup(popup(f.properties, n))
@@ -140,9 +140,9 @@ Promise.all(CITY.concat(DETAIL).map(n =>
   const legend = L.control({ position: 'bottomleft' });
   legend.onAdd = () => {
     const div = L.DomUtil.create('div', 'legend-box');
-    div.innerHTML = ['houses','baths','religious_buildings','social_buildings','economic_buildings','gates','roads','insulae']
+    div.innerHTML = ['houses','baths','religious_buildings','social_buildings','gates','roads','insulae']
       .map(n => '<div><span class="sw" style="background:' + COLORS[n] + '"></span>' + LABELS[n] + '</div>').join('')
-      + '<div class="note">Colours follow the QGIS project symbology. Zoom in to a traced house to see walls, doorways &amp; mosaics.</div>';
+      + '<div class="note">Colours follow the QGIS project symbology. Zoom in to a traced house to see its courts, mosaics &amp; water features.</div>';
     return div;
   };
   legend.addTo(map);

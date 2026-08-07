@@ -8,7 +8,7 @@ last_updated: 2026-08-07
 
 ## The live map
 
-Every feature below was drawn in QGIS from georeferenced satellite imagery, checked against the historical excavation plans, and exported directly from the project's spatial database. The map grows as digitization proceeds: the base city (insulae, roads, gates, baths, public and religious buildings) is complete, and houses appear one by one as their walls are traced. Grey dashed blocks are not yet digitized. Zoom in on a traced house and its walls, doorways, mosaics, and water features draw on top of the imagery.
+Every feature below was drawn in QGIS from georeferenced satellite imagery, checked against the historical excavation plans, and exported directly from the project's spatial database. The map grows as digitization proceeds: the base city (insulae, roads, gates, baths, public and religious buildings) is complete, and houses appear one by one as their walls are traced. Grey dashed blocks are not yet digitized. Zoom in on a traced house and its courts, mosaics, and water features draw on top of the imagery.
 
 <p style="margin: 2rem 0;">
   <a href="/gis/viewer.html" style="display: inline-block; background: var(--teal); color: white; padding: 0.8rem 1.4rem; border-radius: var(--radius); border: none; font-weight: 600; font-size: 0.95rem;">Open the full-screen map &rarr;</a>
