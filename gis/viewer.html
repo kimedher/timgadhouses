@@ -1,0 +1,146 @@
+---
+permalink: /gis/viewer.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Timgad Live Map — Houses of Roman Timgad</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body { font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif; display: flex; flex-direction: column; }
+header.bar { padding: 10px 16px; background: #fff; border-bottom: 1px solid #ddd; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+header.bar h1 { font-size: 17px; color: #222; }
+header.bar .sub { font-size: 11px; color: #666; }
+header.bar .prog { font-size: 11px; color: #1B6B6F; font-weight: 600; margin-left: auto; }
+#map { flex: 1; }
+.leaflet-popup-content { font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.5; }
+.leaflet-popup-content .pname { font-weight: 700; font-size: 13px; }
+.leaflet-popup-content .pfr { font-style: italic; color: #555; }
+.leaflet-popup-content .pmeta { color: #444; margin-top: 3px; }
+.leaflet-popup-content a { color: #1B6B6F; font-weight: 600; }
+.legend-box { background: #fff; padding: 8px 10px; border-radius: 5px; box-shadow: 0 1px 4px rgba(0,0,0,.3); font: 11px 'Montserrat', Arial, sans-serif; line-height: 1.7; }
+.legend-box .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.note { font-size: 10px; color: #777; max-width: 180px; margin-top: 4px; }
+</style>
+</head>
+<body>
+<header class="bar">
+  <h1>Timgad — Live GIS Map</h1>
+  <span class="sub">Every feature drawn from satellite imagery, updated as digitization proceeds. Zoom in on a traced house for walls &amp; doorways.</span>
+  <span class="prog" id="progress"></span>
+</header>
+<div id="map"></div>
+<script>
+const map = L.map('map', { zoomControl: true, maxZoom: 21 });
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  maxZoom: 21, maxNativeZoom: 19,
+  attribution: 'Imagery &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics | Data &copy; 2026 Kim Edher, CC BY 4.0'
+}).addTo(map);
+
+const COLORS = {
+  houses: '#C0392B', baths: '#2E6DA4', religious_buildings: '#4C8A3F',
+  social_buildings: '#8E5BA6', economic_buildings: '#B9770E', gates: '#D4AC0D',
+  roads: '#E4C580', insulae: '#bbbbbb',
+  walls: '#2C3E50', doorways: '#E67E22', colonnades: '#8E44AD',
+  open_spaces: '#A9DFBF', water_features: '#5DADE2', mosaics: '#F1948A',
+  stairs: '#7F8C8D', water_channels: '#3498DB'
+};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function popup(props, layerName) {
+  const p = props || {};
+  let name = p.name || p.gate_name || p.road_name || p.insula_id || layerName.replace(/_/g,' ');
+  let html = '<div class="pname">' + esc(name) + '</div>';
+  let notes = p.notes || '';
+  const frMatch = notes.match(/^Fr:\s*([^-]+?)(?:\s+-\s+([\s\S]*))?$/);
+  if (frMatch) { html += '<div class="pfr">' + esc(frMatch[1].trim()) + '</div>'; notes = (frMatch[2]||'').trim(); }
+  const meta = [];
+  if (p.insula_id && p.name) meta.push('Grid: ' + esc(p.insula_id));
+  if (p.building_use) meta.push(esc(p.building_use));
+  if (p.road_type) meta.push(esc(p.road_type));
+  if (p.period) meta.push(esc(p.period));
+  if (p.certainty) meta.push('certainty: ' + esc(p.certainty));
+  if (p.area_sqm) meta.push(Math.round(p.area_sqm).toLocaleString() + ' m&sup2;');
+  if (p.quarter) meta.push('quarter: ' + esc(p.quarter));
+  if (p.status) meta.push('digitization: ' + esc(p.status));
+  if (meta.length) html += '<div class="pmeta">' + meta.join(' &middot; ') + '</div>';
+  if (notes) html += '<div class="pmeta">' + esc(notes) + '</div>';
+  if (layerName === 'houses' && p.insula_id && !/TBD/.test(p.insula_id))
+    html += '<div class="pmeta"><a href="/houses/catalog/#' + encodeURIComponent(p.insula_id) + '" target="_top">Catalog record &rarr;</a></div>';
+  return html;
+}
+
+const baseStyle = {
+  insulae: f => ({ color:'#888', weight:1, fillColor:'#bbb', fillOpacity:0.08, dashArray:'3 3' }),
+  roads:   f => ({ color:'#C9A227', weight:1, fillColor:COLORS.roads, fillOpacity:0.55 }),
+  houses:  f => ({ color:'#922B21', weight:1.5, fillColor:COLORS.houses, fillOpacity:0.45 }),
+  default: n => f => ({ color:COLORS[n]||'#555', weight:1.5, fillColor:COLORS[n]||'#555', fillOpacity:0.45 })
+};
+const lineStyle = {
+  walls: { color:COLORS.walls, weight:2 }, doorways: { color:COLORS.doorways, weight:3 },
+  colonnades: { color:COLORS.colonnades, weight:2, dashArray:'1 5' },
+  water_channels: { color:COLORS.water_channels, weight:2, dashArray:'6 3' }
+};
+
+const CITY = ['insulae','roads','gates','baths','social_buildings','religious_buildings','economic_buildings','houses'];
+const DETAIL = ['open_spaces','mosaics','water_features','stairs','walls','doorways','colonnades','water_channels'];
+const LABELS = {
+  insulae:'Insulae (blocks)', roads:'Roads', gates:'Gates', baths:'Baths',
+  social_buildings:'Public buildings', religious_buildings:'Religious buildings',
+  economic_buildings:'Economic buildings', houses:'Houses',
+  open_spaces:'Open spaces &amp; courts', mosaics:'Mosaics', water_features:'Water features',
+  stairs:'Stairs', walls:'Walls', doorways:'Doorways', colonnades:'Colonnades', water_channels:'Water channels'
+};
+
+const overlays = {}, loaded = [];
+Promise.all(CITY.concat(DETAIL).map(n =>
+  fetch('/assets/gis/' + n + '.geojson').then(r => r.ok ? r.json() : null).catch(() => null).then(gj => ({ n, gj }))
+)).then(results => {
+  for (const { n, gj } of results) {
+    if (!gj) continue;
+    const isLine = ['walls','doorways','colonnades','water_channels'].includes(n);
+    const lyr = L.geoJSON(gj, {
+      style: isLine ? (lineStyle[n]||{}) : (baseStyle[n] || baseStyle.default(n)),
+      onEachFeature: (f, l) => l.bindPopup(popup(f.properties, n))
+    });
+    overlays['<span class="sw" style="background:' + (COLORS[n]||'#555') + '"></span>' + LABELS[n]] = lyr;
+    loaded.push({ n, lyr, gj });
+    if (CITY.includes(n)) lyr.addTo(map);
+  }
+  const ins = loaded.find(x => x.n === 'insulae');
+  if (ins) map.fitBounds(ins.lyr.getBounds(), { padding: [20, 20] });
+  L.control.layers(null, overlays, { collapsed: window.innerWidth < 700 }).addTo(map);
+
+  const houses = loaded.find(x => x.n === 'houses');
+  const traced = houses ? houses.gj.features.length : 0;
+  document.getElementById('progress').textContent = traced + ' of 73 houses traced';
+
+  function detailVisibility() {
+    const show = map.getZoom() >= 18;
+    for (const { n, lyr } of loaded) {
+      if (!DETAIL.includes(n)) continue;
+      if (show && !map.hasLayer(lyr)) lyr.addTo(map);
+      if (!show && map.hasLayer(lyr)) map.removeLayer(lyr);
+    }
+  }
+  map.on('zoomend', detailVisibility);
+  detailVisibility();
+
+  const legend = L.control({ position: 'bottomleft' });
+  legend.onAdd = () => {
+    const div = L.DomUtil.create('div', 'legend-box');
+    div.innerHTML = ['houses','baths','religious_buildings','social_buildings','economic_buildings','gates','roads','insulae']
+      .map(n => '<div><span class="sw" style="background:' + COLORS[n] + '"></span>' + LABELS[n] + '</div>').join('')
+      + '<div class="note">Zoom in to a traced house to see walls, doorways &amp; mosaics. Grey dashed blocks are not yet digitized.</div>';
+    return div;
+  };
+  legend.addTo(map);
+});
+</script>
+</body>
+</html>
