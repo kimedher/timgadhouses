@@ -62,6 +62,17 @@
 .hc-expand[open] .hc-less { display: inline; }
 .hc-expand[open] .hc-expand-preview { display: none; }
 .hc-expand > p { margin: 0.15rem 0 0; }
+.hc-legend {
+  background: #fff; border: 1px solid var(--hairline);
+  border-radius: var(--radius); padding: 0.75rem 1.15rem;
+  margin: 0 0 0.9rem; font-size: 0.8rem;
+}
+.hc-legend summary { cursor: pointer; list-style: none; font-weight: 600; }
+.hc-legend summary::-webkit-details-marker { display: none; }
+.hc-legend summary::after { content: " +"; color: var(--text-muted); }
+.hc-legend[open] summary::after { content: " \2212"; }
+.hc-legend ul { margin: 0.6rem 0 0; padding-left: 1.1rem; }
+.hc-legend li { margin: 0.35rem 0; line-height: 1.55; }
 .hc-empty {
   grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;
   font-family: var(--serif); font-style: italic; color: var(--text-muted); display: none;
@@ -81,11 +92,11 @@
     <option value="">Building type: all</option>
     {% for t in hc_types %}<option value="{{ t }}">{{ t }}</option>{% endfor %}
   </select>
-  <select id="hc-conf" aria-label="Filter by mapping confidence">
-    <option value="">Mapping confidence: all</option>
-    <option value="high">High</option>
-    <option value="medium">Medium</option>
-    <option value="low">Low</option>
+  <select id="hc-conf" aria-label="Filter by location confidence">
+    <option value="">Location: all</option>
+    <option value="high">Certain</option>
+    <option value="medium">Probable</option>
+    <option value="low">Uncertain</option>
   </select>
   <select id="hc-full" aria-label="Filter by record depth">
     <option value="">Records: all</option>
@@ -98,6 +109,16 @@
   </select>
   <input type="search" id="hc-search" placeholder="Search names and identifiers" aria-label="Search houses">
 </div>
+<details class="hc-legend">
+  <summary>How to read these cards</summary>
+  <ul>
+    <li><strong>Grid ID</strong> (e.g. TIMG.NE.I13): my identifier for each house — TIMG, then the city quadrant (NE/NW/SE/SW inside the walls; E- prefixed quadrants outside them; UNK for houses not yet locatable), then the insula (city block) number.</li>
+    <li><strong>Building type chip</strong>: the structure's classification from the published record (freestanding house, residential block, warehouse or mixed use, and so on).</li>
+    <li><strong>Location badge</strong>: how securely the house can be placed on the city grid — certain, probable, or uncertain.</li>
+    <li><strong>Sources badge</strong>: how much of the record has been checked against the original publications — checked, partly checked, or under review.</li>
+    <li><strong>Full record</strong>: one of the houses with complete notes and references; <strong>Full record to follow</strong>: an index entry whose full write-up is still to come.</li>
+  </ul>
+</details>
 <p class="hc-count"><span id="hc-count" aria-live="polite">Showing all {{ site.data.houses.count }} houses.</span> <button id="hc-clear" type="button">Clear filters</button></p>
 
 <div class="hc-grid" id="hc-grid">
@@ -117,8 +138,8 @@
     <p class="hc-meta">{{ house.zone | escape }}{% if house.area_m2 %} &middot; &asymp;{{ house.area_m2 }} m&sup2;{% endif %}</p>
     <div class="hc-badges">
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
-      <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Mapping: {{ house.mapping_confidence | escape }}</span>
-      <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Verified{% elsif house.verification_status == "partial" %}Partially verified{% else %}Under review{% endif %}</span>
+      <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Location: {% if house.mapping_confidence == "high" %}certain{% elsif house.mapping_confidence == "medium" %}probable{% else %}uncertain{% endif %}</span>
+      <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Sources: checked{% elsif house.verification_status == "partial" %}Sources: partly checked{% else %}Sources: under review{% endif %}</span>
       {% if house.sample %}<span class="hc-badge hc-badge--full">Full record</span>{% endif %}
     </div>
     {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes | escape }}</p></details>{% else %}<p class="hc-note">{{ house.notes | escape }}</p>{% endif %}{% endif %}
