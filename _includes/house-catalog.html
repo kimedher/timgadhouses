@@ -219,7 +219,8 @@
     var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
     if (target && target.classList.contains('hc-card')) {
       target.classList.add('hc-card--target');
-      target.scrollIntoView();
+      try { target.scrollIntoView({ behavior: 'instant', block: 'start' }); }
+      catch (e) { target.scrollIntoView(); }
     }
   }
   scrollToHashCard();
