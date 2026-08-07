@@ -214,12 +214,19 @@
   });
   apply();
 
-  if (location.hash) {
+  function scrollToHashCard() {
+    if (!location.hash) return;
     var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
     if (target && target.classList.contains('hc-card')) {
       target.classList.add('hc-card--target');
       target.scrollIntoView();
     }
   }
+  scrollToHashCard();
+  window.addEventListener('load', function () {
+    scrollToHashCard();
+    setTimeout(scrollToHashCard, 400);
+  });
+  window.addEventListener('hashchange', scrollToHashCard);
 })();
 </script>
