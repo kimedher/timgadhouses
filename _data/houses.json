@@ -751,13 +751,13 @@
    "sample": false
   },
   {
-   "grid_id": "TIMG.NE.I1",
+   "grid_id": "TIMG.SE.I2",
    "name": "House of the Gardens (Jardinières) (Maison des Jardinieres)",
    "name_en": "House of the Gardens (Jardinières)",
    "name_fr": "Maison des Jardinieres",
    "alternate_names": "Rebuffat no. 3",
-   "quadrant": "NE",
-   "zone": "Intramural NE",
+   "quadrant": "SE",
+   "zone": "Intramural SE",
    "building_type": "House",
    "type_class": "House",
    "confidence": "high",
@@ -769,7 +769,7 @@
    "first_published_by": "Ballu 1897: 224-226",
    "key_references": "Ballu 1897 I: 224-226; BCB 1905: 88-92; Germain 1969",
    "possible_duplicate_of": "None — the BCB 1905 record describes this same house",
-   "notes": "Ballu described a house of modest footprint, 21 x 24 m, entered through a doorway 2.10 m wide, with an atrium of 10.50 x 10.60 m; the portico on the Decumanus was carried by eight square pillars of which only the footings remain. Opposite the entrance stood a planter opening of 2.20 m, and bifrons tragic-mask heads crowned the stone uprights. The tablinum was reached through three bays on two columns, with fauces on each side leading to corner alae, which bounded the house on the south. Ballu noted that the house stood in a zone reserved for public buildings, and took it for the residence of a magistrate or important personage [Ballu 1897: 224-226]. The 1905 account gives an atrium about 10 m square with a portico about 2 m wide of ten columns, four across and three deep, a central well some 9 m deep in the atrium, and an entrance vestibule about 5 m wide; the tablinum floor carried a geometric mosaic with vegetal ornament, and geometric mosaics in brown and yellow ran under the atrium porticoes [BCB 1905: 88-92]. Germain calls the house's dimensions modest (assez restreintes) [Germain 1969: 37]. Ballu later noted that the house's columns had been re-erected [Ballu 1903: 110], and his 1909 report calls the street west of the insula 'la voie dite de la maison aux jardinières', the only paved one around that block [Ballu 1909, BCTH: 114-115].",
+   "notes": "Ballu described a house of modest footprint, 21 x 24 m, entered through a doorway 2.10 m wide, with an atrium of 10.50 x 10.60 m; the portico on the Decumanus was carried by eight square pillars of which only the footings remain. Opposite the entrance stood a planter opening of 2.20 m, and bifrons tragic-mask heads crowned the stone uprights. The tablinum was reached through three bays on two columns, with fauces on each side leading to corner alae, which bounded the house on the south. Ballu noted that the house stood in a zone reserved for public buildings, and took it for the residence of a magistrate or important personage [Ballu 1897: 224-226]. The 1905 account gives an atrium about 10 m square with a portico about 2 m wide of ten columns, four across and three deep, a central well some 9 m deep in the atrium, and an entrance vestibule about 5 m wide; the tablinum floor carried a geometric mosaic with vegetal ornament, and geometric mosaics in brown and yellow ran under the atrium porticoes [BCB 1905: 88-92]. Germain calls the house's dimensions modest (assez restreintes) [Germain 1969: 37]. Ballu later noted that the house's columns had been re-erected [Ballu 1903: 110], and his 1909 report calls the street west of the insula 'la voie dite de la maison aux jardinières', the only paved one around that block [Ballu 1909, BCTH: 114-115]. Placement note: Germain's plan sets this house in his insula 70, the block immediately east of the Forum on the south side of the Decumanus, and the project's georeferenced overlay agrees; the record has accordingly been moved to that block from the neighbouring one north of the Decumanus.",
    "sample": true
   },
   {
