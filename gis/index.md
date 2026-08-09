@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GIS
+title: City Map
 subtitle: The city, digitized block by block.
 permalink: /gis/
 last_updated: 2026-08-07

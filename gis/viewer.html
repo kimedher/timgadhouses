@@ -6,7 +6,7 @@ permalink: /gis/viewer.html
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Timgad Live Map — Houses of Roman Timgad</title>
+<title>Timgad City Map — Houses of Roman Timgad</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
@@ -25,12 +25,13 @@ header.bar .prog { font-size: 11px; color: #1B6B6F; font-weight: 600; margin-lef
 .leaflet-popup-content a { color: #1B6B6F; font-weight: 600; }
 .legend-box { background: #fff; padding: 8px 10px; border-radius: 5px; box-shadow: 0 1px 4px rgba(0,0,0,.3); font: 11px 'Montserrat', Arial, sans-serif; line-height: 1.7; }
 .legend-box .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.leaflet-control-layers-overlays label:first-child { border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 5px; display: block; }
 .note { font-size: 10px; color: #777; max-width: 180px; margin-top: 4px; }
 </style>
 </head>
 <body>
 <header class="bar">
-  <h1>Timgad — Live GIS Map</h1>
+  <h1>Timgad — City Map</h1>
   <span class="sub">A live, growing map: houses appear here one by one as their walls are traced from satellite imagery. Zoom in on a traced house for its courts, mosaics &amp; water features. Switch the base layer to "Plain plan" to see the drawings without the imagery, and see the <a href="/grid/" target="_top">insula grid</a> for the block-by-block reference system.</span>
   <span class="prog" id="progress"></span>
 </header>
@@ -113,6 +114,7 @@ const LABELS = {
 };
 
 const overlays = {}, loaded = [];
+overlays['<span class="sw" style="background:#3A2E20"></span><strong>Ballu 1897 plan</strong>'] = balluPlan;
 Promise.all(CITY.concat(DETAIL).map(n =>
   fetch('/assets/gis/' + n + '.geojson').then(r => r.ok ? r.json() : null).catch(() => null).then(gj => ({ n, gj }))
 )).then(results => {
@@ -129,7 +131,6 @@ Promise.all(CITY.concat(DETAIL).map(n =>
   }
   const ins = loaded.find(x => x.n === 'insulae');
   if (ins) map.fitBounds(ins.lyr.getBounds(), { padding: [20, 20] });
-  overlays['<span class="sw" style="background:#3A2E20"></span>Ballu 1897 plan'] = balluPlan;
   L.control.layers({ 'Satellite imagery': satellite, 'Plain plan': plain }, overlays, { collapsed: window.innerWidth < 700 }).addTo(map);
 
   const houses = loaded.find(x => x.n === 'houses');
