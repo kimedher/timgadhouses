@@ -45,6 +45,11 @@ const plain = L.layerGroup([], { attribution: 'Data &copy; 2026 Kim Edher, CC BY
 map.on('baselayerchange', e => {
   document.getElementById('map').style.background = (e.layer === plain) ? '#F2EEE6' : '';
 });
+map.createPane('plans');
+map.getPane('plans').style.zIndex = 350;
+const balluPlan = L.imageOverlay('/assets/gis/overlays/ballu1897_plan.png',
+  [[35.4793584, 6.4623823], [35.4882175, 6.4717666]],
+  { opacity: 0.9, pane: 'plans', attribution: 'Ballu 1897 plan (public domain), georeferenced by the project' });
 
 const COLORS = {
   houses: '#89CFF0', baths: '#F8A5C2', religious_buildings: '#E74C3C',
@@ -124,6 +129,7 @@ Promise.all(CITY.concat(DETAIL).map(n =>
   }
   const ins = loaded.find(x => x.n === 'insulae');
   if (ins) map.fitBounds(ins.lyr.getBounds(), { padding: [20, 20] });
+  overlays['<span class="sw" style="background:#3A2E20"></span>Ballu 1897 plan'] = balluPlan;
   L.control.layers({ 'Satellite imagery': satellite, 'Plain plan': plain }, overlays, { collapsed: window.innerWidth < 700 }).addTo(map);
 
   const houses = loaded.find(x => x.n === 'houses');
