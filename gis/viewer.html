@@ -31,16 +31,20 @@ header.bar .prog { font-size: 11px; color: #1B6B6F; font-weight: 600; margin-lef
 <body>
 <header class="bar">
   <h1>Timgad — Live GIS Map</h1>
-  <span class="sub">A live, growing map: houses appear here one by one as their walls are traced from satellite imagery. Zoom in on a traced house for its courts, mosaics &amp; water features.</span>
+  <span class="sub">A live, growing map: houses appear here one by one as their walls are traced from satellite imagery. Zoom in on a traced house for its courts, mosaics &amp; water features. Switch the base layer to "Plain plan" to see the drawings without the imagery, and see the <a href="/grid/" target="_top">insula grid</a> for the block-by-block reference system.</span>
   <span class="prog" id="progress"></span>
 </header>
 <div id="map"></div>
 <script>
 const map = L.map('map', { zoomControl: true, maxZoom: 21 });
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
   maxZoom: 21, maxNativeZoom: 18,
   attribution: 'Imagery &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics | Data &copy; 2026 Kim Edher, CC BY 4.0'
 }).addTo(map);
+const plain = L.layerGroup([], { attribution: 'Data &copy; 2026 Kim Edher, CC BY 4.0' });
+map.on('baselayerchange', e => {
+  document.getElementById('map').style.background = (e.layer === plain) ? '#F2EEE6' : '';
+});
 
 const COLORS = {
   houses: '#89CFF0', baths: '#F8A5C2', religious_buildings: '#E74C3C',
@@ -120,7 +124,7 @@ Promise.all(CITY.concat(DETAIL).map(n =>
   }
   const ins = loaded.find(x => x.n === 'insulae');
   if (ins) map.fitBounds(ins.lyr.getBounds(), { padding: [20, 20] });
-  L.control.layers(null, overlays, { collapsed: window.innerWidth < 700 }).addTo(map);
+  L.control.layers({ 'Satellite imagery': satellite, 'Plain plan': plain }, overlays, { collapsed: window.innerWidth < 700 }).addTo(map);
 
   const houses = loaded.find(x => x.n === 'houses');
   const traced = houses ? houses.gj.features.length : 0;
