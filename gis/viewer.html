@@ -136,7 +136,7 @@ Promise.all(CITY.concat(DETAIL).map(n =>
 
   const houses = loaded.find(x => x.n === 'houses');
   const traced = houses ? houses.gj.features.length : 0;
-  document.getElementById('progress').textContent = traced + ' houses traced \u00b7 73 documented in excavation reports \u00b7 100+ visible on the ground';
+  document.getElementById('progress').textContent = traced + ' houses traced \u00b7 83 documented in excavation reports \u00b7 100+ visible on the ground';
 
   function detailVisibility() {
     const show = map.getZoom() >= 18;

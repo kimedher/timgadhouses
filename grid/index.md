@@ -20,6 +20,8 @@ The viewer below is the current working version. It is a schematic reference cha
 
 The two main streets are the *cardo maximus*, which runs north to south, and the *decumanus maximus*, which runs east to west. Their intersection divides Timgad into four quadrants (NW, NE, SW, SE), and each insula is numbered outward from that intersection within its own quadrant. A house's position is recorded as a quadrant, insula number, and optional house suffix for multi-unit insulae, so a house can be placed unambiguously on the street grid regardless of its excavation label.
 
+Houses outside the Trajanic walls carry the same quadrant labels with an E- prefix (E-NW, E-NE, E-SW, E-SE). Beyond the gates the boundaries between these quarters follow the projected lines of the two main streets carried outward past the walls: a house is filed by the side of the projected axis on which the greater part of its plan lies. The House of the Hermaphrodite, for example, stands just west of the projected Cardo south of the city, so it is filed under E-SW.
+
 This is a working tool, not a finished publication. Identifiers will continue to be checked against the published excavation reports and archival plans through 2026. If you spot an error or have a correction, please email [km2133@student.ubc.ca](mailto:km2133@student.ubc.ca).
 
 <h2 id="numbering-rationale">A note on the numbering system</h2>

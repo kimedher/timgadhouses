@@ -35,8 +35,8 @@ if os.path.exists(ANALYSIS_CSV):
 # The 12-house dissertation sample publishes full records (notes, references).
 # All other houses publish index metadata only until the analysis is defended.
 SAMPLE_IDS = {
-    "TIMG.E-SW.I1", "TIMG.E-SW.I2", "TIMG.SW.I5", "TIMG.E-SE.I4",
-    "TIMG.NW.I6", "TIMG.E-SE.I5", "TIMG.SE.I2", "TIMG.NW.I17",
+    "TIMG.E-SW.I1", "TIMG.E-SW.I2", "TIMG.SW.I5", "TIMG.E-SW.I5",
+    "TIMG.NW.I6", "TIMG.E-NW.I20", "TIMG.SE.I2", "TIMG.NW.I17",
     "TIMG.SW.I8", "TIMG.E-NW.I18", "TIMG.E-NW.I19", "TIMG.NW.I25",
 }
 
