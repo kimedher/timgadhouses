@@ -146,7 +146,7 @@
     <p class="hc-meta">{{ house.zone | escape }}{% if house.area_m2 %} &middot; &asymp;{{ house.area_m2 }} m&sup2;{% endif %}</p>
     <div class="hc-badges">
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
-      <span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Location: {% if house.mapping_confidence == "high" %}certain{% elsif house.mapping_confidence == "medium" %}probable{% else %}uncertain{% endif %}</span>
+      {% if house.mapping_confidence and house.mapping_confidence != "" %}<span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Location: {% if house.mapping_confidence == "high" %}certain{% elsif house.mapping_confidence == "medium" %}probable{% else %}uncertain{% endif %}</span>{% endif %}
       <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Sources: checked{% elsif house.verification_status == "partial" %}Sources: partly checked{% else %}Sources: under review{% endif %}</span>
       <span class="hc-badge hc-badge--an-{{ house.analysis_status | escape }}">Analysis: {% if house.analysis_status == "case_study" %}case study{% else %}{{ house.analysis_status | escape }}{% endif %}</span>
       {% if house.sample %}<span class="hc-badge hc-badge--full">Full record</span>{% endif %}

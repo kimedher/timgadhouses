@@ -136,15 +136,34 @@ Promise.all(CITY.concat(DETAIL).map(n =>
 
   const houses = loaded.find(x => x.n === 'houses');
   const traced = houses ? houses.gj.features.length : 0;
-  document.getElementById('progress').textContent = traced + ' houses traced \u00b7 83 documented in excavation reports \u00b7 100+ visible on the ground';
+  document.getElementById('progress').textContent = traced + ' houses traced \u00b7 140 attested in the published record \u00b7 132 insulae in the Trajanic grid';
+
+  const userOff = new Set();
+  let programmatic = false;
+  function detailName(layer) {
+    const entry = loaded.find(x => x.lyr === layer && DETAIL.includes(x.n));
+    return entry ? entry.n : null;
+  }
+  map.on('overlayadd', e => {
+    if (programmatic) return;
+    const n = detailName(e.layer);
+    if (n) userOff.delete(n);
+  });
+  map.on('overlayremove', e => {
+    if (programmatic) return;
+    const n = detailName(e.layer);
+    if (n) userOff.add(n);
+  });
 
   function detailVisibility() {
     const show = map.getZoom() >= 18;
+    programmatic = true;
     for (const { n, lyr } of loaded) {
       if (!DETAIL.includes(n)) continue;
-      if (show && !map.hasLayer(lyr)) lyr.addTo(map);
+      if (show && !userOff.has(n) && !map.hasLayer(lyr)) lyr.addTo(map);
       if (!show && map.hasLayer(lyr)) map.removeLayer(lyr);
     }
+    programmatic = false;
   }
   map.on('zoomend', detailVisibility);
   detailVisibility();
@@ -154,7 +173,7 @@ Promise.all(CITY.concat(DETAIL).map(n =>
     const div = L.DomUtil.create('div', 'legend-box');
     div.innerHTML = ['houses','baths','religious_buildings','social_buildings','gates','roads','insulae']
       .map(n => '<div><span class="sw" style="background:' + COLORS[n] + '"></span>' + LABELS[n] + '</div>').join('')
-      + '<div class="note">Colours follow the QGIS project symbology. Houses shown are only those traced so far; Timgad holds over a hundred, and they are added as the work proceeds.</div>';
+      + '<div class="note">Colours follow the QGIS project symbology. Houses shown are only those traced so far; the database attests 140, and they are added as the work proceeds.</div>';
     return div;
   };
   legend.addTo(map);
