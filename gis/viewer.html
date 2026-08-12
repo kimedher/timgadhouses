@@ -138,7 +138,15 @@ Promise.all(CITY.concat(DETAIL).map(n =>
   const traced = houses ? houses.gj.features.length : 0;
   document.getElementById('progress').textContent = traced + ' houses traced \u00b7 140 attested in the published record \u00b7 132 insulae in the Trajanic grid';
 
-  const userOff = new Set();
+  // Layers the user has explicitly unchecked stay off across zooms, reloads,
+  // and the embedded/full-screen versions of this map (persisted per browser).
+  const OFF_KEY = 'timgad-map-details-off';
+  let storedOff = [];
+  try { storedOff = JSON.parse(localStorage.getItem(OFF_KEY)) || []; } catch (e) {}
+  const userOff = new Set(storedOff.filter(n => DETAIL.includes(n)));
+  function saveOff() {
+    try { localStorage.setItem(OFF_KEY, JSON.stringify(Array.from(userOff))); } catch (e) {}
+  }
   let programmatic = false;
   function detailName(layer) {
     const entry = loaded.find(x => x.lyr === layer && DETAIL.includes(x.n));
@@ -147,12 +155,12 @@ Promise.all(CITY.concat(DETAIL).map(n =>
   map.on('overlayadd', e => {
     if (programmatic) return;
     const n = detailName(e.layer);
-    if (n) userOff.delete(n);
+    if (n) { userOff.delete(n); saveOff(); }
   });
   map.on('overlayremove', e => {
     if (programmatic) return;
     const n = detailName(e.layer);
-    if (n) userOff.add(n);
+    if (n) { userOff.add(n); saveOff(); }
   });
 
   function detailVisibility() {
