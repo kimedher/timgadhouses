@@ -68,11 +68,19 @@ def clean(v):
     return re.sub(r"\s+", " ", str(v)).strip()
 
 def strip_editorial_tags(s):
-    # Public output stays clean: drop "[moved from ...]" editorial markers
-    # and database-version tokens like ", v16". The xlsx keeps its markers;
-    # this is export-side only.
+    # Public output stays clean: drop "[moved from ...]" editorial markers,
+    # database-version tokens like ", v16", and whole working segments that are
+    # addressed to the editor rather than the reader ("Correction proposed (...)",
+    # "Name review (...)"). Notes are stored as " | "-separated segments, so an
+    # editorial segment is dropped whole. The xlsx keeps everything; this is
+    # export-side only.
     s = re.sub(r"\s*\[moved from[^\]]*\]\s*", " ", s, flags=re.IGNORECASE)
     s = re.sub(r",\s*v1\d+\]", "]", s)
+    segments = [seg.strip() for seg in s.split("|")]
+    segments = [seg for seg in segments if seg and not re.match(
+        r"^(correction proposed|name review|correction applied|proposed correction)\b",
+        seg, flags=re.IGNORECASE)]
+    s = " | ".join(segments)
     return re.sub(r"\s+", " ", s).strip()
 
 def clean_citation(s):
