@@ -44,8 +44,10 @@ if os.path.exists(OVERLAY_CSV):
         for row in csv.DictReader(f):
             PUBLIC_NOTES[row["grid_id"].strip()] = row["note"].strip()
 
-# Analysis-progress overlay: grid_ids with a status of "drawn" or "case_study";
-# every house absent from the csv exports as "pending".
+# Analysis progress comes from the HOUSES "Status" column (the working tracker);
+# its stages map onto the site vocabulary pending / drawn / interpreted /
+# case_study. The csv overlay remains as a fallback for sheets without the
+# Status column.
 ANALYSIS_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analysis_status.csv")
 ANALYSIS_STATUS = {}
 if os.path.exists(ANALYSIS_CSV):
@@ -174,6 +176,23 @@ def type_class(bt):
     if "house" in t or "residential" in t: return "House"
     return "Uncertain"
 
+
+STATUS_MAP = {
+    "not started": "pending",
+    "in progress": "pending",
+    "drawn in QGIS": "drawn",
+    "analyzed post-drawing": "interpreted",
+    "potential case study": "case_study",
+    "space syntax in progress": "case_study",
+    "completed": "case_study",
+    "full case study finished": "case_study",
+}
+
+def analysis_status(status_cell, gid):
+    if status_cell in STATUS_MAP:
+        return STATUS_MAP[status_cell]
+    return ANALYSIS_STATUS.get(gid, "pending")
+
 VSTATUS = {
     "VERIFIED": "verified",
     "PARTIALLY VERIFIED": "partial",
@@ -183,6 +202,8 @@ VSTATUS = {
 
 def verification_status(v):
     key = clean(v).upper()
+    if not key:
+        return "review"
     if key not in VSTATUS:
         raise ValueError(f"Unexpected Verification Status: {v!r}")
     return VSTATUS[key]
@@ -205,7 +226,7 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
     row = dict(zip(hdr, [c.value for c in r]))
     if not any(v not in (None, "") for v in row.values()): continue
     gid = clean(row["Grid ID"])
-    name, en, fr = names(clean(row["House Name"]), clean(row["French Name"]))
+    name, en, fr = names(clean(row.get("House Name (in English)") or row.get("House Name")), clean(row["French Name"]))
     q = quadrant(clean(row["Quadrant"]), gid)
     ar = clean(row["Approx. Area"]) or clean(row["Footprint L x W (m)"])
     houses.append({
@@ -221,7 +242,7 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
         "confidence": clean(row["Confidence"]).lower(),
         "mapping_confidence": clean(row["Mapping Confidence"]).lower(),
         "verification_status": verification_status(row["Verification Status"]),
-        "analysis_status": ANALYSIS_STATUS.get(gid, "pending"),
+        "analysis_status": analysis_status(clean(row.get("Status")), gid),
         "area_raw": ar,
         "area_m2": area_m2(ar, row["Footprint m2"]),
         "first_published_by": clean_citation(clean(row["First Published By"])),
