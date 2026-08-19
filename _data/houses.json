@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-18",
+ "generated": "2026-08-19",
  "count": 140,
  "houses": [
   {
@@ -1401,13 +1401,13 @@
    "confidence": "high",
    "mapping_confidence": "medium",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "c. 20 x 20 (standard insula module; not individually measured)",
    "area_m2": null,
    "first_published_by": "Ballu, report on the 1906 excavations (BCTH 1907): 32-34 (house and atrium dedication); dedication fragments already Ballu, 1901 report: 12-13; monograph treatment Ballu 1911: 72-76",
    "key_references": "Pavis d'Escurac 1980: 183, 196 (Antiquites africaines 15); Laghmouche 2024: Table 1, p. 224 (chapter 219-227); Lepelley 1981: 455-456 (cited for this house in Laghmouche 2024, Table 1; no local text)",
    "possible_duplicate_of": "",
-   "notes": "Ballu recorded an upper storey, with a staircase of seven steps still surviving when the house was cleared. The tablinum's west wall preserved painted plaster imitating coloured marbles. The house was destroyed rapidly by fire: grain lay carbonized in place and columns had fallen beside their bases. Latrines stood to the right of the entrance, and a paved corridor of 3.55 x 9.75 m served all the rooms around a small atrium (9.55 x 4.50 m) with a square well [Ballu 1911: 72-76].",
+   "notes": "Ballu recorded an upper storey, with a staircase of seven steps still surviving when the house was cleared. The tablinum's west wall preserved painted plaster imitating coloured marbles. The house was destroyed rapidly by fire: grain lay carbonized in place and columns had fallen beside their bases. Latrines stood to the right of the entrance, and a paved corridor of 3.55 x 9.75 m served all the rooms around a small atrium (9.55 x 4.50 m) with a square well [Ballu 1911: 72-76]. The house was drawn in GIS from the georeferenced plans and satellite imagery in August 2026. The drawing keeps an open question the sources disagree on: Wilson's plan puts the main street door on the east side, while Ballu describes it on the south, beside the staircase and latrines. The southern reading fits Ballu's description best, and both openings are recorded so the question stays visible rather than being decided silently.",
    "sample": true
   },
   {
