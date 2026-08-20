@@ -1,5 +1,5 @@
 {
- "generated": "2026-08-19",
+ "generated": "2026-08-20",
  "count": 141,
  "houses": [
   {
@@ -1973,7 +1973,7 @@
    "confidence": "high",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "~504 m² (21 x 24)",
    "area_m2": 504,
    "first_published_by": "Ballu 1897b: 224-226",
