@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-20",
- "count": 141,
+ "generated": "2026-09-20",
+ "count": 140,
  "houses": [
   {
    "grid_id": "TIMG.E-NE.I6",
@@ -18,11 +18,13 @@
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Germain 1969: 122 (croquis after unpublished Meunier plan); catalogued Rebuffat 1969: 678",
+   "first_published_by": "Albertini, CRAI 1939: 101 and Leschi, Revue africaine 83 (1939): 152 (the Optatus mosaic inscription; neither seen, cited from Germain 1969: 122, 126). No excavation-era description or plan of the house was published (Germain 1969: 2); first description and plan as a house: Germain 1969: 122, fig. 17, after the unpublished 1938 Meunier plan",
+   "earliest_source": "Germain 1969: 2, 122, 125-129",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-NW.I18",
@@ -41,10 +43,12 @@
    "area_raw": "~2000 m²",
    "area_m2": 2000,
    "first_published_by": "Ballu, Rapport 1915 (BCTH 1916: 239-242, baths) & Rapport 1916 (BCTH 1917: 292-300, house) [Christofle 1930: 61-62 adds the 1927-29 mosaic]",
+   "earliest_source": "",
    "key_references": "... Assassi & Mebarki 2021: 77-79 (street axis north of the Capitol; no house-level discussion).",
    "possible_duplicate_of": "",
-   "notes": "Germain observed that this building's unusual arrangements suggest a collective building, possibly a baths complex, rather than a private residence. His account describes no workshops, kilns, vats, mills, or other production installations. The building holds reception spaces, decorated rooms, and baths, but no clear manufacturing areas [Germain 1969].",
-   "sample": true
+   "notes": "Christofle calls this the large house discovered in 1916 north of the Capitol [Christofle 1930: 61-62]. Germain describes a vast building on the west side of a street that leaves the decumanus on a north-west to south-east line, bordering it for about a hundred metres with a width of twenty. Three entrances open on the street, two of them behind porticoes, and lead to three courts, the northern one giving access to baths in the north-west part, while a great gallery of 40 by 4 m runs along the whole west side [Germain 1969: 106]. The largest room, 10 by 14 m, opened on the gallery by three doors and was paved with a marine procession around a river god and, to the east, still-life medallions [Germain 1969: 109, 111]. Two more panels show river gods, one from the gallery with the words FLVMEN VAMACCVRA [Germain 1969: 106-107, 113]. Repairing walls in 1927-29, Christofle found a further mosaic, 1.50 m square, with a laurel wreath [Christofle 1930: 62]. Germain found it hard to see the building as a simple private house and thought its arrangements pointed to un usage collectif [Germain 1969: 106, 118]. Ballu's own reports on this house are not yet among the sources read for this record.",
+   "sample": true,
+   "notes_html": "Christofle calls this the large house discovered in 1916 north of the Capitol [Christofle 1930: 61-62]. Germain describes a vast building on the west side of a street that leaves the <em>decumanus</em> on a north-west to south-east line, bordering it for about a hundred metres with a width of twenty. Three entrances open on the street, two of them behind porticoes, and lead to three courts, the northern one giving access to baths in the north-west part, while a great gallery of 40 by 4 m runs along the whole west side [Germain 1969: 106]. The largest room, 10 by 14 m, opened on the gallery by three doors and was paved with a marine procession around a river god and, to the east, still-life medallions [Germain 1969: 109, 111]. Two more panels show river gods, one from the gallery with the words FLVMEN VAMACCVRA [Germain 1969: 106-107, 113]. Repairing walls in 1927-29, Christofle found a further mosaic, 1.50 m square, with a laurel wreath [Christofle 1930: 62]. Germain found it hard to see the building as a simple private house and thought its arrangements pointed to <em>un usage collectif</em> [Germain 1969: 106, 118]. Ballu's own reports on this house are not yet among the sources read for this record."
   },
   {
    "grid_id": "TIMG.E-NW.I19",
@@ -63,17 +67,19 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1930: 58 (first report, campaign of 1927); full description Christofle 1930: 62-65",
+   "earliest_source": "",
    "key_references": "Christofle 1930: 58, 62-65, 68, 76; Laghmouche 2024: Table 1, p. 224 (lists only the Grande maison to the north).",
    "possible_duplicate_of": "",
-   "notes": "Excavations in 1933 on the hill south of the Capitol, reported by Christofle, re-examined the Temple of Mercury first noted by Ballu in Sept années de découvertes (1911: 29). Christofle confirmed the temple's existence but corrected its orientation: the building runs north-south, not east-west as Ballu had stated, with the cella resting on three small barrel-vaulted rooms and a well-built east-west cross-wall interpreted as part of the temple precinct enclosure. A larger platform of pebble-mortar concrete, 22 x 33 m, lay 10 m from the south wall of the Capitol courtyard on the axis of the cella, and a third monument of about 10 x 22 m stood some 10 m further away. A post-Roman cemetery was installed across the hill; Christofle read it as Berber or possibly Arab, from the west-east orientation of the graves, the absence of grave goods in male burials, and the bead necklaces and bronze bracelets found in female ones [Christofle 1938: 355-356]. The house's published name places it north of the Capitol, but the excavation records locate it to the south; the discrepancy is unresolved.",
-   "sample": true
+   "notes": "Christofle found this small house about thirty metres north of the north wall of the large house north of the Capitol, and describes an atrium with rooms on three sides. The atrium was still fully paved, and eight sandstone columns without bases, 2.35 m high, were found standing and carried the four porticoes. At the centre was a basin whose south slab was cut in steps so that the overflow fell as a cascade, and one of its pillars was grooved for the lead pipe that fed it [Christofle 1930: 62, 64]. The entrance was at the north-east angle, where a vestibule with a concrete floor sloping down from the street led to a stair of five steps. The rooms had concrete floors, and the finest, which Christofle calls the tablinum, lay on the south side, measured 6.40 by 5.40 m and opened on the axis of the court by a double door 1.95 m wide [Christofle 1930: 64]. He also reports a house cleared in 1927, 50 metres south of the Château d'eau, with the same paved atrium, basin and eight columns, without saying that it is this one [Christofle 1930: 58, 68].",
+   "sample": true,
+   "notes_html": "Christofle found this small house about thirty metres north of the north wall of the large house north of the Capitol, and describes an <em>atrium</em> with rooms on three sides. The <em>atrium</em> was still fully paved, and eight sandstone columns without bases, 2.35 m high, were found standing and carried the four porticoes. At the centre was a basin whose south slab was cut in steps so that the overflow fell as a cascade, and one of its pillars was grooved for the lead pipe that fed it [Christofle 1930: 62, 64]. The entrance was at the north-east angle, where a vestibule with a concrete floor sloping down from the street led to a stair of five steps. The rooms had concrete floors, and the finest, which Christofle calls the <em>tablinum</em>, lay on the south side, measured 6.40 by 5.40 m and opened on the axis of the court by a double door 1.95 m wide [Christofle 1930: 64]. He also reports a house cleared in 1927, 50 metres south of the <em>Château d'eau</em>, with the same paved <em>atrium</em>, basin and eight columns, without saying that it is this one [Christofle 1930: 58, 68]."
   },
   {
    "grid_id": "TIMG.E-NW.I20",
    "name": "House West of the Filadelfes Baths (Philadelphi) (Maison à l'Ouest des thermes des Filadelfes)",
    "name_en": "House West of the Filadelfes Baths (Philadelphi)",
    "name_fr": "Maison à l'Ouest des thermes des Filadelfes",
-   "alternate_names": "Philadelphi; Filadelfes Bath House; Rebuffat no. 11",
+   "alternate_names": "la maison des Filadelfes (Germain 1969: xii); Rebuffat no. 11",
    "quadrant": "E-NW",
    "zone": "Extramural NW",
    "building_type": "House",
@@ -82,13 +88,15 @@
    "mapping_confidence": "high",
    "verification_status": "partial",
    "analysis_status": "drawn",
-   "area_raw": "~2500 m²",
-   "area_m2": 2500,
-   "first_published_by": "Ballu 1922a (BCTH 1923): 47-53",
+   "area_raw": "2 464 m² (Ballu, Rapport 1922: 47); about 2 500 m² (Germain 1969: 81)",
+   "area_m2": 2464,
+   "first_published_by": "Ballu, Rapport sur les travaux de fouilles ... effectués en 1922 (Algiers 1923): 47-53",
+   "earliest_source": "",
    "key_references": "Ballu 1922a (BCTH 1923): 44, 47-53 (discovery and description), 54-55 (restoration), 55 (mosaic to Museum), 56-67 (finds); Ballu 1922a general report: 7; Rapport 1923 (BCTH 1924): 45-46 (completion), 46-47 (restoration), 48-53 (mosaics A-E with drawings), plan of the house p. 43; Rapport 1925: 36, 45-46 (reservoir enclosure, intaglios); Ballu, Rapport 1905: 18 (first soundings, walls not yet recognized); Christofle 1938: 428-429 (funerary caissons reused in a wall); Germain 1969: 81-85, fig. 10 (cat. 101-109), 143-157 passim; Rebuffat 1969: 678 no. 11; Rebuffat 1974: 497; Laghmouche 2024: Table 1, p. 224 (chapter 219-227); Lepelley 1981",
    "possible_duplicate_of": "",
-   "notes": "This house lies outside the walls to the north-west of the city, beside the Filadelfes Baths, on the rising ground the excavators cleared in the 1920s; its traced plan confirms the position. An earlier version of the catalog filed it under the south-east quarter by mistake, and the record now carries the north-west label.",
-   "sample": true
+   "notes": "Ballu found this house in 1922, when soundings west of the Filadelfes Baths led first to private baths and then to the house itself, and he finished clearing its south side in 1923 [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 45-46]. He places it outside the city wall and gives its total area as 2,464 m², where Germain gives about 2,500 m² and counts about forty rooms [Ballu, Rapport 1922: 47; Germain 1969: 81]. The south front had five independent shops and two entrances, each with a two-column porch [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 46]. The first part lay around a court of 21.55 by 10.05 m that Ballu calls the atrium, with a tablinum of 8.45 by 9.70 m off its west portico, a stair to an upper floor, and small private baths in the north-east corner [Ballu, Rapport 1922: 48-52]. The north portico and three rooms behind it had mosaics, and Germain assigns the floral ones probably to the early third century CE [Ballu, Rapport 1922: 49-50; Ballu, Rapport 1923: 48-51; Germain 1969: 85]. The second court had fourteen columns on three sides and a central well, but the rooms around it were badly ruined [Ballu, Rapport 1922: 52]. A brick kiln, a pottery kiln and Christian children's graves came later [Ballu, Rapport 1922: 49, 53]. Rebuffat thought the room between the courts was probably a triclinium [Rebuffat 1969: 678].",
+   "sample": true,
+   "notes_html": "Ballu found this house in 1922, when soundings west of the Filadelfes Baths led first to private baths and then to the house itself, and he finished clearing its south side in 1923 [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 45-46]. He places it outside the city wall and gives its total area as 2,464 m², where Germain gives about 2,500 m² and counts about forty rooms [Ballu, Rapport 1922: 47; Germain 1969: 81]. The south front had five independent shops and two entrances, each with a two-column porch [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 46]. The first part lay around a court of 21.55 by 10.05 m that Ballu calls the <em>atrium</em>, with a <em>tablinum</em> of 8.45 by 9.70 m off its west portico, a stair to an upper floor, and small private baths in the north-east corner [Ballu, Rapport 1922: 48-52]. The north portico and three rooms behind it had mosaics, and Germain assigns the floral ones probably to the early third century CE [Ballu, Rapport 1922: 49-50; Ballu, Rapport 1923: 48-51; Germain 1969: 85]. The second court had fourteen columns on three sides and a central well, but the rooms around it were badly ruined [Ballu, Rapport 1922: 52]. A brick kiln, a pottery kiln and Christian children's graves came later [Ballu, Rapport 1922: 49, 53]. Rebuffat thought the room between the courts was probably a <em>triclinium</em> [Rebuffat 1969: 678]."
   },
   {
    "grid_id": "TIMG.E-NW.I20.H2",
@@ -101,16 +109,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1923 (BCTH), p.45",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-NW.I21",
@@ -123,16 +133,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1930 (report on 1927-1929), p. 66",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-NW.I22",
@@ -145,16 +157,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Germain 1969, pp. 102-103",
+   "first_published_by": "Ballu, Rapport 1913, BCTH 1914: 324-325 (not seen; cited from Germain 1969: 102-103)",
+   "earliest_source": "Germain 1969: 102-103",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-NW.I23",
@@ -167,16 +181,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Germain 1969, p. 121",
+   "first_published_by": "Ballu, Rapport 1914, BCTH 1915: 143 (not seen; cited from Germain 1969: 121)",
+   "earliest_source": "Germain 1969: 121",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SE.I1",
@@ -195,10 +211,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1906: 35-38 (BCTH 1907); repeated Ballu 1911a: 87-90",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SE.I2",
@@ -217,10 +235,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1906: 38-39",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SE.I3",
@@ -239,10 +259,12 @@
    "area_raw": "20 x 21.80",
    "area_m2": null,
    "first_published_by": "Ballu 1909: 90-92, 105-107; kiln first signalled in Rapport 1907 (BCTH 1908)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SE.I6",
@@ -261,10 +283,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1930: 61-64",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SE.I7",
@@ -277,16 +301,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1922a: 46; Ballu 1923: 42, 45",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I1",
@@ -302,13 +328,15 @@
    "mapping_confidence": "high",
    "verification_status": "partial",
    "analysis_status": "drawn",
-   "area_raw": "3 600 m² (Germain 1969: 59) [Ballu 1903: 81: 62 x 36.50 m = 2 263 m²]",
-   "area_m2": 3600,
-   "first_published_by": "Ballu 1901: 10-11 (first notice, house of 'Faustus et Valentina'); Ballu 1903: 81-89 (first full description)",
+   "area_raw": "2 263 m² (Ballu 1903: 81: 62 x 36.50 m; corroborated by Ballu, Rapport 1922: 47) against 3 600 m² (Germain 1969: 59, no dimensions given)",
+   "area_m2": 2263,
+   "first_published_by": "Gsell 1902 (Rapport archéologique sur les fouilles faites en 1901, BCTH 1902): 315-316 (offprint pp. 10-11; first notice, the house of 'Faustus et Valentina'); first full description Ballu 1903: 81-89",
+   "earliest_source": "",
    "key_references": "Laghmouche 2024: Table 1, p. 224; Germain 1973: 25-26.",
    "possible_duplicate_of": "",
-   "notes": "Christofle's 1938 catalogue records an inscribed square column-die in blue limestone, 0.81 m high and 0.385 m square, with letters of 0.045-0.05 m, recovered from the peristyle of this house. The inscription is likely a dedication to Macer Saturninus, son of M. Memmius Macer, legate of Augustus pro praetore and designated consul. It is one of the very few domestic-context inscriptions catalogued by Christofle [Christofle 1938: 444-445].",
-   "sample": true
+   "notes": "This house north-west of the South Baths, cleared in 1900 and 1901, was first reported by Gsell and described in full by Ballu, who traced the original town wall running through it [Gsell 1902: 315-316; Ballu 1903: 10, 81-89]. Ballu gives a rectangle of 62 by 36.50 m, or 2,263 square metres, whereas Germain gives 3,600 m² [Ballu 1903: 81; Germain 1969: 59]. The main entrance, on the Cardo Maximus behind a portico of eight columns, led through a paved vestibule to Ballu's atrium, a court of 14 by 12 m with a long basin; steps at the end of the vestibule led to private baths, and Ballu attributed two further bath rooms to the servants [Ballu 1903: 83-84]. Beyond the tablinum, whose mosaic went to the museum, a stone-paved peristyle court held a basin with a carved marble bowl above a lower tank that Ballu read as a fish pond [Ballu 1903: 84-86]. A base from the baths reading Hygiae Aug(ustae) Faustus et Valentina led Vars to ask, and Ballu to conclude, that the owners were M. Plotius Faustus Sertius and his wife, donors of the market [Gsell 1902: 316; Ballu 1903: 88]. Germain dated the mosaics between the early third and early fifth centuries CE, and Christofle later listed an inscribed column-die from the peristyle [Germain 1969: 64; Christofle 1938: 445].",
+   "sample": true,
+   "notes_html": "This house north-west of the South Baths, cleared in 1900 and 1901, was first reported by Gsell and described in full by Ballu, who traced the original town wall running through it [Gsell 1902: 315-316; Ballu 1903: 10, 81-89]. Ballu gives a rectangle of 62 by 36.50 m, or 2,263 square metres, whereas Germain gives 3,600 m² [Ballu 1903: 81; Germain 1969: 59]. The main entrance, on the <em>Cardo Maximus</em> behind a portico of eight columns, led through a paved vestibule to Ballu's <em>atrium</em>, a court of 14 by 12 m with a long basin; steps at the end of the vestibule led to private baths, and Ballu attributed two further bath rooms to the servants [Ballu 1903: 83-84]. Beyond the <em>tablinum</em>, whose mosaic went to the museum, a stone-paved peristyle court held a basin with a carved marble bowl above a lower tank that Ballu read as a fish pond [Ballu 1903: 84-86]. A base from the baths reading <em>Hygiae Aug(ustae) Faustus et Valentina</em> led Vars to ask, and Ballu to conclude, that the owners were M. Plotius Faustus Sertius and his wife, donors of the market [Gsell 1902: 316; Ballu 1903: 88]. Germain dated the mosaics between the early third and early fifth centuries CE, and Christofle later listed an inscribed column-die from the peristyle [Germain 1969: 64; Christofle 1938: 445]."
   },
   {
    "grid_id": "TIMG.E-SW.I10",
@@ -321,16 +349,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1922a (BCTH report), p. 47 (discovery); pp. 57-58, 60, 62, 67 (finds)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I11",
@@ -343,16 +373,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Germain 1969, pp. 99-101",
+   "first_published_by": "Ballu, Rapport 1913, BCTH 1914: 323-324 (not seen; cited from Germain 1969: 99-101)",
+   "earliest_source": "Germain 1969: 99-101",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I12",
@@ -365,16 +397,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1935 (report on 1930-1932), pp. 81-82",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I13",
@@ -393,17 +427,19 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1906 (BCTH 1907: 273); described Ballu 1911a: 27-28",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I2",
    "name": "Storehouse (Entrepôt)",
    "name_en": "Storehouse (Entrepôt)",
    "name_fr": "",
-   "alternate_names": "Rebuffat no. 7",
+   "alternate_names": "Rebuffat no. 7; Entrepôt ou salle des ventes (Ballu 1911a: 49); Maison au sud de la porte de Lambèse (Germain 1969: 88)",
    "quadrant": "E-SW",
    "zone": "Extramural SW",
    "building_type": "Mixed-use (residential + storage)",
@@ -414,11 +450,13 @@
    "analysis_status": "drawn",
    "area_raw": "~1 725 m² (derived from 25 x 69 m, Ballu 1911a: 53 n. 1; not a published figure)",
    "area_m2": 1725,
-   "first_published_by": "Ballu 1906 (first report); first full treatment Ballu 1911a: 49-53 [Germain 1969: 88]",
+   "first_published_by": "Ballu, Rapport 1905, BCTH 1906: 201-204, pl. LVIII (offprint pp. 22-25); fuller treatment Ballu 1911a: 49-53, plan p. 51",
+   "earliest_source": "",
    "key_references": "Ballu 1906: 201-204, pl. LVIII (further mentions 206-207 in the west-gate baths account)",
    "possible_duplicate_of": "",
-   "notes": "In his report of the 1933 excavations, Christofle uses the Entrepôt as a landmark for work on the north side of the Decumanus Maximus, opposite the Christian cemetery. There an excavation of 50 x 32 m, behind three lowered sidewalk kerbs with cart ruts still visible, revealed three contiguous private Roman houses. The easternmost had a portico carried on six square pilasters 0.50 m on a side, their bases and lower piers still in place. The middle house opened from a vestibule onto a paved courtyard around a well five metres deep, masonry above and dry-stone below; fragments of a fine bronze palm were recovered from its shaft, and grooves in the surrounding paving once held the vertical slabs of a well-curb. The westernmost house, the most damaged, stood immediately beside the Lambèse Gate, its interior divisions wholly lost. These three houses, directly opposite the Entrepôt, would be its closest known elite domestic neighbours [Christofle 1938: 359].",
-   "sample": true
+   "notes": "First uncovered in 1905, the building stands 8 metres from the Lambèse gate on the south side of the decumanus, behind a portico of eight bays [Ballu, report on 1905, BCTH 1906: 201; Ballu 1911a: 49; Germain 1969: 88]. Ballu saw that the kerb before the widest bay had been worn by carts backing up to unload, and that a wide door led into a paved hall 10.40 m square [Ballu 1911a: 49]. Beyond lay a court of 12.50 by 20 m with a basin and porticoes on four sides, their stuccoed sandstone columns joined by stone slabs 1 m high. The south gallery, raised 1.50 m and paved in marble, opened through three doors onto a hall of 8.20 by 10.25 m with a fine mosaic and onyx-breccia wall panels. Ballu read this gallery as a platform for sales and the building, 25 by 69 m, as a warehouse and perhaps an auction hall [Ballu 1911a: 50-53]. Christofle, who finished the clearance and restoration, was inclined to see instead a complete Roman villa with an atrium and a second court, the peristylium, with four heated rooms of private baths south of it and a Medusa mosaic under its south portico [Christofle 1930: 58-62]. Rebuffat takes the west hall for the original triclinium and the south hall for one taken from a neighbouring house, and asks for a study of the alterations [Rebuffat 1969: 677].",
+   "sample": true,
+   "notes_html": "First uncovered in 1905, the building stands 8 metres from the Lambèse gate on the south side of the <em>decumanus</em>, behind a portico of eight bays [Ballu, report on 1905, BCTH 1906: 201; Ballu 1911a: 49; Germain 1969: 88]. Ballu saw that the kerb before the widest bay had been worn by carts backing up to unload, and that a wide door led into a paved hall 10.40 m square [Ballu 1911a: 49]. Beyond lay a court of 12.50 by 20 m with a basin and porticoes on four sides, their stuccoed sandstone columns joined by stone slabs 1 m high. The south gallery, raised 1.50 m and paved in marble, opened through three doors onto a hall of 8.20 by 10.25 m with a fine mosaic and onyx-breccia wall panels. Ballu read this gallery as a platform for sales and the building, 25 by 69 m, as a warehouse and perhaps an auction hall [Ballu 1911a: 50-53]. Christofle, who finished the clearance and restoration, was inclined to see instead a complete Roman <em>villa</em> with an <em>atrium</em> and a second court, the <em>peristylium</em>, with four heated rooms of private baths south of it and a Medusa mosaic under its south portico [Christofle 1930: 58-62]. Rebuffat takes the west hall for the original <em>triclinium</em> and the south hall for one taken from a neighbouring house, and asks for a study of the alterations [Rebuffat 1969: 677]."
   },
   {
    "grid_id": "TIMG.E-SW.I2.H2",
@@ -431,16 +469,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Rebuffat 1969: 677; corroborated by Germain 1969: 88-90 (cat. 117-119)",
+   "first_published_by": "Ballu, Rapport 1905, BCTH 1906: 204 (offprint p. 25) = Ballu 1911a: 53, where these rooms are described as part of the Entrepôt; Christofle 1930: 60",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I3",
@@ -459,10 +499,12 @@
    "area_raw": "~870 m² (rectangle approximation; interior arrangement partly recoverable)",
    "area_m2": 870,
    "first_published_by": "Christofle 1938 (Rapport 1933-1936): 360-362",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I4",
@@ -481,10 +523,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1938 (Rapport 1933-1936): 358 (first identification as cour de maison and petit therme prive); remains first reported, unidentified, in Christofle 1935: 149 (court and portico paving, apsed hypocaust room) and signalled as razed pagan constructions in Ballu 1906: 210-211 (= Rapport exercice 1905: 30-31)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I5",
@@ -502,11 +546,13 @@
    "analysis_status": "drawn",
    "area_raw": "~1680 m²",
    "area_m2": 1680,
-   "first_published_by": "Ballu 1898 (Chronique des arts et de la curiosite: 202, first notice of the eponymous mosaic); first full description Ballu 1903: 90-94",
+   "first_published_by": "Ballu, Chronique des arts et de la curiosité 1898: 202 (first notice of the mosaic; not seen, cited from Gsell 1901: 110 n. 8); first full description Ballu 1903: 90-94",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "The house stands outside the walls south of the city, close to the line the Cardo would follow if extended beyond the gates. The catalog uses that projected line as the boundary between the south-eastern and south-western quarters; this house lies on its western side, so its record carries the south-west label. Earlier versions filed it under the south-east quarter.",
-   "sample": true
+   "notes": "Ballu places this building, 28 by 60 m, east of the southern cardo, with its single façade on the voie des Thermes north of the Large South Baths, and thought its broad divisions more like a public establishment than a private house [Ballu 1903: 90-91]. Five shops under a portico lined the west side [Ballu 1903: 91]. The main entrance, at the western end, led through a vestibule and a gallery to a hall of 11 by 7.60 m, which Rebuffat takes for the triclinium, and to two hypocaust rooms [Ballu 1903: 91; Rebuffat 1969: 677]. Beyond was a court of 23 by 19 m with porticoes on twenty-two columns, mosaic floors including an inscribed panel read as a game board, and a narrow basin that the 1905 account calls a late addition [Ballu 1903: 91-92; BCB 1905: 323]. Of six rooms on the south, Ballu thought the first might be a stairwell to an upper floor, and the sixth held the mosaic of a hermaphrodite attended by two women, now in the museum, placed by the 1905 account on a threshold [Ballu 1903: 92-94; BCB 1905: 325]. The town wall closed the north, and Germain places the house against the outside of the south wall of Trajan's town, listing it with the quarter of the south gate [Ballu 1903: 91-92; Germain 1969: 65, 150].",
+   "sample": true,
+   "notes_html": "Ballu places this building, 28 by 60 m, east of the southern <em>cardo</em>, with its single façade on the <em>voie des Thermes</em> north of the Large South Baths, and thought its broad divisions more like a public establishment than a private house [Ballu 1903: 90-91]. Five shops under a portico lined the west side [Ballu 1903: 91]. The main entrance, at the western end, led through a vestibule and a gallery to a hall of 11 by 7.60 m, which Rebuffat takes for the <em>triclinium</em>, and to two hypocaust rooms [Ballu 1903: 91; Rebuffat 1969: 677]. Beyond was a court of 23 by 19 m with porticoes on twenty-two columns, mosaic floors including an inscribed panel read as a game board, and a narrow basin that the 1905 account calls a late addition [Ballu 1903: 91-92; BCB 1905: 323]. Of six rooms on the south, Ballu thought the first might be a stairwell to an upper floor, and the sixth held the mosaic of a hermaphrodite attended by two women, now in the museum, placed by the 1905 account on a threshold [Ballu 1903: 92-94; BCB 1905: 325]. The town wall closed the north, and Germain places the house against the outside of the south wall of Trajan's town, listing it with the quarter of the south gate [Ballu 1903: 91-92; Germain 1969: 65, 150]."
   },
   {
    "grid_id": "TIMG.E-SW.I5.H2",
@@ -519,16 +565,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908 (BCTH), p.38",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I6",
@@ -541,16 +589,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Amraoui 2011, pp. 224-232 with new plan fig. 5; Ballu, BCTH 1907 (1906 campaign) and Les ruines de Timgad III (1911)",
+   "first_published_by": "Ballu, Rapport 1906 (BCTH 1907) and Ballu 1911a; pages not yet traced",
+   "earliest_source": "Amraoui 2011: 224-232, new plan fig. 5",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I7",
@@ -563,16 +613,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1921 report, pp. 35-36; Ballu 1922a report, pp. 44-45",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I8",
@@ -585,16 +637,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1923 report, p. 46",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.E-SW.I9",
@@ -607,16 +661,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1912 (BCTH report), pp. 31-32, 34",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I1",
@@ -635,10 +691,12 @@
    "area_raw": "~530 m²",
    "area_m2": 530,
    "first_published_by": "Ballu, BCTH 1903: CCXIV-CCXV and BCTH 1904: 167-168 (first notices; no text in corpus); fullest early description Ballu 1911a: 83-85",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "This house held the corner of the city's two great streets, the Cardo and the Decumanus, directly south of the library, with porticoes along both. Four shops opened under the Decumanus portico, cut off from the dwelling by a continuous wall, and private baths filled the north-west corner. Its largest room kept two fine ornamental mosaics, and the tablinum beside the well-preserved atrium carried the picture mosaic of a nereid borne by a marine centaur, which Ballu judged the best preserved yet found at Timgad. All three mosaics went to the museum [Ballu 1911: 83-85].",
-   "sample": false
+   "sample": false,
+   "notes_html": "This house held the corner of the city's two great streets, the <em>Cardo</em> and the <em>Decumanus</em>, directly south of the library, with porticoes along both. Four shops opened under the <em>Decumanus</em> portico, cut off from the dwelling by a continuous wall, and private baths filled the north-west corner. Its largest room kept two fine ornamental mosaics, and the <em>tablinum</em> beside the well-preserved <em>atrium</em> carried the picture mosaic of a nereid borne by a marine centaur, which Ballu judged the best preserved yet found at Timgad. All three mosaics went to the museum [Ballu 1911: 83-85]."
   },
   {
    "grid_id": "TIMG.NE.I11",
@@ -651,16 +709,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a (Sept années): 96",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I12",
@@ -673,16 +733,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), p.96",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I13",
@@ -701,10 +763,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1904: 14-15",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "First block of the fourth row, on the east side of the Cardo, entered from the street on its north side: a paved atrium with a fountain on its east side and a finely worked rainwater stone, six rooms in the southern part and ten, at a lower level, in the northern part [Ballu 1911: 81].",
-   "sample": false
+   "sample": false,
+   "notes_html": "First block of the fourth row, on the east side of the <em>Cardo</em>, entered from the street on its north side: a paved <em>atrium</em> with a fountain on its east side and a finely worked rainwater stone, six rooms in the southern part and ten, at a lower level, in the northern part [Ballu 1911: 81]."
   },
   {
    "grid_id": "TIMG.NE.I14",
@@ -723,10 +787,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 25-26",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Second block of the fourth row, divided in two by a wall parallel to the Cardo. The western section kept a brick water conduit crossing a room of 10 by 8 metres, a sandstone-paved atrium, and a mosaic of white, red and black cubes forming squares interlaced in lozenges. Ballu judged the house luxurious in its prime, later demolished and long reoccupied; a small engraved figure of a dancer was found on one of its limestone slabs [Ballu 1911: 81-82].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Second block of the fourth row, divided in two by a wall parallel to the <em>Cardo</em>. The western section kept a brick water conduit crossing a room of 10 by 8 metres, a sandstone-paved <em>atrium</em>, and a mosaic of white, red and black cubes forming squares interlaced in lozenges. Ballu judged the house luxurious in its prime, later demolished and long reoccupied; a small engraved figure of a dancer was found on one of its limestone slabs [Ballu 1911: 81-82]."
   },
   {
    "grid_id": "TIMG.NE.I15",
@@ -745,10 +811,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 26",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Third block of the fourth row, east of the previous one: a paved atrium with a basin on the north face, ringed by rooms on all four sides. Ballu found the building of little interest [Ballu 1911: 82].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Third block of the fourth row, east of the previous one: a paved <em>atrium</em> with a basin on the north face, ringed by rooms on all four sides. Ballu found the building of little interest [Ballu 1911: 82]."
   },
   {
    "grid_id": "TIMG.NE.I18",
@@ -761,16 +829,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu, Rapport 1911, p. 30",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 492 (offprint p. 30)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I19",
@@ -789,10 +859,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 95",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu bounds the house by the third and fourth streets parallel to the Decumanus and places it equidistant from the Small Northern Baths and the library, which fixes the block one row further north than previously recorded [Ballu 1903: 95; Ballu 1911].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu bounds the house by the third and fourth streets parallel to the <em>Decumanus</em> and places it equidistant from the Small Northern Baths and the library, which fixes the block one row further north than previously recorded [Ballu 1903: 95; Ballu 1911]."
   },
   {
    "grid_id": "TIMG.NE.I2",
@@ -811,10 +883,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu, BCTH 1904: 168-169 (report on the 1903 campaign; volume not held locally). Fullest early description: Ballu 1911a: 85-86",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Second block of the Decumanus row, facing the House of the Gardens across the great street, south-east of the library. An eight-bay portico fronted the Decumanus with four large shops behind it; the two eastern shops stood over well-preserved cellars, one lit by five light-shafts, with a staircase projecting onto the east street. The tablinum kept a mosaic of curved rosettes with birds, a cock, a kingfisher and a stork, now in the museum [Ballu 1911: 85-86].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Second block of the <em>Decumanus</em> row, facing the House of the Gardens across the great street, south-east of the library. An eight-bay portico fronted the <em>Decumanus</em> with four large shops behind it; the two eastern shops stood over well-preserved cellars, one lit by five light-shafts, with a staircase projecting onto the east street. The <em>tablinum</em> kept a mosaic of curved rosettes with birds, a cock, a kingfisher and a stork, now in the museum [Ballu 1911: 85-86]."
   },
   {
    "grid_id": "TIMG.NE.I2.H1",
@@ -827,16 +901,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1897a (Guide de Timgad), p. 30; Ballu 1897b (Les Ruines de Timgad I), pp. 119-120, 140; Ballu 1903 (Nouvelles découvertes), p. 95",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I20",
@@ -855,10 +931,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 25",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "The one ruin Ballu records in the third row, directly south of the previous block. A broad stone-paved vestibule with two doors on the east street led to a central atrium where nine stone mangers for Byzantine horses were found; a stone table still stood in the vestibule. Five small rooms lined the south side, a long room ran along the west street, and four rooms closed the north side [Ballu 1911: 80-81].",
-   "sample": false
+   "sample": false,
+   "notes_html": "The one ruin Ballu records in the third row, directly south of the previous block. A broad stone-paved vestibule with two doors on the east street led to a central <em>atrium</em> where nine stone mangers for Byzantine horses were found; a stone table still stood in the vestibule. Five small rooms lined the south side, a long room ran along the west street, and four rooms closed the north side [Ballu 1911: 80-81]."
   },
   {
    "grid_id": "TIMG.NE.I23",
@@ -871,16 +949,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), pp.30-31; Germain 1969, p.149",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 492-493 (offprint pp. 30-31)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I24",
@@ -893,16 +973,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1912: 492, quoted in Wilson 2001: 273",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I25",
@@ -921,10 +1003,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1904: 14-16 (Rapport sur les travaux de fouilles operes en 1904, extrait du Bulletin archeologique, 1905); fullest early description remains Ballu 1911a: 79-80",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "The first block of the second row, on the east flank of the Cardo just south of the Small Northern Baths. A door with three steps led from the Cardo into a mosaic-paved vestibule, with an atrium beyond keeping its column bases and a central well, and private baths at the north-east corner. A small cold plunge east of the atrium was later converted into a baptistery when a Christian basilica was built over the eastern part of the house in the Byzantine period; a dedication to the great eternal god by Flavius Donatus and his wife Tertulla was found here [Ballu 1911: 79-80].",
-   "sample": false
+   "sample": false,
+   "notes_html": "The first block of the second row, on the east flank of the <em>Cardo</em> just south of the Small Northern Baths. A door with three steps led from the <em>Cardo</em> into a mosaic-paved vestibule, with an <em>atrium</em> beyond keeping its column bases and a central well, and private baths at the north-east corner. A small cold plunge east of the <em>atrium</em> was later converted into a baptistery when a Christian basilica was built over the eastern part of the house in the Byzantine period; a dedication to the great eternal god by Flavius Donatus and his wife Tertulla was found here [Ballu 1911: 79-80]."
   },
   {
    "grid_id": "TIMG.NE.I26",
@@ -943,10 +1027,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 25",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "The second block of the second row, east of the basilica house. Four small shops faced the north street, with amphora remains that may point to oil storage, a concreted basin in the south-west corner, and only faint traces of the interior walls [Ballu 1911: 80].",
-   "sample": false
+   "sample": false,
+   "notes_html": "The second block of the second row, east of the basilica house. Four small shops faced the north street, with amphora remains that may point to oil storage, a concreted basin in the south-west corner, and only faint traces of the interior walls [Ballu 1911: 80]."
   },
   {
    "grid_id": "TIMG.NE.I27",
@@ -959,38 +1045,42 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), p.32",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 494 (offprint p. 32)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I28",
    "name": "Dyers' House, North-East Quarter, Seventh of the 1911 Sequence",
    "name_en": "Dyers' House, North-East Quarter, Seventh of the 1911 Sequence",
    "name_fr": "",
-   "alternate_names": "",
+   "alternate_names": "Lohmann insula 20 (as used by Amraoui 2020); catalogued until 2026-09-20 also as TIMG.UNK.H27 (retired)",
    "quadrant": "NE",
    "zone": "Intramural NE",
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), pp.31-32",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 493-494 (offprint pp. 31-32)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I29",
@@ -1003,16 +1093,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), p.31",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 493 (offprint p. 31)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I3",
@@ -1031,10 +1123,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 86",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Third house of the Decumanus row, badly damaged: half the portico columns survive, with four shops on the south front and a limestone-paved atrium surrounded by ten rooms, three keeping concrete floors [Ballu 1911: 86].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Third house of the <em>Decumanus</em> row, badly damaged: half the portico columns survive, with four shops on the south front and a limestone-paved <em>atrium</em> surrounded by ten rooms, three keeping concrete floors [Ballu 1911: 86]."
   },
   {
    "grid_id": "TIMG.NE.I30",
@@ -1047,16 +1141,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Rapport): 30",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 492 (offprint p. 30)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I32",
@@ -1075,10 +1171,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 79",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Ballu reached this block first in his tour of the north-east quarter: the one insula worth noting in the first row, immediately east of the Small Northern Baths. Three shops opened onto the northern boulevard, one keeping its back-room; behind them lay a vestibule and the levelled remains of an atrium. The eastern third of the block, five rooms and a large vestibule encroaching on the street, had no communication with the rest of the building [Ballu 1911: 79].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Ballu reached this block first in his tour of the north-east quarter: the one <em>insula</em> worth noting in the first row, immediately east of the Small Northern Baths. Three shops opened onto the northern boulevard, one keeping its back-room; behind them lay a vestibule and the levelled remains of an <em>atrium</em>. The eastern third of the block, five rooms and a large vestibule encroaching on the street, had no communication with the rest of the building [Ballu 1911: 79]."
   },
   {
    "grid_id": "TIMG.NE.I33",
@@ -1091,16 +1189,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), pp.32-33",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 494-495 (offprint pp. 32-33)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I34",
@@ -1113,16 +1213,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), p.32",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 494 (offprint p. 32)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I35",
@@ -1135,16 +1237,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), p.31",
+   "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 493 (offprint p. 31)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I4",
@@ -1163,10 +1267,12 @@
    "area_raw": "~590 m²",
    "area_m2": 590,
    "first_published_by": "Ballu, BCTH 1904: 169-170 (report of the 1903 clearance); reprised in Ballu 1911a: 86",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Fourth insula of the Decumanus row, 22.70 by 26 metres, bounded east by the street along the west wall of the Great Eastern Baths. Five shops opened on the Decumanus and a staircase encroached on the east street. The house had a colonnaded central court and a private bath suite whose hypocaust piles survive. In the Byzantine period a stable was fitted into its largest hall, with nine stone mangers found in place and four more nearby. Earlier visitors took the ruin for an inn; Ballu read it as a private house refitted for Byzantine cavalry [Ballu 1911: 86; the baths first noted Ballu 1903: 54].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Fourth <em>insula</em> of the <em>Decumanus</em> row, 22.70 by 26 metres, bounded east by the street along the west wall of the Great Eastern Baths. Five shops opened on the <em>Decumanus</em> and a staircase encroached on the east street. The house had a colonnaded central court and a private bath suite whose hypocaust piles survive. In the Byzantine period a stable was fitted into its largest hall, with nine stone mangers found in place and four more nearby. Earlier visitors took the ruin for an inn; Ballu read it as a private house refitted for Byzantine cavalry [Ballu 1911: 86; the baths first noted Ballu 1903: 54]."
   },
   {
    "grid_id": "TIMG.NE.I7.H1",
@@ -1179,16 +1285,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), pp.8-9",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NE.I8",
@@ -1207,10 +1315,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1904: 14-15",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "First of the two fifth-row houses, level with the library and one file east of it, entered from the street on its south. A bending corridor vestibule descended four steps to a paved atrium with a basin, and a mosaic-floored portico led to the tablinum. A sandstone latrine seat with three openings came from a western room, and a second stone-paved atrium with an octagonal well lay off the east street. In all, twelve rooms, two atria and a vestibule [Ballu 1911: 82-83].",
-   "sample": false
+   "sample": false,
+   "notes_html": "First of the two fifth-row houses, level with the library and one file east of it, entered from the street on its south. A bending corridor vestibule descended four steps to a paved <em>atrium</em> with a basin, and a mosaic-floored portico led to the <em>tablinum</em>. A sandstone latrine seat with three openings came from a western room, and a second stone-paved <em>atrium</em> with an octagonal well lay off the east street. In all, twelve rooms, two <em>atria</em> and a vestibule [Ballu 1911: 82-83]."
   },
   {
    "grid_id": "TIMG.NE.I9",
@@ -1229,10 +1339,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1909: 114",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Second fifth-row house, on the third file east of the Cardo, beside the street running down to the House of the Gardens, the only paved street of the four that framed it. Little survived beyond threshold traces on the east and north sides, the remains of one important room in the eastern part, and a central atrium [Ballu 1911: 83].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Second fifth-row house, on the third file east of the <em>Cardo</em>, beside the street running down to the House of the Gardens, the only paved street of the four that framed it. Little survived beyond threshold traces on the east and north sides, the remains of one important room in the eastern part, and a central <em>atrium</em> [Ballu 1911: 83]."
   },
   {
    "grid_id": "TIMG.NW.I1",
@@ -1251,10 +1363,12 @@
    "area_raw": "29 x 24.20 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 98",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NW.I10",
@@ -1273,10 +1387,12 @@
    "area_raw": "20.85 x 20.75 m (provisional)",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 79",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "The one new house Ballu records in the fifth row. A party wall divided it into two equal halves: the eastern half held two dwellings of seven and four rooms, one with a basin, and yielded fine amphorae and stone troughs taken to the museum; the western half held twelve rooms, a good cellar, a basin and shops. Ballu concluded that three families lived in the block. He does not say which position in the row it held; the four other blocks of the row are houses he had already published in 1903, so this record is placed at the row's western end, the only block not yet described, and its position is treated as probable rather than certain [Ballu 1911: 79; Ballu 1903: 96-98].",
-   "sample": false
+   "sample": false,
+   "notes_html": "The one new house Ballu records in the fifth row. A party wall divided it into two equal halves: the eastern half held two dwellings of seven and four rooms, one with a basin, and yielded fine amphorae and stone troughs taken to the museum; the western half held twelve rooms, a good cellar, a basin and shops. Ballu concluded that three families lived in the block. He does not say which position in the row it held; the four other blocks of the row are houses he had already published in 1903, so this record is placed at the row's western end, the only block not yet described, and its position is treated as probable rather than certain [Ballu 1911: 79; Ballu 1903: 96-98]."
   },
   {
    "grid_id": "TIMG.NW.I11",
@@ -1295,10 +1411,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1905: 17",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Last house of the fourth row, fronting the Cardo. A stone-paved central court of 7.90 by 9.08 metres kept the four corner columns of its porticoes, with a square basin and well at its centre, and a limestone vestibule joined the court to the Cardo. At the north-west corner lay private baths with three heated rooms, a warm room, a hot room and a sweat-room, served by a furnace room off the north street, beside a cold room with a small semicircular plunge 1.20 metres deep [Ballu 1911: 78].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Last house of the fourth row, fronting the <em>Cardo</em>. A stone-paved central court of 7.90 by 9.08 metres kept the four corner columns of its porticoes, with a square basin and well at its centre, and a limestone vestibule joined the court to the <em>Cardo</em>. At the north-west corner lay private baths with three heated rooms, a warm room, a hot room and a sweat-room, served by a furnace room off the north street, beside a cold room with a small semicircular plunge 1.20 metres deep [Ballu 1911: 78]."
   },
   {
    "grid_id": "TIMG.NW.I12",
@@ -1317,10 +1435,12 @@
    "area_raw": "c. 20 x 20 (seven-room core in the standard insula square; NW balineum encroaching slightly on the voie de la Basilique byzantine; eastern advance of 2.60 m along the 20 m frontage on the voie du Forum)",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 30",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Ballu's 1903 tour names this house only briefly: the house of Januarius, west of the northern Cardo and separated from it by a then-unexcavated block. His 1911 report places the house of Januarius, with the Christian basilica and baptistery, among the known squares of the north-west quarter's fourth row, and the unexcavated block on the Cardo, dug in 1911, stands at the row's east end. Together the two reports fix this house one block west of the Cardo in the fourth row, where it is placed as probable [Ballu 1903: 96; Ballu 1911: 77-78].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Ballu's 1903 tour names this house only briefly: the house of Januarius, west of the northern <em>Cardo</em> and separated from it by a then-unexcavated block. His 1911 report places the house of Januarius, with the Christian basilica and baptistery, among the known squares of the north-west quarter's fourth row, and the unexcavated block on the <em>Cardo</em>, dug in 1911, stands at the row's east end. Together the two reports fix this house one block west of the <em>Cardo</em> in the fourth row, where it is placed as probable [Ballu 1903: 96; Ballu 1911: 77-78]."
   },
   {
    "grid_id": "TIMG.NW.I13",
@@ -1339,10 +1459,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 96",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Ballu records that this 1903 house was largely destroyed when its remains were reused as the vestibule of the Byzantine basilica. His 1911 report counts the basilica block among the known squares of the north-west quarter's fourth row, which places the house in the row's third position, where it is recorded as probable [Ballu 1903: 96; Ballu 1911: 77].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Ballu records that this 1903 house was largely destroyed when its remains were reused as the vestibule of the Byzantine basilica. His 1911 report counts the basilica block among the known squares of the north-west quarter's fourth row, which places the house in the row's third position, where it is recorded as probable [Ballu 1903: 96; Ballu 1911: 77]."
   },
   {
    "grid_id": "TIMG.NW.I14",
@@ -1361,10 +1483,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 24",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Second block of the fourth row: a densely divided block of four series of rooms from north to south, ending on the south street in suites two rooms deep, with a paved room and plunge basin at the south-east corner. Its two stone-paved courts, each with a basin and both placed on the eastern street, struck Ballu as its most unusual feature [Ballu 1911: 78].",
-   "sample": false
+   "sample": false,
+   "notes_html": "Second block of the fourth row: a densely divided block of four series of rooms from north to south, ending on the south street in suites two rooms deep, with a paved room and plunge basin at the south-east corner. Its two stone-paved courts, each with a basin and both placed on the eastern street, struck Ballu as its most unusual feature [Ballu 1911: 78]."
   },
   {
    "grid_id": "TIMG.NW.I15",
@@ -1383,10 +1507,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 24",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "First block of the fourth row, along the western boulevard. The northern half is almost effaced, keeping only traces of concrete and mosaic paving. The southern half preserves an axial entrance from the south street: a vestibule between two large corner rooms leads to a central chamber, with a stone-paved atrium and basin on its west and a large room on the east street. Brick tombs of the Christian period, without grave goods, were dug into the ruin [Ballu 1911: 77].",
-   "sample": false
+   "sample": false,
+   "notes_html": "First block of the fourth row, along the western boulevard. The northern half is almost effaced, keeping only traces of concrete and mosaic paving. The southern half preserves an axial entrance from the south street: a vestibule between two large corner rooms leads to a central chamber, with a stone-paved <em>atrium</em> and basin on its west and a large room on the east street. Brick tombs of the Christian period, without grave goods, were dug into the ruin [Ballu 1911: 77]."
   },
   {
    "grid_id": "TIMG.NW.I16",
@@ -1405,10 +1531,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1905: 16-17",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, fifth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, fifth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I17",
@@ -1423,14 +1551,16 @@
    "confidence": "high",
    "mapping_confidence": "medium",
    "verification_status": "partial",
-   "analysis_status": "case_study",
+   "analysis_status": "interpreted",
    "area_raw": "c. 20 x 20 (standard insula module; not individually measured)",
    "area_m2": null,
    "first_published_by": "Ballu, report on the 1906 excavations (BCTH 1907): 32-34 (house and atrium dedication); dedication fragments already Ballu, 1901 report: 12-13; monograph treatment Ballu 1911a: 72-76",
+   "earliest_source": "",
    "key_references": "Pavis d'Escurac 1980: 183, 196 (Antiquites africaines 15); Laghmouche 2024: Table 1, p. 224 (chapter 219-227); Lepelley 1981: 455-456 (cited for this house in Laghmouche 2024, Table 1; no local text)",
    "possible_duplicate_of": "",
-   "notes": "Ballu recorded an upper storey, with a staircase of seven steps still surviving when the house was cleared. The tablinum's west wall preserved painted plaster imitating coloured marbles. The house was destroyed rapidly by fire: grain lay carbonized in place and columns had fallen beside their bases. Latrines stood to the right of the entrance, and a paved corridor of 3.55 x 9.75 m served all the rooms around a small atrium (9.55 x 4.50 m) with a square well [Ballu 1911: 72-76]. The house was drawn in GIS from the georeferenced plans and satellite imagery in August 2026. The drawing keeps an open question the sources disagree on: Wilson's plan puts the main street door on the east side, while Ballu describes it on the south, beside the staircase and latrines. The southern reading fits Ballu's description best, and both openings are recorded so the question stays visible rather than being decided silently.",
-   "sample": true
+   "notes": "Ballu placed the entrance on the south, where a door two metres wide led to a vestibule paved in sandstone, with latrines to the right on entering and, to the left, a staircase of which seven steps survive and which led to an upper storey. Facing the door, an inner corridor paved in limestone, 3.55 m wide and 9.75 m long, gave access to all the rooms, and on its north side three intercolumniations opened onto an atrium paved in limestone (9.55 by 4.50 m), with a square well in its front part. The west wall of the tablinum kept traces of painted plaster imitating marbles of various colours. Ballu found large quantities of wheat and barley, blackened by fire but with the grains intact, and all the columns overturned near their bases, and he concluded from this that the house had been destroyed rapidly [Ballu 1911a: 72-76]. His two accounts differ on one point: the book puts the vestibule in the south-east angle of the house, the 1906 report in the south-west [Ballu 1911a: 72; Ballu, report on 1906, BCTH 1907: 261]. The house was drawn in GIS from the georeferenced plans and satellite imagery in August 2026. The drawing keeps an open question the sources disagree on: Wilson's plan puts the main street door on the east side, while Ballu describes it on the south, beside the staircase and latrines. The southern reading fits Ballu's description best, and both openings are recorded so the question stays visible.",
+   "sample": true,
+   "notes_html": "Ballu placed the entrance on the south, where a door two metres wide led to a vestibule paved in sandstone, with latrines to the right on entering and, to the left, a staircase of which seven steps survive and which led to an upper storey. Facing the door, an inner corridor paved in limestone, 3.55 m wide and 9.75 m long, gave access to all the rooms, and on its north side three intercolumniations opened onto an <em>atrium</em> paved in limestone (9.55 by 4.50 m), with a square well in its front part. The west wall of the <em>tablinum</em> kept traces of painted plaster imitating marbles of various colours. Ballu found large quantities of wheat and barley, blackened by fire but with the grains intact, and all the columns overturned near their bases, and he concluded from this that the house had been destroyed rapidly [Ballu 1911a: 72-76]. His two accounts differ on one point: the book puts the vestibule in the south-east angle of the house, the 1906 report in the south-west [Ballu 1911a: 72; Ballu, report on 1906, BCTH 1907: 261]. The house was drawn in GIS from the georeferenced plans and satellite imagery in August 2026. The drawing keeps an open question the sources disagree on: Wilson's plan puts the main street door on the east side, while Ballu describes it on the south, beside the staircase and latrines. The southern reading fits Ballu's description best, and both openings are recorded so the question stays visible."
   },
   {
    "grid_id": "TIMG.NW.I18",
@@ -1449,10 +1579,12 @@
    "area_raw": "approx. 20 x 20 m (stated for the insula as a whole)",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 71",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, third position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, third position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I19",
@@ -1462,8 +1594,8 @@
    "alternate_names": "Aelius Julianus (attribution doubtful)",
    "quadrant": "NW",
    "zone": "Intramural NW",
-   "building_type": "Elite peristyle house",
-   "type_class": "Elite house",
+   "building_type": "House",
+   "type_class": "House",
    "confidence": "medium",
    "mapping_confidence": "medium",
    "verification_status": "partial",
@@ -1471,10 +1603,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908 (Rapport sur les fouilles exécutées en 1908): 23, 33 (= BCTH 1909: 105); repeated in Ballu 1911a: 70-71, 181",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, second position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, second position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I2",
@@ -1493,10 +1627,12 @@
    "area_raw": "29 x 20 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 98",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NW.I20",
@@ -1515,10 +1651,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908 (Rapport sur les fouilles exécutées en 1908): 23-24; restated in Ballu 1911a: 70",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, first position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 3, first position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I21",
@@ -1537,10 +1675,12 @@
    "area_raw": "20.50 x 20.80",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 70",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, fifth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, fifth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I22",
@@ -1559,10 +1699,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 69",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, fourth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, fourth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I23",
@@ -1581,10 +1723,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 68-69",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, third position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, third position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I24",
@@ -1603,10 +1747,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 21 (Rapport sur les fouilles executees en 1908, Paris, Imprimerie Nationale, 1909)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, second position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 2, second position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I25",
@@ -1625,10 +1771,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 22-23 (earliest local source mention; report on the 1908 excavation campaign, published 1909).",
+   "earliest_source": "",
    "key_references": "Ballu 1908: 22-23; Ballu 1911a: 67-68.",
    "possible_duplicate_of": "",
-   "notes": "A large square limestone basin stood here, 2.10 m per side and in good condition, its fountain fed through a pierced stone pipe. In the eastern part of the insula, Ballu noted a paved room opening on the north street, beside a larger corner room with traces of mosaic at the north-east angle [Ballu 1911: 67].",
-   "sample": true
+   "notes": "Ballu describes the first house of the second row as well preserved, with its entrance on the north, on the axis of the building. Its large paved atrium, bordered by porticoes of unequal width, held a large square limestone basin in good condition, 2.10 m per side. In the middle of the basin's north wall stood a kind of stone pipe, pierced at mid-height and once topped by a marble cap with a pine cone, which Ballu read as a fountain with a water jet. Directly south of the atrium, the tablinum opened through three intercolumniations and kept traces of mosaic. In the eastern part of the insula, Ballu noted a room paved in limestone opening on the street to the north, beside a larger room with traces of mosaic that formed the north-east angle [Ballu 1911a: 67].",
+   "sample": true,
+   "notes_html": "Ballu describes the first house of the second row as well preserved, with its entrance on the north, on the axis of the building. Its large paved <em>atrium</em>, bordered by porticoes of unequal width, held a large square limestone basin in good condition, 2.10 m per side. In the middle of the basin's north wall stood a kind of stone pipe, pierced at mid-height and once topped by a marble cap with a pine cone, which Ballu read as a fountain with a water jet. Directly south of the <em>atrium</em>, the <em>tablinum</em> opened through three intercolumniations and kept traces of mosaic. In the eastern part of the <em>insula</em>, Ballu noted a room paved in limestone opening on the street to the north, beside a larger room with traces of mosaic that formed the north-east angle [Ballu 1911a: 67]."
   },
   {
    "grid_id": "TIMG.NW.I26",
@@ -1647,10 +1795,12 @@
    "area_raw": "20.30 x 20.60",
    "area_m2": null,
    "first_published_by": "Ballu 1905: 15",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, fifth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, fifth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I27",
@@ -1669,10 +1819,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 66",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, fourth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, fourth position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I28",
@@ -1691,10 +1843,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 66",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, third position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, third position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I29",
@@ -1713,10 +1867,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 65",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, second position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, second position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I3",
@@ -1735,10 +1891,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 99",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NW.I30",
@@ -1757,10 +1915,12 @@
    "area_raw": "~20 x 20 m (standard insula module, unmeasured)",
    "area_m2": null,
    "first_published_by": "Ballu 1908: 20 (BCTH report on the 1908 campaign, p. 1909)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, first position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the Cardo, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter.",
-   "sample": false
+   "sample": false,
+   "notes_html": "Placement note: Ballu describes this house inside the city, in the north-west quadrant's row 1, first position counting from the western boulevard; the quarter he frames is bounded by the city's northern and western boulevards and the <em>Cardo</em>, five squares wide by six rows deep [Ballu 1911: 64-79]. The record was previously filed under an extramural NW quarter."
   },
   {
    "grid_id": "TIMG.NW.I4",
@@ -1779,10 +1939,12 @@
    "area_raw": "28.90 x 20.90",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 99-100",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NW.I5",
@@ -1801,10 +1963,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 100",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NW.I6",
@@ -1820,13 +1984,15 @@
    "mapping_confidence": "high",
    "verification_status": "partial",
    "analysis_status": "pending",
-   "area_raw": "20.25 x 21.40 m",
+   "area_raw": "20.25 x 2?.40 (second figure reads 21 or 24 on the scan of Ballu 1903: 96; check a printed copy)",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 96",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "An isolated residential building of 20.25 x 21.40 m, fronting the Cardo Maximus with a portico of five columns and two square piers. An east-west wall divided it into two equal portions: the southern part held an atrium and six rooms, one with a mosaic fragment, and the northern part six rooms linked by three wide doors [Ballu 1903: 96]. A figured mosaic panel of Diana and Actaeon carried the signature SELIVS P G, restored as Seliu[s] p(in)g(ebat); its jewelled figures led to its removal to the museum for the sake of its colours. Germain also records a figured mosaic in the north-west corner room (6.60 x 5 m) and a mosaic paving fragment in a southern room [Germain 1969: 19, 21].",
-   "sample": true
+   "notes": "Ballu lists this as the fourth of the isolated houses, facing the building he called the Schola across the northern Cardo Maximus, between the first and second decumanus, with the voie du Forum on its west side. On the Cardo Maximus it had a portico of five columns and two square piers. A wall running east to west divided it into two equal parts: the southern part had an atrium and six rooms, one of which kept a fragment of mosaic paving, and the northern part, which communicated with the southern through three wide doors, had six rooms. The room at the north-west corner held a mosaic that looked ordinary until cleaning on 7 May 1902 revealed Diana at her bath surprised by Actaeon, and Ballu had it moved at once to the museum because of its interest and the richness of its colours [Ballu 1903: 96-97]. Germain gives the room as 6.60 by 5 m, opening through three bays on two columns still in place, and the panel as 2.50 by 2.35 m. The inscription SELIV/S P G at the top of the panel was restored by Cagnat as the mosaicist's signature, Selius p(in)g(ebat), though Germain prefers p(in)g(it) or p(i)c(tor) [Germain 1969: 19-22].",
+   "sample": true,
+   "notes_html": "Ballu lists this as the fourth of the isolated houses, facing the building he called the <em>Schola</em> across the northern <em>Cardo Maximus</em>, between the first and second <em>decumanus</em>, with the <em>voie du Forum</em> on its west side. On the <em>Cardo Maximus</em> it had a portico of five columns and two square piers. A wall running east to west divided it into two equal parts: the southern part had an <em>atrium</em> and six rooms, one of which kept a fragment of mosaic paving, and the northern part, which communicated with the southern through three wide doors, had six rooms. The room at the north-west corner held a mosaic that looked ordinary until cleaning on 7 May 1902 revealed Diana at her bath surprised by Actaeon, and Ballu had it moved at once to the museum because of its interest and the richness of its colours [Ballu 1903: 96-97]. Germain gives the room as 6.60 by 5 m, opening through three bays on two columns still in place, and the panel as 2.50 by 2.35 m. The inscription SELIV/S P G at the top of the panel was restored by Cagnat as the mosaicist's signature, <em>Selius p(in)g(ebat)</em>, though Germain prefers <em>p(in)g(it)</em> or <em>p(i)c(tor)</em> [Germain 1969: 19-22]."
   },
   {
    "grid_id": "TIMG.NW.I7",
@@ -1845,10 +2011,12 @@
    "area_raw": "21.10 x 21 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 97",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NW.I8",
@@ -1867,10 +2035,12 @@
    "area_raw": "21.20 x 21.25 (source does not distinguish which axis is length vs. width)",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 98",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.NW.I9",
@@ -1889,10 +2059,12 @@
    "area_raw": "21 x 20.60 m (source does not indicate which figure is length vs. width)",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 98",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I16.H1",
@@ -1905,16 +2077,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), pp.94-95",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I17",
@@ -1927,16 +2101,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1906: 34-35; Ballu 1911a (Sept années): 94-95",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I18",
@@ -1949,16 +2125,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1906: 35; Ballu 1911a (Sept années): 95",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I2",
@@ -1977,10 +2155,12 @@
    "area_raw": "~504 m² (21 x 24)",
    "area_m2": 504,
    "first_published_by": "Ballu 1897b: 224-226",
+   "earliest_source": "",
    "key_references": "Ballu 1897b I: 224-226; BCB 1905: 88-92; Germain 1969",
    "possible_duplicate_of": "",
-   "notes": "Ballu described a house of modest footprint, 21 x 24 m, entered through a doorway 2.10 m wide, with an atrium of 10.50 x 10.60 m; the portico on the Decumanus was carried by eight square pillars of which only the footings remain. Opposite the entrance stood a planter opening of 2.20 m, and bifrons tragic-mask heads crowned the stone uprights. The tablinum was reached through three bays on two columns, with fauces on each side leading to corner alae, which bounded the house on the south. Ballu noted that the house stood in a zone reserved for public buildings, and took it for the residence of a magistrate or important personage [Ballu 1897: 224-226]. The 1905 account gives an atrium about 10 m square with a portico about 2 m wide of ten columns, four across and three deep, a central well some 9 m deep in the atrium, and an entrance vestibule about 5 m wide; the tablinum floor carried a geometric mosaic with vegetal ornament, and geometric mosaics in brown and yellow ran under the atrium porticoes [BCB 1905: 88-92]. Germain calls the house's dimensions modest (assez restreintes) [Germain 1969: 37]. Ballu later noted that the house's columns had been re-erected [Ballu 1903: 110], and his 1909 report calls the street west of the insula 'la voie dite de la maison aux jardinières', the only paved one around that block [Ballu 1909, BCTH: 114-115]. Placement note: Germain's plan sets this house in his insula 70, the block immediately east of the Forum on the south side of the Decumanus, and the project's georeferenced overlay agrees; the record has accordingly been moved to that block from the neighbouring one north of the Decumanus.",
-   "sample": true
+   "notes": "Ballu described a house 21 m wide and 24 m deep on the Decumanus, with a street portico on eight square pillars of which only the footings remained. An opening of 2.10 m led to a vestibule, and two doors led from it to an atrium of 10.50 by 10.60 m with a portico of ten columns. A large stone planter ran around the paved centre, left open for 2.20 m on the side opposite the entrance, and double heads (bifrons), of tragic masks and other types, crowned its four stone uprights; the well was 10 m deep. Three bays on two columns opened onto the tablinum, and on each side a passage (fauces) led to a corner room (alae), these rooms closing the house on the south. Ballu noted that the house stood in a space reserved for public buildings and took it for the home of a magistrate or other important person [Ballu 1897b: 224-226]. The 1905 account gives an atrium about 10 m square, a portico 2 m wide with ten columns, four across and three deep, a well 9 m deep, geometric mosaics in brown and yellow under the porticoes and a geometric mosaic with plant ornament in the tablinum [BCB 1905: 88-92]. Germain calls its dimensions assez restreintes [Germain 1969: 37], and Ballu later reported that its columns had been set upright again [Ballu 1903: 110]. Placement note: Germain's plan sets this house in his insula 70, the block immediately east of the Forum on the south side of the Decumanus, and the project's georeferenced overlay agrees; the record has accordingly been moved to that block from the neighbouring one north of the Decumanus.",
+   "sample": true,
+   "notes_html": "Ballu described a house 21 m wide and 24 m deep on the <em>Decumanus</em>, with a street portico on eight square pillars of which only the footings remained. An opening of 2.10 m led to a vestibule, and two doors led from it to an <em>atrium</em> of 10.50 by 10.60 m with a portico of ten columns. A large stone planter ran around the paved centre, left open for 2.20 m on the side opposite the entrance, and double heads (<em>bifrons</em>), of tragic masks and other types, crowned its four stone uprights; the well was 10 m deep. Three bays on two columns opened onto the <em>tablinum</em>, and on each side a passage (<em>fauces</em>) led to a corner room (<em>alae</em>), these rooms closing the house on the south. Ballu noted that the house stood in a space reserved for public buildings and took it for the home of a magistrate or other important person [Ballu 1897b: 224-226]. The 1905 account gives an <em>atrium</em> about 10 m square, a portico 2 m wide with ten columns, four across and three deep, a well 9 m deep, geometric mosaics in brown and yellow under the porticoes and a geometric mosaic with plant ornament in the <em>tablinum</em> [BCB 1905: 88-92]. Germain calls its dimensions <em>assez restreintes</em> [Germain 1969: 37], and Ballu later reported that its columns had been set upright again [Ballu 1903: 110]. Placement note: Germain's plan sets this house in his <em>insula</em> 70, the block immediately east of the Forum on the south side of the <em>Decumanus</em>, and the project's georeferenced overlay agrees; the record has accordingly been moved to that block from the neighbouring one north of the <em>Decumanus</em>."
   },
   {
    "grid_id": "TIMG.SE.I27",
@@ -1993,16 +2173,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1903 (Les ruines de Timgad, nouvelles découvertes), p.109",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I29",
@@ -2015,16 +2197,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1924 (BCTH), pp.46-47",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I3.H1",
@@ -2037,16 +2221,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), p.13",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I30",
@@ -2059,16 +2245,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1924 (BCTH), p.47",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I35",
@@ -2081,16 +2269,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1924 (BCTH), pp.47-48",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I36",
@@ -2103,16 +2293,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1924 (BCTH), pp.48-49, with plan",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I4",
@@ -2125,16 +2317,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Germain 1969, pp. 38-41 (mosaics nos. 35-40); Inv. Mos. III, nos. 149-154, pp. 37-38; Ballu, BCTH 1907, pp. 264-266; Ballu, Les ruines de Timgad III, pp. 88-90; Gsell, Atlas f. 27, 255, 20",
+   "first_published_by": "Ballu, Rapport 1906, BCTH 1907: 263-266 (offprint pp. 35-38; 'le cinquième carré') = Ballu 1911a: 87-90 ('le second îlot')",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SE.I9",
@@ -2147,16 +2341,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Germain 1969 (Les mosaïques de Timgad), pp. 51-52, pl. XXI, mosaic no. 57",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.SW.I13",
@@ -2175,10 +2371,12 @@
    "area_raw": "21.15 x 20.60 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 102",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Curie path and the Cardo Maximus South, between the 2nd and 3rd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Curie path and the Cardo Maximus South, between the 2nd and 3rd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Curie path and the <em>Cardo Maximus</em> South, between the 2nd and 3rd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I14",
@@ -2197,10 +2395,12 @@
    "area_raw": "20.75 x 20.35 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 103",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Cardo Maximus South on the east and the Museum path on the west, between the 2nd and 3rd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Cardo Maximus South on the east and the Museum path on the west, between the 2nd and 3rd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the <em>Cardo Maximus</em> South on the east and the Museum path on the west, between the 2nd and 3rd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I15",
@@ -2219,10 +2419,12 @@
    "area_raw": "20.45 x 20.65 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 103",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I17",
@@ -2241,10 +2443,12 @@
    "area_raw": "24.90 x 27.60 m (incl. portico)",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 104",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the block north-west of the theatre court, its south side on the 4th south Decumanus [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the block north-west of the theatre court, its south side on the 4th south Decumanus [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the block north-west of the theatre court, its south side on the 4th south <em>Decumanus</em> [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I19",
@@ -2263,10 +2467,12 @@
    "area_raw": "21.10 x 21.05 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 105",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Cardo Maximus South on the east and the Museum path on the west, separated from the theatre-side block by the Small Central Baths [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Cardo Maximus South on the east and the Museum path on the west, separated from the theatre-side block by the Small Central Baths [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the <em>Cardo Maximus</em> South on the east and the Museum path on the west, separated from the theatre-side block by the Small Central Baths [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I20",
@@ -2285,10 +2491,12 @@
    "area_raw": "approx. 20.5-20.6 x 20.77 m (exterior); 9.45 x 19.35 m (undivided southern space)",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 105",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I22",
@@ -2307,10 +2515,12 @@
    "area_raw": "20.15 x 28 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 106",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the block immediately south of the twenty-first house, bordered on the east by the theatre court [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the block immediately south of the twenty-first house, bordered on the east by the theatre court [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the block immediately south of the twenty-first house, bordered on the east by the theatre court [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I23",
@@ -2329,10 +2539,12 @@
    "area_raw": "20.60 x 20.50 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 106",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Curie path on the east and the Cardo Maximus South on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the east and the Cardo Maximus South on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the east and the <em>Cardo Maximus</em> South on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I24",
@@ -2351,10 +2563,12 @@
    "area_raw": "20.63 x 20.80 m (per the numbering key; first figure illegible in the Ballu 1903 p.106 scan)",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 106 (description pp. 106-107)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the west flank of the Cardo Maximus South and the east side of the Museum path, linked to the twenty-second house by a street fountain [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the west flank of the Cardo Maximus South and the east side of the Museum path, linked to the twenty-second house by a street fountain [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the west flank of the <em>Cardo Maximus</em> South and the east side of the Museum path, linked to the twenty-second house by a street fountain [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I25",
@@ -2373,10 +2587,12 @@
    "area_raw": "20.35 x 20.50 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 107",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Museum path on the east and the triumphal-arch path on the west [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I27",
@@ -2395,10 +2611,12 @@
    "area_raw": "20.80 x 28.00 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 107",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Curie path on the west, between the 5th south Decumanus and the south boulevard [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the west, between the 5th south Decumanus and the south boulevard [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the west, between the 5th south <em>Decumanus</em> and the south boulevard [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I28",
@@ -2417,10 +2635,12 @@
    "area_raw": "20.60 x 20.60 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 107",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Curie path on the east and the Cardo Maximus South on the west, on the south boulevard row [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the east and the Cardo Maximus South on the west, on the south boulevard row [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the east and the <em>Cardo Maximus</em> South on the west, on the south boulevard row [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I29",
@@ -2439,10 +2659,12 @@
    "area_raw": "20.50 x 21.00 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 108",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Cardo Maximus South on the east and the Museum path on the west, on the south boulevard row [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Cardo Maximus South on the east and the Museum path on the west, on the south boulevard row [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the <em>Cardo Maximus</em> South on the east and the Museum path on the west, on the south boulevard row [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I3",
@@ -2461,10 +2683,12 @@
    "area_raw": "24.70 x 20.50 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 101",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Curie path on the east, the Cardo Maximus South on the west, and the Decumanus Maximus on the north [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the east, the Cardo Maximus South on the west, and the Decumanus Maximus on the north [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the Curie path on the east, the <em>Cardo Maximus</em> South on the west, and the <em>Decumanus Maximus</em> on the north [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I30",
@@ -2483,10 +2707,12 @@
    "area_raw": "20.50 x 20.00 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 108",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the last house in the south-west angle of the original city, between the Museum path and the triumphal-arch path [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the last house in the south-west angle of the original city, between the Museum path and the triumphal-arch path [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the last house in the south-west angle of the original city, between the Museum path and the triumphal-arch path [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I4",
@@ -2505,17 +2731,19 @@
    "area_raw": "23.90 x 21 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 101",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Cardo Maximus South on the east and the Museum path on the west, just south of the Decumanus [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Cardo Maximus South on the east and the Museum path on the west, just south of the Decumanus [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the <em>Cardo Maximus</em> South on the east and the Museum path on the west, just south of the <em>Decumanus</em> [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.SW.I5",
    "name": "House of the Pool (Maison de la Piscina)",
    "name_en": "House of the Pool",
    "name_fr": "Maison de la Piscina",
-   "alternate_names": "House of the Fish Tanks; Rebuffat no. 2; Ballu 1903 House 15",
+   "alternate_names": "fifteenth house in Ballu's 1903 list (Ballu 1903: 102, 'la quinzième'); BCB 1905 blocks (carrés) 73 and 82; later block numbering 67/75 (Rebuffat 1969: 676, 'Maison 67/75 (ex-73/82)'); Rebuffat no. 2",
    "quadrant": "SW",
    "zone": "Intramural SW",
    "building_type": "House",
@@ -2527,10 +2755,12 @@
    "area_raw": "~1000 m²",
    "area_m2": 1000,
    "first_published_by": "Ballu 1897b (Les ruines de Timgad I): 228-230 [1903 notice at Ballu 1903: 102]",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Three porticoes (Rebuffat 1969: 676) [BCB: colonnaded court, sides unspecified]",
-   "sample": true
+   "notes": "The Maison de la Piscina lies on the Decumanus Maximus, 12 metres east of the Arch of Trajan by Ballu's account [Ballu 1903: 81]. Its plot, which Ballu gave first as 20 by 50 metres and later as 20.80 by 50, joins two blocks of the original grid across a street that was built over [Ballu 1897b: 228; Ballu 1903: 102]. The half on the main street was largely destroyed, and while Ballu believed it held the main entrance and an atrium, the 1905 volume says its purpose cannot be told [Ballu 1897b: 228-229; BCB 1905: 333-334]. In the intact southern half Ballu recorded a peristyle whose open court measured 9.50 by 6.25 m, and an oecus of 6.30 by 6.73 m opening onto it through three unequal bays [Ballu 1897b: 229]. The basin that names the house, long with a half-round end, was of blue granite and carried nine pink marble columns 2.30 m high, and half the portico was lost in a rebuilding Ballu dated to the Byzantine period [Ballu 1897b: 229-230]. The 1905 volume calls the court an atrium and the south room a tablinum, and places baths with hypocausts in the north-east, while Rebuffat counts three porticoes and calls the room a triclinium [BCB 1905: 333-334; Rebuffat 1969: 676]. The oecus mosaic went to the museum, and Germain dated the fittings probably to the early third century CE [Ballu 1911a: 179; Germain 1969: 42-44].",
+   "sample": true,
+   "notes_html": "The <em>Maison de la Piscina</em> lies on the <em>Decumanus Maximus</em>, 12 metres east of the Arch of Trajan by Ballu's account [Ballu 1903: 81]. Its plot, which Ballu gave first as 20 by 50 metres and later as 20.80 by 50, joins two blocks of the original grid across a street that was built over [Ballu 1897b: 228; Ballu 1903: 102]. The half on the main street was largely destroyed, and while Ballu believed it held the main entrance and an <em>atrium</em>, the 1905 volume says its purpose cannot be told [Ballu 1897b: 228-229; BCB 1905: 333-334]. In the intact southern half Ballu recorded a peristyle whose open court measured 9.50 by 6.25 m, and an <em>oecus</em> of 6.30 by 6.73 m opening onto it through three unequal bays [Ballu 1897b: 229]. The basin that names the house, long with a half-round end, was of blue granite and carried nine pink marble columns 2.30 m high, and half the portico was lost in a rebuilding Ballu dated to the Byzantine period [Ballu 1897b: 229-230]. The 1905 volume calls the court an <em>atrium</em> and the south room a <em>tablinum</em>, and places baths with hypocausts in the north-east, while Rebuffat counts three porticoes and calls the room a <em>triclinium</em> [BCB 1905: 333-334; Rebuffat 1969: 676]. The <em>oecus</em> mosaic went to the museum, and Germain dated the fittings probably to the early third century CE [Ballu 1911a: 179; Germain 1969: 42-44]."
   },
   {
    "grid_id": "TIMG.SW.I8",
@@ -2549,10 +2779,12 @@
    "area_raw": "20.40 x 20.65 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 102",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Measuring 20.40 x 20.65 m, this isolated building split into two communicating halves: the eastern part held antechambers opening on the first and second Decumanus, while the western part comprised four rooms and a long vestibule of 12.80 m opening on the second Decumanus [Ballu 1903: 102].",
-   "sample": true
+   "notes": "Ballu lists this as the sixteenth of the isolated houses, bounded on the east by the voie de la Curie, on the south by the second decumanus, on the west by the southern Cardo Maximus and on the north by the first decumanus, and measuring 20.40 by 20.65 m. He thought it had been occupied by two families, separated by a wall running north to south, although the two parts communicated. The eastern part had seven rooms, two of them antechambers opening on the first and second decumanus, and the western part had four rooms and a long vestibule (12.80 m) opening on the second decumanus [Ballu 1903: 102].",
+   "sample": true,
+   "notes_html": "Ballu lists this as the sixteenth of the isolated houses, bounded on the east by the <em>voie de la Curie</em>, on the south by the second <em>decumanus</em>, on the west by the southern <em>Cardo Maximus</em> and on the north by the first <em>decumanus</em>, and measuring 20.40 by 20.65 m. He thought it had been occupied by two families, separated by a wall running north to south, although the two parts communicated. The eastern part had seven rooms, two of them antechambers opening on the first and second <em>decumanus</em>, and the western part had four rooms and a long vestibule (12.80 m) opening on the second <em>decumanus</em> [Ballu 1903: 102]."
   },
   {
    "grid_id": "TIMG.SW.I9",
@@ -2571,10 +2803,12 @@
    "area_raw": "20.75 x 20.80 m",
    "area_m2": null,
    "first_published_by": "Ballu 1903: 102",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Placement note: re-derived from Ballu's own street boundaries — the Cardo Maximus South on the east and the Museum path on the west, between the 1st and 2nd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
-   "sample": false
+   "notes": "Placement note: re-derived from Ballu's own street boundaries: the Cardo Maximus South on the east and the Museum path on the west, between the 1st and 2nd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid.",
+   "sample": false,
+   "notes_html": "Placement note: re-derived from Ballu's own street boundaries: the <em>Cardo Maximus</em> South on the east and the Museum path on the west, between the 1st and 2nd south Decumani [Ballu 1903]. The earlier placement followed his walking order laid mechanically across the grid."
   },
   {
    "grid_id": "TIMG.UNK.H10",
@@ -2593,10 +2827,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1938 (Rapport 1933-1936): 359",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H11",
@@ -2615,10 +2851,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1938 (Rapport 1933-1936): 359",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H12",
@@ -2631,16 +2869,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1919 (BCTH), p.39",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H13",
@@ -2653,16 +2893,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1919 (BCTH), pp.35-36",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H14",
@@ -2675,16 +2917,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1919: 39-40",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H15",
@@ -2697,16 +2941,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a (Les ruines de Timgad, Sept années), pp.97-98 and p.181; Germain 1969, p.152",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H16",
@@ -2719,16 +2965,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1919: 43; cf. Ballu 1918: 25-26",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H17",
@@ -2741,16 +2989,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1926: 25, 27",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H18",
@@ -2763,16 +3013,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1926: 27-29; Christofle 1930: 65-66; plan context Ballu 1911a (Sept années): 110",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H19",
@@ -2785,16 +3037,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Inv. Mos. III, 108 (p. 28); excavations of 1908",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H2",
@@ -2813,10 +3067,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Boeswillwald, Cagnat & Ballu 1905 (BCB): 335, fig. 166 [Rebuffat 1969: 677 secondary]",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H20",
@@ -2829,16 +3085,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Inv. Mos. III, 135-136 (p. 34); Ballu, Bull. arch. 1904-1905: 87",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H21",
@@ -2851,16 +3109,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Inv. Mos. III, 160-163 (pp. 39-40); Ballu, Bull. arch. 1909: 106-107; found 1908",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H22",
@@ -2873,16 +3133,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Rebuffat 1969: 676 n. 1; Ballu, Rapport 1911: 71-72",
+   "first_published_by": "Ballu 1911a: 71-72 (north-west quarter, third row, 'le troisième carré')",
+   "earliest_source": "",
    "key_references": "",
-   "possible_duplicate_of": "",
+   "possible_duplicate_of": "TIMG.NW.I18",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H23",
@@ -2895,16 +3157,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Rebuffat 1969: 676 n. 1; Ballu, Rapport 1911: 76; Germain 1969: 149",
+   "first_published_by": "Ballu 1911a: 76-77 (north-west quarter, third row, 'la cinquième insula')",
+   "earliest_source": "",
    "key_references": "",
-   "possible_duplicate_of": "",
+   "possible_duplicate_of": "TIMG.NW.I16",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H24",
@@ -2917,16 +3181,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Rebuffat 1969: 676 n. 1; Ballu, Rapport 1911: 78",
+   "first_published_by": "Ballu 1911a: 78 (north-west quarter, fourth row, 'la dernière maison en bordure sur le Cardo')",
+   "earliest_source": "",
    "key_references": "",
-   "possible_duplicate_of": "",
+   "possible_duplicate_of": "TIMG.NW.I11",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H25",
@@ -2939,16 +3205,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu, Les ruines de Timgad, Sept années de découvertes (1911), p. 87; Germain 1969, \"Ilot 72,\" p. 37, mosaic catalogue no. 34; Rebuffat 1969, p. 676, s.v. \"maison 72 (ex-79)\"",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H26",
@@ -2961,38 +3229,18 @@
    "building_type": "House",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu, Les ruines de Timgad, Sept années de découvertes (1911), pp. 87-89; Germain 1969, \"Ilot 73,\" p. 38, mosaic no. 35 \"Cœurs et cloches\" (pl. XV), excavated 1906; Rebuffat 1969, p. 676",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
-  },
-  {
-   "grid_id": "TIMG.UNK.H27",
-   "name": "House in the Northern Half of Fullery Insula 20 (Lohmann numbering)",
-   "name_en": "House in the Northern Half of Fullery Insula 20 (Lohmann numbering)",
-   "name_fr": "",
-   "alternate_names": "",
-   "quadrant": "UNK",
-   "zone": "Unlocated",
-   "building_type": "House",
-   "type_class": "House",
-   "confidence": "low",
-   "mapping_confidence": "",
-   "verification_status": "review",
-   "analysis_status": "pending",
-   "area_raw": "",
-   "area_m2": null,
-   "first_published_by": "Amraoui 2020: 228-229, Fig. 11.5",
-   "key_references": "",
-   "possible_duplicate_of": "",
-   "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H28",
@@ -3005,16 +3253,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Amraoui 2020: 234-235, Fig. 11.10; cf. Amraoui 2018: 132-135, Figs 4.9 and 4.11 (fullonica only)",
+   "first_published_by": "not yet traced",
+   "earliest_source": "Amraoui 2020: 234-235, fig. 11.10; cf. Amraoui 2018: 132-135, figs 4.9 and 4.11 (fullonica only)",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H29",
@@ -3027,16 +3277,18 @@
    "building_type": "Possible house",
    "type_class": "House",
    "confidence": "low",
-   "mapping_confidence": "",
+   "mapping_confidence": "pending",
    "verification_status": "review",
    "analysis_status": "pending",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Amraoui 2011: 227-228 (Fig. 3-4)",
+   "first_published_by": "Ballu, Rapport 1906, BCTH 1907: 267-269 = Ballu 1911a: 21-24, plan at p. 22 (the buildings of the triangular quarter; Ballu describes no house there)",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H3",
@@ -3055,10 +3307,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Boeswillwald, Cagnat & Ballu 1905 (BCB): fig. 166 (no page cited by Rebuffat) [Rebuffat 1969: 677 secondary]",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H4",
@@ -3077,10 +3331,12 @@
    "area_raw": "Whole insula 20.75 (N-S) x 21.05 (E-W); the house is the north-east section (3e section)",
    "area_m2": null,
    "first_published_by": "Ballu 1924 (Alger, 1925): p. 48 sq., plan p. 49; Rebuffat 1969 is secondary ...",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   },
   {
    "grid_id": "TIMG.UNK.H9",
@@ -3099,10 +3355,12 @@
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Christofle 1938 (Rapport 1933-1936): 359",
+   "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
    "notes": "",
-   "sample": false
+   "sample": false,
+   "notes_html": ""
   }
  ]
 }

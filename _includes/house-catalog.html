@@ -45,6 +45,8 @@
 .hc-badge--high { background: var(--teal); color: #fff; }
 .hc-badge--medium { background: var(--baby-blue); color: var(--teal-dark); }
 .hc-badge--low { background: var(--terracotta-soft); color: #7A3F26; }
+.hc-badge--pending { background: var(--bg-soft); color: var(--text-muted); border: 1px dashed var(--hairline); }
+.hc-note em, .hc-expand em { font-style: italic; }
 .hc-badge--verified { background: var(--baby-blue-soft); color: var(--teal-dark); border: 1px solid var(--baby-blue-mid); }
 .hc-badge--partial { background: var(--bg-soft); color: var(--text-muted); border: 1px solid var(--hairline); }
 .hc-badge--review { background: var(--bg-soft); color: var(--terracotta-deep); border: 1px solid var(--terracotta-soft); }
@@ -105,6 +107,7 @@
     <option value="high">Certain</option>
     <option value="medium">Probable</option>
     <option value="low">Uncertain</option>
+    <option value="pending">Pending review</option>
   </select>
   <select id="hc-full" aria-label="Filter by record depth">
     <option value="">Records: all</option>
@@ -122,9 +125,10 @@
   <ul>
     <li><strong>Grid ID</strong> (e.g. TIMG.NE.I13): my identifier for each house — TIMG, then the city quadrant (NE/NW/SE/SW inside the walls; E- prefixed quadrants outside them; UNK for houses not yet locatable), then the insula (city block) number.</li>
     <li><strong>Building type</strong>: the structure's classification from the published record. A house is a single dwelling, whether it fills its city block or shares walls with neighbours; a residential block is a whole block holding several dwellings; elite houses are the large residences with colonnaded courts; mixed-use covers buildings where living and working shared one shell.</li>
-    <li><strong>Location badge</strong>: how securely the house can be placed on the city grid — certain, probable, or uncertain.</li>
+    <li><strong>Location badge</strong>: how securely the house can be placed on the city grid: certain, probable, or uncertain. Pending review means I have not yet rated the placement, not that it is doubtful.</li>
     <li><strong>Sources badge</strong>: how much of the record has been checked against the original publications — checked, partly checked, or under review.</li>
     <li><strong>Analysis badge</strong>: how far my own analysis of the house has progressed — pending (cataloged, awaiting redrawing), drawn (redrawn as measurable vector geometry in my GIS), interpreted (drawn, then read room by room for movement, light, work, and display), or case study (selected for full micro-analysis: space syntax, movement, and visibility).</li>
+    <li><strong>First published by</strong>: the excavation-era report that first put the building into print. Later scholars who re-read those reports are not listed here. Where I have not yet seen the original report, the card says so and names the earliest source I have consulted.</li>
     <li><strong>Full record</strong>: one of the houses with complete notes and references; <strong>Full record to follow</strong>: an index entry whose full write-up is still to come.</li>
   </ul>
 </details>
@@ -147,14 +151,14 @@
     <p class="hc-meta">{{ house.zone | escape }}{% if house.area_m2 %} &middot; &asymp;{{ house.area_m2 }} m&sup2;{% endif %}</p>
     <div class="hc-badges">
       <span class="hc-badge hc-badge--type">{{ house.type_class | escape }}</span>
-      {% if house.mapping_confidence and house.mapping_confidence != "" %}<span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Location: {% if house.mapping_confidence == "high" %}certain{% elsif house.mapping_confidence == "medium" %}probable{% else %}uncertain{% endif %}</span>{% endif %}
+      {% if house.mapping_confidence and house.mapping_confidence != "" %}<span class="hc-badge hc-badge--{{ house.mapping_confidence | escape }}">Location: {% if house.mapping_confidence == "high" %}certain{% elsif house.mapping_confidence == "medium" %}probable{% elsif house.mapping_confidence == "low" %}uncertain{% else %}pending review{% endif %}</span>{% endif %}
       <span class="hc-badge hc-badge--{{ house.verification_status | escape }}">{% if house.verification_status == "verified" %}Sources: checked{% elsif house.verification_status == "partial" %}Sources: partly checked{% else %}Sources: under review{% endif %}</span>
       <span class="hc-badge hc-badge--an-{{ house.analysis_status | escape }}">Analysis: {% if house.analysis_status == "case_study" %}case study{% else %}{{ house.analysis_status | escape }}{% endif %}</span>
       {% if house.sample %}<span class="hc-badge hc-badge--full">Full record</span>{% endif %}
     </div>
-    {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes | escape }}</p></details>{% else %}<p class="hc-note">{{ house.notes | escape }}</p>{% endif %}{% endif %}
+    {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes_html }}</p></details>{% else %}<p class="hc-note">{{ house.notes_html }}</p>{% endif %}{% endif %}
     {% unless house.sample %}<p class="hc-pending">Full record to follow.</p>{% endunless %}
-    {% if house.first_published_by != "" %}{% if house.first_published_by.size > 90 %}<details class="hc-expand hc-pub"><summary><span class="hc-expand-preview">First published by {{ house.first_published_by | truncate: 90 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p>First published by {{ house.first_published_by | escape }}</p></details>{% else %}<p class="hc-pub">First published by {{ house.first_published_by | escape }}</p>{% endif %}{% endif %}
+    {% if house.first_published_by != "" %}{% assign fp_lead = house.first_published_by | slice: 0, 3 %}{% if fp_lead == "not" %}{% assign fp_text = "First publication " | append: house.first_published_by %}{% else %}{% assign fp_text = "First published by " | append: house.first_published_by %}{% endif %}{% if house.earliest_source and house.earliest_source != "" %}{% assign fp_text = fp_text | append: ". Earliest source consulted: " | append: house.earliest_source %}{% endif %}{% if fp_text.size > 110 %}<details class="hc-expand hc-pub"><summary><span class="hc-expand-preview">{{ fp_text | truncate: 110 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p>{{ fp_text | escape }}</p></details>{% else %}<p class="hc-pub">{{ fp_text | escape }}</p>{% endif %}{% endif %}
     <p class="hc-gridlink"><a href="/grid/viewer.html#{{ house.grid_id | escape }}">View on the insula grid &rarr;</a></p>
   </article>
   {% endfor %}

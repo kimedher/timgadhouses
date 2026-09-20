@@ -95,6 +95,36 @@ def clean_citation(s):
     s = re.sub(r"(:\s*)~(\d)", r"\1\2", s)  # "Ballu 1911: ~78-79" -> ": 78-79"
     return re.sub(r"\s+", " ", s).strip()
 
+# Non-English words are italicised on the public cards. Notes mark them with
+# *asterisks*; this list catches the common Latin terms in notes that were
+# written before that convention. Longer phrases come first.
+ITALIC_TERMS = [
+    "Decumanus Maximus", "Cardo Maximus", "decumanus maximus", "cardo maximus",
+    "Decumanus", "decumanus", "decumani", "Cardo", "cardo", "cardines",
+    "atrium", "atria", "tablinum", "triclinium", "triclinia", "oecus", "fauces",
+    "alae", "impluvium", "compluvium", "peristylium", "tabernae", "taberna",
+    "cubiculum", "cubicula", "domus", "insulae", "insula", "fullonicae",
+    "fullonica", "frigidarium", "caldarium", "tepidarium", "macellum",
+    "bifrons", "piscina", "horrea", "cenacula", "posticum", "balineum",
+]
+_TERM_RE = re.compile(r"(?<![\w*])(%s)(?![\w*])" % "|".join(re.escape(t) for t in ITALIC_TERMS))
+
+def mark_italics(s):
+    # Leave text already inside *...* alone, mark bare terms elsewhere.
+    parts = re.split(r"(\*[^*]+\*)", s)
+    return "".join(p if p.startswith("*") and p.endswith("*") and len(p) > 2
+                   else _TERM_RE.sub(r"*\1*", p) for p in parts)
+
+def html_escape(s):
+    return (s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+             .replace('"', "&quot;"))
+
+def notes_html(s):
+    return re.sub(r"\*([^*]+)\*", r"<em>\1</em>", html_escape(s))
+
+def notes_plain(s):
+    return re.sub(r"\*([^*]+)\*", r"\1", s)
+
 def split_name(name):
     # Split off the final balanced parenthetical as the French name; handles
     # nested parentheses like "House 83 (formerly 91) (Maison 83 (ex-91))".
@@ -182,12 +212,14 @@ STATUS_MAP = {
     "in progress": "pending",
     "drawn in QGIS": "drawn",
     "analyzed post-drawing": "interpreted",
-    "potential case study": "case_study",
     "space syntax in progress": "case_study",
     "completed": "case_study",
     "full case study finished": "case_study",
 }
 
+# "potential case study" is a working tag in the tracker and is never published
+# (Kim, 2026-09-20): a house shows as a case study only once that analysis is
+# under way or finished.
 STAGE_ORDER = ["pending", "drawn", "interpreted", "case_study"]
 
 def analysis_status(status_cell, gid):
@@ -259,7 +291,7 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
         "building_type": clean(row["Building Type"]),
         "type_class": type_class(clean(row["Building Type"])),
         "confidence": clean(row["Confidence"]).lower(),
-        "mapping_confidence": clean(row["Mapping Confidence"]).lower(),
+        "mapping_confidence": clean(row["Mapping Confidence"]).lower() or "pending",
         "verification_status": (verification_status(row["Verification Status"])
                                 if "Verification Status" in row
                                 else PREVIOUS_VSTATUS.get(gid, "review")),
@@ -267,8 +299,10 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
         "area_raw": ar,
         "area_m2": area_m2(ar, row["Footprint m2"]),
         "first_published_by": clean_citation(clean(row["First Published By"])),
+        "earliest_source": clean_citation(clean(row.get("Earliest Source Consulted"))),
         "key_references": clean(row["Key References"]),
-        "possible_duplicate_of": clean(row["Possible Duplicate Of"]),
+        # only the identifier is exported; the reasoning stays in the database
+        "possible_duplicate_of": (re.match(r"TIMG\.[\w.\-]+", clean(row["Possible Duplicate Of"])) or [""])[0],
         "notes": strip_editorial_tags(clean(row["Notes"])),
     })
     h = houses[-1]
@@ -278,6 +312,11 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
         h["key_references"] = ""
     if h["grid_id"] in PUBLIC_NOTES:
         h["notes"] = PUBLIC_NOTES[h["grid_id"]]
+    marked = mark_italics(h["notes"])
+    h["notes"] = notes_plain(marked)      # plain text: previews, search, grid viewer
+    h["notes_html"] = notes_html(marked)  # escaped, with <em> for non-English words
+    # internal flags never reach the site
+    h["first_published_by"] = re.sub(r"\s*KIM TO [A-Z]+[^.;]*[.;]?", "", h["first_published_by"]).strip()
 
 houses.sort(key=lambda h: h["grid_id"])
 m = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(XLSX))
