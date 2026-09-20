@@ -188,10 +188,19 @@ STATUS_MAP = {
     "full case study finished": "case_study",
 }
 
+STAGE_ORDER = ["pending", "drawn", "interpreted", "case_study"]
+
 def analysis_status(status_cell, gid):
-    if status_cell in STATUS_MAP:
-        return STATUS_MAP[status_cell]
-    return ANALYSIS_STATUS.get(gid, "pending")
+    # The Status cell may hold several comma-separated stages ("drawn in QGIS,
+    # analyzed post-drawing"); the furthest stage reached is published. The csv
+    # overlay can only move a house forward, never back, so a site-side update
+    # is not lost when the sheet lags behind.
+    stages = [STATUS_MAP[p.strip()] for p in status_cell.split(",") if p.strip() in STATUS_MAP]
+    if gid in ANALYSIS_STATUS:
+        stages.append(ANALYSIS_STATUS[gid])
+    if not stages:
+        return "pending"
+    return max(stages, key=STAGE_ORDER.index)
 
 VSTATUS = {
     "VERIFIED": "verified",
@@ -218,6 +227,16 @@ def area_m2(raw, footprint_m2):
         return round(footprint_m2)
     return None
 
+# Verification status lives in the HOUSES sheet when the working copy is
+# exported; the committee copy keeps it in the separate changelog workbook. When
+# the column is absent, the values already published in the output file carry
+# over, and houses new to the catalog start as "review".
+PREVIOUS_VSTATUS = {}
+if os.path.exists(OUT):
+    with open(OUT, encoding="utf-8") as f:
+        for h in json.load(f).get("houses", []):
+            PREVIOUS_VSTATUS[h["grid_id"]] = h.get("verification_status", "review")
+
 wb = openpyxl.load_workbook(XLSX, data_only=True)
 ws = wb["HOUSES"]
 hdr = [c.value for c in ws[HEADER_ROW]]
@@ -241,7 +260,9 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
         "type_class": type_class(clean(row["Building Type"])),
         "confidence": clean(row["Confidence"]).lower(),
         "mapping_confidence": clean(row["Mapping Confidence"]).lower(),
-        "verification_status": verification_status(row["Verification Status"]),
+        "verification_status": (verification_status(row["Verification Status"])
+                                if "Verification Status" in row
+                                else PREVIOUS_VSTATUS.get(gid, "review")),
         "analysis_status": analysis_status(clean(row.get("Status")), gid),
         "area_raw": ar,
         "area_m2": area_m2(ar, row["Footprint m2"]),

@@ -3,7 +3,7 @@ layout: page
 title: The House Catalog
 subtitle: Every house in the database, in one filterable view.
 permalink: /houses/catalog/
-last_updated: 2026-08-02
+last_updated: 2026-09-20
 ---
 
 <div class="callout-warn">
@@ -11,7 +11,7 @@ last_updated: 2026-08-02
 </div>
 
 
-The catalog below lists every house in the project database, {{ site.data.houses.count }} as of August 2026, from the peristyle houses that made it into the guidebooks to buildings known only from a line in an excavation report. Each entry carries the identifier it holds in the [interactive grid](/grid/), so a record here can be traced to its block in the city.
+The catalog below lists every house in the project database, {{ site.data.houses.count }} at the last update, from the peristyle houses that made it into the guidebooks to buildings known only from a line in an excavation report. Each entry carries the identifier it holds in the [interactive grid](/grid/), so a record here can be traced to its block in the city.
 
 Records come at two depths, and that is deliberate. Select houses carry full records with notes and references, and a set of case-study houses will receive complete micro-analyses, space syntax, movement, and visibility among them, as the research progresses; the [Methods](/methods/) page explains how these analyses work. The rest appear as index entries, name, location, type, and confidence, with full records to follow as the analysis is verified and defended. Publishing the index beside the worked examples shows where the corpus actually stands, and where the work still is. Each record carries a location rating, my own assessment of how securely the house can be placed on the city grid. Each house also shows how much of its record has been checked against the original publications: **<span class="vstatus-term">Sources: checked</span>** (findings line up with the excavation reports and current scholarship), **<span class="vstatus-term">Sources: partly checked</span>** (largely checked against publications, with further review still under way), or **<span class="vstatus-term">Sources: under review</span>** (a known question is being resolved).
 
