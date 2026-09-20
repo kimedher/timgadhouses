@@ -70,15 +70,16 @@
 .hc-expand > p { margin: 0.15rem 0 0; }
 .hc-legend {
   background: #fff; border: 1px solid var(--hairline);
-  border-radius: var(--radius); padding: 0.75rem 1.15rem;
-  margin: 0 0 0.9rem; font-size: 0.8rem;
+  border-radius: var(--radius); padding: 0.55rem 1rem;
+  margin: 0 0 0.9rem; font-size: 0.7rem;
 }
 .hc-legend summary { cursor: pointer; list-style: none; font-weight: 600; }
 .hc-legend summary::-webkit-details-marker { display: none; }
 .hc-legend summary::after { content: " +"; color: var(--text-muted); }
 .hc-legend[open] summary::after { content: " \2212"; }
 .hc-legend ul { margin: 0.6rem 0 0; padding-left: 1.1rem; }
-.hc-legend li { margin: 0.35rem 0; line-height: 1.55; }
+.hc-legend li { margin: 0.3rem 0; line-height: 1.5; font-size: 0.68rem; color: var(--text-muted); }
+.hc-legend li strong { color: var(--text); }
 .hc-empty {
   grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;
   font-family: var(--serif); font-style: italic; color: var(--text-muted); display: none;
