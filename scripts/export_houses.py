@@ -55,6 +55,16 @@ if os.path.exists(ANALYSIS_CSV):
         for row in csv.DictReader(f):
             ANALYSIS_STATUS[row["grid_id"].strip()] = row["status"].strip()
 
+# Post-drawing analysis results (counts, syntax measures, figures, summary) are
+# kept in analysis_data.json keyed by grid_id and attached as house["analysis"];
+# the summary's *asterisks* become <em> in summary_html. Written by the
+# per-house "publish TIMG.X" step after each redraw.
+ANALYSIS_JSON = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analysis_data.json")
+ANALYSIS_DATA = {}
+if os.path.exists(ANALYSIS_JSON):
+    with open(ANALYSIS_JSON, encoding="utf-8") as f:
+        ANALYSIS_DATA = json.load(f)
+
 # The 12-house dissertation sample publishes full records (notes, references).
 # All other houses publish index metadata only until the analysis is defended.
 SAMPLE_IDS = {
@@ -317,6 +327,12 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
     h["notes_html"] = notes_html(marked)  # escaped, with <em> for non-English words
     # internal flags never reach the site
     h["first_published_by"] = re.sub(r"\s*KIM TO [A-Z]+[^.;]*[.;]?", "", h["first_published_by"]).strip()
+
+    if h["grid_id"] in ANALYSIS_DATA:
+        a = dict(ANALYSIS_DATA[h["grid_id"]])
+        a["summary_html"] = notes_html(a["summary"])
+        a["summary"] = notes_plain(a["summary"])
+        h["analysis"] = a
 
 houses.sort(key=lambda h: h["grid_id"])
 m = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(XLSX))
