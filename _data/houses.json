@@ -2170,7 +2170,7 @@
     "depth_max": 4,
     "mean_depth": 3.12,
     "rings": 2,
-    "summary": "A single street door from the Decumanus leads through a vestibule onto a ten-column court whose porticoes distribute to nine cellular rooms, with a three-bayed reception room on the entrance axis holding the house's figured floor. Redrawn on confidence-graded layers in September 2026: sixteen spaces, one entrance, two circulation rings through the porticoes. The court is square, with a well and planters rather than a semicircular atrium; the tripartite front of the reception room is confirmed; no street-facing room opens onto the street, so the house reads as one household with no commercial fringe.",
+    "summary": "A single street door from the Decumanus leads through a vestibule onto a ten-column court whose porticoes open onto nine small rooms, with a three-bayed reception room on the entrance axis where the figured mosaic lies. The house was redrawn on confidence-graded layers in September 2026, which gives sixteen spaces reached from one entrance, with two circulation rings running through the porticoes. The court is square, with a well and planters rather than the semicircular atrium of the later plans, the tripartite front of the reception room is confirmed, and no room opens directly onto the street, which points to a single household without shops along the frontage.",
     "figures": [
      {
       "src": "/assets/images/houses/TIMG.SE.I2/fig1_plan_spaces.png",
@@ -2185,7 +2185,7 @@
       "caption": "Depth of each space from the street"
      }
     ],
-    "summary_html": "A single street door from the <em>Decumanus</em> leads through a vestibule onto a ten-column court whose porticoes distribute to nine cellular rooms, with a three-bayed reception room on the entrance axis holding the house's figured floor. Redrawn on confidence-graded layers in September 2026: sixteen spaces, one entrance, two circulation rings through the porticoes. The court is square, with a well and planters rather than a semicircular <em>atrium</em>; the tripartite front of the reception room is confirmed; no street-facing room opens onto the street, so the house reads as one household with no commercial fringe."
+    "summary_html": "A single street door from the <em>Decumanus</em> leads through a vestibule onto a ten-column court whose porticoes open onto nine small rooms, with a three-bayed reception room on the entrance axis where the figured mosaic lies. The house was redrawn on confidence-graded layers in September 2026, which gives sixteen spaces reached from one entrance, with two circulation rings running through the porticoes. The court is square, with a well and planters rather than the semicircular <em>atrium</em> of the later plans, the tripartite front of the reception room is confirmed, and no room opens directly onto the street, which points to a single household without shops along the frontage."
    }
   },
   {
