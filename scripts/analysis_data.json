@@ -1,0 +1,27 @@
+{
+ "TIMG.SE.I2": {
+  "date": "2026-09-25",
+  "round": 2,
+  "spaces": 16,
+  "spaces_note": "12 rooms, 1 court, 3 porticoes",
+  "entrances": 1,
+  "depth_max": 4,
+  "mean_depth": 3.12,
+  "rings": 2,
+  "summary": "A single street door from the *Decumanus* leads through a vestibule onto a ten-column court whose porticoes distribute to nine cellular rooms, with a three-bayed reception room on the entrance axis holding the house's figured floor. Redrawn on confidence-graded layers in September 2026: sixteen spaces, one entrance, two circulation rings through the porticoes. The court is square, with a well and planters rather than a semicircular *atrium*; the tripartite front of the reception room is confirmed; no street-facing room opens onto the street, so the house reads as one household with no commercial fringe.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.SE.I2/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the redrawn plan"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.SE.I2/fig2_jgraph_street.png",
+    "caption": "Justified graph from the street; dashed lines are probable doorways"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.SE.I2/fig4_depth_plan.png",
+    "caption": "Depth of each space from the street"
+   }
+  ]
+ }
+}
