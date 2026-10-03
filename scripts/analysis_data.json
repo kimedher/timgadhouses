@@ -23,5 +23,30 @@
     "caption": "Depth of each space from the street"
    }
   ]
+ },
+ "TIMG.E-SW.I1": {
+  "date": "2026-10-03",
+  "round": 2,
+  "spaces": 56,
+  "spaces_note": "48 rooms, 2 courts, 6 porticoes, 1 street portico",
+  "entrances": 13,
+  "depth_max": 5,
+  "mean_depth": 2.41,
+  "rings": 17,
+  "summary": "Entered from the east street through a seven-column portico and a columned hall, the house runs on one axis across a twelve-column court to an open *tablinum*, with a second, deeper court and its apsed *oecus* to the west and rows of street-entered rooms on the north and south sides. The house was redrawn on confidence-graded layers in October 2026, which gives fifty-six spaces, thirteen street doors on four streets and seventeen circulation rings, so no single room controls the way in. The shops along the south street connect to each other and to the street but reach the house itself only through one uncertain door, which keeps work on the outside of the block and the household behind it, and the *tablinum* and the *oecus* sit among the least integrated spaces, where reception rooms should be.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I1/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the redrawn plan"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I1/fig2_jgraph_street.png",
+    "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I1/fig4_depth_plan.png",
+    "caption": "Depth of each space from the street"
+   }
+  ]
  }
 }
