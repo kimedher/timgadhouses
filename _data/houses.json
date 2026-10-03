@@ -327,7 +327,7 @@
    "confidence": "high",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "drawn",
+   "analysis_status": "interpreted",
    "area_raw": "2 263 m² (Ballu 1903: 81: 62 x 36.50 m; corroborated by Ballu, Rapport 1922: 47) against 3 600 m² (Germain 1969: 59, no dimensions given)",
    "area_m2": 2263,
    "first_published_by": "Gsell 1902 (Rapport archéologique sur les fouilles faites en 1901, BCTH 1902): 315-316 (offprint pp. 10-11; first notice, the house of 'Faustus et Valentina'); first full description Ballu 1903: 81-89",
@@ -336,7 +336,33 @@
    "possible_duplicate_of": "",
    "notes": "This house north-west of the South Baths, cleared in 1900 and 1901, was first reported by Gsell and described in full by Ballu, who traced the original town wall running through it [Gsell 1902: 315-316; Ballu 1903: 10, 81-89]. Ballu gives a rectangle of 62 by 36.50 m, or 2,263 square metres, whereas Germain gives 3,600 m² [Ballu 1903: 81; Germain 1969: 59]. The main entrance, on the Cardo Maximus behind a portico of eight columns, led through a paved vestibule to Ballu's atrium, a court of 14 by 12 m with a long basin; steps at the end of the vestibule led to private baths, and Ballu attributed two further bath rooms to the servants [Ballu 1903: 83-84]. Beyond the tablinum, whose mosaic went to the museum, a stone-paved peristyle court held a basin with a carved marble bowl above a lower tank that Ballu read as a fish pond [Ballu 1903: 84-86]. A base from the baths reading Hygiae Aug(ustae) Faustus et Valentina led Vars to ask, and Ballu to conclude, that the owners were M. Plotius Faustus Sertius and his wife, donors of the market [Gsell 1902: 316; Ballu 1903: 88]. Germain dated the mosaics between the early third and early fifth centuries CE, and Christofle later listed an inscribed column-die from the peristyle [Germain 1969: 64; Christofle 1938: 445].",
    "sample": true,
-   "notes_html": "This house north-west of the South Baths, cleared in 1900 and 1901, was first reported by Gsell and described in full by Ballu, who traced the original town wall running through it [Gsell 1902: 315-316; Ballu 1903: 10, 81-89]. Ballu gives a rectangle of 62 by 36.50 m, or 2,263 square metres, whereas Germain gives 3,600 m² [Ballu 1903: 81; Germain 1969: 59]. The main entrance, on the <em>Cardo Maximus</em> behind a portico of eight columns, led through a paved vestibule to Ballu's <em>atrium</em>, a court of 14 by 12 m with a long basin; steps at the end of the vestibule led to private baths, and Ballu attributed two further bath rooms to the servants [Ballu 1903: 83-84]. Beyond the <em>tablinum</em>, whose mosaic went to the museum, a stone-paved peristyle court held a basin with a carved marble bowl above a lower tank that Ballu read as a fish pond [Ballu 1903: 84-86]. A base from the baths reading <em>Hygiae Aug(ustae) Faustus et Valentina</em> led Vars to ask, and Ballu to conclude, that the owners were M. Plotius Faustus Sertius and his wife, donors of the market [Gsell 1902: 316; Ballu 1903: 88]. Germain dated the mosaics between the early third and early fifth centuries CE, and Christofle later listed an inscribed column-die from the peristyle [Germain 1969: 64; Christofle 1938: 445]."
+   "notes_html": "This house north-west of the South Baths, cleared in 1900 and 1901, was first reported by Gsell and described in full by Ballu, who traced the original town wall running through it [Gsell 1902: 315-316; Ballu 1903: 10, 81-89]. Ballu gives a rectangle of 62 by 36.50 m, or 2,263 square metres, whereas Germain gives 3,600 m² [Ballu 1903: 81; Germain 1969: 59]. The main entrance, on the <em>Cardo Maximus</em> behind a portico of eight columns, led through a paved vestibule to Ballu's <em>atrium</em>, a court of 14 by 12 m with a long basin; steps at the end of the vestibule led to private baths, and Ballu attributed two further bath rooms to the servants [Ballu 1903: 83-84]. Beyond the <em>tablinum</em>, whose mosaic went to the museum, a stone-paved peristyle court held a basin with a carved marble bowl above a lower tank that Ballu read as a fish pond [Ballu 1903: 84-86]. A base from the baths reading <em>Hygiae Aug(ustae) Faustus et Valentina</em> led Vars to ask, and Ballu to conclude, that the owners were M. Plotius Faustus Sertius and his wife, donors of the market [Gsell 1902: 316; Ballu 1903: 88]. Germain dated the mosaics between the early third and early fifth centuries CE, and Christofle later listed an inscribed column-die from the peristyle [Germain 1969: 64; Christofle 1938: 445].",
+   "analysis": {
+    "date": "2026-10-03",
+    "round": 2,
+    "spaces": 56,
+    "spaces_note": "48 rooms, 2 courts, 6 porticoes, 1 street portico",
+    "entrances": 13,
+    "depth_max": 5,
+    "mean_depth": 2.41,
+    "rings": 17,
+    "summary": "Entered from the east street through a seven-column portico and a columned hall, the house runs on one axis across a twelve-column court to an open tablinum, with a second, deeper court and its apsed oecus to the west and rows of street-entered rooms on the north and south sides. The house was redrawn on confidence-graded layers in October 2026, which gives fifty-six spaces, thirteen street doors on four streets and seventeen circulation rings, so no single room controls the way in. The shops along the south street connect to each other and to the street but reach the house itself only through one uncertain door, which keeps work on the outside of the block and the household behind it, and the tablinum and the oecus sit among the least integrated spaces, where reception rooms should be.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.E-SW.I1/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the redrawn plan"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.E-SW.I1/fig2_jgraph_street.png",
+      "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.E-SW.I1/fig4_depth_plan.png",
+      "caption": "Depth of each space from the street"
+     }
+    ],
+    "summary_html": "Entered from the east street through a seven-column portico and a columned hall, the house runs on one axis across a twelve-column court to an open <em>tablinum</em>, with a second, deeper court and its apsed <em>oecus</em> to the west and rows of street-entered rooms on the north and south sides. The house was redrawn on confidence-graded layers in October 2026, which gives fifty-six spaces, thirteen street doors on four streets and seventeen circulation rings, so no single room controls the way in. The shops along the south street connect to each other and to the street but reach the house itself only through one uncertain door, which keeps work on the outside of the block and the household behind it, and the <em>tablinum</em> and the <em>oecus</em> sit among the least integrated spaces, where reception rooms should be."
+   }
   },
   {
    "grid_id": "TIMG.E-SW.I10",
