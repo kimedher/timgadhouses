@@ -569,7 +569,7 @@
    "confidence": "high",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "drawn",
+   "analysis_status": "interpreted",
    "area_raw": "~1680 m²",
    "area_m2": 1680,
    "first_published_by": "Ballu, Chronique des arts et de la curiosité 1898: 202 (first notice of the mosaic; not seen, cited from Gsell 1901: 110 n. 8); first full description Ballu 1903: 90-94",
@@ -578,7 +578,33 @@
    "possible_duplicate_of": "",
    "notes": "Ballu places this building, 28 by 60 m, east of the southern cardo, with its single façade on the voie des Thermes north of the Large South Baths, and thought its broad divisions more like a public establishment than a private house [Ballu 1903: 90-91]. Five shops under a portico lined the west side [Ballu 1903: 91]. The main entrance, at the western end, led through a vestibule and a gallery to a hall of 11 by 7.60 m, which Rebuffat takes for the triclinium, and to two hypocaust rooms [Ballu 1903: 91; Rebuffat 1969: 677]. Beyond was a court of 23 by 19 m with porticoes on twenty-two columns, mosaic floors including an inscribed panel read as a game board, and a narrow basin that the 1905 account calls a late addition [Ballu 1903: 91-92; BCB 1905: 323]. Of six rooms on the south, Ballu thought the first might be a stairwell to an upper floor, and the sixth held the mosaic of a hermaphrodite attended by two women, now in the museum, placed by the 1905 account on a threshold [Ballu 1903: 92-94; BCB 1905: 325]. The town wall closed the north, and Germain places the house against the outside of the south wall of Trajan's town, listing it with the quarter of the south gate [Ballu 1903: 91-92; Germain 1969: 65, 150].",
    "sample": true,
-   "notes_html": "Ballu places this building, 28 by 60 m, east of the southern <em>cardo</em>, with its single façade on the <em>voie des Thermes</em> north of the Large South Baths, and thought its broad divisions more like a public establishment than a private house [Ballu 1903: 90-91]. Five shops under a portico lined the west side [Ballu 1903: 91]. The main entrance, at the western end, led through a vestibule and a gallery to a hall of 11 by 7.60 m, which Rebuffat takes for the <em>triclinium</em>, and to two hypocaust rooms [Ballu 1903: 91; Rebuffat 1969: 677]. Beyond was a court of 23 by 19 m with porticoes on twenty-two columns, mosaic floors including an inscribed panel read as a game board, and a narrow basin that the 1905 account calls a late addition [Ballu 1903: 91-92; BCB 1905: 323]. Of six rooms on the south, Ballu thought the first might be a stairwell to an upper floor, and the sixth held the mosaic of a hermaphrodite attended by two women, now in the museum, placed by the 1905 account on a threshold [Ballu 1903: 92-94; BCB 1905: 325]. The town wall closed the north, and Germain places the house against the outside of the south wall of Trajan's town, listing it with the quarter of the south gate [Ballu 1903: 91-92; Germain 1969: 65, 150]."
+   "notes_html": "Ballu places this building, 28 by 60 m, east of the southern <em>cardo</em>, with its single façade on the <em>voie des Thermes</em> north of the Large South Baths, and thought its broad divisions more like a public establishment than a private house [Ballu 1903: 90-91]. Five shops under a portico lined the west side [Ballu 1903: 91]. The main entrance, at the western end, led through a vestibule and a gallery to a hall of 11 by 7.60 m, which Rebuffat takes for the <em>triclinium</em>, and to two hypocaust rooms [Ballu 1903: 91; Rebuffat 1969: 677]. Beyond was a court of 23 by 19 m with porticoes on twenty-two columns, mosaic floors including an inscribed panel read as a game board, and a narrow basin that the 1905 account calls a late addition [Ballu 1903: 91-92; BCB 1905: 323]. Of six rooms on the south, Ballu thought the first might be a stairwell to an upper floor, and the sixth held the mosaic of a hermaphrodite attended by two women, now in the museum, placed by the 1905 account on a threshold [Ballu 1903: 92-94; BCB 1905: 325]. The town wall closed the north, and Germain places the house against the outside of the south wall of Trajan's town, listing it with the quarter of the south gate [Ballu 1903: 91-92; Germain 1969: 65, 150].",
+   "analysis": {
+    "date": "2026-10-10",
+    "round": 2,
+    "spaces": 49,
+    "spaces_note": "42 rooms, 1 court, 4 porticoes, the north gallery, the west street portico; the ground round the court is cut analytically",
+    "entrances": 7,
+    "depth_max": 7,
+    "mean_depth": 3.67,
+    "rings": 8,
+    "summary": "A west street portico fronts five double-depth shops and a two-doored vestibule with its lodge, behind which a long hall and the grande salle with its Solomon's knot mosaic open on the west portico of a twenty-two-column court with a long central basin, with a 55 m gallery along the north wall and a range of rooms along the south street. The house was redrawn on confidence-graded layers in October 2026, which gives forty-nine spaces, seven street doors and eight rings, though the ground round the court and the north-east quarter carry no walls yet, so the spaces there are provisional. The shops open onto the portico and nowhere else, and the vestibule's inner door and the east entrance of the record are still to be drawn, so for now the interior is entered from the north street through the gallery and from the south street through the hall.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.E-SW.I5/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the redrawn plan"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.E-SW.I5/fig2_jgraph_street.png",
+      "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.E-SW.I5/fig4_depth_plan.png",
+      "caption": "Depth of each space from the street"
+     }
+    ],
+    "summary_html": "A west street portico fronts five double-depth shops and a two-doored vestibule with its lodge, behind which a long hall and the <em>grande salle</em> with its Solomon's knot mosaic open on the west portico of a twenty-two-column court with a long central basin, with a 55 m gallery along the north wall and a range of rooms along the south street. The house was redrawn on confidence-graded layers in October 2026, which gives forty-nine spaces, seven street doors and eight rings, though the ground round the court and the north-east quarter carry no walls yet, so the spaces there are provisional. The shops open onto the portico and nowhere else, and the vestibule's inner door and the east entrance of the record are still to be drawn, so for now the interior is entered from the north street through the gallery and from the south street through the hall."
+   }
   },
   {
    "grid_id": "TIMG.E-SW.I5.H2",
