@@ -473,7 +473,7 @@
       "confidence": "medium",
       "mapping_confidence": "medium",
       "verification_status": "partial",
-      "analysis_status": "drawn",
+      "analysis_status": "interpreted",
       "area_raw": "~1 725 m² (derived from 25 x 69 m, Ballu 1911a: 53 n. 1; not a published figure)",
       "area_m2": 1725,
       "first_published_by": "Ballu, Rapport 1905, BCTH 1906: 201-204, pl. LVIII (offprint pp. 22-25); fuller treatment Ballu 1911a: 49-53, plan p. 51",
@@ -482,7 +482,33 @@
       "possible_duplicate_of": "",
       "notes": "First uncovered in 1905, the building stands 8 metres from the Lambèse gate on the south side of the decumanus, behind a portico of eight bays [Ballu, report on 1905, BCTH 1906: 201; Ballu 1911a: 49; Germain 1969: 88]. Ballu saw that the kerb before the widest bay had been worn by carts backing up to unload, and that a wide door led into a paved hall 10.40 m square [Ballu 1911a: 49]. Beyond lay a court of 12.50 by 20 m with a basin and porticoes on four sides, their stuccoed sandstone columns joined by stone slabs 1 m high. The south gallery, raised 1.50 m and paved in marble, opened through three doors onto a hall of 8.20 by 10.25 m with a fine mosaic and onyx-breccia wall panels. Ballu read this gallery as a platform for sales and the building, 25 by 69 m, as a warehouse and perhaps an auction hall [Ballu 1911a: 50-53]. Christofle, who finished the clearance and restoration, was inclined to see instead a complete Roman villa with an atrium and a second court, the peristylium, with four heated rooms of private baths south of it and a Medusa mosaic under its south portico [Christofle 1930: 58-62]. Rebuffat takes the west hall for the original triclinium and the south hall for one taken from a neighbouring house, and asks for a study of the alterations [Rebuffat 1969: 677].",
       "sample": true,
-      "notes_html": "First uncovered in 1905, the building stands 8 metres from the Lambèse gate on the south side of the <em>decumanus</em>, behind a portico of eight bays [Ballu, report on 1905, BCTH 1906: 201; Ballu 1911a: 49; Germain 1969: 88]. Ballu saw that the kerb before the widest bay had been worn by carts backing up to unload, and that a wide door led into a paved hall 10.40 m square [Ballu 1911a: 49]. Beyond lay a court of 12.50 by 20 m with a basin and porticoes on four sides, their stuccoed sandstone columns joined by stone slabs 1 m high. The south gallery, raised 1.50 m and paved in marble, opened through three doors onto a hall of 8.20 by 10.25 m with a fine mosaic and onyx-breccia wall panels. Ballu read this gallery as a platform for sales and the building, 25 by 69 m, as a warehouse and perhaps an auction hall [Ballu 1911a: 50-53]. Christofle, who finished the clearance and restoration, was inclined to see instead a complete Roman <em>villa</em> with an <em>atrium</em> and a second court, the <em>peristylium</em>, with four heated rooms of private baths south of it and a Medusa mosaic under its south portico [Christofle 1930: 58-62]. Rebuffat takes the west hall for the original <em>triclinium</em> and the south hall for one taken from a neighbouring house, and asks for a study of the alterations [Rebuffat 1969: 677]."
+      "notes_html": "First uncovered in 1905, the building stands 8 metres from the Lambèse gate on the south side of the <em>decumanus</em>, behind a portico of eight bays [Ballu, report on 1905, BCTH 1906: 201; Ballu 1911a: 49; Germain 1969: 88]. Ballu saw that the kerb before the widest bay had been worn by carts backing up to unload, and that a wide door led into a paved hall 10.40 m square [Ballu 1911a: 49]. Beyond lay a court of 12.50 by 20 m with a basin and porticoes on four sides, their stuccoed sandstone columns joined by stone slabs 1 m high. The south gallery, raised 1.50 m and paved in marble, opened through three doors onto a hall of 8.20 by 10.25 m with a fine mosaic and onyx-breccia wall panels. Ballu read this gallery as a platform for sales and the building, 25 by 69 m, as a warehouse and perhaps an auction hall [Ballu 1911a: 50-53]. Christofle, who finished the clearance and restoration, was inclined to see instead a complete Roman <em>villa</em> with an <em>atrium</em> and a second court, the <em>peristylium</em>, with four heated rooms of private baths south of it and a Medusa mosaic under its south portico [Christofle 1930: 58-62]. Rebuffat takes the west hall for the original <em>triclinium</em> and the south hall for one taken from a neighbouring house, and asks for a study of the alterations [Rebuffat 1969: 677].",
+      "analysis": {
+        "date": "2026-09-28",
+        "round": 2,
+        "spaces": 48,
+        "spaces_note": "39 rooms, the great court with five portico spaces, the peristyle garden with two porticoes; all reached",
+        "entrances": 14,
+        "depth_max": 4,
+        "mean_depth": 1.92,
+        "rings": 26,
+        "summary": "Behind an eight-bay portico on the Decumanus a cart door 3.26 m wide, with a smaller door beside it for people, opens into a square paved vestibule and through a second large door onto a great court whose colonnades were closed by stone slabs, with a raised gallery of green-veined marble and red breccia on its south side and behind it a hall that had a fine mosaic and onyx on its lower walls. The redrawn plan, traced from Christofle's plan of 1930 and checked against Ballu's of 1911, gives forty-eight spaces, fourteen street doors and twenty-six rings, with a maximum depth of four and a mean depth of 1.92, the shallowest house drawn so far. Inside the house the only way from the great court to the second court, Christofle's *peristylium* with its basin and the Medusa mosaic in a semicircular room at its corner, runs through that hall, while the rooms round the second court have street doors of their own on two sides, so the warehouse Ballu described and the villa Christofle described meet at a single room.",
+        "figures": [
+          {
+            "src": "/assets/images/houses/TIMG.E-SW.I2/fig1_plan_spaces.png",
+            "caption": "Convex spaces on the redrawn plan"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.E-SW.I2/fig2_jgraph_street.png",
+            "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.E-SW.I2/fig4_depth_plan.png",
+            "caption": "Depth of each space from the street"
+          }
+        ],
+        "summary_html": "Behind an eight-bay portico on the Decumanus a cart door 3.26 m wide, with a smaller door beside it for people, opens into a square paved vestibule and through a second large door onto a great court whose colonnades were closed by stone slabs, with a raised gallery of green-veined marble and red breccia on its south side and behind it a hall that had a fine mosaic and onyx on its lower walls. The redrawn plan, traced from Christofle's plan of 1930 and checked against Ballu's of 1911, gives forty-eight spaces, fourteen street doors and twenty-six rings, with a maximum depth of four and a mean depth of 1.92, the shallowest house drawn so far. Inside the house the only way from the great court to the second court, Christofle's <em>peristylium</em> with its basin and the Medusa mosaic in a semicircular room at its corner, runs through that hall, while the rooms round the second court have street doors of their own on two sides, so the warehouse Ballu described and the villa Christofle described meet at a single room."
+      }
     },
     {
       "grid_id": "TIMG.E-SW.I2.H2",
