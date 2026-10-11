@@ -84,6 +84,15 @@
   grid-column: 1 / -1; text-align: center; padding: 3rem 1rem;
   font-family: var(--serif); font-style: italic; color: var(--text-muted); display: none;
 }
+.hc-analysis { margin: 0.4rem 0 0; border-top: 1px solid var(--hairline-soft); padding-top: 0.5rem; }
+.hc-analysis summary { font-size: 0.72rem; font-weight: 600; color: var(--teal-dark); }
+.hc-analysis summary .hc-expand-label { font-weight: 400; margin-left: 0.3rem; }
+.hc-analysis-stats { font-size: 0.7rem; color: var(--text-muted); margin: 0.35rem 0 0; line-height: 1.5; }
+.hc-analysis-stats strong { color: var(--text); font-weight: 600; }
+.hc-figs { display: grid; grid-template-columns: 1fr; gap: 0.6rem; margin: 0.5rem 0 0; }
+.hc-figs figure { margin: 0; }
+.hc-figs img { width: 100%; height: auto; display: block; border: 1px solid var(--hairline); border-radius: 4px; background: #fff; }
+.hc-figs figcaption { font-size: 0.64rem; color: var(--text-muted); margin-top: 0.2rem; line-height: 1.4; }
 .hc-gridlink { font-size: 0.7rem; margin: 0.3rem 0 0; }
 .hc-gridlink a { color: var(--teal); font-weight: 600; text-decoration: none; }
 .hc-gridlink a:hover { text-decoration: underline; }
@@ -130,6 +139,7 @@
     <li><strong>Sources badge</strong>: how much of the record has been checked against the original publications: checked, partly checked, or under review.</li>
     <li><strong>Analysis badge</strong>: how far my own analysis of the house has progressed: pending (cataloged, awaiting redrawing), drawn (redrawn as measurable vector geometry in my GIS), interpreted (drawn, then read room by room for movement, light, work, and display), or case study (selected for full micro-analysis: space syntax, movement, and visibility).</li>
     <li><strong>First published by</strong>: the excavation-era report that first put the building into print. Later scholars who re-read those reports are not listed here. Where I have not yet seen the original report, the card says so and names the earliest source I have consulted.</li>
+    <li><strong>Spatial analysis</strong>: on houses already redrawn and read, a fold-out with the space count, street entrances, depth from the street and circulation rings, a short reading of how the house works, and three figures: the convex spaces on the redrawn plan, the justified access graph (dashed lines are probable doorways), and the depth of each space from the street.</li>
     <li><strong>Full record</strong>: one of the houses with complete notes and references; <strong>Full record to follow</strong>: an index entry whose full write-up is still to come.</li>
   </ul>
 </details>
@@ -160,6 +170,7 @@
     {% if house.notes != "" %}{% if house.notes.size > 180 %}<details class="hc-expand"><summary><span class="hc-note hc-expand-preview">{{ house.notes | truncate: 180 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p class="hc-note">{{ house.notes_html }}</p></details>{% else %}<p class="hc-note">{{ house.notes_html }}</p>{% endif %}{% endif %}
     {% unless house.sample %}<p class="hc-pending">Full record to follow.</p>{% endunless %}
     {% if house.first_published_by != "" %}{% assign fp_lead = house.first_published_by | slice: 0, 3 %}{% if fp_lead == "not" %}{% assign fp_text = "First publication " | append: house.first_published_by %}{% else %}{% assign fp_text = "First published by " | append: house.first_published_by %}{% endif %}{% if house.earliest_source and house.earliest_source != "" %}{% assign fp_text = fp_text | append: ". Earliest source consulted: " | append: house.earliest_source %}{% endif %}{% if fp_text.size > 110 %}<details class="hc-expand hc-pub"><summary><span class="hc-expand-preview">{{ fp_text | truncate: 110 | escape }}</span> <span class="hc-expand-label"><span class="hc-more-word">show more</span><span class="hc-less">show less</span></span></summary><p>{{ fp_text | escape }}</p></details>{% else %}<p class="hc-pub">{{ fp_text | escape }}</p>{% endif %}{% endif %}
+    {% if house.analysis %}<details class="hc-expand hc-analysis"><summary>Spatial analysis <span class="hc-expand-label"><span class="hc-more-word">show</span><span class="hc-less">hide</span></span></summary><p class="hc-analysis-stats"><strong>{{ house.analysis.spaces }}</strong> spaces ({{ house.analysis.spaces_note | escape }}) &middot; <strong>{{ house.analysis.entrances }}</strong> street entrance{% if house.analysis.entrances != 1 %}s{% endif %} &middot; depth <strong>{{ house.analysis.depth_max }}</strong>, mean <strong>{{ house.analysis.mean_depth }}</strong> &middot; <strong>{{ house.analysis.rings }}</strong> ring{% if house.analysis.rings != 1 %}s{% endif %} &middot; redrawn {{ house.analysis.date | date: "%B %Y" }}</p><p class="hc-note">{{ house.analysis.summary_html }}</p><div class="hc-figs">{% for f in house.analysis.figures %}<figure><img src="{{ f.src }}" alt="{{ house.name_en | escape }}: {{ f.caption | escape }}" loading="lazy"><figcaption>{{ f.caption | escape }}</figcaption></figure>{% endfor %}</div></details>{% endif %}
     <p class="hc-gridlink"><a href="/grid/viewer.html#{{ house.grid_id | escape }}">View on the insula grid &rarr;</a></p>
   </article>
   {% endfor %}
