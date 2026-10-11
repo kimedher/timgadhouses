@@ -73,5 +73,30 @@
         "caption": "Depth of each space from the street"
       }
     ]
+  },
+  "TIMG.E-SW.I2": {
+    "date": "2026-09-28",
+    "round": 2,
+    "spaces": 48,
+    "spaces_note": "39 rooms, the great court with five portico spaces, the peristyle garden with two porticoes; all reached",
+    "entrances": 14,
+    "depth_max": 4,
+    "mean_depth": 1.92,
+    "rings": 26,
+    "summary": "Behind an eight-bay portico on the Decumanus a cart door 3.26 m wide, with a smaller door beside it for people, opens into a square paved vestibule and through a second large door onto a great court whose colonnades were closed by stone slabs, with a raised gallery of green-veined marble and red breccia on its south side and behind it a hall that had a fine mosaic and onyx on its lower walls. The redrawn plan, traced from Christofle's plan of 1930 and checked against Ballu's of 1911, gives forty-eight spaces, fourteen street doors and twenty-six rings, with a maximum depth of four and a mean depth of 1.92, the shallowest house drawn so far. Inside the house the only way from the great court to the second court, Christofle's *peristylium* with its basin and the Medusa mosaic in a semicircular room at its corner, runs through that hall, while the rooms round the second court have street doors of their own on two sides, so the warehouse Ballu described and the villa Christofle described meet at a single room.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I2/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the redrawn plan"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I2/fig2_jgraph_street.png",
+        "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I2/fig4_depth_plan.png",
+        "caption": "Depth of each space from the street"
+      }
+    ]
   }
 }
