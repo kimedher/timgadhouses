@@ -1,0 +1,77 @@
+{
+  "TIMG.SE.I2": {
+    "date": "2026-09-26",
+    "round": 2,
+    "spaces": 16,
+    "spaces_note": "12 rooms, 1 court, 3 porticoes",
+    "entrances": 1,
+    "depth_max": 4,
+    "mean_depth": 3.12,
+    "rings": 2,
+    "summary": "A single street door from the *Decumanus* leads through a vestibule onto a ten-column court whose porticoes open onto nine small rooms, with a three-bayed reception room on the entrance axis where the figured mosaic lies. The house was redrawn on confidence-graded layers in September 2026, which gives sixteen spaces reached from one entrance, with two circulation rings running through the porticoes. The court is square, with a well and planters rather than the semicircular *atrium* of the later plans, the tripartite front of the reception room is confirmed, and no room opens directly onto the street, which points to a single household without shops along the frontage.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.SE.I2/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the redrawn plan"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.SE.I2/fig2_jgraph_street.png",
+        "caption": "Justified graph from the street; dashed lines are probable doorways"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.SE.I2/fig4_depth_plan.png",
+        "caption": "Depth of each space from the street"
+      }
+    ]
+  },
+  "TIMG.E-SW.I1": {
+    "date": "2026-09-26",
+    "round": 2,
+    "spaces": 56,
+    "spaces_note": "48 rooms, 2 courts, 6 porticoes, 1 street portico",
+    "entrances": 13,
+    "depth_max": 5,
+    "mean_depth": 2.41,
+    "rings": 17,
+    "summary": "Entered from the east street through a seven-column portico and a columned hall, the house runs on one axis across a twelve-column court to an open *tablinum*, with a second, deeper court and its apsed *oecus* to the west and rows of street-entered rooms on the north and south sides. The house was redrawn on confidence-graded layers in October 2026, which gives fifty-six spaces, thirteen street doors on four streets and seventeen circulation rings, so no single room controls the way in. The shops along the south street connect to each other and to the street but reach the house itself only through one uncertain door and one certain one, which keeps work on the outside of the block and the household behind it, and the *tablinum* and the *oecus* sit among the least integrated spaces, where Fisher's table expects reception rooms to sit.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I1/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the redrawn plan"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I1/fig2_jgraph_street.png",
+        "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I1/fig4_depth_plan.png",
+        "caption": "Depth of each space from the street"
+      }
+    ]
+  },
+  "TIMG.E-SW.I5": {
+    "date": "2026-09-27",
+    "round": 2,
+    "spaces": 63,
+    "spaces_note": "56 rooms, 1 court, 4 porticoes, the Cardo street portico and the undrawn east ground; 60 reached, three north-strip rooms have no door drawn",
+    "entrances": 11,
+    "depth_max": 9,
+    "mean_depth": 3.42,
+    "rings": 17,
+    "summary": "A colonnaded portico on the Cardo fronts five double-depth shops, but the house itself is entered from the Voie des Thermes, through a vestibule and porter's lodge into a gallery the record gives as 30 m long and 7.30 m wide that opens through three bays into a hall with a big-cube mosaic, and only beyond the hall lies the court with its twenty-two columns, its late basin and its balustrades, with rooms on hypocausts north of the hall and the room of the hermaphrodite mosaic off the west portico. The redrawn plan, checked against Ballu 1903, the 1905 plan and Germain 1969, gives sixty-three spaces, eleven street doors and seventeen rings, with a maximum depth of nine and a mean depth of 3.42, and one obligatory path, since every way to the court runs the length of the gallery past the hall. The shops open onto the portico and nowhere else, the north-west mosaic room and the corner unit have their own street doors and no way into the house, and the row of rooms along the north street, which only Ballu draws, is carried as uncertain and never joins the house.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I5/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the redrawn plan"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I5/fig2_jgraph_street.png",
+        "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.E-SW.I5/fig4_depth_plan.png",
+        "caption": "Depth of each space from the street"
+      }
+    ]
+  }
+}
