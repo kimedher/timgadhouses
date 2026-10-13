@@ -2855,7 +2855,7 @@
       "confidence": "high",
       "mapping_confidence": "high",
       "verification_status": "partial",
-      "analysis_status": "drawn",
+      "analysis_status": "interpreted",
       "area_raw": "~1000 m²",
       "area_m2": 1000,
       "first_published_by": "Ballu 1897b (Les ruines de Timgad I): 228-230 [1903 notice at Ballu 1903: 102]",
@@ -2864,7 +2864,33 @@
       "possible_duplicate_of": "",
       "notes": "The Maison de la Piscina lies on the Decumanus Maximus, 12 metres east of the Arch of Trajan by Ballu's account [Ballu 1903: 81]. Its plot, which Ballu gave first as 20 by 50 metres and later as 20.80 by 50, joins two blocks of the original grid across a street that was built over [Ballu 1897b: 228; Ballu 1903: 102]. The half on the main street was largely destroyed, and while Ballu believed it held the main entrance and an atrium, the 1905 volume says its purpose cannot be told [Ballu 1897b: 228-229; BCB 1905: 333-334]. In the intact southern half Ballu recorded a peristyle whose open court measured 9.50 by 6.25 m, and an oecus of 6.30 by 6.73 m opening onto it through three unequal bays [Ballu 1897b: 229]. The basin that names the house, long with a half-round end, was of blue granite and carried nine pink marble columns 2.30 m high, and half the portico was lost in a rebuilding Ballu dated to the Byzantine period [Ballu 1897b: 229-230]. The 1905 volume calls the court an atrium and the south room a tablinum, and places baths with hypocausts in the north-east, while Rebuffat counts three porticoes and calls the room a triclinium [BCB 1905: 333-334; Rebuffat 1969: 676]. The oecus mosaic went to the museum, and Germain dated the fittings probably to the early third century CE [Ballu 1911a: 179; Germain 1969: 42-44].",
       "sample": true,
-      "notes_html": "The <em>Maison de la Piscina</em> lies on the <em>Decumanus Maximus</em>, 12 metres east of the Arch of Trajan by Ballu's account [Ballu 1903: 81]. Its plot, which Ballu gave first as 20 by 50 metres and later as 20.80 by 50, joins two blocks of the original grid across a street that was built over [Ballu 1897b: 228; Ballu 1903: 102]. The half on the main street was largely destroyed, and while Ballu believed it held the main entrance and an <em>atrium</em>, the 1905 volume says its purpose cannot be told [Ballu 1897b: 228-229; BCB 1905: 333-334]. In the intact southern half Ballu recorded a peristyle whose open court measured 9.50 by 6.25 m, and an <em>oecus</em> of 6.30 by 6.73 m opening onto it through three unequal bays [Ballu 1897b: 229]. The basin that names the house, long with a half-round end, was of blue granite and carried nine pink marble columns 2.30 m high, and half the portico was lost in a rebuilding Ballu dated to the Byzantine period [Ballu 1897b: 229-230]. The 1905 volume calls the court an <em>atrium</em> and the south room a <em>tablinum</em>, and places baths with hypocausts in the north-east, while Rebuffat counts three porticoes and calls the room a <em>triclinium</em> [BCB 1905: 333-334; Rebuffat 1969: 676]. The <em>oecus</em> mosaic went to the museum, and Germain dated the fittings probably to the early third century CE [Ballu 1911a: 179; Germain 1969: 42-44]."
+      "notes_html": "The <em>Maison de la Piscina</em> lies on the <em>Decumanus Maximus</em>, 12 metres east of the Arch of Trajan by Ballu's account [Ballu 1903: 81]. Its plot, which Ballu gave first as 20 by 50 metres and later as 20.80 by 50, joins two blocks of the original grid across a street that was built over [Ballu 1897b: 228; Ballu 1903: 102]. The half on the main street was largely destroyed, and while Ballu believed it held the main entrance and an <em>atrium</em>, the 1905 volume says its purpose cannot be told [Ballu 1897b: 228-229; BCB 1905: 333-334]. In the intact southern half Ballu recorded a peristyle whose open court measured 9.50 by 6.25 m, and an <em>oecus</em> of 6.30 by 6.73 m opening onto it through three unequal bays [Ballu 1897b: 229]. The basin that names the house, long with a half-round end, was of blue granite and carried nine pink marble columns 2.30 m high, and half the portico was lost in a rebuilding Ballu dated to the Byzantine period [Ballu 1897b: 229-230]. The 1905 volume calls the court an <em>atrium</em> and the south room a <em>tablinum</em>, and places baths with hypocausts in the north-east, while Rebuffat counts three porticoes and calls the room a <em>triclinium</em> [BCB 1905: 333-334; Rebuffat 1969: 676]. The <em>oecus</em> mosaic went to the museum, and Germain dated the fittings probably to the early third century CE [Ballu 1911a: 179; Germain 1969: 42-44].",
+      "analysis": {
+        "date": "2026-09-30",
+        "round": 2,
+        "spaces": 30,
+        "spaces_note": "26 rooms, the court and its three porticoes; 29 reached, one small west room has no door on the plan",
+        "entrances": 10,
+        "depth_max": 5,
+        "mean_depth": 2.79,
+        "rings": 14,
+        "summary": "The House of the Pool (*Maison de la Piscina*) joins two blocks of the grid across a street that was built over, with a destroyed front range on the Decumanus, a strip of rooms on the line of the old street and a peristyle block at the back, where a blue granite basin with nine columns stands in a court with porticoes on three sides and an oecus with a three-bay front and mosaic 44 closes the axis. Redrawn on the graded layers (Sep 30, 2026): thirty spaces, ten street doors on three streets, fourteen rings, the east portico the most integrated space and the oecus deep and single-sided, with a side door into a small lobby for service.",
+        "figures": [
+          {
+            "src": "/assets/images/houses/TIMG.SW.I5/fig1_plan_spaces.png",
+            "caption": "Convex spaces on the round-2 drawing (Sep 30, 2026)"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.SW.I5/fig2_jgraph_street.png",
+            "caption": "Access graph from the street"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.SW.I5/fig4_depth_plan.png",
+            "caption": "Depth from the street"
+          }
+        ],
+        "summary_html": "The House of the Pool (<em>Maison de la Piscina</em>) joins two blocks of the grid across a street that was built over, with a destroyed front range on the Decumanus, a strip of rooms on the line of the old street and a peristyle block at the back, where a blue granite basin with nine columns stands in a court with porticoes on three sides and an oecus with a three-bay front and mosaic 44 closes the axis. Redrawn on the graded layers (Sep 30, 2026): thirty spaces, ten street doors on three streets, fourteen rings, the east portico the most integrated space and the oecus deep and single-sided, with a side door into a small lobby for service."
+      }
     },
     {
       "grid_id": "TIMG.SW.I8",

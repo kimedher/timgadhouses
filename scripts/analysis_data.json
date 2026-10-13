@@ -98,5 +98,30 @@
         "caption": "Depth of each space from the street"
       }
     ]
+  },
+  "TIMG.SW.I5": {
+    "date": "2026-09-30",
+    "round": 2,
+    "spaces": 30,
+    "spaces_note": "26 rooms, the court and its three porticoes; 29 reached, one small west room has no door on the plan",
+    "entrances": 10,
+    "depth_max": 5,
+    "mean_depth": 2.79,
+    "rings": 14,
+    "summary": "The House of the Pool (*Maison de la Piscina*) joins two blocks of the grid across a street that was built over, with a destroyed front range on the Decumanus, a strip of rooms on the line of the old street and a peristyle block at the back, where a blue granite basin with nine columns stands in a court with porticoes on three sides and an oecus with a three-bay front and mosaic 44 closes the axis. Redrawn on the graded layers (Sep 30, 2026): thirty spaces, ten street doors on three streets, fourteen rings, the east portico the most integrated space and the oecus deep and single-sided, with a side door into a small lobby for service.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.SW.I5/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the round-2 drawing (Sep 30, 2026)"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.SW.I5/fig2_jgraph_street.png",
+        "caption": "Access graph from the street"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.SW.I5/fig4_depth_plan.png",
+        "caption": "Depth from the street"
+      }
+    ]
   }
 }
