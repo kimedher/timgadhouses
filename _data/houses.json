@@ -52,28 +52,28 @@
       "analysis": {
         "date": "2026-10-01",
         "round": 2,
-        "spaces": 55,
-        "spaces_note": "48 rooms, strips and parts of rooms, the atrium with its two porticoes, the paved court and three street spaces; 54 reached, one space inside the outline of the baths has no door on the plan",
+        "spaces": 53,
+        "spaces_note": "46 rooms, strips and parts of rooms, the atrium with its two porticoes, the paved court and three street spaces; 52 reached, one space inside the outline of the baths has no door on the plan",
         "entrances": 3,
-        "depth_max": 7,
-        "mean_depth": 3.8,
-        "rings": 14,
-        "summary": "The Large House North of the Capitol (Grande maison au Nord du Capitole) runs about a hundred metres along a street north of the Capitol, with private baths at the north end, two rooms cleared in 1925 with a concrete basin, the house of 1916 with its 40 m gallery, atrium and oecus, and at the south an apsed hall that Ballu first took for a chapel. Redrawn on the graded layers (Oct 1, 2026): fifty-five spaces, three entrances on one street leading to the atrium, the paved court and the baths, fourteen rings, a maximum depth of seven and a mean depth of 3.80, the greatest mean depth of any house drawn so far, with the gallery joining the three parts and almost every door known only from Ballu's plan.",
+        "depth_max": 6,
+        "mean_depth": 3.65,
+        "rings": 16,
+        "summary": "The Large House North of the Capitol (Grande maison au Nord du Capitole) runs about a hundred metres along a street north of the Capitol, with private baths at the north end, two rooms cleared in 1925 with a concrete basin, the house of 1916 with its 40 m gallery, atrium and oecus, and at the south an apsed hall that Ballu first took for a chapel. Redrawn on the graded layers (Oct 1, 2026): fifty-three spaces, three entrances on one street leading to the atrium, the paved court and the baths, sixteen rings, a maximum depth of six and a mean depth of 3.65, the greatest mean depth of any house drawn so far, with the gallery joining the three parts and almost every door known only from Ballu's plan.",
         "figures": [
           {
-            "src": "/assets/images/houses/TIMG.E-NW.I18/fig1_plan_spaces.png",
+            "src": "/assets/images/houses/TIMG.E-NW.I18/fig1_plan_spaces_v2.png",
             "caption": "Convex spaces on the round-2 drawing (Oct 1, 2026)"
           },
           {
-            "src": "/assets/images/houses/TIMG.E-NW.I18/fig2_jgraph_street.png",
+            "src": "/assets/images/houses/TIMG.E-NW.I18/fig2_jgraph_street_v2.png",
             "caption": "Access graph from the street"
           },
           {
-            "src": "/assets/images/houses/TIMG.E-NW.I18/fig4_depth_plan.png",
+            "src": "/assets/images/houses/TIMG.E-NW.I18/fig4_depth_plan_v2.png",
             "caption": "Depth from the street"
           }
         ],
-        "summary_html": "The Large House North of the Capitol (<em>Grande maison au Nord du Capitole</em>) runs about a hundred metres along a street north of the Capitol, with private baths at the north end, two rooms cleared in 1925 with a concrete basin, the house of 1916 with its 40 m gallery, atrium and <em>oecus</em>, and at the south an apsed hall that Ballu first took for a chapel. Redrawn on the graded layers (Oct 1, 2026): fifty-five spaces, three entrances on one street leading to the atrium, the paved court and the baths, fourteen rings, a maximum depth of seven and a mean depth of 3.80, the greatest mean depth of any house drawn so far, with the gallery joining the three parts and almost every door known only from Ballu's plan."
+        "summary_html": "The Large House North of the Capitol (<em>Grande maison au Nord du Capitole</em>) runs about a hundred metres along a street north of the Capitol, with private baths at the north end, two rooms cleared in 1925 with a concrete basin, the house of 1916 with its 40 m gallery, atrium and <em>oecus</em>, and at the south an apsed hall that Ballu first took for a chapel. Redrawn on the graded layers (Oct 1, 2026): fifty-three spaces, three entrances on one street leading to the atrium, the paved court and the baths, sixteen rings, a maximum depth of six and a mean depth of 3.65, the greatest mean depth of any house drawn so far, with the gallery joining the three parts and almost every door known only from Ballu's plan."
       }
     },
     {
