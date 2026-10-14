@@ -115,7 +115,7 @@
         "caption": "Convex spaces on the round-2 drawing (Sep 30, 2026)"
       },
       {
-        "src": "/assets/images/houses/TIMG.SW.I5/fig2_jgraph_street.png",
+        "src": "/assets/images/houses/TIMG.SW.I5/fig2_jgraph_street_v2.png",
         "caption": "Access graph from the street"
       },
       {
@@ -140,7 +140,7 @@
         "caption": "Convex spaces on the round-2 drawing (Oct 1, 2026)"
       },
       {
-        "src": "/assets/images/houses/TIMG.E-NW.I18/fig2_jgraph_street_v2.png",
+        "src": "/assets/images/houses/TIMG.E-NW.I18/fig2_jgraph_street_v3.png",
         "caption": "Access graph from the street"
       },
       {
@@ -150,7 +150,7 @@
     ]
   },
   "TIMG.NE.I28": {
-    "date": "2026-10-14",
+    "date": "2026-10-02",
     "round": 2,
     "spaces": 16,
     "spaces_note": "16 rooms, Amraoui's rooms 1 to 16; no court or portico; all reached",
@@ -158,11 +158,11 @@
     "depth_max": 3,
     "mean_depth": 1.63,
     "rings": 3,
-    "summary": "The Fullery House, North-East Quarter, Seventh of the 1911 Sequence is a whole block cleared by Ballu in 1911 and planned by Amraoui as her *insula* 20, about 21 by 20.5 m, with a small *fullonica* in the north-west corner, its well and two tubs in the work room. On the round-2 drawing (Oct 14, 2026) the block has sixteen rooms with no court, eleven street doors on all four streets, six units with no door between them, three rings, a maximum depth of three and a mean depth of 1.63, the smallest and shallowest house drawn so far, with one door joining the workshop to the house and the workshop keeping its own door on the street.",
+    "summary": "The Fullery House, North-East Quarter, Seventh of the 1911 Sequence is a whole block cleared by Ballu in 1911 and planned by Amraoui as her *insula* 20, about 21 by 20.5 m, with a small *fullonica* in the north-west corner, its well and two tubs in the work room. On the round-2 drawing (Oct 2, 2026) the block has sixteen rooms with no court, eleven street doors on all four streets, six units with no door between them, three rings, a maximum depth of three and a mean depth of 1.63, the smallest and shallowest house drawn so far, with one door joining the workshop to the house and the workshop keeping its own door on the street.",
     "figures": [
       {
         "src": "/assets/images/houses/TIMG.NE.I28/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the round-2 drawing (Oct 14, 2026)"
+        "caption": "Convex spaces on the round-2 drawing (Oct 2, 2026)"
       },
       {
         "src": "/assets/images/houses/TIMG.NE.I28/fig2_jgraph_street.png",
