@@ -1164,10 +1164,10 @@
     },
     {
       "grid_id": "TIMG.NE.I28",
-      "name": "Dyers' House, North-East Quarter, Seventh of the 1911 Sequence",
-      "name_en": "Dyers' House, North-East Quarter, Seventh of the 1911 Sequence",
+      "name": "Fullery House, North-East Quarter, Seventh of the 1911 Sequence",
+      "name_en": "Fullery House, North-East Quarter, Seventh of the 1911 Sequence",
       "name_fr": "",
-      "alternate_names": "Lohmann insula 20 (as used by Amraoui 2020); catalogued until 2026-09-20 also as TIMG.UNK.H27 (retired)",
+      "alternate_names": "Amraoui's insula 20 (2020b: 229, fig. 11.5); catalogued until Sep 20, 2026 also as TIMG.UNK.H27 (retired)",
       "quadrant": "NE",
       "zone": "Intramural NE",
       "building_type": "House",
@@ -1175,7 +1175,7 @@
       "confidence": "low",
       "mapping_confidence": "pending",
       "verification_status": "review",
-      "analysis_status": "pending",
+      "analysis_status": "interpreted",
       "area_raw": "",
       "area_m2": null,
       "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 493-494 (offprint pp. 31-32)",
@@ -1184,7 +1184,33 @@
       "possible_duplicate_of": "",
       "notes": "",
       "sample": false,
-      "notes_html": ""
+      "notes_html": "",
+      "analysis": {
+        "date": "2026-10-14",
+        "round": 2,
+        "spaces": 16,
+        "spaces_note": "16 rooms, Amraoui's rooms 1 to 16; no court or portico; all reached",
+        "entrances": 11,
+        "depth_max": 3,
+        "mean_depth": 1.63,
+        "rings": 3,
+        "summary": "The Fullery House, North-East Quarter, Seventh of the 1911 Sequence is a whole block cleared by Ballu in 1911 and planned by Amraoui as her insula 20, about 21 by 20.5 m, with a small fullonica in the north-west corner, its well and two tubs in the work room. On the round-2 drawing (Oct 14, 2026) the block has sixteen rooms with no court, eleven street doors on all four streets, six units with no door between them, three rings, a maximum depth of three and a mean depth of 1.63, the smallest and shallowest house drawn so far, with one door joining the workshop to the house and the workshop keeping its own door on the street.",
+        "figures": [
+          {
+            "src": "/assets/images/houses/TIMG.NE.I28/fig1_plan_spaces.png",
+            "caption": "Convex spaces on the round-2 drawing (Oct 14, 2026)"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.NE.I28/fig2_jgraph_street.png",
+            "caption": "Access graph from the street"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.NE.I28/fig4_depth_plan.png",
+            "caption": "Depth from the street"
+          }
+        ],
+        "summary_html": "The Fullery House, North-East Quarter, Seventh of the 1911 Sequence is a whole block cleared by Ballu in 1911 and planned by Amraoui as her <em>insula</em> 20, about 21 by 20.5 m, with a small <em>fullonica</em> in the north-west corner, its well and two tubs in the work room. On the round-2 drawing (Oct 14, 2026) the block has sixteen rooms with no court, eleven street doors on all four streets, six units with no door between them, three rings, a maximum depth of three and a mean depth of 1.63, the smallest and shallowest house drawn so far, with one door joining the workshop to the house and the workshop keeping its own door on the street."
+      }
     },
     {
       "grid_id": "TIMG.NE.I29",
