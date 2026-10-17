@@ -173,5 +173,30 @@
         "caption": "Depth from the street"
       }
     ]
+  },
+  "TIMG.NE.I27": {
+    "date": "2026-09-29",
+    "round": 2,
+    "spaces": 17,
+    "spaces_note": "17 spaces, Amraoui's rooms 1 to 16 with room 6 as two; no court or portico; all reached",
+    "entrances": 9,
+    "depth_max": 3,
+    "mean_depth": 1.71,
+    "rings": 3,
+    "summary": "The Fullery House, North-East Quarter, Ninth of the 1911 Sequence is a whole block cleared by Ballu in 1911 and drawn by Amraoui as her *insula* 19, about 21.2 by 20.7 m, with a *fullonica* of two rooms in the north-east corner, three terracotta tubs in stone compartments and a well. On the round-2 drawing (Sep 29, 2026) the block has seventeen spaces with no court, nine street doors on all four streets, five units with no door between them, three rings, a maximum depth of three and a mean depth of 1.71, with the fullery's unit of four rooms opening on the north and east streets, with a cart door on the east street, and the west unit meeting round a well in room 6.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.NE.I27/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the round-2 drawing (Sep 29, 2026)"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.NE.I27/fig2_jgraph_street.png",
+        "caption": "Access graph from the street"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.NE.I27/fig4_depth_plan.png",
+        "caption": "Depth from the street"
+      }
+    ]
   }
 }
