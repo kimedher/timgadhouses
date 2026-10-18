@@ -1043,6 +1043,56 @@
       "notes_html": "The one ruin Ballu records in the third row, directly south of the previous block. A broad stone-paved vestibule with two doors on the east street led to a central <em>atrium</em> where nine stone mangers for Byzantine horses were found; a stone table still stood in the vestibule. Five small rooms lined the south side, a long room ran along the west street, and four rooms closed the north side [Ballu 1911: 80-81]."
     },
     {
+      "grid_id": "TIMG.NE.I21",
+      "name": "Fullery of Amraoui's Insula 30, North-East Quarter",
+      "name_en": "Fullery of Amraoui's Insula 30, North-East Quarter",
+      "name_fr": "",
+      "alternate_names": "Amraoui's insula 30 (2020a: 134, fig. 4.11); the largest fullonica in Timgad (2020b: 234); formerly TIMG.UNK.H28, House Beside the Largest Fullonica",
+      "quadrant": "NE",
+      "zone": "Intramural NE",
+      "building_type": "Residential block (multi-unit)",
+      "type_class": "House",
+      "confidence": "medium",
+      "mapping_confidence": "pending",
+      "verification_status": "review",
+      "analysis_status": "interpreted",
+      "area_raw": "",
+      "area_m2": null,
+      "first_published_by": "Ballu 1911a: 123-126 or 1912: 490-495, the reports Wilson (2001: 278) cites for the fulleries of the quarter, whichever holds this block",
+      "earliest_source": "",
+      "key_references": "",
+      "possible_duplicate_of": "",
+      "notes": "",
+      "sample": false,
+      "notes_html": "",
+      "analysis": {
+        "date": "2026-10-03",
+        "round": 2,
+        "spaces": 15,
+        "spaces_note": "15 spaces, Amraoui's rooms 1 to 14 with room 12 as two; no court or portico; all reached",
+        "entrances": 6,
+        "depth_max": 7,
+        "mean_depth": 3.0,
+        "rings": 1,
+        "summary": "The block is Amraoui's insula 30, about 20.9 by 21.1 m, in the quarter cleared between 1908 and 1913, holding what she calls the largest fullonica in Timgad, three rooms in the north-east corner with eleven stone compartments, ten of them for tubs, and a well, worked from three openings on the north street and shut off from the rest of the block. On the round-2 drawing (Oct 3, 2026) the block has fifteen spaces with no court, six street doors on the west and north streets, four units with no door between them, one ring, a maximum depth of seven and a mean depth of 3.00, the dwelling nine spaces from one door on the west street, most of them in a chain, with its last room seven doors in, and room 3, with a well, either a room off the house's street room or open to the street, as Amraoui draws it.",
+        "figures": [
+          {
+            "src": "/assets/images/houses/TIMG.NE.I21/fig1_plan_spaces.png",
+            "caption": "Convex spaces on the round-2 drawing (Oct 3, 2026)"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.NE.I21/fig2_jgraph_street.png",
+            "caption": "Access graph from the street"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.NE.I21/fig4_depth_plan.png",
+            "caption": "Depth from the street"
+          }
+        ],
+        "summary_html": "The block is Amraoui's <em>insula</em> 30, about 20.9 by 21.1 m, in the quarter cleared between 1908 and 1913, holding what she calls the largest <em>fullonica</em> in Timgad, three rooms in the north-east corner with eleven stone compartments, ten of them for tubs, and a well, worked from three openings on the north street and shut off from the rest of the block. On the round-2 drawing (Oct 3, 2026) the block has fifteen spaces with no court, six street doors on the west and north streets, four units with no door between them, one ring, a maximum depth of seven and a mean depth of 3.00, the dwelling nine spaces from one door on the west street, most of them in a chain, with its last room seven doors in, and room 3, with a well, either a room off the house's street room or open to the street, as Amraoui draws it."
+      }
+    },
+    {
       "grid_id": "TIMG.NE.I23",
       "name": "Fuller's House, North-East Quarter (Insula 23)",
       "name_en": "Fuller's House, North-East Quarter (Insula 23)",
@@ -3444,30 +3494,6 @@
       "area_m2": null,
       "first_published_by": "Ballu, Les ruines de Timgad, Sept années de découvertes (1911), pp. 87-89; Germain 1969, \"Ilot 73,\" p. 38, mosaic no. 35 \"Cœurs et cloches\" (pl. XV), excavated 1906; Rebuffat 1969, p. 676",
       "earliest_source": "",
-      "key_references": "",
-      "possible_duplicate_of": "",
-      "notes": "",
-      "sample": false,
-      "notes_html": ""
-    },
-    {
-      "grid_id": "TIMG.UNK.H28",
-      "name": "House Beside the Largest Fullonica, Insula 30 (Lohmann numbering)",
-      "name_en": "House Beside the Largest Fullonica, Insula 30 (Lohmann numbering)",
-      "name_fr": "",
-      "alternate_names": "",
-      "quadrant": "UNK",
-      "zone": "Unlocated",
-      "building_type": "Possible house",
-      "type_class": "House",
-      "confidence": "low",
-      "mapping_confidence": "pending",
-      "verification_status": "review",
-      "analysis_status": "pending",
-      "area_raw": "",
-      "area_m2": null,
-      "first_published_by": "pages not traced",
-      "earliest_source": "Amraoui 2020: 234-235, fig. 11.10; cf. Amraoui 2018: 132-135, figs 4.9 and 4.11 (fullonica only)",
       "key_references": "",
       "possible_duplicate_of": "",
       "notes": "",

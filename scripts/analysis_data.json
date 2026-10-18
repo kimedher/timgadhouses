@@ -198,5 +198,30 @@
         "caption": "Depth from the street"
       }
     ]
+  },
+  "TIMG.NE.I21": {
+    "date": "2026-10-03",
+    "round": 2,
+    "spaces": 15,
+    "spaces_note": "15 spaces, Amraoui's rooms 1 to 14 with room 12 as two; no court or portico; all reached",
+    "entrances": 6,
+    "depth_max": 7,
+    "mean_depth": 3.0,
+    "rings": 1,
+    "summary": "The block is Amraoui's *insula* 30, about 20.9 by 21.1 m, in the quarter cleared between 1908 and 1913, holding what she calls the largest *fullonica* in Timgad, three rooms in the north-east corner with eleven stone compartments, ten of them for tubs, and a well, worked from three openings on the north street and shut off from the rest of the block. On the round-2 drawing (Oct 3, 2026) the block has fifteen spaces with no court, six street doors on the west and north streets, four units with no door between them, one ring, a maximum depth of seven and a mean depth of 3.00, the dwelling nine spaces from one door on the west street, most of them in a chain, with its last room seven doors in, and room 3, with a well, either a room off the house's street room or open to the street, as Amraoui draws it.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.NE.I21/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the round-2 drawing (Oct 3, 2026)"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.NE.I21/fig2_jgraph_street.png",
+        "caption": "Access graph from the street"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.NE.I21/fig4_depth_plan.png",
+        "caption": "Depth from the street"
+      }
+    ]
   }
 }
