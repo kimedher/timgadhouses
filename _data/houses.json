@@ -102,9 +102,9 @@
     },
     {
       "grid_id": "TIMG.E-NW.I20",
-      "name": "House West of the Filadelfes Baths (Philadelphi) (Maison à l'Ouest des thermes des Filadelfes)",
+      "name": "House West of the Filadelfes Baths (Philadelphi) (Grande maison à l'Ouest des thermes des Filadelfes)",
       "name_en": "House West of the Filadelfes Baths (Philadelphi)",
-      "name_fr": "Maison à l'Ouest des thermes des Filadelfes",
+      "name_fr": "Grande maison à l'Ouest des thermes des Filadelfes",
       "alternate_names": "la maison des Filadelfes (Germain 1969: xii); Rebuffat no. 11",
       "quadrant": "E-NW",
       "zone": "Extramural NW",
@@ -113,7 +113,7 @@
       "confidence": "high",
       "mapping_confidence": "high",
       "verification_status": "partial",
-      "analysis_status": "drawn",
+      "analysis_status": "interpreted",
       "area_raw": "2 464 m² (Ballu, Rapport 1922: 47); about 2 500 m² (Germain 1969: 81)",
       "area_m2": 2464,
       "first_published_by": "Ballu, Rapport sur les travaux de fouilles ... effectués en 1922 (Algiers 1923): 47-53",
@@ -122,7 +122,33 @@
       "possible_duplicate_of": "",
       "notes": "Ballu found this house in 1922, when soundings west of the Filadelfes Baths led first to private baths and then to the house itself, and he finished clearing its south side in 1923 [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 45-46]. He places it outside the city wall and gives its total area as 2,464 m², where Germain gives about 2,500 m² and counts about forty rooms [Ballu, Rapport 1922: 47; Germain 1969: 81]. The south front had five independent shops and two entrances, each with a two-column porch [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 46]. The first part lay around a court of 21.55 by 10.05 m that Ballu calls the atrium, with a tablinum of 8.45 by 9.70 m off its west portico, a stair to an upper floor, and small private baths in the north-east corner [Ballu, Rapport 1922: 48-52]. The north portico and three rooms behind it had mosaics, and Germain assigns the floral ones probably to the early third century CE [Ballu, Rapport 1922: 49-50; Ballu, Rapport 1923: 48-51; Germain 1969: 85]. The second court had fourteen columns on three sides and a central well, but the rooms around it were badly ruined [Ballu, Rapport 1922: 52]. A brick kiln, a pottery kiln and Christian children's graves came later [Ballu, Rapport 1922: 49, 53]. Rebuffat thought the room between the courts was probably a triclinium [Rebuffat 1969: 678].",
       "sample": true,
-      "notes_html": "Ballu found this house in 1922, when soundings west of the Filadelfes Baths led first to private baths and then to the house itself, and he finished clearing its south side in 1923 [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 45-46]. He places it outside the city wall and gives its total area as 2,464 m², where Germain gives about 2,500 m² and counts about forty rooms [Ballu, Rapport 1922: 47; Germain 1969: 81]. The south front had five independent shops and two entrances, each with a two-column porch [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 46]. The first part lay around a court of 21.55 by 10.05 m that Ballu calls the <em>atrium</em>, with a <em>tablinum</em> of 8.45 by 9.70 m off its west portico, a stair to an upper floor, and small private baths in the north-east corner [Ballu, Rapport 1922: 48-52]. The north portico and three rooms behind it had mosaics, and Germain assigns the floral ones probably to the early third century CE [Ballu, Rapport 1922: 49-50; Ballu, Rapport 1923: 48-51; Germain 1969: 85]. The second court had fourteen columns on three sides and a central well, but the rooms around it were badly ruined [Ballu, Rapport 1922: 52]. A brick kiln, a pottery kiln and Christian children's graves came later [Ballu, Rapport 1922: 49, 53]. Rebuffat thought the room between the courts was probably a <em>triclinium</em> [Rebuffat 1969: 678]."
+      "notes_html": "Ballu found this house in 1922, when soundings west of the Filadelfes Baths led first to private baths and then to the house itself, and he finished clearing its south side in 1923 [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 45-46]. He places it outside the city wall and gives its total area as 2,464 m², where Germain gives about 2,500 m² and counts about forty rooms [Ballu, Rapport 1922: 47; Germain 1969: 81]. The south front had five independent shops and two entrances, each with a two-column porch [Ballu, Rapport 1922: 47; Ballu, Rapport 1923: 46]. The first part lay around a court of 21.55 by 10.05 m that Ballu calls the <em>atrium</em>, with a <em>tablinum</em> of 8.45 by 9.70 m off its west portico, a stair to an upper floor, and small private baths in the north-east corner [Ballu, Rapport 1922: 48-52]. The north portico and three rooms behind it had mosaics, and Germain assigns the floral ones probably to the early third century CE [Ballu, Rapport 1922: 49-50; Ballu, Rapport 1923: 48-51; Germain 1969: 85]. The second court had fourteen columns on three sides and a central well, but the rooms around it were badly ruined [Ballu, Rapport 1922: 52]. A brick kiln, a pottery kiln and Christian children's graves came later [Ballu, Rapport 1922: 49, 53]. Rebuffat thought the room between the courts was probably a <em>triclinium</em> [Rebuffat 1969: 678].",
+      "analysis": {
+        "date": "2026-10-03",
+        "round": 2,
+        "spaces": 66,
+        "spaces_note": "66 spaces, 62 drawn and 4 rooms and yards Ballu draws open on the north, on the graph without a polygon; the atrium court with four walks and the peristyle court with three; all reached",
+        "entrances": 13,
+        "depth_max": 10,
+        "mean_depth": 3.44,
+        "rings": 13,
+        "summary": "Ballu's two-part villa outside the city wall, the largest house he had found at Timgad (2,464 m², Ballu 1922: 47), an atrium and a peristyle with the tablinum between them, a row of five shops on the street, each on its own, and a private bath suite in the north-east corner. On the round-2 drawing it is 66 spaces with 13 rings, a maximum depth of 10 and a mean depth of 3.44, the deepest house so far, and the secondary entrance brings a visitor to the atrium court in four steps and the main entrance in five, while the baths lie behind one narrow passage in the atrium's north-east corner, the laconicum ten steps from the street. The peristyle is two steps from outside through a threshold in its west wall, or five behind the south front alone.",
+        "figures": [
+          {
+            "src": "/assets/images/houses/TIMG.E-NW.I20/fig1_plan_spaces.png",
+            "caption": "Convex spaces on the round-2 drawing (Oct 3, 2026)"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.E-NW.I20/fig2_jgraph_street.png",
+            "caption": "Access graph from the street"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.E-NW.I20/fig4_depth_plan.png",
+            "caption": "Depth from the street"
+          }
+        ],
+        "summary_html": "Ballu's two-part villa outside the city wall, the largest house he had found at Timgad (2,464 m², Ballu 1922: 47), an <em>atrium</em> and a peristyle with the <em>tablinum</em> between them, a row of five shops on the street, each on its own, and a private bath suite in the north-east corner. On the round-2 drawing it is 66 spaces with 13 rings, a maximum depth of 10 and a mean depth of 3.44, the deepest house so far, and the secondary entrance brings a visitor to the <em>atrium</em> court in four steps and the main entrance in five, while the baths lie behind one narrow passage in the <em>atrium</em>'s north-east corner, the <em>laconicum</em> ten steps from the street. The peristyle is two steps from outside through a threshold in its west wall, or five behind the south front alone."
+      }
     },
     {
       "grid_id": "TIMG.E-NW.I20.H2",
