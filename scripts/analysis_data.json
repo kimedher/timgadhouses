@@ -248,5 +248,30 @@
         "caption": "Depth from the street"
       }
     ]
+  },
+  "TIMG.NW.I17": {
+    "date": "2026-10-04",
+    "round": 2,
+    "spaces": 16,
+    "spaces_note": "16 spaces, all drawn and all reached; the atrium court with its east portico, the tablinum and the central corridor cut apart on their colonnade lines",
+    "entrances": 2,
+    "depth_max": 5,
+    "mean_depth": 2.94,
+    "rings": 3,
+    "summary": "A block of about 21 by 20 m in the north-west quarter, rebuilt by the *flamen perpetuus* Corfidius Crementius, whose inscription was found in the *atrium* (Ballu 1911a: 73-74), with the entrance on the south, latrines and a stair beside it, a paved corridor that Ballu says served every room, two rooms of stored grain, one with four stone troughs, and a small *atrium* with one portico and a *tablinum* at the back. On the round-2 drawing it is 16 spaces with 3 rings, a maximum depth of 5 and a mean depth of 2.94, and the corridor, not the *atrium*, is the hub, two steps from the street with eight links; the court is three steps in and the *tablinum* four. Whether the troughs room opened on the *cardo*, as Courtois's and Wilson's city plans have it, stays open.",
+    "figures": [
+      {
+        "src": "/assets/images/houses/TIMG.NW.I17/fig1_plan_spaces.png",
+        "caption": "Convex spaces on the round-2 drawing (Oct 4, 2026)"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.NW.I17/fig2_jgraph_street.png",
+        "caption": "Access graph from the street"
+      },
+      {
+        "src": "/assets/images/houses/TIMG.NW.I17/fig4_depth_plan.png",
+        "caption": "Depth from the street"
+      }
+    ]
   }
 }
