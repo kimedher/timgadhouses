@@ -323,5 +323,30 @@
     "caption": "Depth from the street"
    }
   ]
+ },
+ "TIMG.NE.I33": {
+  "date": "2026-10-05",
+  "round": 2,
+  "spaces": 20,
+  "spaces_note": "no court or portico; every room reached, none by a certain door",
+  "entrances": 11,
+  "depth_max": 3,
+  "mean_depth": 1.6,
+  "rings": 3,
+  "summary": "The tenth and last block Ballu cleared in 1911 in the north-east quarter, between the fifth *decumanus* and the north boulevard, a building he says was used by two dyers and split by a median wall, with a corner room of basins and terracotta tubs and four shops on the west and south streets in the west part, and in the east part rooms with a well, with three basins and with one basin on the north boulevard, the east street and the south street (Ballu 1912: 494-495). No plan of the block has a door, so on the round-2 drawing (Oct 5, 2026) nearly all the doors are where the walls' shadows break on the ground: 20 spaces, all reached, 11 street doors, 23 links, 3 rings, a maximum depth of 3 and a mean depth of 1.60, eleven of the twenty spaces one step from a street, with the two halves meeting only at a doubtful door through the median wall.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I33/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 5, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I33/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I33/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
  }
 }
