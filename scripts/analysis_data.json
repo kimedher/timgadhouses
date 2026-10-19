@@ -1,277 +1,302 @@
 {
-  "TIMG.SE.I2": {
-    "date": "2026-09-26",
-    "round": 2,
-    "spaces": 16,
-    "spaces_note": "12 rooms, 1 court, 3 porticoes",
-    "entrances": 1,
-    "depth_max": 4,
-    "mean_depth": 3.12,
-    "rings": 2,
-    "summary": "A single street door from the *Decumanus* leads through a vestibule onto a ten-column court whose porticoes open onto nine small rooms, with a three-bayed reception room on the entrance axis where the figured mosaic lies. The house was redrawn on confidence-graded layers in September 2026, which gives sixteen spaces reached from one entrance, with two circulation rings running through the porticoes. The court is square, with a well and planters rather than the semicircular *atrium* of the later plans, the tripartite front of the reception room is confirmed, and no room opens directly onto the street, which points to a single household without shops along the frontage.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.SE.I2/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the redrawn plan"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.SE.I2/fig2_jgraph_street.png",
-        "caption": "Justified graph from the street; dashed lines are probable doorways"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.SE.I2/fig4_depth_plan.png",
-        "caption": "Depth of each space from the street"
-      }
-    ]
-  },
-  "TIMG.E-SW.I1": {
-    "date": "2026-09-26",
-    "round": 2,
-    "spaces": 56,
-    "spaces_note": "48 rooms, 2 courts, 6 porticoes, 1 street portico",
-    "entrances": 13,
-    "depth_max": 5,
-    "mean_depth": 2.41,
-    "rings": 17,
-    "summary": "Entered from the east street through a seven-column portico and a columned hall, the house runs on one axis across a twelve-column court to an open *tablinum*, with a second, deeper court and its apsed *oecus* to the west and rows of street-entered rooms on the north and south sides. The house was redrawn on confidence-graded layers in October 2026, which gives fifty-six spaces, thirteen street doors on four streets and seventeen circulation rings, so no single room controls the way in. The shops along the south street connect to each other and to the street but reach the house itself only through one uncertain door and one certain one, which keeps work on the outside of the block and the household behind it, and the *tablinum* and the *oecus* sit among the least integrated spaces, where Fisher's table expects reception rooms to sit.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I1/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the redrawn plan"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I1/fig2_jgraph_street.png",
-        "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I1/fig4_depth_plan.png",
-        "caption": "Depth of each space from the street"
-      }
-    ]
-  },
-  "TIMG.E-SW.I5": {
-    "date": "2026-09-27",
-    "round": 2,
-    "spaces": 63,
-    "spaces_note": "56 rooms, 1 court, 4 porticoes, the Cardo street portico and the undrawn east ground; 60 reached, three north-strip rooms have no door drawn",
-    "entrances": 11,
-    "depth_max": 9,
-    "mean_depth": 3.42,
-    "rings": 17,
-    "summary": "A colonnaded portico on the Cardo fronts five double-depth shops, but the house itself is entered from the Voie des Thermes, through a vestibule and porter's lodge into a gallery the record gives as 30 m long and 7.30 m wide that opens through three bays into a hall with a big-cube mosaic, and only beyond the hall lies the court with its twenty-two columns, its late basin and its balustrades, with rooms on hypocausts north of the hall and the room of the hermaphrodite mosaic off the west portico. The redrawn plan, checked against Ballu 1903, the 1905 plan and Germain 1969, gives sixty-three spaces, eleven street doors and seventeen rings, with a maximum depth of nine and a mean depth of 3.42, and one obligatory path, since every way to the court runs the length of the gallery past the hall. The shops open onto the portico and nowhere else, the north-west mosaic room and the corner unit have their own street doors and no way into the house, and the row of rooms along the north street, which only Ballu draws, is carried as uncertain and never joins the house.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I5/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the redrawn plan"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I5/fig2_jgraph_street.png",
-        "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I5/fig4_depth_plan.png",
-        "caption": "Depth of each space from the street"
-      }
-    ]
-  },
-  "TIMG.E-SW.I2": {
-    "date": "2026-09-28",
-    "round": 2,
-    "spaces": 48,
-    "spaces_note": "39 rooms, the great court with five portico spaces, the peristyle garden with two porticoes; all reached",
-    "entrances": 14,
-    "depth_max": 4,
-    "mean_depth": 1.92,
-    "rings": 26,
-    "summary": "Behind an eight-bay portico on the Decumanus a cart door 3.26 m wide, with a smaller door beside it for people, opens into a square paved vestibule and through a second large door onto a great court whose colonnades were closed by stone slabs, with a raised gallery of green-veined marble and red breccia on its south side and behind it a hall that had a fine mosaic and onyx on its lower walls. The redrawn plan, traced from Christofle's plan of 1930 and checked against Ballu's of 1911, gives forty-eight spaces, fourteen street doors and twenty-six rings, with a maximum depth of four and a mean depth of 1.92, the shallowest house drawn so far. Inside the house the only way from the great court to the second court, Christofle's *peristylium* with its basin and the Medusa mosaic in a semicircular room at its corner, runs through that hall, while the rooms round the second court have street doors of their own on two sides, so the warehouse Ballu described and the villa Christofle described meet at a single room.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I2/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the redrawn plan"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I2/fig2_jgraph_street.png",
-        "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-SW.I2/fig4_depth_plan.png",
-        "caption": "Depth of each space from the street"
-      }
-    ]
-  },
-  "TIMG.SW.I5": {
-    "date": "2026-09-30",
-    "round": 2,
-    "spaces": 30,
-    "spaces_note": "26 rooms, the court and its three porticoes; 29 reached, one small west room has no door on the plan",
-    "entrances": 10,
-    "depth_max": 5,
-    "mean_depth": 2.79,
-    "rings": 14,
-    "summary": "The House of the Pool (*Maison de la Piscina*) joins two blocks of the grid across a street that was built over, with a destroyed front range on the Decumanus, a strip of rooms on the line of the old street and a peristyle block at the back, where a blue granite basin with nine columns stands in a court with porticoes on three sides and an oecus with a three-bay front and mosaic 44 closes the axis. Redrawn on the graded layers (Sep 30, 2026): thirty spaces, ten street doors on three streets, fourteen rings, the east portico the most integrated space and the oecus deep and single-sided, with a side door into a small lobby for service.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.SW.I5/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the round-2 drawing (Sep 30, 2026)"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.SW.I5/fig2_jgraph_street_v2.png",
-        "caption": "Access graph from the street"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.SW.I5/fig4_depth_plan.png",
-        "caption": "Depth from the street"
-      }
-    ]
-  },
-  "TIMG.E-NW.I18": {
-    "date": "2026-10-01",
-    "round": 2,
-    "spaces": 53,
-    "spaces_note": "46 rooms, strips and parts of rooms, the atrium with its two porticoes, the paved court and three street spaces; 52 reached, one space inside the outline of the baths has no door on the plan",
-    "entrances": 3,
-    "depth_max": 6,
-    "mean_depth": 3.65,
-    "rings": 16,
-    "summary": "The Large House North of the Capitol (*Grande maison au Nord du Capitole*) runs about a hundred metres along a street north of the Capitol, with private baths at the north end, two rooms cleared in 1925 with a concrete basin, the house of 1916 with its 40 m gallery, atrium and *oecus*, and at the south an apsed hall that Ballu first took for a chapel. Redrawn on the graded layers (Oct 1, 2026): fifty-three spaces, three entrances on one street leading to the atrium, the paved court and the baths, sixteen rings, a maximum depth of six and a mean depth of 3.65, the greatest mean depth of any house drawn so far, with the gallery joining the three parts and almost every door known only from Ballu's plan.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.E-NW.I18/fig1_plan_spaces_v2.png",
-        "caption": "Convex spaces on the round-2 drawing (Oct 1, 2026)"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-NW.I18/fig2_jgraph_street_v3.png",
-        "caption": "Access graph from the street"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-NW.I18/fig4_depth_plan_v2.png",
-        "caption": "Depth from the street"
-      }
-    ]
-  },
-  "TIMG.NE.I28": {
-    "date": "2026-10-02",
-    "round": 2,
-    "spaces": 16,
-    "spaces_note": "16 rooms, Amraoui's rooms 1 to 16; no court or portico; all reached",
-    "entrances": 11,
-    "depth_max": 3,
-    "mean_depth": 1.63,
-    "rings": 3,
-    "summary": "The Fullery House, North-East Quarter, Seventh of the 1911 Sequence is a whole block cleared by Ballu in 1911 and planned by Amraoui as her *insula* 20, about 21 by 20.5 m, with a small *fullonica* in the north-west corner, its well and two tubs in the work room. On the round-2 drawing (Oct 2, 2026) the block has sixteen rooms with no court, eleven street doors on all four streets, six units with no door between them, three rings, a maximum depth of three and a mean depth of 1.63, the smallest and shallowest house drawn so far, with one door joining the workshop to the house and the workshop keeping its own door on the street.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.NE.I28/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the round-2 drawing (Oct 2, 2026)"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NE.I28/fig2_jgraph_street.png",
-        "caption": "Access graph from the street"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NE.I28/fig4_depth_plan.png",
-        "caption": "Depth from the street"
-      }
-    ]
-  },
-  "TIMG.NE.I27": {
-    "date": "2026-09-29",
-    "round": 2,
-    "spaces": 17,
-    "spaces_note": "17 spaces, Amraoui's rooms 1 to 16 with room 6 as two; no court or portico; all reached",
-    "entrances": 9,
-    "depth_max": 3,
-    "mean_depth": 1.71,
-    "rings": 3,
-    "summary": "The Fullery House, North-East Quarter, Ninth of the 1911 Sequence is a whole block cleared by Ballu in 1911 and drawn by Amraoui as her *insula* 19, about 21.2 by 20.7 m, with a *fullonica* of two rooms in the north-east corner, three terracotta tubs in stone compartments and a well. On the round-2 drawing (Sep 29, 2026) the block has seventeen spaces with no court, nine street doors on all four streets, five units with no door between them, three rings, a maximum depth of three and a mean depth of 1.71, with the fullery's unit of four rooms opening on the north and east streets, with a cart door on the east street, and the west unit meeting round a well in room 6.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.NE.I27/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the round-2 drawing (Sep 29, 2026)"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NE.I27/fig2_jgraph_street.png",
-        "caption": "Access graph from the street"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NE.I27/fig4_depth_plan.png",
-        "caption": "Depth from the street"
-      }
-    ]
-  },
-  "TIMG.NE.I21": {
-    "date": "2026-10-03",
-    "round": 2,
-    "spaces": 15,
-    "spaces_note": "15 spaces, Amraoui's rooms 1 to 14 with room 12 as two; no court or portico; all reached",
-    "entrances": 6,
-    "depth_max": 7,
-    "mean_depth": 3.0,
-    "rings": 1,
-    "summary": "The block is Amraoui's *insula* 30, about 20.9 by 21.1 m, in the quarter cleared between 1908 and 1913, holding what she calls the largest *fullonica* in Timgad, three rooms in the north-east corner with eleven stone compartments, ten of them for tubs, and a well, worked from three openings on the north street and shut off from the rest of the block. On the round-2 drawing (Oct 3, 2026) the block has fifteen spaces with no court, six street doors on the west and north streets, four units with no door between them, one ring, a maximum depth of seven and a mean depth of 3.00, the dwelling nine spaces from one door on the west street, most of them in a chain, with its last room seven doors in, and room 3, with a well, either a room off the house's street room or open to the street, as Amraoui draws it.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.NE.I21/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the round-2 drawing (Oct 3, 2026)"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NE.I21/fig2_jgraph_street.png",
-        "caption": "Access graph from the street"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NE.I21/fig4_depth_plan.png",
-        "caption": "Depth from the street"
-      }
-    ]
-  },
-  "TIMG.E-NW.I20": {
-    "date": "2026-10-03",
-    "round": 2,
-    "spaces": 66,
-    "spaces_note": "66 spaces, 62 drawn and 4 rooms and yards Ballu draws open on the north, on the graph without a polygon; the atrium court with four walks and the peristyle court with three; all reached",
-    "entrances": 13,
-    "depth_max": 10,
-    "mean_depth": 3.44,
-    "rings": 13,
-    "summary": "Ballu's two-part villa outside the city wall, the largest house he had found at Timgad (2,464 m², Ballu 1922: 47), an *atrium* and a peristyle with the *tablinum* between them, a row of five shops on the street, each on its own, and a private bath suite in the north-east corner. On the round-2 drawing it is 66 spaces with 13 rings, a maximum depth of 10 and a mean depth of 3.44, the deepest house so far, and the secondary entrance brings a visitor to the *atrium* court in four steps and the main entrance in five, while the baths lie behind one narrow passage in the *atrium*'s north-east corner, the *laconicum* ten steps from the street. The peristyle is two steps from outside through a threshold in its west wall, or five behind the south front alone.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.E-NW.I20/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the round-2 drawing (Oct 3, 2026)"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-NW.I20/fig2_jgraph_street.png",
-        "caption": "Access graph from the street"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.E-NW.I20/fig4_depth_plan.png",
-        "caption": "Depth from the street"
-      }
-    ]
-  },
-  "TIMG.NW.I17": {
-    "date": "2026-10-04",
-    "round": 2,
-    "spaces": 16,
-    "spaces_note": "16 spaces, all drawn and all reached; the atrium court with its east portico, the tablinum and the central corridor cut apart on their colonnade lines",
-    "entrances": 2,
-    "depth_max": 5,
-    "mean_depth": 2.94,
-    "rings": 3,
-    "summary": "A block of about 21 by 20 m in the north-west quarter, rebuilt by the *flamen perpetuus* Corfidius Crementius, whose inscription was found in the *atrium* (Ballu 1911a: 73-74), with the entrance on the south, latrines and a stair beside it, a paved corridor that Ballu says served every room, two rooms of stored grain, one with four stone troughs, and a small *atrium* with one portico and a *tablinum* at the back. On the round-2 drawing it is 16 spaces with 3 rings, a maximum depth of 5 and a mean depth of 2.94, and the corridor, not the *atrium*, is the hub, two steps from the street with eight links; the court is three steps in and the *tablinum* four. Whether the troughs room opened on the *cardo*, as Courtois's and Wilson's city plans have it, stays open.",
-    "figures": [
-      {
-        "src": "/assets/images/houses/TIMG.NW.I17/fig1_plan_spaces.png",
-        "caption": "Convex spaces on the round-2 drawing (Oct 4, 2026)"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NW.I17/fig2_jgraph_street.png",
-        "caption": "Access graph from the street"
-      },
-      {
-        "src": "/assets/images/houses/TIMG.NW.I17/fig4_depth_plan.png",
-        "caption": "Depth from the street"
-      }
-    ]
-  }
+ "TIMG.SE.I2": {
+  "date": "2026-09-26",
+  "round": 2,
+  "spaces": 16,
+  "spaces_note": "12 rooms, 1 court, 3 porticoes",
+  "entrances": 1,
+  "depth_max": 4,
+  "mean_depth": 3.12,
+  "rings": 2,
+  "summary": "A single street door from the *Decumanus* leads through a vestibule onto a ten-column court whose porticoes open onto nine small rooms, with a three-bayed reception room on the entrance axis where the figured mosaic lies. The house was redrawn on confidence-graded layers in September 2026, which gives sixteen spaces reached from one entrance, with two circulation rings running through the porticoes. The court is square, with a well and planters rather than the semicircular *atrium* of the later plans, the tripartite front of the reception room is confirmed, and no room opens directly onto the street, which points to a single household without shops along the frontage.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.SE.I2/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the redrawn plan"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.SE.I2/fig2_jgraph_street.png",
+    "caption": "Justified graph from the street; dashed lines are probable doorways"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.SE.I2/fig4_depth_plan.png",
+    "caption": "Depth of each space from the street"
+   }
+  ]
+ },
+ "TIMG.E-SW.I1": {
+  "date": "2026-09-26",
+  "round": 2,
+  "spaces": 56,
+  "spaces_note": "48 rooms, 2 courts, 6 porticoes, 1 street portico",
+  "entrances": 13,
+  "depth_max": 5,
+  "mean_depth": 2.41,
+  "rings": 17,
+  "summary": "Entered from the east street through a seven-column portico and a columned hall, the house runs on one axis across a twelve-column court to an open *tablinum*, with a second, deeper court and its apsed *oecus* to the west and rows of street-entered rooms on the north and south sides. The house was redrawn on confidence-graded layers in October 2026, which gives fifty-six spaces, thirteen street doors on four streets and seventeen circulation rings, so no single room controls the way in. The shops along the south street connect to each other and to the street but reach the house itself only through one uncertain door and one certain one, which keeps work on the outside of the block and the household behind it, and the *tablinum* and the *oecus* sit among the least integrated spaces, where Fisher's table expects reception rooms to sit.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I1/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the redrawn plan"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I1/fig2_jgraph_street.png",
+    "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I1/fig4_depth_plan.png",
+    "caption": "Depth of each space from the street"
+   }
+  ]
+ },
+ "TIMG.E-SW.I5": {
+  "date": "2026-09-27",
+  "round": 2,
+  "spaces": 63,
+  "spaces_note": "56 rooms, 1 court, 4 porticoes, the Cardo street portico and the undrawn east ground; 60 reached, three north-strip rooms have no door drawn",
+  "entrances": 11,
+  "depth_max": 9,
+  "mean_depth": 3.42,
+  "rings": 17,
+  "summary": "A colonnaded portico on the Cardo fronts five double-depth shops, but the house itself is entered from the Voie des Thermes, through a vestibule and porter's lodge into a gallery the record gives as 30 m long and 7.30 m wide that opens through three bays into a hall with a big-cube mosaic, and only beyond the hall lies the court with its twenty-two columns, its late basin and its balustrades, with rooms on hypocausts north of the hall and the room of the hermaphrodite mosaic off the west portico. The redrawn plan, checked against Ballu 1903, the 1905 plan and Germain 1969, gives sixty-three spaces, eleven street doors and seventeen rings, with a maximum depth of nine and a mean depth of 3.42, and one obligatory path, since every way to the court runs the length of the gallery past the hall. The shops open onto the portico and nowhere else, the north-west mosaic room and the corner unit have their own street doors and no way into the house, and the row of rooms along the north street, which only Ballu draws, is carried as uncertain and never joins the house.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I5/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the redrawn plan"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I5/fig2_jgraph_street.png",
+    "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I5/fig4_depth_plan.png",
+    "caption": "Depth of each space from the street"
+   }
+  ]
+ },
+ "TIMG.E-SW.I2": {
+  "date": "2026-09-28",
+  "round": 2,
+  "spaces": 48,
+  "spaces_note": "39 rooms, the great court with five portico spaces, the peristyle garden with two porticoes; all reached",
+  "entrances": 14,
+  "depth_max": 4,
+  "mean_depth": 1.92,
+  "rings": 26,
+  "summary": "Behind an eight-bay portico on the Decumanus a cart door 3.26 m wide, with a smaller door beside it for people, opens into a square paved vestibule and through a second large door onto a great court whose colonnades were closed by stone slabs, with a raised gallery of green-veined marble and red breccia on its south side and behind it a hall that had a fine mosaic and onyx on its lower walls. The redrawn plan, traced from Christofle's plan of 1930 and checked against Ballu's of 1911, gives forty-eight spaces, fourteen street doors and twenty-six rings, with a maximum depth of four and a mean depth of 1.92, the shallowest house drawn so far. Inside the house the only way from the great court to the second court, Christofle's *peristylium* with its basin and the Medusa mosaic in a semicircular room at its corner, runs through that hall, while the rooms round the second court have street doors of their own on two sides, so the warehouse Ballu described and the villa Christofle described meet at a single room.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I2/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the redrawn plan"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I2/fig2_jgraph_street.png",
+    "caption": "Justified graph from the street; dashed lines are probable doorways, dotted lines uncertain ones"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I2/fig4_depth_plan.png",
+    "caption": "Depth of each space from the street"
+   }
+  ]
+ },
+ "TIMG.SW.I5": {
+  "date": "2026-09-30",
+  "round": 2,
+  "spaces": 30,
+  "spaces_note": "26 rooms, the court and its three porticoes; 29 reached, one small west room has no door on the plan",
+  "entrances": 10,
+  "depth_max": 5,
+  "mean_depth": 2.79,
+  "rings": 14,
+  "summary": "The House of the Pool (*Maison de la Piscina*) joins two blocks of the grid across a street that was built over, with a destroyed front range on the Decumanus, a strip of rooms on the line of the old street and a peristyle block at the back, where a blue granite basin with nine columns stands in a court with porticoes on three sides and an oecus with a three-bay front and mosaic 44 closes the axis. Redrawn on the graded layers (Sep 30, 2026): thirty spaces, ten street doors on three streets, fourteen rings, the east portico the most integrated space and the oecus deep and single-sided, with a side door into a small lobby for service.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.SW.I5/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Sep 30, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.SW.I5/fig2_jgraph_street_v2.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.SW.I5/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
+ },
+ "TIMG.E-NW.I18": {
+  "date": "2026-10-01",
+  "round": 2,
+  "spaces": 53,
+  "spaces_note": "46 rooms, strips and parts of rooms, the atrium with its two porticoes, the paved court and three street spaces; 52 reached, one space inside the outline of the baths has no door on the plan",
+  "entrances": 3,
+  "depth_max": 6,
+  "mean_depth": 3.65,
+  "rings": 16,
+  "summary": "The Large House North of the Capitol (*Grande maison au Nord du Capitole*) runs about a hundred metres along a street north of the Capitol, with private baths at the north end, two rooms cleared in 1925 with a concrete basin, the house of 1916 with its 40 m gallery, atrium and *oecus*, and at the south an apsed hall that Ballu first took for a chapel. Redrawn on the graded layers (Oct 1, 2026): fifty-three spaces, three entrances on one street leading to the atrium, the paved court and the baths, sixteen rings, a maximum depth of six and a mean depth of 3.65, the greatest mean depth of any house drawn so far, with the gallery joining the three parts and almost every door known only from Ballu's plan.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.E-NW.I18/fig1_plan_spaces_v2.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 1, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-NW.I18/fig2_jgraph_street_v3.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-NW.I18/fig4_depth_plan_v2.png",
+    "caption": "Depth from the street"
+   }
+  ]
+ },
+ "TIMG.NE.I28": {
+  "date": "2026-10-02",
+  "round": 2,
+  "spaces": 16,
+  "spaces_note": "16 rooms, Amraoui's rooms 1 to 16; no court or portico; all reached",
+  "entrances": 11,
+  "depth_max": 3,
+  "mean_depth": 1.63,
+  "rings": 3,
+  "summary": "The Fullery House, North-East Quarter, Seventh of the 1911 Sequence is a whole block cleared by Ballu in 1911 and planned by Amraoui as her *insula* 20, about 21 by 20.5 m, with a small *fullonica* in the north-west corner, its well and two tubs in the work room. On the round-2 drawing (Oct 2, 2026) the block has sixteen rooms with no court, eleven street doors on all four streets, six units with no door between them, three rings, a maximum depth of three and a mean depth of 1.63, the smallest and shallowest house drawn so far, with one door joining the workshop to the house and the workshop keeping its own door on the street.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I28/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 2, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I28/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I28/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
+ },
+ "TIMG.NE.I27": {
+  "date": "2026-09-29",
+  "round": 2,
+  "spaces": 17,
+  "spaces_note": "17 spaces, Amraoui's rooms 1 to 16 with room 6 as two; no court or portico; all reached",
+  "entrances": 9,
+  "depth_max": 3,
+  "mean_depth": 1.71,
+  "rings": 3,
+  "summary": "The Fullery House, North-East Quarter, Ninth of the 1911 Sequence is a whole block cleared by Ballu in 1911 and drawn by Amraoui as her *insula* 19, about 21.2 by 20.7 m, with a *fullonica* of two rooms in the north-east corner, three terracotta tubs in stone compartments and a well. On the round-2 drawing (Sep 29, 2026) the block has seventeen spaces with no court, nine street doors on all four streets, five units with no door between them, three rings, a maximum depth of three and a mean depth of 1.71, with the fullery's unit of four rooms opening on the north and east streets, with a cart door on the east street, and the west unit meeting round a well in room 6.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I27/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Sep 29, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I27/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I27/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
+ },
+ "TIMG.NE.I21": {
+  "date": "2026-10-03",
+  "round": 2,
+  "spaces": 15,
+  "spaces_note": "15 spaces, Amraoui's rooms 1 to 14 with room 12 as two; no court or portico; all reached",
+  "entrances": 6,
+  "depth_max": 7,
+  "mean_depth": 3.0,
+  "rings": 1,
+  "summary": "The block is Amraoui's *insula* 30, about 20.9 by 21.1 m, in the quarter cleared between 1908 and 1913, holding what she calls the largest *fullonica* in Timgad, three rooms in the north-east corner with eleven stone compartments, ten of them for tubs, and a well, worked from three openings on the north street and shut off from the rest of the block. On the round-2 drawing (Oct 3, 2026) the block has fifteen spaces with no court, six street doors on the west and north streets, four units with no door between them, one ring, a maximum depth of seven and a mean depth of 3.00, the dwelling nine spaces from one door on the west street, most of them in a chain, with its last room seven doors in, and room 3, with a well, either a room off the house's street room or open to the street, as Amraoui draws it.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I21/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 3, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I21/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I21/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
+ },
+ "TIMG.E-NW.I20": {
+  "date": "2026-10-03",
+  "round": 2,
+  "spaces": 66,
+  "spaces_note": "66 spaces, 62 drawn and 4 rooms and yards Ballu draws open on the north, on the graph without a polygon; the atrium court with four walks and the peristyle court with three; all reached",
+  "entrances": 13,
+  "depth_max": 10,
+  "mean_depth": 3.44,
+  "rings": 13,
+  "summary": "Ballu's two-part villa outside the city wall, the largest house he had found at Timgad (2,464 m², Ballu 1922: 47), an *atrium* and a peristyle with the *tablinum* between them, a row of five shops on the street, each on its own, and a private bath suite in the north-east corner. On the round-2 drawing it is 66 spaces with 13 rings, a maximum depth of 10 and a mean depth of 3.44, the deepest house so far, and the secondary entrance brings a visitor to the *atrium* court in four steps and the main entrance in five, while the baths lie behind one narrow passage in the *atrium*'s north-east corner, the *laconicum* ten steps from the street. The peristyle is two steps from outside through a threshold in its west wall, or five behind the south front alone.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.E-NW.I20/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 3, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-NW.I20/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-NW.I20/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
+ },
+ "TIMG.NW.I17": {
+  "date": "2026-10-04",
+  "round": 2,
+  "spaces": 16,
+  "spaces_note": "16 spaces, all drawn and all reached; the atrium court with its east portico, the tablinum and the central corridor cut apart on their colonnade lines",
+  "entrances": 2,
+  "depth_max": 5,
+  "mean_depth": 2.94,
+  "rings": 3,
+  "summary": "A block of about 21 by 20 m in the north-west quarter, rebuilt by the *flamen perpetuus* Corfidius Crementius, whose inscription was found in the *atrium* (Ballu 1911a: 73-74), with the entrance on the south, latrines and a stair beside it, a paved corridor that Ballu says served every room, two rooms of stored grain, one with four stone troughs, and a small *atrium* with one portico and a *tablinum* at the back. On the round-2 drawing it is 16 spaces with 3 rings, a maximum depth of 5 and a mean depth of 2.94, and the corridor, not the *atrium*, is the hub, two steps from the street with eight links; the court is three steps in and the *tablinum* four. Whether the troughs room opened on the *cardo*, as Courtois's and Wilson's city plans have it, stays open.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NW.I17/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 4, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NW.I17/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NW.I17/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
+ },
+ "TIMG.E-SW.I14": {
+  "date": "2026-10-04",
+  "round": 2,
+  "spaces": 14,
+  "spaces_note": "15 spaces drawn, 14 reached (the room north of 192 has no door on the sketch); the court and its four porticoes, and the hall's two parts, cut apart on their colonnade lines",
+  "entrances": 3,
+  "depth_max": 5,
+  "mean_depth": 2.93,
+  "rings": 3,
+  "summary": "A house inside the Donatist episcopal quarter west of the Capitol, between the cathedral's east wall and the chapel, named for the Donatist bishop Optatus, whose name is in the mosaic inscription of the room off the west portico, *haec iubente sacerdote Dei Op[tato ...]* in Albertini's restoration (Germain 1969: 122, 126-127). The only plan is a fragment of Meunier's unpublished 1938 sketch; on the round-2 drawing it is a full peristyle of four colonnades round a court of about 10 by 10 m, a hall north of the court, the mosaic rooms on the west and a passage along the east side with the way in at the north-east corner from the complex's corridor, 15 spaces (14 reached) with 3 rings, a maximum depth of 5 and a mean depth of 2.93. The passage, not the court, is the hub, one step in; the court is two, and the three mosaic floors are the deepest decorated spaces, the west portico three steps in and the two rooms four and five, through the inscription room. Where the house's door really was, and what Meunier drew east and south of the fragment, stay open.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I14/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 4, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I14/fig2_jgraph_street.png",
+    "caption": "Access graph from outside the house"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.E-SW.I14/fig4_depth_plan.png",
+    "caption": "Depth from outside the house"
+   }
+  ]
+ }
 }
