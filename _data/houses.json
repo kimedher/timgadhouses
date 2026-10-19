@@ -1353,7 +1353,7 @@
       "confidence": "low",
       "mapping_confidence": "pending",
       "verification_status": "review",
-      "analysis_status": "pending",
+      "analysis_status": "interpreted",
       "area_raw": "",
       "area_m2": null,
       "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 493 (offprint p. 31)",
@@ -1362,7 +1362,33 @@
       "possible_duplicate_of": "",
       "notes": "",
       "sample": false,
-      "notes_html": ""
+      "notes_html": "",
+      "analysis": {
+        "date": "2026-10-04",
+        "round": 2,
+        "spaces": 16,
+        "spaces_note": "no court or portico; 5 reached from the street as drawn, the street row of the north half",
+        "entrances": 4,
+        "depth_max": 2,
+        "mean_depth": 1.2,
+        "rings": 1,
+        "summary": "The fifth house Ballu cleared in 1911 in the north-east quarter, a block of about 22 by 21 m over its outer faces on the drawing, between the fourth and fifth decumani, split into two equal halves by a party wall, with a paved room, a well, three terracotta vats for dyeing and two basins in the north half's row on the fifth decumanus, and in the south half a big hall, a paved room with a well, two basins and four fulling vats, and a vast storeroom, so that, he says, there were two dyers in the house (Ballu 1912: 493). No plan of the house exists in the sources used beyond the city plans, and Ballu names no door. On the round-2 drawing (Oct 4, 2026) it has 16 spaces and only the five street rooms reach a street, by four uncertain doors in the north wall, 6 links, 1 ring, a maximum depth of 2 and a mean depth of 1.20 for those five; the other 11 spaces, the fullery and the storeroom among them, have no way to any street as drawn, so where their doors were stays open.",
+        "figures": [
+          {
+            "src": "/assets/images/houses/TIMG.NE.I29/fig1_plan_spaces.png",
+            "caption": "Convex spaces on the round-2 drawing (Oct 4, 2026)"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.NE.I29/fig2_jgraph_street.png",
+            "caption": "Access graph from the street (only the street row is reached as drawn)"
+          },
+          {
+            "src": "/assets/images/houses/TIMG.NE.I29/fig4_depth_plan.png",
+            "caption": "Depth from the street"
+          }
+        ],
+        "summary_html": "The fifth house Ballu cleared in 1911 in the north-east quarter, a block of about 22 by 21 m over its outer faces on the drawing, between the fourth and fifth <em>decumani</em>, split into two equal halves by a party wall, with a paved room, a well, three terracotta vats for dyeing and two basins in the north half's row on the fifth <em>decumanus</em>, and in the south half a big hall, a paved room with a well, two basins and four fulling vats, and a vast storeroom, so that, he says, there were two dyers in the house (Ballu 1912: 493). No plan of the house exists in the sources used beyond the city plans, and Ballu names no door. On the round-2 drawing (Oct 4, 2026) it has 16 spaces and only the five street rooms reach a street, by four uncertain doors in the north wall, 6 links, 1 ring, a maximum depth of 2 and a mean depth of 1.20 for those five; the other 11 spaces, the fullery and the storeroom among them, have no way to any street as drawn, so where their doors were stays open."
+      }
     },
     {
       "grid_id": "TIMG.NE.I3",
