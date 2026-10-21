@@ -1549,7 +1549,7 @@
    "confidence": "low",
    "mapping_confidence": "pending",
    "verification_status": "review",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 493 (offprint p. 31)",
@@ -1558,7 +1558,33 @@
    "possible_duplicate_of": "",
    "notes": "",
    "sample": false,
-   "notes_html": ""
+   "notes_html": "",
+   "analysis": {
+    "date": "2026-10-13",
+    "round": 2,
+    "spaces": 19,
+    "spaces_note": "no court or portico; every room reached, none by a certain door",
+    "entrances": 9,
+    "depth_max": 4,
+    "mean_depth": 1.89,
+    "rings": 5,
+    "summary": "The sixth block Ballu cleared in 1911 in the north-east quarter, between the fifth *decumanus* and the north boulevard, where he says two craftsmen lived either side of a north-south wall, with long rooms of 15 by 5 m, a room of 15 m with a well and two large fulling vessels, three rooms on the east street and two east-west rooms along the south, with vats and basins (Ballu 1912: 493). On the ground and both city plans two more east-west walls cut his long rooms into three, so the round-2 drawing (Oct 13, 2026) has 19 rooms, all reached, 9 street doors, 24 links, 5 rings, a maximum depth of 4 and a mean depth of 1.89, the fullery's well room three steps in from the east street, with no plan or text giving a single door and the two halves meeting only at a doubtful gap in the median wall.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I35/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the round-2 drawing (Oct 13, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I35/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I35/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "The sixth block Ballu cleared in 1911 in the north-east quarter, between the fifth <em>decumanus</em> and the north boulevard, where he says two craftsmen lived either side of a north-south wall, with long rooms of 15 by 5 m, a room of 15 m with a well and two large fulling vessels, three rooms on the east street and two east-west rooms along the south, with vats and basins (Ballu 1912: 493). On the ground and both city plans two more east-west walls cut his long rooms into three, so the round-2 drawing (Oct 13, 2026) has 19 rooms, all reached, 9 street doors, 24 links, 5 rings, a maximum depth of 4 and a mean depth of 1.89, the fullery's well room three steps in from the east street, with no plan or text giving a single door and the two halves meeting only at a doubtful gap in the median wall."
+   }
   },
   {
    "grid_id": "TIMG.NE.I4",
