@@ -348,5 +348,30 @@
     "caption": "Depth from the street"
    }
   ]
+ },
+ "TIMG.NW.I25": {
+  "date": "2026-10-06",
+  "round": 2,
+  "spaces": 21,
+  "spaces_note": "the atrium's court and its four walks as five spaces; every space reached, none by a certain door",
+  "entrances": 8,
+  "depth_max": 4,
+  "mean_depth": 1.9,
+  "rings": 14,
+  "summary": "The first house of the second row of the north-west quarter on the west boulevard, the fourth block Ballu cleared in 1908, which he thought by far the finest and best preserved: a vestibule entered from the north in the axis of the building, a paved *atrium* with porticoes on four sides and a square limestone basin with a fountain, the *tablinum* by three bays, a hall in the axis of the wide east portico, and an east fraction of smaller rooms, several opening onto the east street (Ballu 1909: 94-95; 1911a: 67-68). No plan of the house exists in the sources used, so on the round-2 drawing (Oct 6, 2026) the doors sit over the black spots and breaks on the walls and Courtois's gaps, giving 21 spaces, all reached, 8 street doors, 35 links, 14 rings, a maximum depth of 4 and a mean depth of 1.90, the entrance, the vestibule's opening and the hall's door on one line down the wide east portico.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NW.I25/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 6, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NW.I25/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NW.I25/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
  }
 }
