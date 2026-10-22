@@ -45,8 +45,8 @@ if os.path.exists(OVERLAY_CSV):
             PUBLIC_NOTES[row["grid_id"].strip()] = row["note"].strip()
 
 # Analysis progress comes from the HOUSES "Status" column (the working tracker);
-# its stages map onto the site vocabulary pending / drawn / interpreted /
-# case_study. The csv overlay remains as a fallback for sheets without the
+# its stages map onto the site vocabulary pending / drawn / interpreted.
+# The csv overlay remains as a fallback for sheets without the
 # Status column.
 ANALYSIS_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analysis_status.csv")
 ANALYSIS_STATUS = {}
@@ -222,15 +222,17 @@ STATUS_MAP = {
     "in progress": "pending",
     "drawn in QGIS": "drawn",
     "analyzed post-drawing": "interpreted",
-    "space syntax in progress": "case_study",
-    "completed": "case_study",
-    "full case study finished": "case_study",
+    "space syntax in progress": "interpreted",
+    "completed": "interpreted",
+    "full case study finished": "interpreted",
 }
 
 # "potential case study" is a working tag in the tracker and is never published
-# (Kim, 2026-09-20): a house shows as a case study only once that analysis is
-# under way or finished.
-STAGE_ORDER = ["pending", "drawn", "interpreted", "case_study"]
+# (Kim, 2026-09-20). From Oct 22, 2026 (Kim) no house is published as a case
+# study at all, on the grid or on the catalog cards, so that the houses chosen
+# for in-depth analysis are not revealed before the defence: the case-study
+# stages publish as "interpreted", and the site vocabulary stops there.
+STAGE_ORDER = ["pending", "drawn", "interpreted"]
 
 def analysis_status(status_cell, gid):
     # The Status cell may hold several comma-separated stages ("drawn in QGIS,
@@ -239,7 +241,7 @@ def analysis_status(status_cell, gid):
     # is not lost when the sheet lags behind.
     stages = [STATUS_MAP[p.strip()] for p in status_cell.split(",") if p.strip() in STATUS_MAP]
     if gid in ANALYSIS_STATUS:
-        stages.append(ANALYSIS_STATUS[gid])
+        stages.append("interpreted" if ANALYSIS_STATUS[gid] == "case_study" else ANALYSIS_STATUS[gid])
     if not stages:
         return "pending"
     return max(stages, key=STAGE_ORDER.index)
