@@ -3,12 +3,12 @@ layout: page
 title: Interactive Grid of Timgad
 subtitle: The urban plan of Timgad, block by block, with house identifiers mapped to the streets.
 permalink: /grid/
-last_updated: 2026-07-06
+last_updated: 2026-10-22
 ---
 
 Timgad was laid out on a strict rectilinear grid, two main streets crossing at right angles with regular rectangular blocks between them. Each block, called an *insula* in Latin, is identified here by a quadrant-based reference that locates it relative to the city's central axes. Individual houses are keyed to the insula they sit inside, so that a house identifier like `TIMG.SE.I20.H2` can be traced directly to its place in the city.
 
-The viewer below is the current working version. It is a schematic reference chart, not a scale map: every block is drawn the same size so the identifiers stay legible. For the city as it actually lies on the ground — real shapes, real distances, satellite imagery you can switch on and off — see the [live GIS map](/gis/); the two views share the same identifiers and colour coding. It shows the city grid and the identifiers assigned to each block, based on the standardized system described in the [numbering rationale](#numbering-rationale) below. Blocks holding a house in the database appear in blue and click through to that house's record, with public buildings in purple and baths in pink, the same colour coding the project uses in its GIS drawings; houses with full records in the [catalog](/houses/catalog/) are marked with a check.
+The viewer below is the current working version. It is a schematic reference chart, not a scale map: every block is drawn the same size so the identifiers stay legible. For the city as it actually lies on the ground, with real shapes, real distances, and satellite imagery you can switch on and off, see the [live GIS map](/gis/); the two views share the same identifiers and colour coding. It shows the city grid and the identifiers assigned to each block, based on the standardized system described in the [numbering rationale](#numbering-rationale) below. Block colours follow the three tiers of evidence the database assigns to its houses: blue for blocks with a documented house, pale blue for blocks whose houses are only probable, and gray for possible houses and blocks not yet securely documented, with public buildings in purple and baths in pink, the same colour coding the project uses in its GIS drawings. Every block with a house record clicks through to that record. Small tags mark the houses I have already redrawn in the GIS, graded wall by wall against the satellite imagery and the published plans (*drawn*), and those I have gone on to analyse room by room (*interpreted*), whose results sit on their [catalog](/houses/catalog/) cards; houses with full published records are marked with a check.
 
 <p style="margin: 2rem 0;">
   <a href="/grid/viewer.html" style="display: inline-block; background: var(--teal); color: white; padding: 0.8rem 1.4rem; border-radius: var(--radius); border: none; font-weight: 600; font-size: 0.95rem;">Open the full-screen grid &rarr;</a>
@@ -46,7 +46,7 @@ A concordance spreadsheet keeps every TIMG identifier in translation with Ballu 
 
 <h2>Downloading the data</h2>
 
-The underlying data for the grid will be published as GeoJSON and CSV under a Creative Commons license once the current round of source-checking is complete. For now, the data is in active flux and not distributed externally.
+The grid and the catalog read from the same house table, which lives in the site's public [GitHub repository](https://github.com/kimedher/timgadhouses) and is archived with a DOI on [Zenodo](https://doi.org/10.5281/zenodo.21116238). A documented release of the full dataset as GeoJSON and CSV, under a Creative Commons license, will follow once the current round of redrawing and source-checking is complete. For now, the data is in active flux and the archived copy is a snapshot, not a stable version.
 
 <div class="callout-warn">
   <p><strong>A note on the wet paint.</strong> This grid is a work in progress, and I've published it early on purpose. It pulls straight from the same database as the house catalog, so the blocks update whenever the data does, and right now the data is still moving. Numbers will shift, and some assignments will turn out to be wrong. I would rather fix things in the open than wait for perfect. Once the data settles, I will update this note to reflect its reliability as a stable version for future reference.</p>
