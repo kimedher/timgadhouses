@@ -1429,7 +1429,7 @@
    "confidence": "low",
    "mapping_confidence": "high",
    "verification_status": "review",
-   "analysis_status": "drawn",
+   "analysis_status": "interpreted",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1912 (Rapport sur les fouilles exécutées en 1911), BCTH 1912: 494 (offprint p. 32)",
@@ -1438,7 +1438,33 @@
    "possible_duplicate_of": "",
    "notes": "",
    "sample": false,
-   "notes_html": ""
+   "notes_html": "",
+   "analysis": {
+    "date": "2026-10-13",
+    "round": 2,
+    "spaces": 20,
+    "spaces_note": "atrium five steps in; every room reached, none by a certain door",
+    "entrances": 7,
+    "depth_max": 5,
+    "mean_depth": 2.35,
+    "rings": 3,
+    "summary": "The eighth block Ballu cleared in 1911 in the north-east quarter, between the fifth *decumanus* and the north boulevard, a dyers' house in two equal halves either side of a median wall, with a fine atrium paved in stone, a big well with a semicircular wall behind it and three basins in front, two corner rooms with wells and fulling vats, the atrium and fifteen rooms, sixteen spaces in all (Ballu 1912: 494). On the ground the atrium's well and curved wall stand in the west half where he puts them in the east, so the round-2 drawing (Oct 13, 2026) keeps the ground's compass: 20 spaces, all reached, 7 street doors on the two side streets and none on the long ones, 23 links, 3 rings, a maximum depth of 5 and a mean depth of 2.35, the atrium one of the two deepest rooms in the house, five steps in through the other half, with no plan or text giving a single door.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I34/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the round-2 drawing (Oct 13, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I34/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I34/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "The eighth block Ballu cleared in 1911 in the north-east quarter, between the fifth <em>decumanus</em> and the north boulevard, a dyers' house in two equal halves either side of a median wall, with a fine atrium paved in stone, a big well with a semicircular wall behind it and three basins in front, two corner rooms with wells and fulling vats, the atrium and fifteen rooms, sixteen spaces in all (Ballu 1912: 494). On the ground the atrium's well and curved wall stand in the west half where he puts them in the east, so the round-2 drawing (Oct 13, 2026) keeps the ground's compass: 20 spaces, all reached, 7 street doors on the two side streets and none on the long ones, 23 links, 3 rings, a maximum depth of 5 and a mean depth of 2.35, the atrium one of the two deepest rooms in the house, five steps in through the other half, with no plan or text giving a single door."
+   }
   },
   {
    "grid_id": "TIMG.NE.I35",
