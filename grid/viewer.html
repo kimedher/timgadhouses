@@ -270,12 +270,14 @@ function houseCard(h, viewId) {
   </div>`;
 }
 
-function renderQuadrant(q, elId, title, sub) {
+function renderQuadrant(q, elId, title, sub, empty) {
   const items = HOUSES.filter(h => h.quadrant === q).sort((a,b) => {
     const n = g => parseInt((g.grid_id.match(/\.I(\d+)/) || [0,0])[1], 10);
     return n(a) - n(b);
   });
-  let html = `<div class="section-title">${title}</div><p class="section-sub">${sub} ${items.length} houses in the database.</p><div class="fab-grid">`;
+  let html = `<div class="section-title">${title}</div><p class="section-sub">${sub} ${items.length === 0 ? "No house has yet been placed in this quarter." : items.length + " houses in the database."}</p>`;
+  if (items.length === 0 && empty) html += `<p class="section-sub">${empty}</p>`;
+  html += `<div class="fab-grid">`;
   items.forEach(h => { html += houseCard(h, elId.replace("view-","")); });
   html += `</div>`;
   document.getElementById(elId).innerHTML = html;
@@ -374,7 +376,7 @@ function renderBanner() {
 function renderAll() {
   renderMain();
   renderQuadrant("E-NW", "view-enw", "Extramural NW Quarter (E-NW)", "Houses beyond the walls to the NW, in the quarter of the Filadelfes Baths and the Great Northern Baths.");
-  renderQuadrant("E-NE", "view-ene", "Extramural NE Quarter (E-NE)", "Houses NE of the Trajanic walls.");
+  renderQuadrant("E-NE", "view-ene", "Extramural NE Quarter (E-NE)", "Houses NE of the Trajanic walls.", "The database records the blocks of this suburb from Ballu's 1911 description of the quarter, without a house record assigned to any of them so far. Entries will appear here as the record is worked through.");
   renderQuadrant("E-SE", "view-ese", "Extramural SE Quarter (E-SE)", "Houses SE of the Trajanic walls.");
   renderQuadrant("E-SW", "view-esw", "Extramural SW Quarter (E-SW)", "Houses SW of the Trajanic walls, toward the Lamb\u00e8se Gate. The Sertius market stands just west of the Arch of Trajan, with the Southern Baths and the Byzantine fort further south.");
   renderUnk();
