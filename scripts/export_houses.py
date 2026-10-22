@@ -75,6 +75,11 @@ SAMPLE_IDS = {
 
 HEADER_ROW = 4  # v16: rows 1-2 titles, row 3 section bands, row 4 headers
 
+# Rows retired from the catalog (merged into another record) that may still
+# sit in the working sheet; never exported. UNK.H27 was folded into NE.I28 on
+# Sep 20, 2026.
+RETIRED_IDS = {"TIMG.UNK.H27"}
+
 def clean(v):
     if v is None: return ""
     return re.sub(r"\s+", " ", str(v)).strip()
@@ -289,6 +294,7 @@ for r in ws.iter_rows(min_row=HEADER_ROW + 1):
     row = dict(zip(hdr, [c.value for c in r]))
     if not any(v not in (None, "") for v in row.values()): continue
     gid = clean(row["Grid ID"])
+    if gid in RETIRED_IDS: continue
     name, en, fr = names(clean(row.get("House Name (in English)") or row.get("House Name")), clean(row["French Name"]))
     q = quadrant(clean(row["Quadrant"]), gid)
     ar = clean(row["Approx. Area"]) or clean(row["Footprint L x W (m)"])
