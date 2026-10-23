@@ -8,7 +8,7 @@ last_updated: 2026-10-22
 
 ## The live map
 
-Every feature below was drawn in QGIS from georeferenced satellite imagery, checked against the historical excavation plans, and exported directly from the project's spatial database. The map grows in two tiers. The base city is mapped: the blocks of the grid (shaded yellow), the roads, the gates, the baths, and the public and religious buildings. The houses go on as they are drawn, each in blue over its block, and they are only the first of the {{ site.data.houses.count }} houses in the [catalog](/houses/catalog/). Zoom in on a drawn house and its walls and doorways come up over the imagery, graded by how clearly each one shows on the ground (solid lines for certain, dashed for probable, dotted for uncertain), along with its courts, colonnades, mosaics, stairs, water features and workshops.
+Every feature below was drawn in QGIS from georeferenced satellite imagery, checked against the historical excavation plans, and exported directly from the project's spatial database. The map grows in two tiers. The base city is mapped: the blocks of the grid (shaded yellow), the roads, the gates, the baths, and the public and religious buildings. The houses go on as they are drawn, each in blue over its block, and they are only the first of the {{ site.data.houses.count }} houses in the [catalog](/houses/catalog/). Zoom in on a drawn house and its courts, mosaics and paving, stairs, basins and wells, and workshops come up over the imagery.
 
 <p style="margin: 2rem 0;">
   <a href="/gis/viewer.html" style="display: inline-block; background: var(--teal); color: white; padding: 0.8rem 1.4rem; border-radius: var(--radius); border: none; font-weight: 600; font-size: 0.95rem;">Open the full-screen map &rarr;</a>
@@ -16,7 +16,7 @@ Every feature below was drawn in QGIS from georeferenced satellite imagery, chec
 
 <iframe src="/gis/viewer.html" class="grid-viewer-frame" title="Live GIS map of Timgad"></iframe>
 
-Click any feature for its identification, French name, dating, and certainty level; each wall and doorway of a drawn house also carries its grade, the plan it follows, and a note on what the ground shows there, and drawn houses link through to their records in the [catalog](/houses/catalog/). Public building identifications follow the published excavation literature (Ballu, Boeswillwald–Cagnat–Ballu, Gsell, Germain); dates and attributions marked *uncertain* are flagged in the data itself, in keeping with the project's [methods](/methods/).
+Click any feature for its identification, French name, dating, and certainty level; drawn houses link through to their records in the [catalog](/houses/catalog/). Public building identifications follow the published excavation literature (Ballu, Boeswillwald–Cagnat–Ballu, Gsell, Germain); dates and attributions marked *uncertain* are flagged in the data itself, in keeping with the project's [methods](/methods/).
 
 ## How this map is made
 

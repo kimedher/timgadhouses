@@ -18,41 +18,51 @@ header.bar h1 { font-size: 17px; color: #222; }
 header.bar .sub { font-size: 11px; color: #666; flex: 1 1 420px; }
 header.bar .sub a { color: #1B6B6F; }
 header.bar .prog { font-size: 11px; color: #1B6B6F; font-weight: 600; margin-left: auto; }
-#map { flex: 1; }
+#main { flex: 1; display: flex; min-height: 0; }
+#map { flex: 1; min-width: 0; }
+/* the legend sits beside the map, never on it */
+aside.side-legend { width: 190px; flex: none; overflow-y: auto; background: #fff; border-left: 1px solid #ddd;
+  padding: 10px 12px; font: 11px 'Montserrat', Arial, sans-serif; line-height: 1.6; color: #333; }
+.legend .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.legend .lh { font-weight: 700; margin-top: 8px; }
+.legend .lh:first-child { margin-top: 0; }
+.legend .note { font-size: 10px; color: #777; line-height: 1.4; margin-top: 8px; }
+/* on narrow screens: a small button on the map that opens the same legend */
+.legend-pop { background: #fff; border-radius: 5px; box-shadow: 0 1px 4px rgba(0,0,0,.3); font: 11px 'Montserrat', Arial, sans-serif; line-height: 1.6; padding: 5px 9px; max-width: 190px; max-height: 50vh; overflow-y: auto; }
+.legend-pop button { font: 600 11px 'Montserrat', Arial, sans-serif; background: none; border: 0; color: #1B6B6F; cursor: pointer; padding: 0; }
+.legend-pop.collapsed .legend { display: none; }
+.legend-pop .legend { margin-top: 4px; }
 .leaflet-popup-content { font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif; font-size: 12px; line-height: 1.5; }
 .leaflet-popup-content .pname { font-weight: 700; font-size: 13px; }
 .leaflet-popup-content .pfr { font-style: italic; color: #555; }
 .leaflet-popup-content .pmeta { color: #444; margin-top: 3px; }
 .leaflet-popup-content .pdesc { color: #333; margin-top: 5px; }
-.leaflet-popup-content .psrc { color: #777; margin-top: 5px; font-size: 11px; }
 .leaflet-popup-content a { color: #1B6B6F; font-weight: 600; }
-.legend-box { background: #fff; padding: 8px 10px; border-radius: 5px; box-shadow: 0 1px 4px rgba(0,0,0,.3); font: 11px 'Montserrat', Arial, sans-serif; line-height: 1.7; max-width: 230px; }
-.legend-box .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
-.legend-box svg, .leaflet-control-layers svg { width: 26px; height: 10px; margin-right: 5px; vertical-align: 0; display: inline-block; }
-.legend-box .lh { font-weight: 700; margin-top: 4px; }
-.legend-box .lh:first-child { margin-top: 0; }
-.legend-box .note { font-size: 10px; color: #777; line-height: 1.4; margin-top: 4px; }
-.legend-box button.ltoggle { display: none; font: 600 11px 'Montserrat', Arial, sans-serif; background: none; border: 0; color: #1B6B6F; cursor: pointer; padding: 0; }
+.leaflet-control-layers { font-size: 12px; }
+.leaflet-control-layers .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
 .leaflet-control-layers-base label { font-weight: 700; }
 .leaflet-control-layers-overlays label:first-child { border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 5px; display: block; }
+@media (max-width: 760px) {
+  aside.side-legend { display: none; }
+}
 @media (max-width: 600px) {
   header.bar { padding: 6px 10px; }
   header.bar h1 { font-size: 14px; }
   header.bar .sub { display: none; }
   header.bar .prog { margin-left: 0; font-size: 10px; }
-  .legend-box button.ltoggle { display: block; }
-  .legend-box.collapsed .lbody { display: none; }
-  .legend-box { max-width: 200px; max-height: 45vh; overflow-y: auto; }
 }
 </style>
 </head>
 <body>
 <header class="bar">
   <h1>Timgad City Map</h1>
-  <span class="sub">The city's blocks, streets, gates and public buildings, with the houses drawn so far in blue over the satellite imagery. Zoom in on a house to see its walls and doorways, graded by how clearly they show on the ground: solid where certain, dashed where probable, dotted where uncertain, with its courts, mosaics, stairs and water features. Switch the base layer to "Plain plan" to see the drawings without the imagery, and see the <a href="/grid/" target="_top">insula grid</a> for the block-by-block reference system.</span>
+  <span class="sub">The city's blocks, streets, gates and public buildings, with the houses drawn so far in blue over the satellite imagery. Zoom in on a house to see its courts, mosaics and paving, stairs, basins and wells, and workshops. Switch the base layer to "Plain plan" to see the map without the imagery, and see the <a href="/grid/" target="_top">insula grid</a> for the block-by-block reference system.</span>
   <span class="prog" id="progress"></span>
 </header>
-<div id="map"></div>
+<div id="main">
+  <div id="map"></div>
+  <aside class="side-legend" id="side-legend" aria-label="Map legend"></aside>
+</div>
 <script>
 // House names come from the catalog (_data/houses.json), joined by Grid ID.
 const CATALOG = {
@@ -78,28 +88,16 @@ const COLORS = {
   houses: '#89CFF0', baths: '#F8A5C2', religious_buildings: '#E74C3C',
   social_buildings: '#9B59B6', economic_buildings: '#2ECC71', gates: '#800020',
   roads: '#FE9306', insulae: '#F4D03F',
-  colonnades: '#B2DF8A', open_spaces: '#EBB27B', water_features: '#40E0D0',
-  mosaics: '#D295B2', stairs: '#D0F362'
+  open_spaces: '#EBB27B', water_features: '#40E0D0', mosaics: '#D295B2', stairs: '#D0F362'
 };
 const STROKES = {
   houses: '#5AA5D1', baths: '#D47FA6', religious_buildings: '#C0392B',
   social_buildings: '#7D3C98', economic_buildings: '#1E8449', gates: '#5C0017',
   roads: '#D4AC0D', insulae: '#D4AC0D',
-  open_spaces: '#A16B4D', water_features: '#2BB5A5', mosaics: '#4E152C',
-  stairs: '#9CBF2F'
+  open_spaces: '#A16B4D', water_features: '#2BB5A5', mosaics: '#4E152C', stairs: '#9CBF2F'
 };
-// Walls by grade: solid, dashed, dotted. White over the imagery, near-black on the plain plan.
-const GRADE = {
-  certain:   { dash: null,  op: 1.0,  w: 2.4 },
-  probable:  { dash: '6 4', op: 0.95, w: 2.2 },
-  uncertain: { dash: '1 5', op: 0.85, w: 2.2 }
-};
-const DOOR = { certain: '#FF8C00', probable: '#FDBF6F', uncertain: '#FFE6BF' };
-const DOOR_PLAIN = { certain: '#C25E00', probable: '#E59A3A', uncertain: '#F1C98C' };
-let onPlain = false;
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const rich = s => esc(s).replace(/\*([^*]+)\*/g, '<em>$1</em>');   // *Latin* and *French* in italics
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 
 function catalogFor(id) {
@@ -116,16 +114,12 @@ const LABELS = {
   insulae: 'Blocks (insulae)', roads: 'Roads', gates: 'Gates', baths: 'Baths',
   social_buildings: 'Public buildings', religious_buildings: 'Religious buildings',
   houses: 'Houses drawn',
-  walls_certain: 'Walls, certain', walls_probable: 'Walls, probable', walls_uncertain: 'Walls, uncertain',
-  doorways_certain: 'Doorways, certain', doorways_probable: 'Doorways, probable', doorways_uncertain: 'Doorways, uncertain',
-  colonnades: 'Colonnades', open_spaces: 'Courts &amp; open spaces', mosaics: 'Mosaics &amp; paving',
+  open_spaces: 'Courts &amp; open spaces', mosaics: 'Mosaics &amp; paving',
   water_features: 'Basins, wells &amp; fountains', stairs: 'Stairs',
   economic_buildings: 'Workshops, shops &amp; stores'
 };
 const SINGULAR = {
-  walls_certain: 'Wall', walls_probable: 'Wall', walls_uncertain: 'Wall',
-  doorways_certain: 'Doorway', doorways_probable: 'Doorway', doorways_uncertain: 'Doorway',
-  colonnades: 'Colonnade', open_spaces: 'Court', mosaics: 'Floor', water_features: 'Water feature',
+  open_spaces: 'Court', mosaics: 'Floor', water_features: 'Water feature',
   stairs: 'Stairs', economic_buildings: 'Workshop or store'
 };
 
@@ -145,8 +139,6 @@ function popup(props, n) {
     meta.push('Grid: ' + esc(p.insula_id));
     if (p.area_sqm) meta.push(Math.round(p.area_sqm).toLocaleString() + ' m&sup2; as drawn');
     html += '<div class="pmeta">' + meta.join(' &middot; ') + '</div>';
-    if (p.description) html += '<div class="pdesc">' + rich(cap(p.description)) + '</div>';
-    if (p.plan_source) html += '<div class="psrc">' + rich(p.plan_source) + '</div>';
     if (cat.length) html += '<div class="pmeta">' + cat.map(([id]) => catLink(id, cat.length > 1 ? id : 'Catalog record')).join('<br>') + '</div>';
     return html;
   }
@@ -156,23 +148,16 @@ function popup(props, n) {
     if (p.area_sqm) meta.push(Math.round(p.area_sqm).toLocaleString() + ' m&sup2;');
     if (meta.length) html += '<div class="pmeta">' + meta.join(' &middot; ') + '</div>';
     const cat = catalogFor(p.insula_id);
-    if (p.drawn) html += '<div class="pmeta">House drawn; zoom in for its walls and doorways.</div>';
+    if (p.drawn) html += '<div class="pmeta">House drawn; zoom in for its courts, floors and fittings.</div>';
     if (cat.length) html += '<div class="pmeta">' + cat.slice(0, 4).map(([id, [en]]) => esc(en) + '<br>' + catLink(id)).join('<br>') + '</div>';
     return html;
   }
   if (SINGULAR[n]) {
-    const title = p.name ? cap(p.name) : SINGULAR[n];
-    html += '<div class="pname">' + rich(title) + '</div>';
+    html += '<div class="pname">' + (p.feature_type ? esc(cap(p.feature_type)) : SINGULAR[n]) + '</div>';
     const cat = catalogFor(houseBase(p.insula_id));
-    if (p.wall_type) meta.push(esc(p.wall_type) + ' wall');
-    if (p.feature_type) meta.push(esc(p.feature_type));
-    if (p.step_count) meta.push(esc(p.step_count) + ' steps');
-    if (p.leads_to) meta.push('to the ' + esc(p.leads_to));
     if (p.certainty) meta.push(esc(p.certainty));
     if (meta.length) html += '<div class="pmeta">' + meta.join(' &middot; ') + '</div>';
     html += '<div class="pmeta">' + (cat.length ? esc(cat[0][1][0]) + ' (' + esc(p.insula_id) + ')' : esc(p.insula_id || '')) + '</div>';
-    if (p.description) html += '<div class="pdesc">' + rich(cap(p.description)) + '</div>';
-    if (p.plan_source) html += '<div class="psrc">' + rich(p.plan_source) + '</div>';
     if (cat.length) html += '<div class="pmeta">' + catLink(cat[0][0]) + '</div>';
     return html;
   }
@@ -186,83 +171,58 @@ function popup(props, n) {
   if (p.certainty) meta.push('certainty: ' + esc(p.certainty));
   if (p.area_sqm) meta.push(Math.round(p.area_sqm).toLocaleString() + ' m&sup2;');
   if (meta.length) html += '<div class="pmeta">' + meta.join(' &middot; ') + '</div>';
-  if (p.description) html += '<div class="pdesc">' + rich(p.description) + '</div>';
+  if (p.description) html += '<div class="pdesc">' + esc(p.description) + '</div>';
   return html;
 }
+
+const CITY = ['insulae','roads','gates','baths','social_buildings','religious_buildings','houses'];
+const DETAIL = ['open_spaces','mosaics','water_features','stairs','economic_buildings'];
+const DETAIL_ZOOM = 18;
 
 function polyStyle(n) {
   if (n === 'insulae') return () => ({ color:'#D4AC0D', weight:1.2, fillColor:'#F4D03F', fillOpacity:0.30 });
   if (n === 'roads') return () => ({ color:'#D4AC0D', weight:0.8, fillColor:'#FE9306', fillOpacity:0.30 });
   if (n === 'houses') return () => ({ color:STROKES.houses, weight:1.4, fillColor:COLORS.houses,
-                                      fillOpacity: map.getZoom() >= DETAIL_ZOOM ? 0.18 : 0.45 });
+                                      fillOpacity: map.getZoom() >= DETAIL_ZOOM ? 0.25 : 0.45 });
   return () => ({ color:STROKES[n]||COLORS[n]||'#555', weight:1.2, fillColor:COLORS[n]||'#555', fillOpacity:0.39 });
 }
-function lineStyle(n) {
-  const g = (n.split('_')[1]) || 'certain';
-  if (n.startsWith('walls_')) return () => ({ color: onPlain ? '#222' : '#FFFFFF', weight: GRADE[g].w,
-      opacity: GRADE[g].op, dashArray: GRADE[g].dash, lineCap: g === 'uncertain' ? 'round' : 'butt' });
-  if (n.startsWith('doorways_')) return () => ({ color: (onPlain ? DOOR_PLAIN : DOOR)[g], weight: 4.5, opacity: 1, lineCap: 'butt' });
-  if (n === 'colonnades') return () => ({ color: onPlain ? '#3E8E2F' : '#B2DF8A', weight: 3.2, dashArray: '0.1 6', lineCap: 'round' });
-  return () => ({ color:'#555', weight:2 });
-}
-const LINES = ['walls_certain','walls_probable','walls_uncertain','doorways_certain','doorways_probable','doorways_uncertain','colonnades'];
-const CITY = ['insulae','roads','gates','baths','social_buildings','religious_buildings','houses'];
-const DETAIL = ['open_spaces','mosaics','water_features','stairs','economic_buildings',
-                'colonnades','walls_uncertain','walls_probable','walls_certain',
-                'doorways_uncertain','doorways_probable','doorways_certain'];
-const DETAIL_ZOOM = 18;
+const swatch = n => '<span class="sw" style="background:' + (COLORS[n]||'#555') + '"></span>';
 
-function swatch(n) {
-  if (n.startsWith('walls_')) {
-    const g = n.split('_')[1];
-    return '<svg viewBox="0 0 26 10"><rect width="26" height="10" fill="#6b6b6b"/><line x1="1" y1="5" x2="25" y2="5" stroke="#fff" stroke-width="2.2"'
-      + (GRADE[g].dash ? ' stroke-dasharray="' + GRADE[g].dash + '"' : '') + (g === 'uncertain' ? ' stroke-linecap="round"' : '') + '/></svg>';
-  }
-  if (n.startsWith('doorways_')) return '<svg viewBox="0 0 26 10"><rect width="26" height="10" fill="#6b6b6b"/><line x1="8" y1="5" x2="18" y2="5" stroke="' + DOOR[n.split('_')[1]] + '" stroke-width="4"/></svg>';
-  if (n === 'colonnades') return '<svg viewBox="0 0 26 10"><rect width="26" height="10" fill="#6b6b6b"/><line x1="3" y1="5" x2="24" y2="5" stroke="#B2DF8A" stroke-width="3" stroke-dasharray="0.1 6" stroke-linecap="round"/></svg>';
-  return '<span class="sw" style="background:' + (COLORS[n]||'#555') + '"></span>';
-}
-
-const POPUP_OPTS = { maxWidth: Math.min(320, window.innerWidth - 110), maxHeight: Math.min(280, Math.round(window.innerHeight * 0.45)),
+const POPUP_OPTS = { maxWidth: Math.min(300, window.innerWidth - 110), maxHeight: Math.min(260, Math.round(window.innerHeight * 0.45)),
                      autoPanPaddingTopLeft: L.point(56, 56), autoPanPaddingBottomRight: L.point(56, 40) };
 const overlays = {}, loaded = [];
 overlays['<span class="sw" style="background:#3A2E20"></span><strong>Ballu 1897 plan</strong>'] = balluPlan;
-const ORDER = CITY.concat(['walls_certain','walls_probable','walls_uncertain','doorways_certain','doorways_probable','doorways_uncertain',
-                           'colonnades','open_spaces','mosaics','water_features','stairs','economic_buildings']);
+const ORDER = CITY.concat(DETAIL);
 Promise.all(ORDER.map(n =>
   fetch('/assets/gis/' + n + '.geojson').then(r => r.ok ? r.json() : null).catch(() => null).then(gj => ({ n, gj }))
 )).then(results => {
   const byName = {};
   for (const { n, gj } of results) {
     if (!gj || !gj.features || !gj.features.length) continue;
-    const isLine = LINES.includes(n);
     const lyr = L.geoJSON(gj, {
-      style: isLine ? lineStyle(n) : polyStyle(n),
+      style: polyStyle(n),
       onEachFeature: (f, l) => l.bindPopup(popup(f.properties, n), POPUP_OPTS)
     });
     byName[n] = { n, lyr, gj };
   }
-  // add in drawing order (polygons first, then walls, doorways on top), list in reading order
   for (const n of ORDER) if (byName[n]) overlays[swatch(n) + LABELS[n]] = byName[n].lyr;
-  for (const n of CITY.concat(DETAIL)) if (byName[n]) loaded.push(byName[n]);
+  for (const n of ORDER) if (byName[n]) loaded.push(byName[n]);
   for (const { n, lyr } of loaded) if (CITY.includes(n)) lyr.addTo(map);
 
   const ins = byName.insulae;
   if (ins) map.fitBounds(ins.lyr.getBounds(), { padding: [20, 20] });
-  L.control.layers({ 'Satellite imagery': satellite, 'Plain plan': plain }, overlays, { collapsed: window.innerWidth < 700 }).addTo(map);
+  // the layer list stays folded into its icon until it is hovered or tapped
+  L.control.layers({ 'Satellite imagery': satellite, 'Plain plan': plain }, overlays, { collapsed: true }).addTo(map);
 
-  // progress: houses with walls in the graded layers, blocks on the map, houses in the catalog
+  // progress: drawn houses, blocks on the map, houses in the catalog
   const drawn = new Set();
-  for (const g of ['walls_certain','walls_probable','walls_uncertain'])
-    if (byName[g]) byName[g].gj.features.forEach(f => { const b = houseBase(f.properties.insula_id); if (b) drawn.add(b); });
+  if (byName.houses) byName.houses.gj.features.forEach(f => { const b = houseBase(f.properties.insula_id); if (b) drawn.add(b); });
   const blocks = ins ? ins.gj.features.length : 0;
   document.getElementById('progress').textContent =
     drawn.size + ' houses drawn · ' + blocks + ' blocks mapped · ' + CATALOG_COUNT + ' houses in the catalog';
 
   map.on('baselayerchange', e => {
-    onPlain = (e.layer === plain);
-    document.getElementById('map').style.background = onPlain ? '#F2EEE6' : '';
-    for (const n of LINES) if (byName[n]) byName[n].lyr.setStyle(lineStyle(n));
+    document.getElementById('map').style.background = (e.layer === plain) ? '#F2EEE6' : '';
   });
 
   // Layers the user has explicitly unchecked stay off across zooms, reloads,
@@ -304,24 +264,27 @@ Promise.all(ORDER.map(n =>
   map.on('zoomend', detailVisibility);
   detailVisibility();
 
-  const legend = L.control({ position: window.innerWidth <= 600 ? 'topleft' : 'bottomleft' });
-  legend.onAdd = () => {
-    const div = L.DomUtil.create('div', 'legend-box' + (window.innerWidth <= 600 ? ' collapsed' : ''));
-    const row = n => byName[n] ? '<div>' + swatch(n) + LABELS[n] + '</div>' : '';
-    div.innerHTML = '<button class="ltoggle" type="button">Legend</button><div class="lbody">'
-      + '<div class="lh">The city</div>'
-      + ['houses','insulae','roads','gates','baths','social_buildings','religious_buildings'].map(row).join('')
-      + '<div class="lh">Inside a drawn house (zoom in)</div>'
-      + ['walls_certain','walls_probable','walls_uncertain','doorways_certain','doorways_probable','doorways_uncertain',
-         'colonnades','open_spaces','mosaics','water_features','stairs','economic_buildings'].map(row).join('')
-      + '<div class="note">Certain: clearly there on the satellite imagery. Probable: it shows on the ground, but not clearly. Uncertain: barely anything on the ground, drawn from the published plans. Houses are added one by one as they are drawn.</div>'
-      + '</div>';
-    L.DomEvent.disableClickPropagation(div);
-    L.DomEvent.disableScrollPropagation(div);
-    div.querySelector('.ltoggle').addEventListener('click', () => div.classList.toggle('collapsed'));
-    return div;
-  };
-  legend.addTo(map);
+  // legend: in the side panel on wide screens, behind a small button on narrow ones
+  const row = n => byName[n] ? '<div>' + swatch(n) + LABELS[n] + '</div>' : '';
+  const legendHTML = '<div class="legend">'
+    + '<div class="lh">The city</div>'
+    + ['houses','insulae','roads','gates','baths','social_buildings','religious_buildings'].map(row).join('')
+    + '<div class="lh">Inside a drawn house (zoom in)</div>'
+    + DETAIL.map(row).join('')
+    + '<div class="note">Houses are added one by one as they are drawn.</div></div>';
+  document.getElementById('side-legend').innerHTML = legendHTML;
+  if (window.innerWidth <= 760) {
+    const ctl = L.control({ position: 'topleft' });
+    ctl.onAdd = () => {
+      const div = L.DomUtil.create('div', 'legend-pop collapsed');
+      div.innerHTML = '<button type="button">Legend</button>' + legendHTML;
+      L.DomEvent.disableClickPropagation(div);
+      L.DomEvent.disableScrollPropagation(div);
+      div.querySelector('button').addEventListener('click', () => div.classList.toggle('collapsed'));
+      return div;
+    };
+    ctl.addTo(map);
+  }
 });
 </script>
 </body>
