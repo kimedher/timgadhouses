@@ -1607,16 +1607,42 @@
    "confidence": "medium",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "~590 m²",
    "area_m2": 590,
    "first_published_by": "Ballu, BCTH 1904: 169-170 (report of the 1903 clearance); reprised in Ballu 1911a: 86",
    "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Fourth insula of the Decumanus row, 22.70 by 26 metres, bounded east by the street along the west wall of the Great Eastern Baths. Five shops opened on the Decumanus and a staircase encroached on the east street. The house had a colonnaded central court and a private bath suite whose hypocaust piles survive. In the Byzantine period a stable was fitted into its largest hall, with nine stone mangers found in place and four more nearby. Earlier visitors took the ruin for an inn; Ballu read it as a private house refitted for Byzantine cavalry [Ballu 1911: 86; the baths first noted Ballu 1903: 54].",
+   "notes": "Fourth insula of the Decumanus row, 22.70 by 26 metres, bounded east by the street along the west wall of the Great East Baths. Five shops opened on the Decumanus and a staircase took over part of the east street. The house had a central court with a walk round it bounded by upright slabs set into stone blocks, and four rooms of private baths. In the Byzantine period a stable was fitted into its larger hall, with nine stone troughs found in place and four more in a room on the street along the baths, where hypocaust piers still stood. Earlier visitors took the ruin for an inn; Ballu read it as a private house refitted for Byzantine cavalry, and in 1926 he found its door, 2 m wide, on the street to the north [Ballu 1911a: 86; Ballu 1927: 25; the baths first noted Ballu 1903: 54].",
    "sample": false,
-   "notes_html": "Fourth <em>insula</em> of the <em>Decumanus</em> row, 22.70 by 26 metres, bounded east by the street along the west wall of the Great Eastern Baths. Five shops opened on the <em>Decumanus</em> and a staircase encroached on the east street. The house had a colonnaded central court and a private bath suite whose hypocaust piles survive. In the Byzantine period a stable was fitted into its largest hall, with nine stone mangers found in place and four more nearby. Earlier visitors took the ruin for an inn; Ballu read it as a private house refitted for Byzantine cavalry [Ballu 1911: 86; the baths first noted Ballu 1903: 54]."
+   "notes_html": "Fourth <em>insula</em> of the <em>Decumanus</em> row, 22.70 by 26 metres, bounded east by the street along the west wall of the Great East Baths. Five shops opened on the <em>Decumanus</em> and a staircase took over part of the east street. The house had a central court with a walk round it bounded by upright slabs set into stone blocks, and four rooms of private baths. In the Byzantine period a stable was fitted into its larger hall, with nine stone troughs found in place and four more in a room on the street along the baths, where hypocaust piers still stood. Earlier visitors took the ruin for an inn; Ballu read it as a private house refitted for Byzantine cavalry, and in 1926 he found its door, 2 m wide, on the street to the north [Ballu 1911a: 86; Ballu 1927: 25; the baths first noted Ballu 1903: 54].",
+   "analysis": {
+    "date": "2026-10-17",
+    "round": 2,
+    "spaces": 25,
+    "spaces_note": "all reached; the room behind the first shops and the corridor west of the court are one room in two convex spaces",
+    "entrances": 9,
+    "depth_max": 4,
+    "mean_depth": 2.2,
+    "rings": 2,
+    "summary": "Drawn from the ground with Ballu's description (1911a: 86) and the Cagnat, Courtois and Wilson city plans set on its outer walls, the house comes out as 25 spaces, all reached by nine street doors, with a mean depth of 2.20; the five shops on the Decumanus open only onto the street, the one door a source names, 2 m wide from the north street (Ballu 1927: 25), leads straight into the hall, which I take for the Byzantine stable, and the court, with the highest control, is three steps in from the north and west streets, its links to the hall and the east strip resting on two doors placed by the layout alone.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I4/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the round-2 drawing (Oct 17, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I4/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I4/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "Drawn from the ground with Ballu's description (1911a: 86) and the Cagnat, Courtois and Wilson city plans set on its outer walls, the house comes out as 25 spaces, all reached by nine street doors, with a mean depth of 2.20; the five shops on the Decumanus open only onto the street, the one door a source names, 2 m wide from the north street (Ballu 1927: 25), leads straight into the hall, which I take for the Byzantine stable, and the court, with the highest control, is three steps in from the north and west streets, its links to the hall and the east strip resting on two doors placed by the layout alone."
+   }
   },
   {
    "grid_id": "TIMG.NE.I7.H1",
