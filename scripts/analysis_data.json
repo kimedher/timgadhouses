@@ -473,5 +473,30 @@
     "caption": "Depth from the street"
    }
   ]
+ },
+ "TIMG.NE.I1": {
+  "date": "2026-10-17",
+  "round": 2,
+  "spaces": 17,
+  "spaces_note": "17 reached; the south bath room and the room east of it have no way in as drawn",
+  "entrances": 10,
+  "depth_max": 4,
+  "mean_depth": 1.71,
+  "rings": 3,
+  "summary": "Drawn from the ground with Ballu's description (1911a: 83-85) and the Cagnat, Courtois and Wilson city plans set on its outer walls, the house comes out as 19 spaces, 17 reached by ten street doors, with a mean depth of 1.71; the four shops on the Decumanus open only onto the street behind the partition wall Ballu describes, the east entrance leads through the vestibule into the *atrium*, and the north entrance straight into the largest room, which joins the *atrium* only through the *tablinum*, while the baths in the north-west corner are reached only through the furnace room off the largest room.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I1/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 17, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I1/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I1/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
  }
 }

@@ -771,7 +771,7 @@
    "confidence": "high",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "~530 m²",
    "area_m2": 530,
    "first_published_by": "Ballu, BCTH 1903: CCXIV-CCXV and BCTH 1904: 167-168 (first notices; no text in corpus); fullest early description Ballu 1911a: 83-85",
@@ -780,7 +780,33 @@
    "possible_duplicate_of": "",
    "notes": "This house held the corner of the city's two great streets, the Cardo and the Decumanus, directly south of the library, with porticoes along both. Four shops opened under the Decumanus portico, cut off from the dwelling by a continuous wall, and private baths filled the north-west corner. Its largest room kept two fine ornamental mosaics, and the tablinum beside the well-preserved atrium carried the picture mosaic of a nereid borne by a marine centaur, which Ballu judged the best preserved yet found at Timgad. All three mosaics went to the museum [Ballu 1911: 83-85].",
    "sample": false,
-   "notes_html": "This house held the corner of the city's two great streets, the <em>Cardo</em> and the <em>Decumanus</em>, directly south of the library, with porticoes along both. Four shops opened under the <em>Decumanus</em> portico, cut off from the dwelling by a continuous wall, and private baths filled the north-west corner. Its largest room kept two fine ornamental mosaics, and the <em>tablinum</em> beside the well-preserved <em>atrium</em> carried the picture mosaic of a nereid borne by a marine centaur, which Ballu judged the best preserved yet found at Timgad. All three mosaics went to the museum [Ballu 1911: 83-85]."
+   "notes_html": "This house held the corner of the city's two great streets, the <em>Cardo</em> and the <em>Decumanus</em>, directly south of the library, with porticoes along both. Four shops opened under the <em>Decumanus</em> portico, cut off from the dwelling by a continuous wall, and private baths filled the north-west corner. Its largest room kept two fine ornamental mosaics, and the <em>tablinum</em> beside the well-preserved <em>atrium</em> carried the picture mosaic of a nereid borne by a marine centaur, which Ballu judged the best preserved yet found at Timgad. All three mosaics went to the museum [Ballu 1911: 83-85].",
+   "analysis": {
+    "date": "2026-10-17",
+    "round": 2,
+    "spaces": 17,
+    "spaces_note": "17 reached; the south bath room and the room east of it have no way in as drawn",
+    "entrances": 10,
+    "depth_max": 4,
+    "mean_depth": 1.71,
+    "rings": 3,
+    "summary": "Drawn from the ground with Ballu's description (1911a: 83-85) and the Cagnat, Courtois and Wilson city plans set on its outer walls, the house comes out as 19 spaces, 17 reached by ten street doors, with a mean depth of 1.71; the four shops on the Decumanus open only onto the street behind the partition wall Ballu describes, the east entrance leads through the vestibule into the *atrium*, and the north entrance straight into the largest room, which joins the *atrium* only through the *tablinum*, while the baths in the north-west corner are reached only through the furnace room off the largest room.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I1/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the round-2 drawing (Oct 17, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I1/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I1/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "Drawn from the ground with Ballu's description (1911a: 83-85) and the Cagnat, Courtois and Wilson city plans set on its outer walls, the house comes out as 19 spaces, 17 reached by ten street doors, with a mean depth of 1.71; the four shops on the Decumanus open only onto the street behind the partition wall Ballu describes, the east entrance leads through the vestibule into the <em>atrium</em>, and the north entrance straight into the largest room, which joins the <em>atrium</em> only through the <em>tablinum</em>, while the baths in the north-west corner are reached only through the furnace room off the largest room."
+   }
   },
   {
    "grid_id": "TIMG.NE.I11",
