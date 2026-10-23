@@ -77,8 +77,8 @@ HEADER_ROW = 4  # v16: rows 1-2 titles, row 3 section bands, row 4 headers
 
 # Rows retired from the catalog (merged into another record) that may still
 # sit in the working sheet; never exported. UNK.H27 was folded into NE.I28 on
-# Sep 20, 2026.
-RETIRED_IDS = {"TIMG.UNK.H27", "TIMG.UNK.H26", "TIMG.E-SE.I1"}
+# Sep 20, 2026; UNK.H20 (old-plan carré LI) was folded into NE.I8 on Oct 23, 2026.
+RETIRED_IDS = {"TIMG.UNK.H27", "TIMG.UNK.H26", "TIMG.E-SE.I1", "TIMG.UNK.H20"}
 
 def clean(v):
     if v is None: return ""
