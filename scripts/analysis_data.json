@@ -423,5 +423,30 @@
     "caption": "Depth from the street"
    }
   ]
+ },
+ "TIMG.NE.I23": {
+  "date": "2026-10-15",
+  "round": 2,
+  "spaces": 17,
+  "spaces_note": "all reached; no door certain, seven uncertain",
+  "entrances": 4,
+  "depth_max": 5,
+  "mean_depth": 2.53,
+  "rings": 4,
+  "summary": "Drawn from Courtois's and Wilson's city plans set on the ground, with Ballu's description of the fourth house of 1911 (Ballu 1912: 492-493), the house comes out as 17 spaces, all reached, with four street doors on the two *decumani* and a mean depth of 2.53, entered mainly through Ballu's fine storeroom (*beau magasin*) with the middle room behind it the most integrated by RRA, while the room with the fulling vats has its own street door and the shop opens only onto the street, and every door comes from the ground, seven of them uncertain.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I23/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 15, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I23/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I23/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
  }
 }
