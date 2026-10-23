@@ -22,13 +22,14 @@ header.bar .prog { font-size: 11px; color: #1B6B6F; font-weight: 600; margin-lef
 #map { flex: 1; min-width: 0; }
 /* the legend sits beside the map, never on it */
 aside.side-legend { width: 190px; flex: none; overflow-y: auto; background: #fff; border-left: 1px solid #ddd;
-  padding: 10px 12px; font: 11px 'Montserrat', Arial, sans-serif; line-height: 1.6; color: #333; }
-.legend .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  padding: 10px 10px; font: 10px 'Montserrat', Arial, sans-serif; line-height: 1.6; color: #333; white-space: nowrap; }
+.legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
 .legend .lh { font-weight: 700; margin-top: 8px; }
 .legend .lh:first-child { margin-top: 0; }
-.legend .note { font-size: 10px; color: #777; line-height: 1.4; margin-top: 8px; }
+.legend .lz { font-weight: 400; }
+.legend .note { font-size: 9.5px; color: #777; line-height: 1.4; margin-top: 8px; white-space: normal; }
 /* on narrow screens: a small button on the map that opens the same legend */
-.legend-pop { background: #fff; border-radius: 5px; box-shadow: 0 1px 4px rgba(0,0,0,.3); font: 11px 'Montserrat', Arial, sans-serif; line-height: 1.6; padding: 5px 9px; max-width: 190px; max-height: 50vh; overflow-y: auto; }
+.legend-pop { background: #fff; border-radius: 5px; box-shadow: 0 1px 4px rgba(0,0,0,.3); font: 10px 'Montserrat', Arial, sans-serif; line-height: 1.6; padding: 5px 9px; max-width: 210px; max-height: 50vh; overflow-y: auto; }
 .legend-pop button { font: 600 11px 'Montserrat', Arial, sans-serif; background: none; border: 0; color: #1B6B6F; cursor: pointer; padding: 0; }
 .legend-pop.collapsed .legend { display: none; }
 .legend-pop .legend { margin-top: 4px; }
@@ -56,7 +57,7 @@ aside.side-legend { width: 190px; flex: none; overflow-y: auto; background: #fff
 <body>
 <header class="bar">
   <h1>Timgad City Map</h1>
-  <span class="sub">The city's blocks, streets, gates and public buildings, with the houses drawn so far in blue over the satellite imagery. Zoom in on a house to see its courts, mosaics and paving, stairs, basins and wells, and workshops. Switch the base layer to "Plain plan" to see the map without the imagery, and see the <a href="/grid/" target="_top">insula grid</a> for the block-by-block reference system.</span>
+  <span class="sub">The city's blocks, streets, gates and public buildings, with the houses drawn so far in blue over the satellite imagery. Zoom in on a house to see its courts, mosaics and paving, stairs, basins and wells, and economic or commercial spaces. Switch the base layer to "Plain plan" to see the map without the imagery, and see the <a href="/grid/" target="_top">insula grid</a> for the block-by-block reference system.</span>
   <span class="prog" id="progress"></span>
 </header>
 <div id="main">
@@ -116,11 +117,11 @@ const LABELS = {
   houses: 'Houses drawn',
   open_spaces: 'Courts &amp; open spaces', mosaics: 'Mosaics &amp; paving',
   water_features: 'Basins, wells &amp; fountains', stairs: 'Stairs',
-  economic_buildings: 'Workshops, shops &amp; stores'
+  economic_buildings: 'Economic or commercial spaces'
 };
 const SINGULAR = {
   open_spaces: 'Court', mosaics: 'Floor', water_features: 'Water feature',
-  stairs: 'Stairs', economic_buildings: 'Workshop or store'
+  stairs: 'Stairs', economic_buildings: 'Economic or commercial space'
 };
 
 function popup(props, n) {
@@ -269,7 +270,7 @@ Promise.all(ORDER.map(n =>
   const legendHTML = '<div class="legend">'
     + '<div class="lh">The city</div>'
     + ['houses','insulae','roads','gates','baths','social_buildings','religious_buildings'].map(row).join('')
-    + '<div class="lh">Inside a drawn house (zoom in)</div>'
+    + '<div class="lh">Inside a drawn house <span class="lz">(zoom in)</span></div>'
     + DETAIL.map(row).join('')
     + '<div class="note">Houses are added one by one as they are drawn.</div></div>';
   document.getElementById('side-legend').innerHTML = legendHTML;
