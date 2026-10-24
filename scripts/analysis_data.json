@@ -536,15 +536,15 @@
   "summary": "Drawn from the ground with Ballu's order of rooms (1905: 86-87) and the Courtois and Wilson city plans set on its outer walls, the house comes out as 17 spaces, all reached by five street doors, with a mean depth of 2.71; Ballu's entrance leads into a vestibule that bends left to the *atrium*, three steps in, with the portico and the *tablinum* beyond it on one line, and his second *atrium*, with its well and its own door on the east street, sits next to the corner room where he found the troughs, one step from the vestibule by his narrow corridor.",
   "figures": [
    {
-    "src": "/assets/images/houses/TIMG.NE.I8/fig1_plan_spaces_v2.png",
+    "src": "/assets/images/houses/TIMG.NE.I8/fig1_plan_spaces_v3.png",
     "caption": "Convex spaces on the round-2 drawing (Oct 19, 2026)"
    },
    {
-    "src": "/assets/images/houses/TIMG.NE.I8/fig2_jgraph_street_v2.png",
+    "src": "/assets/images/houses/TIMG.NE.I8/fig2_jgraph_street_v3.png",
     "caption": "Access graph from the street"
    },
    {
-    "src": "/assets/images/houses/TIMG.NE.I8/fig4_depth_plan_v2.png",
+    "src": "/assets/images/houses/TIMG.NE.I8/fig4_depth_plan_v3.png",
     "caption": "Depth from the street"
    }
   ]
