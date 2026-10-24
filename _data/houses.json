@@ -869,16 +869,42 @@
    "confidence": "medium",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1905: 14-15",
+   "first_published_by": "Ballu 1905: 86-87",
    "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "First block of the fourth row, on the east side of the Cardo, entered from the street on its north side: a paved atrium with a fountain on its east side and a finely worked rainwater stone, six rooms in the southern part and ten, at a lower level, in the northern part [Ballu 1911: 81].",
+   "notes": "First block of the fourth row, on the east side of the Cardo Maximus and north of the library, entered from the street on its north side. From the entrance one reached a paved atrium with a fountain on its east side and, in its south-west corner, a door with a step; six rooms in the southern part and ten, at a lower level, in the northern part; and in the atrium a finely worked stone for discharging the rainwater [Ballu 1905: 87; Ballu 1911a: 81].",
    "sample": false,
-   "notes_html": "First block of the fourth row, on the east side of the <em>Cardo</em>, entered from the street on its north side: a paved <em>atrium</em> with a fountain on its east side and a finely worked rainwater stone, six rooms in the southern part and ten, at a lower level, in the northern part [Ballu 1911: 81]."
+   "notes_html": "First block of the fourth row, on the east side of the <em>Cardo Maximus</em> and north of the library, entered from the street on its north side. From the entrance one reached a paved <em>atrium</em> with a fountain on its east side and, in its south-west corner, a door with a step; six rooms in the southern part and ten, at a lower level, in the northern part; and in the <em>atrium</em> a finely worked stone for discharging the rainwater [Ballu 1905: 87; Ballu 1911a: 81].",
+   "analysis": {
+    "date": "2026-10-20",
+    "round": 2,
+    "spaces": 22,
+    "spaces_note": "all reached; the atrium and its east bay, the north-west corner room either side of its short wall, and the strip along the middle wall are the convex spaces that are not rooms",
+    "entrances": 5,
+    "depth_max": 6,
+    "mean_depth": 3.0,
+    "rings": 3,
+    "summary": "Drawn from the ground with Ballu's five lines on the house (1905: 87) and the Courtois and Wilson city plans set on its outer walls, the house comes out as 22 spaces, all reached by five street doors, with a mean depth of 3.00; Ballu's entrance on the north street opens straight into the atrium, with the black block of his fountain in its east half and his door with a step in its south-west corner, and the whole south part, his six rooms, is reached only through the west room along the portico, so the south-east rooms sit five and six steps in and the west room, not the atrium, is the most integrated space.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I13/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the round-2 drawing (Oct 20, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I13/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I13/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "Drawn from the ground with Ballu's five lines on the house (1905: 87) and the Courtois and Wilson city plans set on its outer walls, the house comes out as 22 spaces, all reached by five street doors, with a mean depth of 3.00; Ballu's entrance on the north street opens straight into the <em>atrium</em>, with the black block of his fountain in its east half and his door with a step in its south-west corner, and the whole south part, his six rooms, is reached only through the west room along the portico, so the south-east rooms sit five and six steps in and the west room, not the <em>atrium</em>, is the most integrated space."
+   }
   },
   {
    "grid_id": "TIMG.NE.I14",

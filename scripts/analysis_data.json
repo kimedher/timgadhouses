@@ -548,5 +548,30 @@
     "caption": "Depth from the street"
    }
   ]
+ },
+ "TIMG.NE.I13": {
+  "date": "2026-10-20",
+  "round": 2,
+  "spaces": 22,
+  "spaces_note": "all reached; the atrium and its east bay, the north-west corner room either side of its short wall, and the strip along the middle wall are the convex spaces that are not rooms",
+  "entrances": 5,
+  "depth_max": 6,
+  "mean_depth": 3.0,
+  "rings": 3,
+  "summary": "Drawn from the ground with Ballu's five lines on the house (1905: 87) and the Courtois and Wilson city plans set on its outer walls, the house comes out as 22 spaces, all reached by five street doors, with a mean depth of 3.00; Ballu's entrance on the north street opens straight into the *atrium*, with the black block of his fountain in its east half and his door with a step in its south-west corner, and the whole south part, his six rooms, is reached only through the west room along the portico, so the south-east rooms sit five and six steps in and the west room, not the *atrium*, is the most integrated space.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I13/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the round-2 drawing (Oct 20, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I13/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I13/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
  }
 }
