@@ -597,5 +597,29 @@
     "caption": "Depth from the street, all doors as drawn"
    }
   ]
+ },
+ "TIMG.NE.I20": {
+  "date": "2026-10-21",
+  "spaces": 18,
+  "spaces_note": "all reached; every room is closed all round and opens to the next only by its doors",
+  "entrances": 8,
+  "depth_max": 4,
+  "mean_depth": 1.89,
+  "rings": 6,
+  "summary": "Drawn from the ground with Ballu's room-by-room description (1909: 97) and the city plans as a cross-check, the house comes out as 18 spaces, all reached, with eight street doors, four of them his, and a mean depth of 1.89; it works from the wide paved vestibule on the east street, while the *atrium* Ballu puts at the centre opens only onto the vestibule, a dead end two steps in, and the west rooms and the north-west corner are reached from the north street through the north-west corner room.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I20/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the drawing (Oct 21, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I20/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I20/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
  }
 }
