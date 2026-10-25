@@ -1059,21 +1059,46 @@
    "alternate_names": "",
    "quadrant": "NE",
    "zone": "Intramural NE",
-   "building_type": "Residential block (multi-unit)",
-   "type_class": "Residential block",
+   "building_type": "House",
+   "type_class": "House",
    "confidence": "low",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1909: 25",
+   "first_published_by": "Ballu 1909: 97",
    "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "The one ruin Ballu records in the third row, directly south of the previous block. A broad stone-paved vestibule with two doors on the east street led to a central atrium where nine stone mangers for Byzantine horses were found; a stone table still stood in the vestibule. Five small rooms lined the south side, a long room ran along the west street, and four rooms closed the north side [Ballu 1911: 80-81].",
+   "notes": "Second block of the third row from the north boulevard, east of the Cardo. The atrium was in the centre, reached by a wide vestibule paved in stone with two doors onto the east street; the tablinum was reached from the vestibule too, its width and the atrium's together equal to the vestibule's. A stone table was found in place in the vestibule and nine Byzantine mangers for horses in the atrium. Five small rooms along the south side all opened into each other except the south-west corner one, which opened onto the west street; on the west side a long room gave onto two rooms behind it, backing onto the atrium and the tablinum, and a deep room whose east end rested against the atrium's north side; on the north side four rooms, the west corner one paved in stone with three doors, the east corner one divided in two [Ballu 1909: 97; Ballu 1911a: 80-81].",
    "sample": false,
-   "notes_html": "The one ruin Ballu records in the third row, directly south of the previous block. A broad stone-paved vestibule with two doors on the east street led to a central <em>atrium</em> where nine stone mangers for Byzantine horses were found; a stone table still stood in the vestibule. Five small rooms lined the south side, a long room ran along the west street, and four rooms closed the north side [Ballu 1911: 80-81]."
+   "notes_html": "Second block of the third row from the north boulevard, east of the <em>Cardo</em>. The <em>atrium</em> was in the centre, reached by a wide vestibule paved in stone with two doors onto the east street; the <em>tablinum</em> was reached from the vestibule too, its width and the <em>atrium</em>'s together equal to the vestibule's. A stone table was found in place in the vestibule and nine Byzantine mangers for horses in the <em>atrium</em>. Five small rooms along the south side all opened into each other except the south-west corner one, which opened onto the west street; on the west side a long room gave onto two rooms behind it, backing onto the <em>atrium</em> and the <em>tablinum</em>, and a deep room whose east end rested against the <em>atrium</em>'s north side; on the north side four rooms, the west corner one paved in stone with three doors, the east corner one divided in two [Ballu 1909: 97; Ballu 1911a: 80-81].",
+   "analysis": {
+    "date": "2026-10-21",
+    "spaces": 18,
+    "spaces_note": "all reached; every room is closed all round and opens to the next only by its doors",
+    "entrances": 8,
+    "depth_max": 4,
+    "mean_depth": 1.89,
+    "rings": 6,
+    "summary": "Drawn from the ground with Ballu's room-by-room description (1909: 97) and the city plans as a cross-check, the house comes out as 18 spaces, all reached, with eight street doors, four of them his, and a mean depth of 1.89; it works from the wide paved vestibule on the east street, while the atrium Ballu puts at the centre opens only onto the vestibule, a dead end two steps in, and the west rooms and the north-west corner are reached from the north street through the north-west corner room.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I20/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the drawing (Oct 21, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I20/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I20/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "Drawn from the ground with Ballu's room-by-room description (1909: 97) and the city plans as a cross-check, the house comes out as 18 spaces, all reached, with eight street doors, four of them his, and a mean depth of 1.89; it works from the wide paved vestibule on the east street, while the <em>atrium</em> Ballu puts at the centre opens only onto the vestibule, a dead end two steps in, and the west rooms and the north-west corner are reached from the north street through the north-west corner room."
+   }
   },
   {
    "grid_id": "TIMG.NE.I21",
