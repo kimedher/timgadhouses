@@ -621,5 +621,29 @@
     "caption": "Depth from the street"
    }
   ]
+ },
+ "TIMG.NE.I25": {
+  "date": "2026-10-21",
+  "spaces": 23,
+  "spaces_note": "all reached; every room is closed all round and opens to the next only by its doors",
+  "entrances": 5,
+  "depth_max": 6,
+  "mean_depth": 2.61,
+  "rings": 4,
+  "summary": "Drawn from the ground with Ballu's description (1905: 87-88; 1911a: 79-80) and his plan of 1911 as the cross-check, the house comes out as 23 spaces, all reached, with five street doors, three of them his, and a mean depth of 2.61; you come in off the Cardo by three steps into the vestibule and straight on into the *atrium*, which the sweating room, the room east of it, most of the narrow strip and the room north of the second south room open off, while the south-east rooms have their own door on the east street and none into the house, and the little Byzantine basilica takes up the east strip.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I25/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the drawing (Oct 21, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I25/fig2_jgraph_street.png",
+    "caption": "Access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I25/fig4_depth_plan.png",
+    "caption": "Depth from the street"
+   }
+  ]
  }
 }
