@@ -1263,16 +1263,41 @@
    "confidence": "medium",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1905: 14-16 (Rapport sur les travaux de fouilles operes en 1904, extrait du Bulletin archeologique, 1905); fullest early description remains Ballu 1911a: 79-80",
+   "first_published_by": "Ballu 1905: 87-88",
    "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "The first block of the second row, on the east flank of the Cardo just south of the Small Northern Baths. A door with three steps led from the Cardo into a mosaic-paved vestibule, with an atrium beyond keeping its column bases and a central well, and private baths at the north-east corner. A small cold plunge east of the atrium was later converted into a baptistery when a Christian basilica was built over the eastern part of the house in the Byzantine period; a dedication to the great eternal god by Flavius Donatus and his wife Tertulla was found here [Ballu 1911: 79-80].",
+   "notes": "First block of the second row on the east side of the north Cardo, south of the small north baths. A door with three steps opened onto the Cardo into a vestibule with pretty geometric mosaics; east of it and facing the entrance, an atrium kept its column bases in place, with a well in the middle. Left of the atrium, in the north-east of the house, were private baths, with a sweating room with a semicircular part on its west side and a furnace, a caldarium with its hypocaust intact on the street between the house and the small north baths, and a second caldarium east of it, built out into the street like the first. South of it and east of the atrium a small cold pool was later turned into the baptistery of a little Christian basilica the Byzantines set up on the ruins of the east part of the house, with its door on the north street and its apse at the opposite end, decorated with two columns taken from a ruin nearby. Besides these there were seven rooms and a vestibule with its entrance door on the east side, and at the corner a stone pierced at a slant for tying horses [Ballu 1905: 87-88; Ballu 1911a: 79-80].",
    "sample": false,
-   "notes_html": "The first block of the second row, on the east flank of the <em>Cardo</em> just south of the Small Northern Baths. A door with three steps led from the <em>Cardo</em> into a mosaic-paved vestibule, with an <em>atrium</em> beyond keeping its column bases and a central well, and private baths at the north-east corner. A small cold plunge east of the <em>atrium</em> was later converted into a baptistery when a Christian basilica was built over the eastern part of the house in the Byzantine period; a dedication to the great eternal god by Flavius Donatus and his wife Tertulla was found here [Ballu 1911: 79-80]."
+   "notes_html": "First block of the second row on the east side of the north <em>Cardo</em>, south of the small north baths. A door with three steps opened onto the <em>Cardo</em> into a vestibule with pretty geometric mosaics; east of it and facing the entrance, an <em>atrium</em> kept its column bases in place, with a well in the middle. Left of the <em>atrium</em>, in the north-east of the house, were private baths, with a sweating room with a semicircular part on its west side and a furnace, a <em>caldarium</em> with its hypocaust intact on the street between the house and the small north baths, and a second <em>caldarium</em> east of it, built out into the street like the first. South of it and east of the <em>atrium</em> a small cold pool was later turned into the baptistery of a little Christian basilica the Byzantines set up on the ruins of the east part of the house, with its door on the north street and its apse at the opposite end, decorated with two columns taken from a ruin nearby. Besides these there were seven rooms and a vestibule with its entrance door on the east side, and at the corner a stone pierced at a slant for tying horses [Ballu 1905: 87-88; Ballu 1911a: 79-80].",
+   "analysis": {
+    "date": "2026-10-21",
+    "spaces": 23,
+    "spaces_note": "all reached; every room is closed all round and opens to the next only by its doors",
+    "entrances": 5,
+    "depth_max": 6,
+    "mean_depth": 2.61,
+    "rings": 4,
+    "summary": "Drawn from the ground with Ballu's description (1905: 87-88; 1911a: 79-80) and his plan of 1911 as the cross-check, the house comes out as 23 spaces, all reached, with five street doors, three of them his, and a mean depth of 2.61; you come in off the Cardo by three steps into the vestibule and straight on into the atrium, which the sweating room, the room east of it, most of the narrow strip and the room north of the second south room open off, while the south-east rooms have their own door on the east street and none into the house, and the little Byzantine basilica takes up the east strip.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I25/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the drawing (Oct 21, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I25/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I25/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "Drawn from the ground with Ballu's description (1905: 87-88; 1911a: 79-80) and his plan of 1911 as the cross-check, the house comes out as 23 spaces, all reached, with five street doors, three of them his, and a mean depth of 2.61; you come in off the Cardo by three steps into the vestibule and straight on into the <em>atrium</em>, which the sweating room, the room east of it, most of the narrow strip and the room north of the second south room open off, while the south-east rooms have their own door on the east street and none into the house, and the little Byzantine basilica takes up the east strip."
+   }
   },
   {
    "grid_id": "TIMG.NE.I26",
