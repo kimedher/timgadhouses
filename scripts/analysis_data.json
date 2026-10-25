@@ -573,5 +573,29 @@
     "caption": "Depth from the street"
    }
   ]
+ },
+ "TIMG.NE.I15": {
+  "date": "2026-10-20",
+  "spaces": 16,
+  "spaces_note": "all reached; the central room as two spaces, its north arm and its south part, and the south-east corner room with the strip south of its short line",
+  "entrances": 5,
+  "depth_max": 6,
+  "mean_depth": 2.44,
+  "rings": 6,
+  "summary": "Drawn from the ground with Ballu's own plan of the excavations (1911a) and his list of rooms (1909: 98; 1911a: 82), the house comes out as 16 spaces, all reached by five uncertain street doors, with a mean depth of 2.44; the narrow paved strip taken for his *atrium* opens only into the central room's north arm, and it's his poorly defined central room that holds the house together, the most integrated space, with the whole west side opening off it, so the north-west corner room sits six steps in, while the three east rooms each have their own door onto the east street.",
+  "figures": [
+   {
+    "src": "/assets/images/houses/TIMG.NE.I15/fig1_plan_spaces.png",
+    "caption": "Convex spaces on the drawing (Oct 20, 2026)"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I15/fig2_jgraph_street.png",
+    "caption": "Justified access graph from the street"
+   },
+   {
+    "src": "/assets/images/houses/TIMG.NE.I15/fig4_depth_plan.png",
+    "caption": "Depth from the street, all doors as drawn"
+   }
+  ]
  }
 }

@@ -943,16 +943,41 @@
    "confidence": "medium",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "",
    "area_m2": null,
-   "first_published_by": "Ballu 1909: 26",
+   "first_published_by": "Ballu 1909: 98",
    "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Third block of the fourth row, east of the previous one: a paved atrium with a basin on the north face, ringed by rooms on all four sides. Ballu found the building of little interest [Ballu 1911: 82].",
+   "notes": "Third block of the fourth row of the north-east quarter, east of the previous one. A paved atrium with a basin on the north face; east of it two rooms opening into each other; west of it a room forming the north-west corner; on the west side two rooms and a large room with a basin at the south-west corner; on the south two rooms, one of them the south-east corner; three rooms on the east side besides the corner ones; and in the centre, south of the atrium, a rather poorly defined room. The house is not of much interest [Ballu 1911a: 82]; Ballu's first report calls it the fourth block, puts the atrium in the centre with its basin in the north, says the building does not seem of much interest so far and says its clearing was not yet finished [Ballu 1909: 98].",
    "sample": false,
-   "notes_html": "Third block of the fourth row, east of the previous one: a paved <em>atrium</em> with a basin on the north face, ringed by rooms on all four sides. Ballu found the building of little interest [Ballu 1911: 82]."
+   "notes_html": "Third block of the fourth row of the north-east quarter, east of the previous one. A paved <em>atrium</em> with a basin on the north face; east of it two rooms opening into each other; west of it a room forming the north-west corner; on the west side two rooms and a large room with a basin at the south-west corner; on the south two rooms, one of them the south-east corner; three rooms on the east side besides the corner ones; and in the centre, south of the <em>atrium</em>, a rather poorly defined room. The house is not of much interest [Ballu 1911a: 82]; Ballu's first report calls it the fourth block, puts the <em>atrium</em> in the centre with its basin in the north, says the building does not seem of much interest so far and says its clearing was not yet finished [Ballu 1909: 98].",
+   "analysis": {
+    "date": "2026-10-20",
+    "spaces": 16,
+    "spaces_note": "all reached; the central room as two spaces, its north arm and its south part, and the south-east corner room with the strip south of its short line",
+    "entrances": 5,
+    "depth_max": 6,
+    "mean_depth": 2.44,
+    "rings": 6,
+    "summary": "Drawn from the ground with Ballu's own plan of the excavations (1911a) and his list of rooms (1909: 98; 1911a: 82), the house comes out as 16 spaces, all reached by five uncertain street doors, with a mean depth of 2.44; the narrow paved strip taken for his atrium opens only into the central room's north arm, and it's his poorly defined central room that holds the house together, the most integrated space, with the whole west side opening off it, so the north-west corner room sits six steps in, while the three east rooms each have their own door onto the east street.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I15/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the drawing (Oct 20, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I15/fig2_jgraph_street.png",
+      "caption": "Justified access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I15/fig4_depth_plan.png",
+      "caption": "Depth from the street, all doors as drawn"
+     }
+    ],
+    "summary_html": "Drawn from the ground with Ballu's own plan of the excavations (1911a) and his list of rooms (1909: 98; 1911a: 82), the house comes out as 16 spaces, all reached by five uncertain street doors, with a mean depth of 2.44; the narrow paved strip taken for his <em>atrium</em> opens only into the central room's north arm, and it's his poorly defined central room that holds the house together, the most integrated space, with the whole west side opening off it, so the north-west corner room sits six steps in, while the three east rooms each have their own door onto the east street."
+   }
   },
   {
    "grid_id": "TIMG.NE.I18",
