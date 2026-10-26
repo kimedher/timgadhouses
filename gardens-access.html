@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>House of the Gardens access</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Single light look on purpose, matching timgadhouses.org */
+:root{color-scheme:light;
+  --bg:#FAF7F2;--bg-soft:#F1ECE3;--card:#FFFFFF;--text:#1F2933;--muted:#6B7380;
+  --teal:#1B6B6F;--teal-dark:#104A4D;--blue-soft:#E4F0F4;--blue:#B8D8E3;--blue-mid:#8FBDCF;--blue-deep:#4F8AA0;
+  --terra:#C77B5A;--terra-soft:#E8C4AE;--terra-deep:#A65D40;--hair:#E3D9C9;--wall:#2B2F33;--unreached:#ECE6DC;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text)}
+body{font-family:Montserrat,system-ui,sans-serif;font-size:15px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);font-weight:600;margin:0 0 6px}
+h1{font-size:26px;line-height:1.25;font-weight:600;margin:0 0 4px}
+h1 em,.fr{font-family:Fraunces,Georgia,serif;font-weight:400}
+.sub{color:var(--muted);margin:0 0 18px;max-width:760px}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px}
+.stat{background:var(--card);border:1px solid var(--hair);border-radius:10px;padding:8px 14px;min-width:96px}
+.stat b{display:block;font-size:20px;font-weight:600;color:var(--teal-dark);line-height:1.2}
+.stat span{font-size:12px;color:var(--muted)}
+.stat.changed b{color:var(--terra-deep)}
+.controls{display:flex;flex-wrap:wrap;gap:14px 24px;align-items:flex-end;margin:0 0 14px}
+.group label{display:block;font-size:12px;color:var(--muted);margin:0 0 5px;font-weight:500}
+.seg{display:inline-flex;flex-wrap:wrap;background:var(--bg-soft);border-radius:10px;padding:3px;gap:3px}
+.seg button{font:inherit;font-size:13px;font-weight:500;border:0;background:transparent;color:var(--text);padding:7px 12px;border-radius:8px;cursor:pointer}
+.seg button:hover{background:#fff}
+.seg button.on{background:var(--teal);color:#fff}
+.seg.alt button.on{background:var(--terra-deep)}
+.explain{background:var(--card);border:1px solid var(--hair);border-left:4px solid var(--teal);border-radius:0;padding:12px 16px;margin:0 0 16px}
+.explain h2{font-size:15px;font-weight:600;margin:0 0 2px}
+.explain p{margin:0;color:var(--text)}
+.explain .scale{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:12px;color:var(--muted)}
+.explain .bar{height:10px;width:160px;border-radius:5px;background:linear-gradient(90deg,#E4F0F4,#8FBDCF,#1B6B6F)}
+.variant-note{display:none;background:#FBF1EA;border:1px solid var(--terra-soft);border-radius:10px;padding:10px 14px;margin:0 0 16px;font-size:14px}
+.variant-note.show{display:block}
+.panels{display:grid;grid-template-columns:1.05fr 1fr;gap:16px}
+@media (max-width:860px){.panels{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:12px 12px 8px}
+.panel h3{font-size:13px;font-weight:600;margin:2px 4px 6px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.panel svg{display:block;width:100%;height:auto}
+.room{cursor:pointer;stroke:#fff;stroke-width:.6;transition:fill .25s}
+.room:hover{stroke:var(--terra-deep);stroke-width:2}
+.room.sel{stroke:var(--terra-deep);stroke-width:2.6}
+.rlab{font-size:11px;font-weight:600;pointer-events:none;text-anchor:middle;dominant-baseline:central}
+.gnode{cursor:pointer}
+.gnode rect{transition:fill .25s;stroke-width:1}
+.gnode:hover rect{stroke:var(--terra-deep);stroke-width:2}
+.gnode.sel rect{stroke:var(--terra-deep);stroke-width:2.6}
+.gnode text{font-size:11px;font-weight:600;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.rowlab{font-size:11px;fill:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted);margin:6px 4px 4px}
+.legend i{display:inline-block;width:22px;height:0;vertical-align:middle;margin-right:6px;border-top:3px solid var(--teal)}
+.legend i.p{border-top:3px dashed var(--terra)}
+.legend i.o{border-top:2px dotted var(--blue-deep)}
+.legend i.u{width:12px;height:12px;border:1px solid #cfc6b8;background:var(--unreached);border-radius:2px}
+.below{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media (max-width:860px){.below{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:14px 16px}
+.card h2{font-size:16px;font-weight:600;margin:0 0 2px}
+.card .code{color:var(--terra-deep);font-weight:600}
+.walk{font-size:13px;color:var(--teal-dark);background:var(--blue-soft);border-radius:8px;padding:6px 10px;margin:8px 0}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px;margin:8px 0 0}
+.facts dt{color:var(--muted);font-size:13px}
+.facts dd{margin:0}
+.facts dd small{color:var(--muted)}
+.hint{color:var(--muted);font-size:14px;margin:0}
+.key{columns:2;column-gap:18px;font-size:13px;margin:6px 0 0;padding:0;list-style:none}
+@media (max-width:520px){.key{columns:1}}
+.key li{break-inside:avoid;padding:2px 0;cursor:pointer}
+.key li:hover{color:var(--terra-deep)}
+.key b{display:inline-block;min-width:32px;color:var(--teal-dark)}
+.foot{margin-top:22px;font-size:12px;color:var(--muted);max-width:900px}
+.foot p{margin:0 0 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Timgad houses · access explorer</p>
+  <h1>House of the Gardens <em>(Maison des Jardinières)</em></h1>
+  <p class="sub">TIMG.SE.I2, on the south side of the <em>Decumanus</em> east of the Forum. One street door, a vestibule, a court with ten columns and porticoes on three sides, and a room with a three-bay front on the entrance axis. Pick a measure, then click any room on the plan or the graph.</p>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="controls">
+    <div class="group"><label>Colour the rooms by</label>
+      <div class="seg" id="measures">
+        <button data-m="depth" class="on">Depth</button>
+        <button data-m="conn">Connections</button>
+        <button data-m="cv">Control</button>
+        <button data-m="rra">Integration</button>
+        <button data-m="ring">Rings</button>
+      </div>
+    </div>
+    <div class="group"><label>Which reading of the drawing</label>
+      <div class="seg alt" id="variants">
+        <button data-v="all" class="on">All doors drawn</button>
+        <button data-v="certain">Certain doors only</button>
+        <button data-v="merged">Court and porticoes as one</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain" id="explain"></div>
+  <div class="variant-note" id="vnote"></div>
+
+  <div class="panels">
+    <div class="panel">
+      <h3>The plan</h3>
+      <svg id="plan" viewBox="0 0 452 530" role="img" aria-label="Plan of the house with rooms coloured by the chosen measure"></svg>
+      <div class="legend">
+        <span><i></i>certain door</span><span><i class="p"></i>probable door</span><span><i class="o"></i>column line (open)</span><span><i class="u"></i>not reached</span>
+      </div>
+    </div>
+    <div class="panel">
+      <h3>The access graph (street at the bottom)</h3>
+      <svg id="graph" viewBox="0 0 440 420" role="img" aria-label="Justified access graph, spaces stacked by depth from the street"></svg>
+      <div class="legend">
+        <span><i></i>certain door</span><span><i class="p"></i>probable door</span><span><i class="o"></i>open link</span><span>each row = one more step in</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="below">
+    <div class="card" id="detail"><p class="hint">Click a room to see its numbers in plain words and the route a visitor takes to reach it from the street.</p></div>
+    <div class="card">
+      <h2>Room key</h2>
+      <ul class="key" id="key"></ul>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p><b>Sources.</b> The drawing (Sep 25, 2026), traced from Ballu 1897 I: Pl. XXXVII and fig. 36 (printed p. 224) and BCB 1905: fig. 40 (pp. 88-92). Room names follow the drawing; Ballu calls the court an <em>atrium</em> and the three-bay room the <em>tablinum</em>.</p>
+    <p><b>Method.</b> Each room, the court and each portico is one space, the street is space zero, and every doorway or open column line is one link. Depth, connections, control (CV), integration (RRA) and rings are recalculated live for each reading. Interaction labels (after Fisher) and visibility scores come from the drawing's analysis with all doors drawn.</p>
+  </div>
+</div>
+
+<script>
+const HOUSE={
+ root:'ST',
+ nodes:{
+  ST:{name:'the street (the Decumanus)',poly:[[-9.6,9.12],[12.2,9.12],[12.2,14.2],[-9.6,14.2]],g:5,street:1},
+  R1:{name:'the vestibule',poly:[[-1.29,9.08],[3.75,9.09],[3.66,5.2],[-1.38,5.12]],g:5,label:'public-inclusive',vis:10},
+  R2:{name:'the room east of the vestibule',poly:[[3.75,9.09],[7.5,9.01],[7.47,5.18],[3.66,5.2]],g:7.2,vis:7},
+  R3:{name:'the north-east corner room',poly:[[7.5,9.01],[11.54,8.92],[11.55,5.16],[7.47,5.18]],g:10,label:'private-exclusive',vis:4},
+  R5:{name:'the room west of the vestibule',poly:[[-3.95,9.1],[-1.29,9.08],[-1.38,5.12],[-3.92,5.1]],g:2.8,label:'gathering',vis:7},
+  R4:{name:'the north-west corner room',poly:[[-8.98,9.09],[-3.95,9.1],[-3.92,5.1],[-8.95,5.05]],g:0,label:'private-exclusive',vis:4},
+  PN:{name:'the north portico',poly:[[-4.23,5.1],[6.54,5.19],[6.54,2.95],[4.3,2.9],[-1.85,2.85],[-4.22,2.85]],g:5,vis:11,lab:[1.2,4.0]},
+  PW:{name:'the west portico',poly:[[-4.22,2.85],[-1.85,2.85],[-2.0,-5.2],[-4.26,-5.34]],g:3,label:'gathering',vis:11},
+  PE:{name:'the east portico',poly:[[4.3,2.9],[6.54,2.95],[6.54,-5.08],[4.4,-5.1]],g:7,label:'gathering',vis:12},
+  C:{name:'the court, with the well and planters',poly:[[-1.85,2.85],[4.3,2.9],[4.4,-5.1],[-2.0,-5.2]],g:5,label:'public-inclusive',vis:11,lab:[1.2,1.4]},
+  R7:{name:'the west room, north',poly:[[-8.95,5.05],[-4.23,5.1],[-4.24,0.45],[-8.93,0.49]],g:0.5,label:'private-exclusive',vis:7},
+  R8:{name:'the west room, south',poly:[[-8.93,0.49],[-4.24,0.45],[-4.26,-5.34],[-8.9,-5.28]],g:1.6,label:'private-exclusive',vis:8},
+  R10:{name:'the south-west corner room',poly:[[-8.9,-5.28],[-1.88,-5.33],[-2.32,-11.1],[-8.86,-11.13]],g:2.7,label:'private-exclusive',vis:4},
+  R11:{name:'the room with the three-bay front (Ballu’s tablinum)',poly:[[-1.88,-5.33],[4.88,-5.1],[4.78,-11.07],[-2.32,-11.1]],g:5,label:'private-exclusive',vis:5},
+  R12:{name:'the south-east corner room',poly:[[4.88,-5.1],[11.57,-5.11],[11.59,-11.03],[4.78,-11.07]],g:7.3,label:'private-exclusive',vis:4},
+  R9:{name:'the east room, south',poly:[[6.53,-0.24],[11.56,-0.27],[11.57,-5.11],[6.54,-5.08]],g:8.4,label:'private-exclusive',vis:5},
+  R6:{name:'the east room, north',poly:[[6.54,5.19],[11.55,5.16],[11.56,-0.27],[6.53,-0.24]],g:9.5,label:'private-exclusive',vis:6}
+ },
+ edges:[
+  ['ST','R1','c','the street door, 1.6 m'],['R1','R2','c','door, 1.9 m'],['R1','R5','c','door, 1.7 m'],
+  ['R5','R4','p','door, 1.0 m'],['R2','R3','p','door, 0.85 m'],['R1','PN','c','the inner door, 1.25 m'],
+  ['PW','R7','c','door, 2.2 m'],['PW','R8','c','door, 1.6 m'],['PW','R10','c','door, 1.8 m'],
+  ['PE','R6','p','door, 1.4 m'],['PE','R9','p','door, 1.25 m'],['PE','R12','c','door, 1.7 m'],
+  ['C','R11','c','three bays, 3.5 m in all'],['C','PN','o','the column line'],['C','PW','o','the column line'],
+  ['C','PE','o','the column line'],['PN','PW','o','the portico corner'],['PN','PE','o','the portico corner']
+ ],
+ variants:{
+  all:{label:'All doors drawn'},
+  certain:{label:'Certain doors only',drop:['p'],note:'Only the 11 certain doors and the open column lines. The 4 probable doors are taken out, so <b>4 rooms can’t be reached at all</b>: the two corner rooms behind the front rooms (R3, R4) and two east portico rooms (R6, R9). Everything the house says about those rooms rests on doors the plans only half show.'},
+  merged:{label:'Court and porticoes as one',merge:{PN:'C',PW:'C',PE:'C'},note:'The other way to read a peristyle: the court and its three porticoes as <b>one space</b>. The two rings disappear, the house becomes a pure tree, and the court jumps to a control of 7.25 because eight rooms hang off it. Same drawing, different counting rule, so the rule has to be stated every time.'}
+ },
+ walls:{"wc": [[[-8.98, 9.09], [-1.29, 9.08], [-0.39, 9.09]], [[1.97, 9.13], [3.75, 9.09], [11.54, 8.92], [11.55, 5.16], [11.59, -11.03], [4.78, -11.07], [-2.32, -11.1], [-8.86, -11.13], [-8.9, -5.28], [-8.93, 0.49], [-8.95, 5.05], [-8.98, 9.09]], [[3.69, 6.06], [3.66, 5.2], [11.55, 5.16]], [[-1.39, 6.15], [-1.38, 5.12], [-4.23, 5.1], [-8.95, 5.05]], [[3.72, 7.96], [3.75, 9.09]], [[-1.29, 7.84], [-1.29, 9.08]], [[-8.93, 0.49], [-4.24, 0.45], [-4.28, -0.95]], [[-4.23, 5.1], [-4.2, 3.84]], [[-4.25, 1.69], [-4.24, 0.45]], [[4.88, -5.1], [4.78, -11.07]], [[-4.24, -2.55], [-4.26, -5.34], [-8.9, -5.28]], [[-1.88, -5.33], [-2.32, -11.1]], [[-2.43, -5.21], [-1.3, -5.24]], [[4.88, -5.1], [3.68, -5.09]], [[-1.38, 5.12], [-0.32, 5.07]], [[3.66, 5.2], [2.5, 5.17]]], "wp": [[[11.56, -0.27], [6.53, -0.24]], [[11.57, -5.11], [6.54, -5.08]], [[7.47, 5.18], [7.53, 6.7]], [[7.5, 9.01], [7.49, 7.54]], [[-3.94, 5.1], [-3.89, 7.07]], [[-3.97, 9.1], [-3.92, 8.05]], [[-0.39, 9.09], [0.37, 9.1]], [[6.53, -0.24], [6.55, 2.17]], [[6.54, -5.08], [6.53, -3.11]], [[6.53, -0.24], [6.58, -1.87]], [[6.54, 5.19], [6.53, 3.56]]], "dc": [[[1.97, 9.13], [0.37, 9.1]], [[3.72, 7.96], [3.69, 6.06]], [[-1.29, 7.84], [-1.39, 6.15]], [[-4.2, 3.84], [-4.25, 1.69]], [[-4.28, -0.95], [-4.24, -2.55]], [[-4.26, -5.34], [-2.43, -5.21]], [[4.88, -5.1], [6.54, -5.08]], [[-1.3, -5.24], [-0.23, -5.29]], [[3.68, -5.09], [2.75, -5.11]], [[0.56, -5.26], [2.01, -5.25]], [[0.52, 5.27], [1.77, 5.25]]], "dp": [[[-3.92, 8.05], [-3.89, 7.07]], [[7.49, 7.54], [7.53, 6.7]], [[6.53, 3.56], [6.55, 2.17]], [[6.58, -1.87], [6.53, -3.11]]]},
+ colonnade:[[-1.85,2.85],[4.3,2.9],[4.4,-5.1],[-2.0,-5.2]],
+ well:[1.15,-1.08],
+ streetPiers:{y:12.4,x0:-9.2,x1:11.5,n:8}
+};
+
+const MEAS={
+ depth:{t:'Depth: how many steps in',p:'Count the doorways or openings you pass through from the street. The vestibule is 1, the rooms round the porticoes are 4. Deeper usually means more private: harder for a visitor to reach, easier for the household to keep to itself.',lo:'near the street',hi:'deep inside'},
+ conn:{t:'Connections: how many ways out',p:'How many spaces open straight off this one. A room with 1 is a dead end: you leave the way you came in. Porticoes and courts with many connections are where people move about.',lo:'dead end',hi:'many ways out'},
+ cv:{t:'Control: is this a gatekeeper?',p:'Every space shares out one point among the spaces it touches; control is how much this one collects. Above 1 means the rooms next door depend on it to be reached. Here the two side porticoes (3.50) and the vestibule (2.25) are the gatekeepers.',lo:'depends on others',hi:'gatekeeper'},
+ rra:{t:'Integration: hub or backwater?',p:'How close this space is, on average, to every other space (the RRA number). A low RRA, shown dark, is the hub everything passes near; a high RRA, shown light, is tucked away. The north portico, not the court, is the best-connected space in the house.',lo:'tucked away (high RRA)',hi:'hub (low RRA)'},
+ ring:{t:'Rings: can you walk in a loop?',p:'A ring is a loop where you can go round and come back without retracing your steps, so no single space controls the route. The highlighted links and spaces are the ones on a loop. A house with no rings is a tree, and whoever stands at a branch controls everything beyond it.',lo:'',hi:''}
+};
+
+let M='depth',V='all',SEL=null,R=null;
+const SVGNS='http://www.w3.org/2000/svg';
+const el=(t,a,p)=>{const e=document.createElementNS(SVGNS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;};
+
+function build(v){
+ const va=HOUSE.variants[v],mp=va.merge||{},drop=va.drop||[];
+ const id=n=>mp[n]||n;const seen={};const E=[];
+ for(const [a,b,g,d] of HOUSE.edges){if(drop.includes(g))continue;const A=id(a),B=id(b);if(A===B)continue;const k=[A,B].sort().join('|');if(seen[k])continue;seen[k]=1;E.push({a:A,b:B,g,d,orig:[a,b]});}
+ const nodes=[...new Set(Object.keys(HOUSE.nodes).map(id))];
+ const adj={};nodes.forEach(n=>adj[n]=[]);E.forEach(e=>{adj[e.a].push(e.b);adj[e.b].push(e.a);});
+ const bfs=s=>{const d={[s]:0},par={[s]:null},q=[s];while(q.length){const x=q.shift();for(const y of adj[x])if(!(y in d)){d[y]=d[x]+1;par[y]=x;q.push(y);}}return{d,par};};
+ const root=bfs(HOUSE.root),reach=Object.keys(root.d),k=reach.length;
+ const Dk=2*(k*(Math.log2((k+2)/3)-1)+1)/((k-1)*(k-2));
+ const out={};
+ for(const n of reach){const {d}=bfs(n);const md=reach.reduce((s,m)=>s+d[m],0)/(k-1);const ra=2*(md-1)/(k-2);
+  out[n]={depth:root.d[n],conn:adj[n].length,cv:adj[n].reduce((s,m)=>s+1/adj[m].length,0),md,rra:ra/Dk};}
+ const RE=E.filter(e=>e.a in root.d&&e.b in root.d);
+ const ringE=new Set();
+ RE.forEach((e,i)=>{const q=[e.a],s=new Set([e.a]);while(q.length){const x=q.shift();for(const y of adj[x]){if((x===e.a&&y===e.b)||(x===e.b&&y===e.a))continue;if(!s.has(y)){s.add(y);q.push(y);}}}if(s.has(e.b))ringE.add(i);});
+ const ringN=new Set();RE.forEach((e,i)=>{if(ringE.has(i)){ringN.add(e.a);ringN.add(e.b);}});
+ const sp=reach.filter(n=>n!==HOUSE.root);
+ const sorted=sp.map(n=>out[n].rra).sort((a,b)=>a-b);
+ const t1=sorted[Math.floor(sp.length/3)],t2=sorted[Math.floor(2*sp.length/3)];
+ sp.forEach(n=>{const r=out[n].rra;out[n].third=r<=t1+1e-9?0:(r<=t2+1e-9?1:2);});
+ return{E,RE,ringE,ringN,out,par:root.par,reach:new Set(reach),nodes,mp,k,rings:RE.length-k+1,
+  md:out[HOUSE.root].md,maxd:Math.max(...reach.map(n=>root.d[n])),entr:E.filter(e=>e.a===HOUSE.root||e.b===HOUSE.root).length,
+  unreached:nodes.filter(n=>!(n in root.d))};
+}
+
+const lerp=(a,b,t)=>a+(b-a)*t;
+const r2=v=>(Math.round(v*100-1e-9)/100).toFixed(2);
+function hex(h){return[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));}
+const STOPS=['#E4F0F4','#8FBDCF','#4F8AA0','#1B6B6F'].map(hex);
+function ramp(t){t=Math.max(0,Math.min(1,t));const s=t*(STOPS.length-1),i=Math.min(Math.floor(s),STOPS.length-2),f=s-i;const c=STOPS[i].map((v,j)=>Math.round(lerp(v,STOPS[i+1][j],f)));return`rgb(${c})`;}
+function inkFor(t){return t>0.55?'#fff':'#104A4D';}
+
+function valueT(n){
+ const o=R.out[n];if(!o)return null;
+ const sp=[...R.reach].filter(x=>x!==HOUSE.root);
+ const vals=sp.map(x=>R.out[x][M==='rra'?'rra':M]);
+ if(M==='ring')return R.ringN.has(n)?1:0.08;
+ const mn=Math.min(...vals),mx=Math.max(...vals);let v=o[M];
+ let t=mx>mn?(v-mn)/(mx-mn):0.5;if(M==='rra')t=1-t;return 0.08+0.92*t;
+}
+function fillFor(n){
+ if(n===HOUSE.root)return'#F1ECE3';
+ const t=valueT(n);if(t===null)return'url(#hatch)';
+ if(M==='ring')return R.ringN.has(n)?'#E8C4AE':'#F4F1EC';
+ return ramp(t);
+}
+function inkOf(n){if(n===HOUSE.root)return'#6B7380';const t=valueT(n);if(t===null)return'#9A9287';if(M==='ring')return R.ringN.has(n)?'#7A3F28':'#9A9287';return inkFor(t);}
+const fmt=(m,v)=>m==='depth'||m==='conn'?String(v):(m==='rra'?v.toFixed(3):r2(v));
+
+/* ---------- plan ---------- */
+const S=20,X=x=>(x+10)*S,Y=y=>(14.5-y)*S;
+const plan=document.getElementById('plan');
+function drawPlan(){
+ plan.innerHTML='';
+ const defs=el('defs',{},plan);const pat=el('pattern',{id:'hatch',width:6,height:6,patternUnits:'userSpaceOnUse',patternTransform:'rotate(45)'},defs);
+ el('rect',{width:6,height:6,fill:'#ECE6DC'},pat);el('line',{x1:0,y1:0,x2:0,y2:6,stroke:'#D6CCBC','stroke-width':2},pat);
+ const shown=R.mp;
+ for(const [code,n] of Object.entries(HOUSE.nodes)){
+  const key=shown[code]||code;
+  const pts=n.poly.map(p=>X(p[0])+','+Y(p[1])).join(' ');
+  const p=el('polygon',{points:pts,class:'room'+(SEL===key?' sel':''),fill:fillFor(key)},plan);
+  p.addEventListener('click',()=>select(key));
+  const t=el('title',{},p);t.textContent=code+': '+n.name;
+ }
+ // street piers
+ const sp=HOUSE.streetPiers;for(let i=0;i<sp.n;i++){const x=lerp(sp.x0,sp.x1,i/(sp.n-1));el('rect',{x:X(x)-4,y:Y(sp.y)-4,width:8,height:8,fill:'#CFC6B8'},plan);}
+ const st=el('text',{x:X(1.2),y:Y(13.5),class:'rlab',fill:'#6B7380'},plan);st.innerHTML='the <tspan font-style="italic">Decumanus</tspan> (street portico on eight piers)';
+ // colonnade + well
+ el('polygon',{points:HOUSE.colonnade.map(p=>X(p[0])+','+Y(p[1])).join(' '),fill:'none',stroke:'#4F8AA0','stroke-width':1.6,'stroke-dasharray':'2 4','pointer-events':'none'},plan);
+ el('circle',{cx:X(HOUSE.well[0]),cy:Y(HOUSE.well[1]),r:26,fill:'none',stroke:'rgba(16,74,77,.35)','stroke-width':1,'stroke-dasharray':'3 3','pointer-events':'none'},plan);
+ el('circle',{cx:X(HOUSE.well[0]),cy:Y(HOUSE.well[1]),r:6,fill:'none',stroke:'rgba(16,74,77,.6)','stroke-width':1.5,'pointer-events':'none'},plan);
+ // walls
+ const line=(pts,a)=>el('polyline',Object.assign({points:pts.map(p=>X(p[0])+','+Y(p[1])).join(' '),fill:'none','stroke-linecap':'round','stroke-linejoin':'round','pointer-events':'none'},a),plan);
+ HOUSE.walls.wc.forEach(w=>line(w,{stroke:'#2B2F33','stroke-width':4}));
+ HOUSE.walls.wp.forEach(w=>line(w,{stroke:'#2B2F33','stroke-width':2.4,'stroke-dasharray':'5 3'}));
+ const dropP=(HOUSE.variants[V].drop||[]).includes('p');
+ HOUSE.walls.dc.forEach(w=>line(w,{stroke:'#1B6B6F','stroke-width':5}));
+ HOUSE.walls.dp.forEach(w=>line(w,dropP?{stroke:'#2B2F33','stroke-width':4}:{stroke:'#C77B5A','stroke-width':5,'stroke-dasharray':'4 2'}));
+ // route
+ if(SEL&&R.reach.has(SEL)){const path=[];let x=SEL;while(x){path.unshift(x);x=R.par[x];}
+  const cen=c=>{const n=HOUSE.nodes[c];if(c===HOUSE.root)return[1.2,10.6];const xs=n.poly.map(p=>p[0]),ys=n.poly.map(p=>p[1]);return n.lab||[(Math.min(...xs)+Math.max(...xs))/2,(Math.min(...ys)+Math.max(...ys))/2];};
+  const pts=path.map(cen);line(pts,{stroke:'#A65D40','stroke-width':3,'stroke-dasharray':'1 6','opacity':.95});
+}
+ // labels
+ for(const [code,n] of Object.entries(HOUSE.nodes)){
+  if(code===HOUSE.root)continue;const key=shown[code]||code;if(key!==code)continue;
+  let c=n.lab;if(!c){const xs=n.poly.map(p=>p[0]),ys=n.poly.map(p=>p[1]);c=[(Math.min(...xs)+Math.max(...xs))/2,(Math.min(...ys)+Math.max(...ys))/2];}
+  const o=R.out[code];const t=el('text',{x:X(c[0]),y:Y(c[1])-6,class:'rlab',fill:inkOf(code)},plan);t.textContent=code;
+  const v=el('text',{x:X(c[0]),y:Y(c[1])+8,class:'rlab',fill:inkOf(code),'font-weight':'500'},plan);
+  v.textContent=!o?'not reached':(M==='ring'?(R.ringN.has(code)?'on a ring':''):fmt(M,o[M]));
+ }
+
+}
+
+/* ---------- graph ---------- */
+const graph=document.getElementById('graph');
+function drawGraph(){
+ graph.innerHTML='';
+ const defs=el('defs',{},graph);const pat=el('pattern',{id:'hatch2',width:6,height:6,patternUnits:'userSpaceOnUse',patternTransform:'rotate(45)'},defs);
+ el('rect',{width:6,height:6,fill:'#ECE6DC'},pat);el('line',{x1:0,y1:0,x2:0,y2:6,stroke:'#D6CCBC','stroke-width':2},pat);
+ const W=440,top=36,bottom=392,maxd=R.maxd,hasU=R.unreached.length>0;
+ const rows=maxd+(hasU?1:0);const dy=(bottom-top)/Math.max(rows,1);
+ const rowY=d=>bottom-d*dy;
+ const byD={};[...R.reach].forEach(n=>{const d=R.out[n].depth;(byD[d]=byD[d]||[]).push(n);});
+ if(hasU)byD[maxd+1]=R.unreached.slice();
+ const pos={},pw={};
+ for(const d in byD){const arr=byD[d].sort((a,b)=>HOUSE.nodes[a].g-HOUSE.nodes[b].g);const n=arr.length;
+  arr.forEach((c,i)=>{pos[c]=[n===1?W/2:lerp(70,W-28,i/(n-1)),rowY(+d)];});
+  const gap=n>1?(W-98)/(n-1):99;arr.forEach(c=>pw[c]=Math.min(44,gap-6));
+  const lab=el('text',{x:4,y:rowY(+d)-16,class:'rowlab'},graph);lab.textContent=(+d>maxd)?'not reached':('depth '+d);}
+ // route set
+ const route=new Set();if(SEL&&R.reach.has(SEL)){let x=SEL;while(R.par[x]!==null&&R.par[x]!==undefined){route.add([x,R.par[x]].sort().join('|'));x=R.par[x];}}
+ const allE=build(V).E;
+ allE.forEach((e,i)=>{if(!pos[e.a]||!pos[e.b])return;
+  const onRing=R.RE.indexOf(e)>-1;
+  const ri=R.RE.findIndex(x=>x.a===e.a&&x.b===e.b);const ring=ri>-1&&R.ringE.has(ri);
+  const k=[e.a,e.b].sort().join('|');const hot=route.has(k);
+  let a={x1:pos[e.a][0],y1:pos[e.a][1],x2:pos[e.b][0],y2:pos[e.b][1],stroke:e.g==='p'?'#C77B5A':(e.g==='o'?'#4F8AA0':'#1B6B6F'),'stroke-width':e.g==='o'?1.6:2};
+  if(e.g==='p')a['stroke-dasharray']='6 4';if(e.g==='o')a['stroke-dasharray']='2 4';
+  if(M==='ring'&&ring){a.stroke='#A65D40';a['stroke-width']=4;}
+  if(hot){a.stroke='#A65D40';a['stroke-width']=4.5;delete a['stroke-dasharray'];}
+  el('line',a,graph);});
+ // dropped probable doors shown faint when certain-only
+ if(V==='certain'){HOUSE.edges.filter(e=>e[2]==='p').forEach(([a,b])=>{if(pos[a]&&pos[b])el('line',{x1:pos[a][0],y1:pos[a][1],x2:pos[b][0],y2:pos[b][1],stroke:'#C77B5A','stroke-width':1,'stroke-dasharray':'2 5',opacity:.5},graph);});}
+ for(const c in pos){
+  const g=el('g',{class:'gnode'+(SEL===c?' sel':''),transform:`translate(${pos[c][0]},${pos[c][1]})`},graph);
+  const w=c===HOUSE.root?64:(pw[c]||44);
+  const isU=!R.out[c];
+  el('rect',{x:-w/2,y:-13,width:w,height:26,rx:13,fill:isU?'url(#hatch2)':fillFor(c),stroke:c===HOUSE.root?'#B9AE9C':'rgba(16,74,77,.35)'},g);
+  const t=el('text',{fill:inkOf(c)},g);t.textContent=c===HOUSE.root?'street':c;
+  const tt=el('title',{},g);tt.textContent=(c===HOUSE.root?'the street':c)+': '+HOUSE.nodes[c].name;
+  g.addEventListener('click',()=>select(c));
+ }
+}
+
+/* ---------- text ---------- */
+function plainCV(v){return v>=2?'a gatekeeper: the spaces next door depend on it':(v>=1?'some control over its neighbours':'little control: it depends on its neighbours more than they depend on it');}
+const THIRD=['in the best-connected third of the house','in the middle third','in the most tucked-away third'];
+function detail(){
+ const box=document.getElementById('detail');
+ if(!SEL){box.innerHTML='<p class="hint">Click a room to see its numbers in plain words and the route a visitor takes to reach it from the street.</p>';return;}
+ const n=HOUSE.nodes[SEL],o=R.out[SEL];
+ const merged=Object.entries(R.mp).filter(([a,b])=>b===SEL).map(([a])=>a);
+ let name=n.name.replace('tablinum','<em>tablinum</em>')+(merged.length?' and the three porticoes, counted as one':'');
+ if(SEL===HOUSE.root){box.innerHTML=`<h2>The street</h2><p class="hint">The street is space zero, the point everything is counted from. It touches the house at ${R.entr} door${R.entr>1?'s':''}. Its mean depth, ${r2(R.md)}, is the house's mean depth: the average number of steps from the street to every space.</p>`;return;}
+ if(!o){box.innerHTML=`<h2><span class="code">${SEL}</span> ${name}</h2><p>With this reading it <b>can’t be reached</b>. Its only door is one of the probable ones, so whether anyone could get in depends on a door the plans only half show.</p>`;return;}
+ const path=[];let x=SEL;while(x){path.unshift(x);x=R.par[x];}
+ const words=path.map(c=>c===HOUSE.root?'street':c).join(' → ');
+ const doors=[];for(let i=1;i<path.length;i++){const e=R.E.find(e=>(e.a===path[i-1]&&e.b===path[i])||(e.b===path[i-1]&&e.a===path[i]));if(e)doors.push(e.d);}
+ const showStatic=V==='all';
+ box.innerHTML=`<h2><span class="code">${SEL}</span> ${name}</h2>
+ <div class="walk">Route from the street: ${words}<br><small>through ${doors.join(', then ')}</small></div>
+ <dl class="facts">
+  <dt>Depth</dt><dd><b>${o.depth}</b> <small>${o.depth} step${o.depth>1?'s':''} in from the street</small></dd>
+  <dt>Connections</dt><dd><b>${o.conn}</b> <small>${o.conn===1?'a dead end: one way in, the same way out':'opens onto '+o.conn+' spaces'}</small></dd>
+  <dt>Control (CV)</dt><dd><b>${r2(o.cv)}</b> <small>${plainCV(o.cv)}</small></dd>
+  <dt>Integration (RRA)</dt><dd><b>${o.rra.toFixed(3)}</b> <small>${THIRD[o.third]}</small></dd>
+  <dt>Mean depth (MD)</dt><dd><b>${r2(o.md)}</b> <small>average steps from here to every other space</small></dd>
+  <dt>On a ring?</dt><dd><b>${R.ringN.has(SEL)?'yes':'no'}</b> <small>${R.ringN.has(SEL)?'there are two routes here, so nobody controls the way in':'only one route in'}</small></dd>
+  ${showStatic&&n.vis!==undefined?`<dt>Visibility score</dt><dd><b>${n.vis}</b> <small>spaces you can see into from here</small></dd>`:''}
+  ${showStatic?`<dt>Interaction label</dt><dd><b>${n.label||'none'}</b> <small>${n.label?'from control and integration together':'its control and integration don’t fit one of the labels'}</small></dd>`:''}
+ </dl>`;
+}
+function stats(){
+ const base=build('all');
+ const items=[['spaces',R.k-1,base.k-1],['street doors',R.entr,base.entr],['rings',R.rings,base.rings],['max depth',R.maxd,base.maxd],['mean depth',r2(R.md),r2(base.md)],['not reached',R.unreached.length,0]];
+ document.getElementById('stats').innerHTML=items.map(([l,v,b])=>`<div class="stat${String(v)!==String(b)?' changed':''}"><b>${v}</b><span>${l}</span></div>`).join('');
+}
+function explain(){
+ const m=MEAS[M];const sc=M==='ring'?'':`<div class="scale"><span>${m.lo}</span><span class="bar"></span><span>${m.hi}</span></div>`;
+ document.getElementById('explain').innerHTML=`<h2>${m.t}</h2><p>${m.p}</p>${sc}`;
+ const vn=document.getElementById('vnote');const note=HOUSE.variants[V].note;vn.innerHTML=note||'';vn.classList.toggle('show',!!note);
+}
+function key(){
+ const ul=document.getElementById('key');ul.innerHTML='';
+ Object.entries(HOUSE.nodes).forEach(([c,n])=>{if(c===HOUSE.root)return;const li=document.createElement('li');li.innerHTML=`<b>${c}</b>${n.name.replace('tablinum','<em>tablinum</em>')}`;li.onclick=()=>select(R.mp[c]||c);ul.appendChild(li);});
+}
+function select(c){SEL=(SEL===c)?null:c;render();}
+function render(){R=build(V);if(SEL&&!R.nodes.includes(SEL))SEL=null;stats();explain();drawPlan();drawGraph();detail();}
+document.querySelectorAll('#measures button').forEach(b=>b.onclick=()=>{M=b.dataset.m;document.querySelectorAll('#measures button').forEach(x=>x.classList.toggle('on',x===b));render();});
+document.querySelectorAll('#variants button').forEach(b=>b.onclick=()=>{V=b.dataset.v;document.querySelectorAll('#variants button').forEach(x=>x.classList.toggle('on',x===b));render();});
+key();render();
+</script>
+
+
+</body>
+</html>
