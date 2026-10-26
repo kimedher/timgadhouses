@@ -77,6 +77,8 @@ h1 em,.fr{font-family:Fraunces,Georgia,serif;font-weight:400}
 .key li{break-inside:avoid;padding:2px 0;cursor:pointer}
 .key li:hover{color:var(--terra-deep)}
 .key b{display:inline-block;min-width:32px;color:var(--teal-dark)}
+.srcline{font-size:13px;color:var(--muted);margin:10px 0 0;line-height:1.55}
+.srcline b{color:var(--text);font-weight:600}
 .foot{margin-top:22px;font-size:12px;color:var(--muted);max-width:900px}
 .foot p{margin:0 0 6px}
 </style>
@@ -85,7 +87,7 @@ h1 em,.fr{font-family:Fraunces,Georgia,serif;font-weight:400}
 <div class="wrap">
   <p class="eyebrow">Timgad houses · access explorer</p>
   <h1>House of the Gardens <em>(Maison des Jardinières)</em></h1>
-  <p class="sub">TIMG.SE.I2, on the south side of the <em>Decumanus</em> east of the Forum. One street door, a vestibule, a court with ten columns and porticoes on three sides, and a room with a three-bay front on the entrance axis. Pick a measure, then click any room on the plan or the graph.</p>
+  <p class="sub">TIMG.SE.I2, on the south side of the <em>Decumanus</em> east of the Forum. A vestibule off the street, an <em>atrium</em> court ringed by ten columns and four porticoes, and the <em>tablinum</em> on the entrance axis between two <em>alae</em>, as Ballu describes it. Rooms are named from Ballu and the later accounts; walls and doors are from the drawing. Pick a measure, then click any room.</p>
 
   <div class="stats" id="stats"></div>
 
@@ -99,11 +101,12 @@ h1 em,.fr{font-family:Fraunces,Georgia,serif;font-weight:400}
         <button data-m="ring">Rings</button>
       </div>
     </div>
-    <div class="group"><label>Which reading of the drawing</label>
+    <div class="group"><label>Which reading of the house</label>
       <div class="seg alt" id="variants">
-        <button data-v="all" class="on">All doors drawn</button>
+        <button data-v="four" class="on">The excavators’ plan</button>
         <button data-v="certain">Certain doors only</button>
-        <button data-v="merged">Court and porticoes as one</button>
+        <button data-v="merged">Peristyle as one space</button>
+        <button data-v="three">The drawing as analysed</button>
       </div>
     </div>
   </div>
@@ -116,7 +119,7 @@ h1 em,.fr{font-family:Fraunces,Georgia,serif;font-weight:400}
       <h3>The plan</h3>
       <svg id="plan" viewBox="0 0 452 530" role="img" aria-label="Plan of the house with rooms coloured by the chosen measure"></svg>
       <div class="legend">
-        <span><i></i>certain door</span><span><i class="p"></i>probable door</span><span><i class="o"></i>column line (open)</span><span><i class="u"></i>not reached</span>
+        <span><i></i>certain door</span><span><i class="p"></i>probable door</span><span><i class="o"></i>column line (open)</span><span><i class="o" style="border-top-color:#A65D40"></i>south column line, BCB fig. 40</span><span><i class="u"></i>not reached</span>
       </div>
     </div>
     <div class="panel">
@@ -137,8 +140,8 @@ h1 em,.fr{font-family:Fraunces,Georgia,serif;font-weight:400}
   </div>
 
   <div class="foot">
-    <p><b>Sources.</b> The drawing (Sep 25, 2026), traced from Ballu 1897 I: Pl. XXXVII and fig. 36 (printed p. 224) and BCB 1905: fig. 40 (pp. 88-92). Room names follow the drawing; Ballu calls the court an <em>atrium</em> and the three-bay room the <em>tablinum</em>.</p>
-    <p><b>Method.</b> Each room, the court and each portico is one space, the street is space zero, and every doorway or open column line is one link. Depth, connections, control (CV), integration (RRA) and rings are recalculated live for each reading. Interaction labels (after Fisher) and visibility scores come from the drawing's analysis with all doors drawn.</p>
+    <p><b>Sources.</b> Rooms and their names from Ballu 1897b: 224-226 and Pl. XXXVII; Boeswillwald, Cagnat and Ballu 1905: 88-92 and fig. 40; Gsell 1901: 16-17; Cagnat 1909: 114-116; Germain 1969: 37; Rebuffat 1974: 447; Inv. Mos. III 146-147. Walls and doors from the drawing (Sep 26, 2026), traced from Ballu’s plate and BCB fig. 40; the south portico is added from fig. 40 and is not on the drawing.</p>
+    <p><b>Method.</b> Each room, the court and each portico is one space, the street is space zero, and every doorway or open column line is one link. Depth, connections, control (CV), integration (RRA) and rings are recalculated live for each reading. Interaction labels (after Fisher) and visibility scores come from the drawing’s analysis and show only under “The drawing as analysed”.</p>
   </div>
 </div>
 
@@ -147,35 +150,52 @@ const HOUSE={
  root:'ST',
  nodes:{
   ST:{name:'the street (the Decumanus)',poly:[[-9.6,9.12],[12.2,9.12],[12.2,14.2],[-9.6,14.2]],g:5,street:1},
-  R1:{name:'the vestibule',poly:[[-1.29,9.08],[3.75,9.09],[3.66,5.2],[-1.38,5.12]],g:5,label:'public-inclusive',vis:10},
-  R2:{name:'the room east of the vestibule',poly:[[3.75,9.09],[7.5,9.01],[7.47,5.18],[3.66,5.2]],g:7.2,vis:7},
-  R3:{name:'the north-east corner room',poly:[[7.5,9.01],[11.54,8.92],[11.55,5.16],[7.47,5.18]],g:10,label:'private-exclusive',vis:4},
-  R5:{name:'the room west of the vestibule',poly:[[-3.95,9.1],[-1.29,9.08],[-1.38,5.12],[-3.92,5.1]],g:2.8,label:'gathering',vis:7},
-  R4:{name:'the north-west corner room',poly:[[-8.98,9.09],[-3.95,9.1],[-3.92,5.1],[-8.95,5.05]],g:0,label:'private-exclusive',vis:4},
-  PN:{name:'the north portico',poly:[[-4.23,5.1],[6.54,5.19],[6.54,2.95],[4.3,2.9],[-1.85,2.85],[-4.22,2.85]],g:5,vis:11,lab:[1.2,4.0]},
-  PW:{name:'the west portico',poly:[[-4.22,2.85],[-1.85,2.85],[-2.0,-5.2],[-4.26,-5.34]],g:3,label:'gathering',vis:11},
-  PE:{name:'the east portico',poly:[[4.3,2.9],[6.54,2.95],[6.54,-5.08],[4.4,-5.1]],g:7,label:'gathering',vis:12},
-  C:{name:'the court, with the well and planters',poly:[[-1.85,2.85],[4.3,2.9],[4.4,-5.1],[-2.0,-5.2]],g:5,label:'public-inclusive',vis:11,lab:[1.2,1.4]},
-  R7:{name:'the west room, north',poly:[[-8.95,5.05],[-4.23,5.1],[-4.24,0.45],[-8.93,0.49]],g:0.5,label:'private-exclusive',vis:7},
-  R8:{name:'the west room, south',poly:[[-8.93,0.49],[-4.24,0.45],[-4.26,-5.34],[-8.9,-5.28]],g:1.6,label:'private-exclusive',vis:8},
-  R10:{name:'the south-west corner room',poly:[[-8.9,-5.28],[-1.88,-5.33],[-2.32,-11.1],[-8.86,-11.13]],g:2.7,label:'private-exclusive',vis:4},
-  R11:{name:'the room with the three-bay front (Ballu’s tablinum)',poly:[[-1.88,-5.33],[4.88,-5.1],[4.78,-11.07],[-2.32,-11.1]],g:5,label:'private-exclusive',vis:5},
-  R12:{name:'the south-east corner room',poly:[[4.88,-5.1],[11.57,-5.11],[11.59,-11.03],[4.78,-11.07]],g:7.3,label:'private-exclusive',vis:4},
-  R9:{name:'the east room, south',poly:[[6.53,-0.24],[11.56,-0.27],[11.57,-5.11],[6.54,-5.08]],g:8.4,label:'private-exclusive',vis:5},
-  R6:{name:'the east room, north',poly:[[6.54,5.19],[11.55,5.16],[11.56,-0.27],[6.53,-0.24]],g:9.5,label:'private-exclusive',vis:6}
+  R1:{name:'the vestibule',poly:[[-1.29,9.08],[3.75,9.09],[3.66,5.2],[-1.38,5.12]],g:5,label:'public-inclusive',vis:10,
+     src:'Ballu’s vestibule with two doors into the <em>atrium</em> (Ballu 1897b: 224-226); A on BCB 1905 fig. 40.',
+     size:'Ballu gives the street entrance as 2.10 m (1897b: 224) and BCB the vestibule as 4.50 m wide (1905: 88-92); the drawing has a 1.60 m street door and a vestibule about 5.0 m wide. Ballu’s two inner doors are drawn as one central door of 1.25 m with narrow gaps either side.'},
+  R2:{name:'the room east of the vestibule',poly:[[3.75,9.09],[7.5,9.01],[7.47,5.18],[3.66,5.2]],g:7.2,vis:7,src:'B on BCB 1905 fig. 40; not named in the texts.'},
+  R3:{name:'the north-east front room',poly:[[7.5,9.01],[11.54,8.92],[11.55,5.16],[7.47,5.18]],g:10,label:'private-exclusive',vis:4,src:'C on BCB 1905 fig. 40; not named in the texts.'},
+  R5:{name:'the room west of the vestibule',poly:[[-3.95,9.1],[-1.29,9.08],[-1.38,5.12],[-3.92,5.1]],g:2.8,label:'gathering',vis:7,src:'B on BCB 1905 fig. 40; not named in the texts.'},
+  R4:{name:'the north-west front room',poly:[[-8.98,9.09],[-3.95,9.1],[-3.92,5.1],[-8.95,5.05]],g:0,label:'private-exclusive',vis:4,src:'C on BCB 1905 fig. 40; not named in the texts.'},
+  PN:{name:'the north portico of the atrium',poly:[[-4.23,5.1],[6.54,5.19],[6.54,2.95],[4.3,2.9],[-1.85,2.85],[-4.22,2.85]],g:5,vis:11,lab:[1.2,4.0],
+     src:'One of the four porticoes (Gsell 1901: 16-17; BCB 1905 fig. 40), 2 m wide (BCB 1905: 88-92).',floor:'black-and-white geometric mosaic under the porticoes (Inv. Mos. III 146; Germain no. 32)'},
+  PW:{name:'the west portico of the atrium',poly:[[-4.22,2.85],[-1.85,2.85],[-2.0,-5.2],[-4.26,-5.34]],g:3,label:'gathering',vis:11,
+     src:'D on BCB 1905 fig. 40; one of Gsell’s four porticoes (1901: 16-17).',floor:'black-and-white geometric mosaic under the porticoes (Inv. Mos. III 146; Germain no. 32)'},
+  PE:{name:'the east portico of the atrium',poly:[[4.3,2.9],[6.54,2.95],[6.54,-5.08],[4.4,-5.1]],g:7,label:'gathering',vis:12,
+     src:'D on BCB 1905 fig. 40; one of Gsell’s four porticoes (1901: 16-17).',floor:'black-and-white geometric mosaic under the porticoes (Inv. Mos. III 146; Germain no. 32)'},
+  PS:{name:'the south portico, in front of the tablinum',poly:[[-2.0,-3.2],[4.4,-3.15],[4.4,-5.1],[-2.0,-5.2]],g:5,lab:[1.2,-4.2],only:'four',
+     src:'Not on the drawing. BCB 1905 fig. 40 runs the walk along the <em>tablinum</em> front, and its ten columns, four across and three deep, only close as a ring on four sides; Gsell counts four porticoes (1901: 16-17), Rebuffat a complete peristyle. Drawn here 2 m deep, BCB’s portico width.',floor:'black-and-white geometric mosaic under the porticoes (Inv. Mos. III 146; Germain no. 32)'},
+  C:{name:'the atrium, an open court with the well and planters',poly:[[-1.85,2.85],[4.3,2.9],[4.4,-5.1],[-2.0,-5.2]],poly4:[[-1.85,2.85],[4.3,2.9],[4.4,-3.15],[-2.0,-3.2]],g:5,label:'public-inclusive',vis:11,lab:[1.2,1.4],lab4:[1.2,0.9],
+     src:'Ballu’s <em>atrium</em>, ringed by ten columns and a stone planter round a well (Ballu 1897b: 224-226); Gsell’s court with balustraded beds round a well (1901: 16-17); c on BCB 1905 fig. 40.',
+     size:'Ballu gives the <em>atrium</em> as 10.50 by 10.60 m (1897b: 224-226), the well 10 m deep (BCB 1905: 9 m); the drawing’s court with its porticoes is about 10.8 by 10.3 m.'},
+  R7:{name:'the west room, north',poly:[[-8.95,5.05],[-4.23,5.1],[-4.24,0.45],[-8.93,0.49]],g:0.5,label:'private-exclusive',vis:7,src:'E on BCB 1905 fig. 40; one of Cagnat’s chambers under the colonnade (1909: 114-116).'},
+  R8:{name:'the west room, south',poly:[[-8.93,0.49],[-4.24,0.45],[-4.26,-5.34],[-8.9,-5.28]],g:1.6,label:'private-exclusive',vis:8,src:'E on BCB 1905 fig. 40; one of Cagnat’s chambers under the colonnade (1909: 114-116).'},
+  R10:{name:'the south-west ala',poly:[[-8.9,-5.28],[-1.88,-5.33],[-2.32,-11.1],[-8.86,-11.13]],g:2.7,label:'private-exclusive',vis:4,
+     src:'One of Ballu’s two <em>alae</em>, reached by a passage (<em>fauces</em>) beside the <em>tablinum</em> (1897b: 224-226); Gsell’s room behind a columned antechamber (1901: 16-17); H on BCB 1905 fig. 40.'},
+  R11:{name:'the tablinum',poly:[[-1.88,-5.33],[4.88,-5.1],[4.78,-11.07],[-2.32,-11.1]],g:5,label:'private-exclusive',vis:5,
+     src:'Ballu’s <em>tablinum</em>, opening by three bays on two columns (1897b: 224-226); Cagnat’s state room opposite the door (1909: 114-116); Gsell’s salon with a triple bay (1901: 16-17); G on BCB 1905 fig. 40. Rebuffat reads it as the <em>triclinium</em>, with a tripartite entrance (1974: 447).',
+     size:'BCB gives the <em>tablinum</em> as 6 by 5 m (1905: 88-92); the drawing has about 6.9 by 5.9 m to the wall centrelines.',floor:'mosaic of interlaced flowers and foliage (Inv. Mos. III 147; Germain no. 33), now lost'},
+  R12:{name:'the south-east ala',poly:[[4.88,-5.1],[11.57,-5.11],[11.59,-11.03],[4.78,-11.07]],g:7.3,label:'private-exclusive',vis:4,
+     src:'One of Ballu’s two <em>alae</em>, reached by a passage (<em>fauces</em>) beside the <em>tablinum</em> (1897b: 224-226); Gsell’s room behind a columned antechamber (1901: 16-17); H on BCB 1905 fig. 40.'},
+  R9:{name:'the east room, south',poly:[[6.53,-0.24],[11.56,-0.27],[11.57,-5.11],[6.54,-5.08]],g:8.4,label:'private-exclusive',vis:5,src:'E on BCB 1905 fig. 40; one of Cagnat’s chambers under the colonnade (1909: 114-116).'},
+  R6:{name:'the east room, north',poly:[[6.54,5.19],[11.55,5.16],[11.56,-0.27],[6.53,-0.24]],g:9.5,label:'private-exclusive',vis:6,src:'E on BCB 1905 fig. 40; one of Cagnat’s chambers under the colonnade (1909: 114-116).'}
  },
  edges:[
-  ['ST','R1','c','the street door, 1.6 m'],['R1','R2','c','door, 1.9 m'],['R1','R5','c','door, 1.7 m'],
-  ['R5','R4','p','door, 1.0 m'],['R2','R3','p','door, 0.85 m'],['R1','PN','c','the inner door, 1.25 m'],
-  ['PW','R7','c','door, 2.2 m'],['PW','R8','c','door, 1.6 m'],['PW','R10','c','door, 1.8 m'],
-  ['PE','R6','p','door, 1.4 m'],['PE','R9','p','door, 1.25 m'],['PE','R12','c','door, 1.7 m'],
-  ['C','R11','c','three bays, 3.5 m in all'],['C','PN','o','the column line'],['C','PW','o','the column line'],
+  ['ST','R1','c','the street door (Ballu: 2.10 m; drawn 1.60 m)'],['R1','R2','c','a door of 1.9 m'],['R1','R5','c','a door of 1.7 m'],
+  ['R5','R4','p','a door of 1.0 m'],['R2','R3','p','a door of 0.85 m'],['R1','PN','c','Ballu’s two doors into the atrium (drawn as one, 1.25 m)'],
+  ['PW','R7','c','a door of 2.2 m'],['PW','R8','c','a door of 1.6 m'],['PW','R10','c','the passage (fauces) into the ala, 1.8 m'],
+  ['PE','R6','p','a door of 1.4 m'],['PE','R9','p','a door of 1.25 m'],['PE','R12','c','the passage (fauces) into the ala, 1.7 m'],
+  ['C','R11','c','three bays on two columns, 3.5 m in all','three'],
+  ['PS','R11','c','three bays on two columns, 3.5 m in all','four'],['C','PS','o','the column line','four'],
+  ['PS','PW','o','the portico corner','four'],['PS','PE','o','the portico corner','four'],
+  ['C','PN','o','the column line'],['C','PW','o','the column line'],
   ['C','PE','o','the column line'],['PN','PW','o','the portico corner'],['PN','PE','o','the portico corner']
  ],
  variants:{
-  all:{label:'All doors drawn'},
-  certain:{label:'Certain doors only',drop:['p'],note:'Only the 11 certain doors and the open column lines. The 4 probable doors are taken out, so <b>4 rooms can’t be reached at all</b>: the two corner rooms behind the front rooms (R3, R4) and two east portico rooms (R6, R9). Everything the house says about those rooms rests on doors the plans only half show.'},
-  merged:{label:'Court and porticoes as one',merge:{PN:'C',PW:'C',PE:'C'},note:'The other way to read a peristyle: the court and its three porticoes as <b>one space</b>. The two rings disappear, the house becomes a pure tree, and the court jumps to a control of 7.25 because eight rooms hang off it. Same drawing, different counting rule, so the rule has to be stated every time.'}
+  four:{plan:'four',note:'The house as Ballu, BCB, Gsell and Rebuffat describe it: <b>four porticoes</b> round the <em>atrium</em>, so the <em>tablinum</em> opens onto the south portico, not straight onto the court. Walls and doors are the drawing’s; the south portico is added from BCB 1905 fig. 40. The <em>tablinum</em> becomes the deepest space in the house, five steps in.'},
+  certain:{plan:'four',drop:['p'],note:'The same four-portico house with only the 11 certain doors. The 4 probable doors are taken out, so <b>4 rooms can’t be reached at all</b>: the two front corner rooms (R3, R4) and two east rooms (R6, R9). Nothing in the texts gives those doors; they rest on the plans and the drawing.'},
+  merged:{plan:'four',merge:{PN:'C',PW:'C',PE:'C',PS:'C'},note:'Rebuffat’s <em>péristyle complet</em> taken as <b>one space</b>: the court and its four porticoes together. The rings disappear, the house becomes a tree, and the peristyle controls eight rooms. Same house, different counting rule, so the rule has to be stated every time.'},
+  three:{plan:'three',note:'The drawing as analysed on Sep 26, 2026, with three porticoes and the <em>tablinum</em> opening straight onto the court. Kept for comparison; the interaction labels and visibility scores come from this run.'}
  },
  walls:{"wc": [[[-8.98, 9.09], [-1.29, 9.08], [-0.39, 9.09]], [[1.97, 9.13], [3.75, 9.09], [11.54, 8.92], [11.55, 5.16], [11.59, -11.03], [4.78, -11.07], [-2.32, -11.1], [-8.86, -11.13], [-8.9, -5.28], [-8.93, 0.49], [-8.95, 5.05], [-8.98, 9.09]], [[3.69, 6.06], [3.66, 5.2], [11.55, 5.16]], [[-1.39, 6.15], [-1.38, 5.12], [-4.23, 5.1], [-8.95, 5.05]], [[3.72, 7.96], [3.75, 9.09]], [[-1.29, 7.84], [-1.29, 9.08]], [[-8.93, 0.49], [-4.24, 0.45], [-4.28, -0.95]], [[-4.23, 5.1], [-4.2, 3.84]], [[-4.25, 1.69], [-4.24, 0.45]], [[4.88, -5.1], [4.78, -11.07]], [[-4.24, -2.55], [-4.26, -5.34], [-8.9, -5.28]], [[-1.88, -5.33], [-2.32, -11.1]], [[-2.43, -5.21], [-1.3, -5.24]], [[4.88, -5.1], [3.68, -5.09]], [[-1.38, 5.12], [-0.32, 5.07]], [[3.66, 5.2], [2.5, 5.17]]], "wp": [[[11.56, -0.27], [6.53, -0.24]], [[11.57, -5.11], [6.54, -5.08]], [[7.47, 5.18], [7.53, 6.7]], [[7.5, 9.01], [7.49, 7.54]], [[-3.94, 5.1], [-3.89, 7.07]], [[-3.97, 9.1], [-3.92, 8.05]], [[-0.39, 9.09], [0.37, 9.1]], [[6.53, -0.24], [6.55, 2.17]], [[6.54, -5.08], [6.53, -3.11]], [[6.53, -0.24], [6.58, -1.87]], [[6.54, 5.19], [6.53, 3.56]]], "dc": [[[1.97, 9.13], [0.37, 9.1]], [[3.72, 7.96], [3.69, 6.06]], [[-1.29, 7.84], [-1.39, 6.15]], [[-4.2, 3.84], [-4.25, 1.69]], [[-4.28, -0.95], [-4.24, -2.55]], [[-4.26, -5.34], [-2.43, -5.21]], [[4.88, -5.1], [6.54, -5.08]], [[-1.3, -5.24], [-0.23, -5.29]], [[3.68, -5.09], [2.75, -5.11]], [[0.56, -5.26], [2.01, -5.25]], [[0.52, 5.27], [1.77, 5.25]]], "dp": [[[-3.92, 8.05], [-3.89, 7.07]], [[7.49, 7.54], [7.53, 6.7]], [[6.53, 3.56], [6.55, 2.17]], [[6.58, -1.87], [6.53, -3.11]]]},
  colonnade:[[-1.85,2.85],[4.3,2.9],[4.4,-5.1],[-2.0,-5.2]],
@@ -184,22 +204,22 @@ const HOUSE={
 };
 
 const MEAS={
- depth:{t:'Depth: how many steps in',p:'Count the doorways or openings you pass through from the street. The vestibule is 1, the rooms round the porticoes are 4. Deeper usually means more private: harder for a visitor to reach, easier for the household to keep to itself.',lo:'near the street',hi:'deep inside'},
+ depth:{t:'Depth: how many steps in',p:'Count the doorways or openings you pass through from the street. The vestibule is 1; on the excavators’ plan the <em>tablinum</em> is 5, the deepest space in the house. Deeper usually means more private: harder for a visitor to reach, easier for the household to keep to itself.',lo:'near the street',hi:'deep inside'},
  conn:{t:'Connections: how many ways out',p:'How many spaces open straight off this one. A room with 1 is a dead end: you leave the way you came in. Porticoes and courts with many connections are where people move about.',lo:'dead end',hi:'many ways out'},
- cv:{t:'Control: is this a gatekeeper?',p:'Every space shares out one point among the spaces it touches; control is how much this one collects. Above 1 means the rooms next door depend on it to be reached. Here the two side porticoes (3.50) and the vestibule (2.25) are the gatekeepers.',lo:'depends on others',hi:'gatekeeper'},
- rra:{t:'Integration: hub or backwater?',p:'How close this space is, on average, to every other space (the RRA number). A low RRA, shown dark, is the hub everything passes near; a high RRA, shown light, is tucked away. The north portico, not the court, is the best-connected space in the house.',lo:'tucked away (high RRA)',hi:'hub (low RRA)'},
+ cv:{t:'Control: is this a gatekeeper?',p:'Every space shares out one point among the spaces it touches; control is how much this one collects. Above 1 means the rooms next door depend on it to be reached. In this house the side porticoes and the vestibule are the gatekeepers.',lo:'depends on others',hi:'gatekeeper'},
+ rra:{t:'Integration: hub or backwater?',p:'How close this space is, on average, to every other space (the RRA number). A low RRA, shown dark, is the hub everything passes near; a high RRA, shown light, is tucked away. In this house the north portico, the one every visitor crosses, is the best-connected space.',lo:'tucked away (high RRA)',hi:'hub (low RRA)'},
  ring:{t:'Rings: can you walk in a loop?',p:'A ring is a loop where you can go round and come back without retracing your steps, so no single space controls the route. The highlighted links and spaces are the ones on a loop. A house with no rings is a tree, and whoever stands at a branch controls everything beyond it.',lo:'',hi:''}
 };
 
-let M='depth',V='all',SEL=null,R=null;
+let M='depth',V='four',SEL=null,R=null;
 const SVGNS='http://www.w3.org/2000/svg';
 const el=(t,a,p)=>{const e=document.createElementNS(SVGNS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;};
 
 function build(v){
  const va=HOUSE.variants[v],mp=va.merge||{},drop=va.drop||[];
  const id=n=>mp[n]||n;const seen={};const E=[];
- for(const [a,b,g,d] of HOUSE.edges){if(drop.includes(g))continue;const A=id(a),B=id(b);if(A===B)continue;const k=[A,B].sort().join('|');if(seen[k])continue;seen[k]=1;E.push({a:A,b:B,g,d,orig:[a,b]});}
- const nodes=[...new Set(Object.keys(HOUSE.nodes).map(id))];
+ const pl=va.plan||'four';for(const [a,b,g,d,only] of HOUSE.edges){if(only&&only!==pl)continue;if(drop.includes(g))continue;const A=id(a),B=id(b);if(A===B)continue;const k=[A,B].sort().join('|');if(seen[k])continue;seen[k]=1;E.push({a:A,b:B,g,d,orig:[a,b]});}
+ const nodes=[...new Set(Object.keys(HOUSE.nodes).filter(n=>!HOUSE.nodes[n].only||HOUSE.nodes[n].only===pl).map(id))];
  const adj={};nodes.forEach(n=>adj[n]=[]);E.forEach(e=>{adj[e.a].push(e.b);adj[e.b].push(e.a);});
  const bfs=s=>{const d={[s]:0},par={[s]:null},q=[s];while(q.length){const x=q.shift();for(const y of adj[x])if(!(y in d)){d[y]=d[x]+1;par[y]=x;q.push(y);}}return{d,par};};
  const root=bfs(HOUSE.root),reach=Object.keys(root.d),k=reach.length;
@@ -215,7 +235,7 @@ function build(v){
  const sorted=sp.map(n=>out[n].rra).sort((a,b)=>a-b);
  const t1=sorted[Math.floor(sp.length/3)],t2=sorted[Math.floor(2*sp.length/3)];
  sp.forEach(n=>{const r=out[n].rra;out[n].third=r<=t1+1e-9?0:(r<=t2+1e-9?1:2);});
- return{E,RE,ringE,ringN,out,par:root.par,reach:new Set(reach),nodes,mp,k,rings:RE.length-k+1,
+ return{pl,E,RE,ringE,ringN,out,par:root.par,reach:new Set(reach),nodes,mp,k,rings:RE.length-k+1,
   md:out[HOUSE.root].md,maxd:Math.max(...reach.map(n=>root.d[n])),entr:E.filter(e=>e.a===HOUSE.root||e.b===HOUSE.root).length,
   unreached:nodes.filter(n=>!(n in root.d))};
 }
@@ -253,8 +273,10 @@ function drawPlan(){
  el('rect',{width:6,height:6,fill:'#ECE6DC'},pat);el('line',{x1:0,y1:0,x2:0,y2:6,stroke:'#D6CCBC','stroke-width':2},pat);
  const shown=R.mp;
  for(const [code,n] of Object.entries(HOUSE.nodes)){
+  if(n.only&&n.only!==R.pl)continue;
   const key=shown[code]||code;
-  const pts=n.poly.map(p=>X(p[0])+','+Y(p[1])).join(' ');
+  const pg=(R.pl==='four'&&n.poly4)?n.poly4:n.poly;
+  const pts=pg.map(p=>X(p[0])+','+Y(p[1])).join(' ');
   const p=el('polygon',{points:pts,class:'room'+(SEL===key?' sel':''),fill:fillFor(key)},plan);
   p.addEventListener('click',()=>select(key));
   const t=el('title',{},p);t.textContent=code+': '+n.name;
@@ -266,6 +288,7 @@ function drawPlan(){
  el('polygon',{points:HOUSE.colonnade.map(p=>X(p[0])+','+Y(p[1])).join(' '),fill:'none',stroke:'#4F8AA0','stroke-width':1.6,'stroke-dasharray':'2 4','pointer-events':'none'},plan);
  el('circle',{cx:X(HOUSE.well[0]),cy:Y(HOUSE.well[1]),r:26,fill:'none',stroke:'rgba(16,74,77,.35)','stroke-width':1,'stroke-dasharray':'3 3','pointer-events':'none'},plan);
  el('circle',{cx:X(HOUSE.well[0]),cy:Y(HOUSE.well[1]),r:6,fill:'none',stroke:'rgba(16,74,77,.6)','stroke-width':1.5,'pointer-events':'none'},plan);
+ if(R.pl==='four')el('line',{x1:X(-2.0),y1:Y(-3.2),x2:X(4.4),y2:Y(-3.15),stroke:'#A65D40','stroke-width':1.8,'stroke-dasharray':'2 4','pointer-events':'none'},plan);
  // walls
  const line=(pts,a)=>el('polyline',Object.assign({points:pts.map(p=>X(p[0])+','+Y(p[1])).join(' '),fill:'none','stroke-linecap':'round','stroke-linejoin':'round','pointer-events':'none'},a),plan);
  HOUSE.walls.wc.forEach(w=>line(w,{stroke:'#2B2F33','stroke-width':4}));
@@ -280,8 +303,8 @@ function drawPlan(){
 }
  // labels
  for(const [code,n] of Object.entries(HOUSE.nodes)){
-  if(code===HOUSE.root)continue;const key=shown[code]||code;if(key!==code)continue;
-  let c=n.lab;if(!c){const xs=n.poly.map(p=>p[0]),ys=n.poly.map(p=>p[1]);c=[(Math.min(...xs)+Math.max(...xs))/2,(Math.min(...ys)+Math.max(...ys))/2];}
+  if(code===HOUSE.root)continue;if(n.only&&n.only!==R.pl)continue;const key=shown[code]||code;if(key!==code)continue;
+  let c=(R.pl==='four'&&n.lab4)?n.lab4:n.lab;if(!c){const xs=n.poly.map(p=>p[0]),ys=n.poly.map(p=>p[1]);c=[(Math.min(...xs)+Math.max(...xs))/2,(Math.min(...ys)+Math.max(...ys))/2];}
   const o=R.out[code];const t=el('text',{x:X(c[0]),y:Y(c[1])-6,class:'rlab',fill:inkOf(code)},plan);t.textContent=code;
   const v=el('text',{x:X(c[0]),y:Y(c[1])+8,class:'rlab',fill:inkOf(code),'font-weight':'500'},plan);
   v.textContent=!o?'not reached':(M==='ring'?(R.ringN.has(code)?'on a ring':''):fmt(M,o[M]));
@@ -338,13 +361,13 @@ function detail(){
  if(!SEL){box.innerHTML='<p class="hint">Click a room to see its numbers in plain words and the route a visitor takes to reach it from the street.</p>';return;}
  const n=HOUSE.nodes[SEL],o=R.out[SEL];
  const merged=Object.entries(R.mp).filter(([a,b])=>b===SEL).map(([a])=>a);
- let name=n.name.replace('tablinum','<em>tablinum</em>')+(merged.length?' and the three porticoes, counted as one':'');
+ let name=n.name.replace(/(tablinum|atrium|ala)\b/g,'<em>$1</em>')+(merged.length?' and its four porticoes, counted as one':'');
  if(SEL===HOUSE.root){box.innerHTML=`<h2>The street</h2><p class="hint">The street is space zero, the point everything is counted from. It touches the house at ${R.entr} door${R.entr>1?'s':''}. Its mean depth, ${r2(R.md)}, is the house's mean depth: the average number of steps from the street to every space.</p>`;return;}
  if(!o){box.innerHTML=`<h2><span class="code">${SEL}</span> ${name}</h2><p>With this reading it <b>can’t be reached</b>. Its only door is one of the probable ones, so whether anyone could get in depends on a door the plans only half show.</p>`;return;}
  const path=[];let x=SEL;while(x){path.unshift(x);x=R.par[x];}
  const words=path.map(c=>c===HOUSE.root?'street':c).join(' → ');
  const doors=[];for(let i=1;i<path.length;i++){const e=R.E.find(e=>(e.a===path[i-1]&&e.b===path[i])||(e.b===path[i-1]&&e.a===path[i]));if(e)doors.push(e.d);}
- const showStatic=V==='all';
+ const showStatic=V==='three';
  box.innerHTML=`<h2><span class="code">${SEL}</span> ${name}</h2>
  <div class="walk">Route from the street: ${words}<br><small>through ${doors.join(', then ')}</small></div>
  <dl class="facts">
@@ -354,12 +377,15 @@ function detail(){
   <dt>Integration (RRA)</dt><dd><b>${o.rra.toFixed(3)}</b> <small>${THIRD[o.third]}</small></dd>
   <dt>Mean depth (MD)</dt><dd><b>${r2(o.md)}</b> <small>average steps from here to every other space</small></dd>
   <dt>On a ring?</dt><dd><b>${R.ringN.has(SEL)?'yes':'no'}</b> <small>${R.ringN.has(SEL)?'there are two routes here, so nobody controls the way in':'only one route in'}</small></dd>
+  ${n.floor?`<dt>Floor</dt><dd><small>${n.floor}</small></dd>`:''}
   ${showStatic&&n.vis!==undefined?`<dt>Visibility score</dt><dd><b>${n.vis}</b> <small>spaces you can see into from here</small></dd>`:''}
   ${showStatic?`<dt>Interaction label</dt><dd><b>${n.label||'none'}</b> <small>${n.label?'from control and integration together':'its control and integration don’t fit one of the labels'}</small></dd>`:''}
- </dl>`;
+ </dl>
+ ${n.src?`<p class="srcline"><b>In the sources.</b> ${n.src}</p>`:''}
+ ${n.size?`<p class="srcline"><b>Sources against the drawing.</b> ${n.size}</p>`:''}`;
 }
 function stats(){
- const base=build('all');
+ const base=build(V==='three'?'three':'four');
  const items=[['spaces',R.k-1,base.k-1],['street doors',R.entr,base.entr],['rings',R.rings,base.rings],['max depth',R.maxd,base.maxd],['mean depth',r2(R.md),r2(base.md)],['not reached',R.unreached.length,0]];
  document.getElementById('stats').innerHTML=items.map(([l,v,b])=>`<div class="stat${String(v)!==String(b)?' changed':''}"><b>${v}</b><span>${l}</span></div>`).join('');
 }
@@ -370,7 +396,7 @@ function explain(){
 }
 function key(){
  const ul=document.getElementById('key');ul.innerHTML='';
- Object.entries(HOUSE.nodes).forEach(([c,n])=>{if(c===HOUSE.root)return;const li=document.createElement('li');li.innerHTML=`<b>${c}</b>${n.name.replace('tablinum','<em>tablinum</em>')}`;li.onclick=()=>select(R.mp[c]||c);ul.appendChild(li);});
+ Object.entries(HOUSE.nodes).forEach(([c,n])=>{if(c===HOUSE.root)return;const li=document.createElement('li');li.innerHTML=`<b>${c}</b>${n.name.replace(/(tablinum|atrium|ala)\b/g,'<em>$1</em>')}`;li.onclick=()=>select(R.mp[c]||c);ul.appendChild(li);});
 }
 function select(c){SEL=(SEL===c)?null:c;render();}
 function render(){R=build(V);if(SEL&&!R.nodes.includes(SEL))SEL=null;stats();explain();drawPlan();drawGraph();detail();}
