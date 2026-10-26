@@ -2761,28 +2761,28 @@
    "analysis": {
     "date": "2026-09-26",
     "round": 2,
-    "spaces": 16,
-    "spaces_note": "12 rooms, 1 court, 3 porticoes",
+    "spaces": 17,
+    "spaces_note": "12 rooms, 1 court, 4 porticoes",
     "entrances": 1,
-    "depth_max": 4,
-    "mean_depth": 3.12,
-    "rings": 2,
-    "summary": "A single street door from the Decumanus leads through a vestibule onto a ten-column court whose porticoes open onto nine small rooms, with a three-bayed reception room on the entrance axis where the figured mosaic lies. The house was redrawn on confidence-graded layers in September 2026, which gives sixteen spaces reached from one entrance, with two circulation rings running through the porticoes. The court is square, with a well and planters rather than the semicircular atrium of the later plans, the tripartite front of the reception room is confirmed, and no room opens directly onto the street, which points to a single household without shops along the frontage.",
+    "depth_max": 5,
+    "mean_depth": 3.24,
+    "rings": 4,
+    "summary": "A single street door from the Decumanus leads into a vestibule, and two doors either side of a pier lead on into a ten-column court with porticoes on all four sides, where the tablinum opens onto the south portico by three bays between two alae, as Ballu and the 1905 plan describe it. On the drawing (Sep 26, 2026) that gives seventeen spaces reached from one entrance, four circulation rings through the porticoes, a maximum depth of five and a mean depth of 3.24, with the tablinum and the alae the deepest spaces in the house and the pier keeping the tablinum out of view from the street door. The court is square, with a well and planters rather than the semicircular atrium of the later plans, and no room opens directly onto the street, which points to a single household without shops along the frontage.",
     "figures": [
      {
-      "src": "/assets/images/houses/TIMG.SE.I2/fig1_plan_spaces.png",
+      "src": "/assets/images/houses/TIMG.SE.I2/fig1_plan_spaces_v2.png",
       "caption": "Convex spaces on the redrawn plan"
      },
      {
-      "src": "/assets/images/houses/TIMG.SE.I2/fig2_jgraph_street.png",
+      "src": "/assets/images/houses/TIMG.SE.I2/fig2_jgraph_street_v2.png",
       "caption": "Justified graph from the street; dashed lines are probable doorways"
      },
      {
-      "src": "/assets/images/houses/TIMG.SE.I2/fig4_depth_plan.png",
+      "src": "/assets/images/houses/TIMG.SE.I2/fig4_depth_plan_v2.png",
       "caption": "Depth of each space from the street"
      }
     ],
-    "summary_html": "A single street door from the <em>Decumanus</em> leads through a vestibule onto a ten-column court whose porticoes open onto nine small rooms, with a three-bayed reception room on the entrance axis where the figured mosaic lies. The house was redrawn on confidence-graded layers in September 2026, which gives sixteen spaces reached from one entrance, with two circulation rings running through the porticoes. The court is square, with a well and planters rather than the semicircular <em>atrium</em> of the later plans, the tripartite front of the reception room is confirmed, and no room opens directly onto the street, which points to a single household without shops along the frontage."
+    "summary_html": "A single street door from the <em>Decumanus</em> leads into a vestibule, and two doors either side of a pier lead on into a ten-column court with porticoes on all four sides, where the <em>tablinum</em> opens onto the south portico by three bays between two <em>alae</em>, as Ballu and the 1905 plan describe it. On the drawing (Sep 26, 2026) that gives seventeen spaces reached from one entrance, four circulation rings through the porticoes, a maximum depth of five and a mean depth of 3.24, with the <em>tablinum</em> and the <em>alae</em> the deepest spaces in the house and the pier keeping the <em>tablinum</em> out of view from the street door. The court is square, with a well and planters rather than the semicircular <em>atrium</em> of the later plans, and no room opens directly onto the street, which points to a single household without shops along the frontage."
    }
   },
   {
