@@ -1534,16 +1534,41 @@
    "confidence": "medium",
    "mapping_confidence": "high",
    "verification_status": "partial",
-   "analysis_status": "pending",
+   "analysis_status": "interpreted",
    "area_raw": "",
    "area_m2": null,
    "first_published_by": "Ballu 1911a: 79",
    "earliest_source": "",
    "key_references": "",
    "possible_duplicate_of": "",
-   "notes": "Ballu reached this block first in his tour of the north-east quarter: the one insula worth noting in the first row, immediately east of the Small Northern Baths. Three shops opened onto the northern boulevard, one keeping its back-room; behind them lay a vestibule and the levelled remains of an atrium. The eastern third of the block, five rooms and a large vestibule encroaching on the street, had no communication with the rest of the building [Ballu 1911: 79].",
+   "notes": "In the first row of the north-east quarter there's only one block to point out, the one east of and next to the small north baths. Its layout isn't of much interest. There are three shops open onto the boulevard, one with a back-shop, a vestibule, and a vast space in the middle where the atrium, now gone, used to be. On the east side, with no communication with the rest of the building, about a third of the block is made up of five rooms of varying size and, besides, a large vestibule built out over the street with its whole surface [Ballu 1911a: 79].",
    "sample": false,
-   "notes_html": "Ballu reached this block first in his tour of the north-east quarter: the one <em>insula</em> worth noting in the first row, immediately east of the Small Northern Baths. Three shops opened onto the northern boulevard, one keeping its back-room; behind them lay a vestibule and the levelled remains of an <em>atrium</em>. The eastern third of the block, five rooms and a large vestibule encroaching on the street, had no communication with the rest of the building [Ballu 1911: 79]."
+   "notes_html": "In the first row of the north-east quarter there's only one block to point out, the one east of and next to the small north baths. Its layout isn't of much interest. There are three shops open onto the boulevard, one with a back-shop, a vestibule, and a vast space in the middle where the <em>atrium</em>, now gone, used to be. On the east side, with no communication with the rest of the building, about a third of the block is made up of five rooms of varying size and, besides, a large vestibule built out over the street with its whole surface [Ballu 1911a: 79].",
+   "analysis": {
+    "date": "2026-10-23",
+    "spaces": 17,
+    "spaces_note": "all reached; the court, the room west of it, the big west room and the middle room are joined across rows of column bases",
+    "entrances": 9,
+    "depth_max": 2,
+    "mean_depth": 1.47,
+    "rings": 7,
+    "summary": "Drawn from the ground with Ballu's few lines (1911a: 79) and his plan of 1911 as the cross-check, the block comes out as 17 spaces, all reached, with nine street doors and a mean depth of 1.47, every room one or two steps from a street, in three groups that never meet; the house has Ballu's three shops on the boulevard and a back-shop, and in the middle, where he says the atrium had gone, a court with column bases on two sides and a basin against one row, none of it on any plan; his east part, three rooms on the drawing against his five, is entered only from the east street, through the vestibule he says was built out over it and by the big south-east room's own door, and the south-west room has only its own street door.",
+    "figures": [
+     {
+      "src": "/assets/images/houses/TIMG.NE.I32/fig1_plan_spaces.png",
+      "caption": "Convex spaces on the drawing (Oct 23, 2026)"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I32/fig2_jgraph_street.png",
+      "caption": "Access graph from the street"
+     },
+     {
+      "src": "/assets/images/houses/TIMG.NE.I32/fig4_depth_plan.png",
+      "caption": "Depth from the street"
+     }
+    ],
+    "summary_html": "Drawn from the ground with Ballu's few lines (1911a: 79) and his plan of 1911 as the cross-check, the block comes out as 17 spaces, all reached, with nine street doors and a mean depth of 1.47, every room one or two steps from a street, in three groups that never meet; the house has Ballu's three shops on the boulevard and a back-shop, and in the middle, where he says the <em>atrium</em> had gone, a court with column bases on two sides and a basin against one row, none of it on any plan; his east part, three rooms on the drawing against his five, is entered only from the east street, through the vestibule he says was built out over it and by the big south-east room's own door, and the south-west room has only its own street door."
+   }
   },
   {
    "grid_id": "TIMG.NE.I33",
